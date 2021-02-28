@@ -1,0 +1,18 @@
+monsters:
+  cockatrice:
+    difficulty: "8"
+    attacks: "bite 1d3, petrification"
+    speed: "6"
+    ac: "6"
+    mr: "30"
+    alignment: "neutral"
+    genocidable: true
+    weight: "30"
+    nutritional_value: "30"
+    size: "small"
+    resistances: "poison and petrification"
+    restistances_conveyed: "poison (33%)"
+    corpse_safe: false
+    elbereth: true
+    extra: ""
+
