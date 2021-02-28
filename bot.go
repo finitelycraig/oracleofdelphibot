@@ -38,6 +38,17 @@ type armor struct {
    MC string `yaml:"mc"`
 }
 
+type tools struct {
+    Items map[string]tool `yaml:"tools"`
+}
+
+type tool struct {
+   Cost string `yaml:"cost"`
+   Weight string `yaml:"weight"`
+   Use string `yaml:"use"`
+   Magic bool `yaml:"magic"`
+}
+
 type monsters struct {
     Items map[string]monster `yaml:"monsters"`
 }
@@ -45,16 +56,17 @@ type monsters struct {
 type monster struct {
    Difficulty string `yaml:"difficulty"`
    Attacks string `yaml:"attacks"`
-   Speed string `yaml:"weight"`
+   Speed string `yaml:"speed"`
    AC string `yaml:"ac"`
    MR string `yaml:"mr"`
+   Weight string `yaml:"weight"`
    Alignment string `yaml:"alignment"`
-   Genocidale bool `yaml:"genocidable"`
+   Genocidable bool `yaml:"genocidable"`
    NutritionalValue string `yaml:"nutritional_value"`
    Size string `yaml:"size"`
    Resistances string `yaml:"resistances"`
    ResistancesConveyed string `yaml:"resistances_conveyed"`
-   CorseSafe bool `yaml:"corpse_safe"`
+   CorpseSafe bool `yaml:"corpse_safe"`
    Elbereth bool `yaml:"elbereth"`
    Extra string `yaml:"extra"`
 }
@@ -63,17 +75,6 @@ type monster struct {
 func (a *armors) getArmorMessage(name string) string {
     output := "Adventurer, I know of no weapon called " + name 
     if val, ok := a.Items[name]; ok {
-        //output = fmt.Sprintf("Adventurer! This %s you speak of does %s damage "+ 
-        //"to small creatures and %s to larger foes. It is made of %s, weighing "+ 
-        //"%s. An honest shopkeep (if ever there were one) would value it at "+
-        //"%s. Continued use could see you upgrade your skill with %s.", 
-        //name, 
-        //val.DamageSmall, 
-        //val.DamageLarge, 
-        //val.Material, 
-        //val.Weight, 
-        //val.Cost, 
-        //val.Skill)
         // new output for luxi
         output = fmt.Sprintf("A %s has AC %s, MC %s, weight %s, costs %s and is made of %s. %s",
         name, 
@@ -91,17 +92,6 @@ func (a *armors) getArmorMessage(name string) string {
 func (w *weapons) getWeaponMessage(name string) string {
     output := "Adventurer, I know of no weapon called " + name 
     if val, ok := w.Items[name]; ok {
-        //output = fmt.Sprintf("Adventurer! This %s you speak of does %s damage "+ 
-        //"to small creatures and %s to larger foes. It is made of %s, weighing "+ 
-        //"%s. An honest shopkeep (if ever there were one) would value it at "+
-        //"%s. Continued use could see you upgrade your skill with %s.", 
-        //name, 
-        //val.DamageSmall, 
-        //val.DamageLarge, 
-        //val.Material, 
-        //val.Weight, 
-        //val.Cost, 
-        //val.Skill)
         // new output for luxi
         output = fmt.Sprintf("A %s does %s/%s damage. "+ 
         "It is made of %s, weighs "+ 
@@ -118,60 +108,79 @@ func (w *weapons) getWeaponMessage(name string) string {
     return output
 }
 
+// Get the stats message for an individual tool
+func (t *tools) getToolMessage(name string) string {
+    output := "Adventurer, I know of no weapon called " + name 
+    if val, ok := t.Items[name]; ok {
+        var magic string
+        if val.Magic {
+            magic = "is magical"
+        } else {
+            magic = "is not magical"
+        }
+        // new output for luxi
+        output = fmt.Sprintf("A %s costs %s zm, weighs %s and %s.  It %s ", 
+        name, 
+        val.Cost, 
+        val.Weight, 
+        magic, 
+        val.Use)
+    }
+    return output
+}
+
 // Get the stats message for an individual weapon
 func (m *monsters) getMonsterMessage(name string) string {
     output := "Adventurer, I know of no weapon called " + name 
     if val, ok := m.Items[name]; ok {
         var genocidable string
         if val.Genocidable {
-            genociable = "They are genocidable"
+            genocidable = "genocidable"
         } else {
-            genociable = "They are not genocidable"
-        }
-        var corpseSafe string
-        if val.CorpseSafe {
-            corpseSafe = "It is safe to eat"
-        } else {
-            corpseSafe = "It is not safe to eat"
-        }
-        var elbereth string
-        if val.Elbereth {
-            elbereth = "It respects Elbereth"
-        } else {
-            elbereth = "It does not respect Elbereth"
+            genocidable = "not genocidable"
         }
         var resistances string
         if val.Resistances != "" {
-            resistances = "It is resistant to " + val.Resistances
+            resistances = "It is resistant to " + val.Resistances + "."
         }
         var resistancesConveyed string
         if val.ResistancesConveyed != "" {
-            resistancesConveyed = "Consumption might provide resistance to " + val.ResistancesConveyed
+            resistancesConveyed = "It might convey resistance to " + val.ResistancesConveyed + "."
         }
-        //output = fmt.Sprintf("Adventurer! This %s you speak of does %s damage "+ 
-       //"to small creatures and %s to larger foes. It is made of %s, weighing "+ 
-        //"%s. An honest shopkeep (if ever there were one) would value it at "+
-        //"%s. Continued use could see you upgrade your skill with %s.", 
-        //name, 
-        //val.DamageSmall, 
-        //val.DamageLarge, 
-        //val.Material, 
-       //val.Weight, 
-        //val.Cost, 
-        //val.Skill)
+        var corpseSafe string
+        if val.CorpseSafe {
+            corpseSafe = "safe"
+        } else {
+            corpseSafe = "not safe"
+        }
+        var elbereth string
+        if val.Elbereth {
+            elbereth = "respects"
+        } else {
+            elbereth = "does not respect"
+        }
+
         // new output for luxi
-        output = fmt.Sprintf("A %s has difficulty %s.  It attacks for %s "+ 
-        "It has speed %s, AC %s, MR %s, %s alignment, weight %s, "+
-        "nutritional value %s. It is size %s.
-        "%s, and is valued at "+
-        "%s. Works your skill with %s."+, 
+        output = fmt.Sprintf("A %s has difficulty %s.  It attacks for %s, " +
+        "has speed %s, %s AC, %s MR, weighs %s, has nutritional value %s " +
+        "and %s alignment.  It is a %s creature.  It is %s.%s%s " + 
+        "Its corpse is %s to eat. It %s Elbereth.%s",
         name, 
         val.Difficulty, 
-        val.Attacks, 
-        val.Speed, 
-        val.AC, 
-        val.MR, 
-        val.Speed)
+        val.Attacks,
+        val.Speed,
+        val.AC,
+        val.MR,
+        val.Weight,
+        val.NutritionalValue,
+        val.Alignment,
+        val.Size,
+        genocidable,
+        resistances,
+        resistancesConveyed,
+        corpseSafe,
+        elbereth,
+        val.Extra)
     }
     return output
 }
@@ -221,8 +230,23 @@ func getMonsters(fname string) *monsters {
 	return m
 }
 
+// Load in the weapon stats from a yaml file
+func getTools(fname string) *tools {
+    var t *tools
+	yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &t)
+    if err != nil {
+        log.Fatalf("Unmarshal: %v", err)
+    }
+
+	return t
+}
+
 // parse messages to see if we should reply or not
-func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armors, m *monsters) {
+func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armors, m *monsters, t *tools) {
     fmt.Println(message)
     words := strings.Split(message, " ")
     fmt.Println(words)
@@ -241,6 +265,9 @@ func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armo
     } else if _, mok := m.Items[message]; mok {
         c.Say(channel, m.getMonsterMessage(message))
         //return
+    } else if _, tok := t.Items[message]; tok {
+        c.Say(channel, t.getToolMessage(message))
+        //return
     } else {
         return 
     }
@@ -252,6 +279,7 @@ func main() {
 		w := getWeapons("weapons.yaml")
 		a := getArmor("armor.yaml")
 		m := getMonsters("monsters.yaml")
+		t := getTools("tools.yaml")
 
         // find the bot's name, channel's name and oauth from OS env vars
         bot := os.Getenv("TWITCHBOT")
@@ -264,7 +292,7 @@ func main() {
             fmt.Printf("%s: %s\n", message.User.Name, message.Message)
             if message.User.Name != bot {
                 fmt.Println("message was not from the oracle")
-                parseMessage(client, channel, message.Message, w, a, m)
+                parseMessage(client, channel, message.Message, w, a, m, t)
             }
         })
 
