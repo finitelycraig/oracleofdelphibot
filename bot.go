@@ -49,6 +49,19 @@ type tool struct {
    Magic bool `yaml:"magic"`
 }
 
+type wands struct {
+    Items map[string]wand `yaml:"wands"`
+}
+
+type wand struct {
+   Cost string `yaml:"cost"`
+   Weight string `yaml:"weight"`
+   Type string `yaml:"type"`
+   StartingCharges string `yaml:"starting_charges"`
+   Effect string `yaml:"effect"`
+   Broken string `yaml:"broken"`
+}
+
 type monsters struct {
     Items map[string]monster `yaml:"monsters"`
 }
@@ -129,6 +142,23 @@ func (t *tools) getToolMessage(name string) string {
     return output
 }
 
+func (w *wands) getWandMessage(name string) string {
+    output := "Adventurer, I know of no weapon called " + name 
+    if val, ok := w.Items[name]; ok {
+        // new output for luxi
+        output = fmt.Sprintf("A wand of %s costs %szm, weighs %s and had %s starting charges.  It's pattern is %s. "+
+        "%s %s", 
+        name, 
+        val.Cost, 
+        val.Weight, 
+        val.StartingCharges, 
+        val.Type,
+        val.Effect,
+        val.Broken)
+    }
+    return output
+}
+
 // Get the stats message for an individual weapon
 func (m *monsters) getMonsterMessage(name string) string {
     output := "Adventurer, I know of no weapon called " + name 
@@ -141,11 +171,11 @@ func (m *monsters) getMonsterMessage(name string) string {
         }
         var resistances string
         if val.Resistances != "" {
-            resistances = "It is resistant to " + val.Resistances + "."
+            resistances = " It is resistant to " + val.Resistances + "."
         }
         var resistancesConveyed string
         if val.ResistancesConveyed != "" {
-            resistancesConveyed = "It might convey resistance to " + val.ResistancesConveyed + "."
+            resistancesConveyed = " It might convey resistance to " + val.ResistancesConveyed + "."
         }
         var corpseSafe string
         if val.CorpseSafe {
@@ -161,9 +191,9 @@ func (m *monsters) getMonsterMessage(name string) string {
         }
 
         // new output for luxi
-        output = fmt.Sprintf("A %s has difficulty %s.  It attacks for %s, " +
+        output = fmt.Sprintf("A %s has difficulty %s.  It attacks are %s. It " +
         "has speed %s, %s AC, %s MR, weighs %s, has nutritional value %s " +
-        "and %s alignment.  It is a %s creature.  It is %s.%s%s " + 
+        "and %s alignment.  It is a %s creature. It is %s.%s%s " + 
         "Its corpse is %s to eat. It %s Elbereth.%s",
         name, 
         val.Difficulty, 
@@ -245,8 +275,23 @@ func getTools(fname string) *tools {
 	return t
 }
 
+// Load in the weapon stats from a yaml file
+func getWands(fname string) *wands {
+    var w *wands
+	yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &w)
+    if err != nil {
+        log.Fatalf("Unmarshal: %v", err)
+    }
+
+	return w
+}
+
 // parse messages to see if we should reply or not
-func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armors, m *monsters, t *tools) {
+func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armors, m *monsters, t *tools, wa *wands) {
     fmt.Println(message)
     words := strings.Split(message, " ")
     fmt.Println(words)
@@ -268,8 +313,11 @@ func parseMessage(c *twitch.Client, channel, message string, w *weapons, a *armo
     } else if _, tok := t.Items[message]; tok {
         c.Say(channel, t.getToolMessage(message))
         //return
+    } else if _, waok := wa.Items[message]; waok {
+        c.Say(channel, wa.getWandMessage(message))
+        //return
     } else {
-        return 
+        return
     }
 }
 
@@ -280,6 +328,7 @@ func main() {
 		a := getArmor("armor.yaml")
 		m := getMonsters("monsters.yaml")
 		t := getTools("tools.yaml")
+		wa := getWands("wands.yaml")
 
         // find the bot's name, channel's name and oauth from OS env vars
         bot := os.Getenv("TWITCHBOT")
@@ -292,7 +341,7 @@ func main() {
             fmt.Printf("%s: %s\n", message.User.Name, message.Message)
             if message.User.Name != bot {
                 fmt.Println("message was not from the oracle")
-                parseMessage(client, channel, message.Message, w, a, m, t)
+                parseMessage(client, channel, message.Message, w, a, m, t, wa)
             }
         })
 
