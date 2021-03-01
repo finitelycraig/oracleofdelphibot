@@ -1,7 +1,7 @@
 monsters:
   cockatrice:
     difficulty: "8"
-    attacks: "bite 1d3, petrification"
+    attacks: "bite 1d3 and petrification"
     speed: "6"
     ac: "6"
     mr: "30"
