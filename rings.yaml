@@ -1,0 +1,9 @@
+rings:
+  ring-of-adornment:
+    cost: 100
+    extrinsic_granted: "+n charisma"
+    notes: "It is chargeable"
+  ring-of-hunger:
+    cost: 100
+    extrinsic_granted: "hunger"
+    notes: "90% are generated cursed"

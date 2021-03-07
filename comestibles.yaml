@@ -1,0 +1,15 @@
+comestibles:
+  food-ration:
+    cost: 45
+    weight: 20
+    nutritional_value: 800
+    time: 5
+    conduct: "vegan"
+    effect: ""
+  clove-of-garlic:
+    cost: 7
+    weight: 1
+    nutritional_value: 40
+    time: 1
+    conduct: "vegan"
+    effect: "Garlic makes you nauseous if you are undead."

@@ -1,0 +1,5 @@
+potions:
+  extra-healing:
+    cost: 100
+    weight: 20
+    effect: "A blessed one heals 8d8 HP when quaffed, an uncursed one 6d8 HP, and a cursed one 4d8 HP. If this would bring your HP above its maximum, your maximum will increase by 2 for an uncursed potion, or 5 for a blessed potion. The potion will also cure hallucination and blindness, exercise constitution and strength, and, if noncursed, cure sickness."

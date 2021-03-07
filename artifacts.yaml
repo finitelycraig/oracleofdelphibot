@@ -1,0 +1,19 @@
+artifacts:
+  cleaver:
+    base_item: "battle-axe"
+    alignment: "neutral"
+    intelligent: false
+    use: "weilded"
+    carried: ""
+    used: "+d3 to-hit and +d6 damage. Arc-swing hits up to 3 monsters at once"
+    invoked: ""
+    obtaining: "It is the first sacrifice gift for Barbarians."
+  the-eye-of-aethiopica:
+    base_item: "amulet-of-esp"
+    alignment: "neutral"
+    intelligent: true
+    use: "worn"
+    carried: "energy regeneration and half spell damage"
+    used: "magic resistance and telepathy"
+    invoked: "branchport"
+    obtaining: "It is the Quest artifact for Wizards."

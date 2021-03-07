@@ -1,0 +1,8 @@
+properties:
+  fire-resistance:
+    effect: "prevents fire damage, but does not fireproof your inventory"
+    sources: 
+      - "being a Monk at level 11"
+      - "being a Priest at level 20"
+      - "putting on or eating a ring of fire resistance"
+      - "polymorphing into a resistant monster"
