@@ -11,6 +11,8 @@ import (
     "github.com/gempir/go-twitch-irc/v2"
 )
 
+var allowedChannels []string
+
 type weapons struct {
     Items map[string]weapon `yaml:"weapons"`
 }
@@ -531,7 +533,12 @@ func getArtifacts(fname string) *artifacts {
 func parseOracleMessage(c *twitch.Client, message string, user string) {
     if message == "join" {
         fmt.Printf("%s requests we %s", user, message)
-        c.Join(user)
+        for _, allowedChannel := range allowedChannels {
+            if user == allowedChannel {
+                c.Join(user)
+                return
+            }
+        }
     } else if message == "depart" {
         fmt.Printf("%s requests we %s", user, message)
         c.Depart(user)
@@ -606,6 +613,7 @@ func parseMessage(c *twitch.Client, mess twitch.PrivateMessage, w *weapons, a *a
 }
 
 func main() {
+    allowedChannels = []string{"finitelycraig"}
     // load the information from yaml files containing stats
     w := getWeapons("weapons.yaml")
     a := getArmor("armor.yaml")
