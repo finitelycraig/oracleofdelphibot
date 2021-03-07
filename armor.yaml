@@ -1,145 +1,145 @@
 armors:
   hawaiian-shirt:
     type: "shirt"
-    cost: "3zm"
-    weight: "5"
-    ac: "0"
+    cost: 3
+    weight: 5
+    ac: 0
     material: "cloth"
     effect: "If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price)."
-    mc: "0"
+    mc: 0
   t-shirt:
     type: "shirt"
-    cost: "2zm"
-    weight: "5"
-    ac: "0"
+    cost: 2
+    weight: 5
+    ac: 0
     material: "cloth"
     effect: "If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price)."
-    mc: "0"
+    mc: 0
   leather-jacket:
     type: "suit of armor"
-    cost: "10zm"
-    weight: "30"
-    ac: "1"
+    cost: 10
+    weight: 30
+    ac: 1 
     material: "leather"
     effect: ""
-    mc: "0"
+    mc: 0
   leather-armor:
     type: "suit of armor"
-    cost: "5zm"
-    weight: "150"
-    ac: "2"
+    cost: 5
+    weight: 150
+    ac: 2
     material: "leather"
     effect: ""
-    mc: "0"
+    mc: 0
   orcish-ring-mail:
     type: "suit of armor"
-    cost: "80zm"
-    weight: "250"
-    ac: "2"
+    cost: 80
+    weight: 250
+    ac: 2
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   studded-leather-armor:
     type: "suit of armor"
-    cost: "15zm"
-    weight: "200"
-    ac: "3"
+    cost: 15
+    weight: 200
+    ac: 3
     material: "leather"
     effect: ""
-    mc: "0"
+    mc: 0
   ring-mail:
     type: "suit of armor"
-    cost: "100zm"
-    weight: "250"
-    ac: "3"
+    cost: 100
+    weight: 250
+    ac: 3
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   scale-mail:
     type: "suit of armor"
-    cost: "45zm"
-    weight: "250"
-    ac: "4"
+    cost: 45
+    weight: 250
+    ac: 4
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   orcish-chain-mail:
     type: "suit of armor"
-    cost: "70zm"
-    weight: "300"
-    ac: "4"
+    cost: 70
+    weight: 300
+    ac: 4
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   chain-mail:
     type: "suit of armor"
-    cost: "75zm"
-    weight: "300"
-    ac: "5"
+    cost: 75
+    weight: 300
+    ac: 5
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   elvin-mirthril-coat:
     type: "suit of armor"
-    cost: "240zm"
-    weight: "150"
-    ac: "5"
+    cost: 240
+    weight: 150
+    ac: 5
     material: "mithril"
     effect: ""
-    mc: "0"
+    mc: 0
   splint-mail:
     type: "suit of armor"
-    cost: "80zm"
-    weight: "400"
-    ac: "6"
+    cost: 80
+    weight: 400
+    ac: 6
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   banded-mail:
     type: "suit of armor"
-    cost: "90zm"
-    weight: "350"
-    ac: "6"
+    cost: 90
+    weight: 350
+    ac: 6
     material: "iron"
     effect: ""
-    mc: "1"
+    mc: 1
   dwarvish-mirthril-coat:
     type: "suit of armor"
-    cost: "240zm"
-    weight: "150"
-    ac: "6"
+    cost: 240
+    weight: 150
+    ac: 6
     material: "mithril"
     effect: ""
-    mc: "0"
+    mc: 0
   bronze-plate-mail:
     type: "suit of armor"
-    cost: "400zm"
-    weight: "450"
-    ac: "6"
+    cost: 400
+    weight: 450
+    ac: 6
     material: "copper"
     effect: ""
-    mc: "0"
+    mc: 0
   plate-mail:
     type: "suit of armor"
-    cost: "600zm"
-    weight: "450"
-    ac: "7"
+    cost: 600
+    weight: 450
+    ac: 7
     material: "iron"
     effect: ""
-    mc: "2"
+    mc: 2
   tanko:
     type: "suit of armor"
-    cost: "600zm"
-    weight: "450"
-    ac: "7"
+    cost: 600
+    weight: 450
+    ac: 7
     material: "iron"
     effect: ""
-    mc: "0"
+    mc: 0
   crystal-plate-mail:
     type: "suit of armor"
-    cost: "820zm"
-    weight: "450"
-    ac: "7"
+    cost: 820
+    weight: 450
+    ac: 7
     material: "glass"
     effect: ""
-    mc: "0"
+    mc: 0

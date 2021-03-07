@@ -1,6 +1,6 @@
 tools:
   blindfold:
-    cost: "20"
-    weight: "2"
+    cost: 20
+    weight: 2
     use: "blinds you"
     magic: false

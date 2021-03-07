@@ -1,555 +1,554 @@
 weapons:
   aklys:
     skill: "clubs"
-    cost: "4zm"
-    weight: "15"
+    cost: 4
+    weight: 15
     damage-small: "d6"
     damage-large: "d3"
     material: "iron"
   arrow:
     skill: "bows"
-    cost: "2zm"
-    weight: "1"
+    cost: 2
+    weight: 1
     damage-small: "d6"
     damage-large: "d6"
     material: "iron"
   athame:
     skill: "daggers"
-    cost: "4zm"
-    weight: "10"
+    cost: 4
+    weight: 10
     damage-small: "d6"
     damage-large: "d4"
     material: "iron"
   axe:
     skill: "axes"
-    cost: "8zm"
-    weight: "60"
+    cost: 8
+    weight: 60
     damage-small: "d6"
     damage-large: "d4"
     material: "iron"
   bardiche:
     skill: "polearms"
-    cost: "7zm"
-    weight: "120"
+    cost: 7
+    weight: 120
     damage-small: "2d4"
     damage-large: "3d4"
     material: "iron"
   battle-axe:
     skill: "axes"
-    cost: "40zm"
-    weight: "120"
+    cost: 40
+    weight: 120
     damage-small: "d8+d4"
     damage-large: "d6+2d4"
     material: "iron"
   bec-de-corbin:
     skill: "polearms"
-    cost: "8zm"
-    weight: "100"
+    cost: 8
+    weight: 100
     damage-small: "d8"
     damage-large: "d6"
     material: "iron"
   bill-guisarme:
     skill: "polearms"
-    cost: "7zm"
-    weight: "120"
+    cost: 7
+    weight: 120
     damage-small: "2d4"
     damage-large: "d10"
     material: "iron"
   boomerang:
     skill: "boomerangs"
-    cost: "20zm"
-    weight: "5"
+    cost: 20
+    weight: 5
     damage-small: "d9"
     damage-large: "d9"
     material: "wood"
   bow:
     skill: "bows"
-    cost: "60zm"
-    weight: "30"
+    cost: 60
+    weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
   broadsword:
     skill: "broadsword"
-    cost: "10zm"
-    weight: "70"
+    cost: 10
+    weight: 70
     damage-small: "2d4"
     damage-large: "d6+1"
     material: "iron"
   ninja-to:
     skill: "broadswords"
-    cost: "10zm"
-    weight: "70"
+    cost: 10
+    weight: 70
     damage-small: "2d4"
     damage-large: "d6+1"
     material: "iron"
   bullwhip:
     skill: "whips"
-    cost: "4zm"
-    weight: "20"
+    cost: 4
+    weight: 20
     damage-small: "d2"
     damage-large: "1"
     material: "leather"
   club:
     skill: "clubs"
-    cost: "3zm"
-    weight: "30"
+    cost: 3
+    weight: 30
     damage-small: "d6"
     damage-large: "d3"
     material: "wood"
   crossbow:
     skill: "crossbows"
-    cost: "40zm"
-    weight: "50"
+    cost: 40
+    weight: 50
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
   crossbow-bolt:
     skill: "crossbows"
-    cost: "2zm"
-    weight: "1"
+    cost: 2
+    weight: 1
     damage-small: "d4+1"
     damage-large: "d6+1"
     material: "iron"
   crysknife:
     skill: "knifes"
-    cost: "100zm"
-    weight: "20"
+    cost: 100
+    weight: 20
     damage-small: "d10"
     damage-large: "d10"
     material: "mineral"
   dagger:
     skill: "daggers"
-    cost: "4zm"
-    weight: "10"
+    cost: 4
+    weight: 10
     damage-small: "d4"
     damage-large: "d3"
     material: "iron"
   dart:
     skill: "darts"
-    cost: "2zm"
-    weight: "1"
+    cost: 2
+    weight: 1
     damage-small: "d3"
     damage-large: "d2"
     material: "iron"
   dwarvish-mattock:
     skill: "pick-axes"
-    cost: "50zm"
-    weight: "120"
+    cost: 50
+    weight: 120
     damage-small: "d12"
     damage-large: "d8+2d6"
     material: "iron"
   dwarvish-short-sword:
     skill: "short swords"
-    cost: "10zm"
-    weight: "30"
+    cost: 10
+    weight: 30
     damage-small: "d7"
     damage-large: "d8"
     material: "iron"
   dwarvish-spear:
     skill: "spears"
-    cost: "3zm"
-    weight: "35"
+    cost: 3
+    weight: 35
     damage-small: "d8"
     damage-large: "d8"
     material: "iron"
   elven-arrow:
     skill: "bows"
-    cost: "2zm"
-    weight: "1"
+    cost: 2
+    weight: 1
     damage-small: "d7"
     damage-large: "d6"
     material: "wood"
   elven-bow:
     skill: "bows"
-    cost: "60zm"
-    weight: "30"
+    cost: 60
+    weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
   elven-broadsword:
     skill: "broadswords"
-    cost: "10zm"
-    weight: "70"
+    cost: 10
+    weight: 70
     damage-small: "d6+d4"
     damage-large: "d6+1"
     material: "wood"
   elven-dagger:
     skill: "daggers"
-    cost: "4zm"
-    weight: "10"
+    cost: 4
+    weight: 10
     damage-small: "d5"
     damage-large: "d3"
     material: "wood"
   elven-short-sword:
     skill: "short swords"
-    cost: "10zm"
-    weight: "30"
+    cost: 10
+    weight: 30
     damage-small: "d8"
     damage-large: "d8"
     material: "wood"
   elven-spear:
     skill: "spears"
-    cost: "3zm"
-    weight: "30"
+    cost: 3
+    weight: 30
     damage-small: "d7"
     damage-large: "d8"
     material: "wood"
   fauchard:
     skill: "polearms"
-    cost: "5zm"
-    weight: "60"
+    cost: 5
+    weight: 60
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
   flail:
     skill: "flails"
-    cost: "4zm"
-    weight: "15"
+    cost: 4
+    weight: 15
     damage-small: "d6+1"
     damage-large: "2d4"
     material: "iron"
   nunchaku:
     skill: "flails"
-    cost: "4zm"
-    weight: "15"
+    cost: 4
+    weight: 15
     damage-small: "d6+1"
     damage-large: "2d4"
     material: "iron"
   flint-stone:
     skill: "slings"
-    cost: "1zm"
-    weight: "10"
+    cost: 1
+    weight: 10
     damage-small: "d6"
     damage-large: "d6"
     material: "mineral"
   glaive:
     skill: "polearms"
-    cost: "6zm"
-    weight: "75"
+    cost: 6
+    weight: 75
     damage-small: "d6"
     damage-large: "d10"
     material: "iron"
   naginata:
     skill: "polearms"
-    cost: "6zm"
-    weight: "75"
+    cost: 6
+    weight: 75
     damage-small: "d6"
     damage-large: "d10"
     material: "iron"
   grappling-hook:
     skill: "flails"
-    cost: "50zm"
-    weight: "30"
+    cost: 50
+    weight: 30
     damage-small: "d2"
     damage-large: "d6"
     material: "iron"
   guisarme:
     skill: "polearms"
-    cost: "5zm"
-    weight: "80"
+    cost: 5
+    weight: 80
     damage-small: "2d4"
     damage-large: "d8"
     material: "iron"
   halberd:
     skill: "polearms"
-    cost: "10zm"
-    weight: "150"
+    cost: 10
+    weight: 150
     damage-small: "d10"
     damage-large: "2d6"
     material: "iron"
   javelin:
     skill: "spears"
-    cost: "3zm"
-    weight: "20"
+    cost: 3
+    weight: 20
     damage-small: "d6"
     damage-large: "d6"
     material: "iron"
   katana:
     skill: "long swords"
-    cost: "80zm"
-    weight: "40"
+    cost: 80
+    weight: 40
     damage-small: "d10"
     damage-large: "d12"
     material: "iron"
   knife:
     skill: "knives"
-    cost: "4zm"
-    weight: "5"
+    cost: 4
+    weight: 5
     damage-small: "d3"
     damage-large: "d2"
     material: "iron"
   shito:
     skill: "knives"
-    cost: "4zm"
-    weight: "5"
+    cost: 4
+    weight: 5
     damage-small: "d3"
     damage-large: "d2"
     material: "iron"
   lance:
     skill: "lances"
-    cost: "10zm"
-    weight: "180"
+    cost: 10
+    weight: 180
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
   long-sword:
     skill: "long swords"
-    cost: "15zm"
-    weight: "40"
+    cost: 15
+    weight: 40
     damage-small: "d8"
     damage-large: "d12"
     material: "iron"
   lucern-hammer:
     skill: "polearms"
-    cost: "7zm"
-    weight: "150"
+    cost: 7
+    weight: 150
     damage-small: "2d4"
     damage-large: "d6"
     material: "iron"
   mace:
     skill: "maces"
-    cost: "5zm"
-    weight: "30"
+    cost: 5
+    weight: 30
     damage-small: "d6+1"
     damage-large: "d6"
     material: "iron"
   morning-star:
     skill: "morning stars"
-    cost: "10zm"
-    weight: "120"
+    cost: 10
+    weight: 120
     damage-small: "2d4"
     damage-large: "d6+1"
     material: "iron"
   orcish-arrow:
     skill: "bows"
-    cost: "2zm"
-    weight: "1"
+    cost: 2
+    weight: 1
     damage-small: "d5"
     damage-large: "d6"
     material: "iron"
   orcish-bow:
     skill: "bows"
-    cost: "60zm"
-    weight: "30"
+    cost: 60
+    weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
   orcish-dagger:
     skill: "daggers"
-    cost: "4zm"
-    weight: "10"
+    cost: 4
+    weight: 10
     damage-small: "d3"
     damage-large: "d3"
     material: "iron"
   orcish-short-sword:
     skill: "short swords"
-    cost: "10zm"
-    weight: "30"
+    cost: 10
+    weight: 30
     damage-small: "d5"
     damage-large: "d8"
     material: "iron"
   orcish-spear:
     skill: "spears"
-    cost: "3zm"
-    weight: "30"
+    cost: 3
+    weight: 30
     damage-small: "d5"
     damage-large: "d8"
     material: "iron"
   partisan:
     skill: "polearms"
-    cost: "10zm"
-    weight: "80"
+    cost: 10
+    weight: 80
     damage-small: "d6"
     damage-large: "d6+1"
     material: "iron"
   pick-axe:
     skill: "pick-axes"
-    cost: "50zm"
-    weight: "100"
+    cost: 50
+    weight: 100
     damage-small: "d6"
     damage-large: "d3"
     material: "iron"
   quarterstaff:
     skill: "quarterstaves"
-    cost: "5zm"
-    weight: "40"
+    cost: 5
+    weight: 40
     damage-small: "d6"
     damage-large: "d6"
     material: "wood"
   ranseur:
     skill: "polearms"
-    cost: "6zm"
-    weight: "50"
+    cost: 6
+    weight: 50
     damage-small: "2d4"
     damage-large: "2d4"
     material: "iron"
   rubber-hose:
     skill: "whips"
-    cost: "3zm"
-    weight: "20"
+    cost: 3
+    weight: 20
     damage-small: "d4"
     damage-large: "d3"
     material: "plastic"
   runesword:
     skill: "broadswords"
-    cost: "300zm"
-    weight: "40"
+    cost: 300
+    weight: 40
     damage-small: "2d4"
     damage-large: "d6+1"
     material: "iron"
   scalpel:
     skill: "knives"
-    cost: "4zm"
-    weight: "5"
+    cost: 4
+    weight: 5
     damage-small: "d3"
     damage-large: "d3"
     material: "metal"
   scimitar:
     skill: "scimitars"
-    cost: "15zm"
-    weight: "40"
+    cost: 15
+    weight: 40
     damage-small: "d8"
     damage-large: "d8"
     material: "iron"
   short-sword:
     skill: "short swords"
-    cost: "10zm"
-    weight: "30"
+    cost: 10
+    weight: 30
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
   wakizashi:
     skill: "short swords"
-    cost: "10zm"
-    weight: "30"
+    cost: 10
+    weight: 30
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
   shuriken:
     skill: "shurikens"
-    cost: "5zm"
-    weight: "1"
+    cost: 5
+    weight: 1
     damage-small: "d8"
     damage-large: "d6"
     material: "iron"
   silver-arrow:
     skill: "bows"
-    cost: "5zm"
-    weight: "1"
+    cost: 5
+    weight: 1
     damage-small: "d6"
     damage-large: "d6"
     material: "silver"
   silver-dagger:
     skill: "daggers"
-    cost: "40zm"
-    weight: "12"
+    cost: 40
+    weight: 12
     damage-small: "d4"
     damage-large: "d3"
     material: "silver"
   silver-saber:
     skill: "sabers"
-    cost: "75zm"
-    weight: "40"
+    cost: 75
+    weight: 40
     damage-small: "d8"
     damage-large: "d8"
     material: "silver"
   silver-spear:
     skill: "spears"
-    cost: "40zm"
-    weight: "36"
+    cost: 40
+    weight: 36
     damage-small: "d6"
     damage-large: "d8"
     material: "silver"
   sling:
     skill: "slings"
-    cost: "20zm"
-    weight: "3"
+    cost: 20
+    weight: 3
     damage-small: "d2"
     damage-large: "d2"
     material: "leather"
   spear:
     skill: "spears"
-    cost: "3zm"
-    weight: "30"
+    cost: 3
+    weight: 30
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
   spetum:
     skill: "polearms"
-    cost: "5zm"
-    weight: "50"
+    cost: 5
+    weight: 50
     damage-small: "d6+1"
     damage-large: "2d6"
     material: "iron"
   stiletto:
     skill: "knives"
-    cost: "4zm"
-    weight: "5"
+    cost: 4
+    weight: 5
     damage-small: "d3"
     damage-large: "d2"
     material: "iron"
   trident:
     skill: "tridents"
-    cost: "5zm"
-    weight: "25"
+    cost: 5
+    weight: 25
     damage-small: "d6+1"
     damage-large: "3d4"
     material: "iron"
   tsurugi:
     skill: "two-handed swords"
-    cost: "500zm"
-    weight: "60"
+    cost: 500
+    weight: 60
     damage-small: "d16"
     damage-large: "d8+2d6"
     material: "metal"
   two-handed-sword:
     skill: "two-handed swords"
-    cost: "50zm"
-    weight: "150"
+    cost: 50
+    weight: 150
     damage-small: "d12"
     damage-large: "3d6"
     material: "iron"
   unicorn-horn:
     skill: "unicorn horns"
-    cost: "100zm"
-    weight: "20"
+    cost: 100
+    weight: 20
     damage-small: "d12"
     damage-large: "d12"
     material: "bone"
   voulge:
     skill: "polearms"
-    cost: "5zm"
-    weight: "125"
+    cost: 5
+    weight: 125
     damage-small: "2d4"
     damage-large: "2d4"
     material: "iron"
   war-hammer:
     skill: "hammers"
-    cost: "5zm"
-    weight: "50"
+    cost: 5
+    weight: 50
     damage-small: "d4+1"
     damage-large: "d4"
     material: "iron"
   worm-tooth:
     skill: "knives"
-    cost: "2zm"
-    weight: "20"
+    cost: 2
+    weight: 20
     damage-small: "d2"
     damage-large: "d2"
     material: "undefined material"
   ya:
     skill: "bows"
-    cost: "4zm"
-    weight: "1"
+    cost: 4
+    weight: 1
     damage-small: "d7"
     damage-large: "d7"
     material: "metal"
   yumi:
     skill: "bows"
-    cost: "60zm"
-    weight: "30"
+    cost: 60
+    weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
-

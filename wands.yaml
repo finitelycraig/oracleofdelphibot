@@ -1,7 +1,7 @@
 wands:
-  light:
-    cost: "100"
-    weight: "7"
+  wand-of-light:
+    cost: 100
+    weight: 7
     starting_charges: "11-15"
     type: "non-directional"
     effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
