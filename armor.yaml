@@ -134,7 +134,7 @@ armors:
     ac: 7
     material: "iron"
     effect: ""
-    mc: 0
+    mc: 2
   crystal-plate-mail:
     type: "suit of armor"
     cost: 820
@@ -143,3 +143,17 @@ armors:
     material: "glass"
     effect: ""
     mc: 0
+  dragon-scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, whie offers cold resistance, yellow offers acid resistance."
+  dragon-scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, whie offers cold resistance, yellow offers acid resistance."
