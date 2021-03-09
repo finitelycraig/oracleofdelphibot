@@ -11,7 +11,27 @@ import (
     "github.com/gempir/go-twitch-irc/v2"
 )
 
-var allowedChannels []string
+var weaponsInfo *weapons
+var armorInfo *armors
+var monstersInfo *monsters
+var toolsInfo *tools
+var wandsInfo *wands
+var ringsInfo *rings
+var propsInfo *properties
+var comestiblesInfo * comestibles
+var potionsInfo *potions
+var artifactsInfo *artifacts
+var appearsAs *appearances
+
+var allowedBroadcasters *allowedChannels
+
+type allowedChannels struct {
+    Names []string `yaml:"channels"`
+}
+
+type appearances struct {
+    Items map[string]string `yaml:"appearances"`
+}
 
 type weapons struct {
     Items map[string]weapon `yaml:"weapons"`
@@ -121,6 +141,7 @@ type comestible struct {
     Effect string `yaml:"effect"`
 }
 
+
 type monsters struct {
     Items map[string]monster `yaml:"monsters"`
 }
@@ -144,12 +165,12 @@ type monster struct {
 }
 
 // Get the stats message for an individual weapon
-func (a *armors) getArmorMessage(name string) string {
+func getArmorMessage(name string) string {
     var output string 
-    if val, ok := a.Items[name]; ok {
+    if val, ok := armorInfo.Items[name]; ok {
         // new output for luxi
         output = fmt.Sprintf("A %s has AC %d, MC %d, weight %d, costs %dzm and is made of %s. %s",
-        name, 
+        strings.ReplaceAll(name,"-"," "), 
         val.AC, 
         val.MC, 
         val.Weight,
@@ -161,15 +182,15 @@ func (a *armors) getArmorMessage(name string) string {
 }
 
 // Get the stats message for an individual weapon
-func (w *weapons) getWeaponMessage(name string) string {
+func getWeaponMessage(name string) string {
     var output string 
-    if val, ok := w.Items[name]; ok {
+    if val, ok := weaponsInfo.Items[name]; ok {
         // new output for luxi
         output = fmt.Sprintf("A %s does %s/%s damage. "+ 
         "It is made of %s, weighs "+ 
         "%d, and is valued at "+
         "%dzm. Works your skill with %s.", 
-        name, 
+        strings.ReplaceAll(name,"-"," "), 
         val.DamageSmall, 
         val.DamageLarge, 
         val.Material, 
@@ -180,9 +201,9 @@ func (w *weapons) getWeaponMessage(name string) string {
     return output
 }
 
-func (a *artifacts) getArtifactMessage(name string) string {
+func getArtifactMessage(name string) string {
     var output string 
-    if val, ok := a.Items[name]; ok {
+    if val, ok := artifactsInfo.Items[name]; ok {
         
         var intelligent string
         if val.Intelligent {
@@ -219,9 +240,9 @@ func (a *artifacts) getArtifactMessage(name string) string {
 }
 
 // Get the stats message for an individual tool
-func (t *tools) getToolMessage(name string) string {
+func getToolMessage(name string) string {
     var output string 
-    if val, ok := t.Items[name]; ok {
+    if val, ok := toolsInfo.Items[name]; ok {
         var magic string
         if val.Magic {
             magic = "is magical"
@@ -230,7 +251,7 @@ func (t *tools) getToolMessage(name string) string {
         }
         // new output for luxi
         output = fmt.Sprintf("A %s costs %dzm, weighs %d and %s.  It %s.",
-        name,
+        strings.ReplaceAll(name,"-"," "), 
         val.Cost,
         val.Weight,
         magic,
@@ -239,9 +260,9 @@ func (t *tools) getToolMessage(name string) string {
     return output
 }
 
-func (w *wands) getWandMessage(name string) string {
+func getWandMessage(name string) string {
     var output string 
-    if val, ok := w.Items[name]; ok {
+    if val, ok := wandsInfo.Items[name]; ok {
         // new output for luxi
         output = fmt.Sprintf("A %s costs %dzm, weighs %d and had %s starting charges.  It's pattern is %s. "+
         "%s %s", 
@@ -256,9 +277,9 @@ func (w *wands) getWandMessage(name string) string {
     return output
 }
 
-func (r *rings) getRingMessage(name string) string {
+func getRingMessage(name string) string {
     var output string 
-    if val, ok := r.Items[name]; ok {
+    if val, ok := ringsInfo.Items[name]; ok {
         // new output for luxi
         output = fmt.Sprintf("A %s costs %dzm and grants %s. %s.",
         strings.ReplaceAll(name,"-"," "), 
@@ -269,9 +290,9 @@ func (r *rings) getRingMessage(name string) string {
     return output
 }
 
-func (p *properties) getPropertyMessage(name string) string {
+func getPropertyMessage(name string) string {
     var output string 
-    if val, ok := p.Items[name]; ok {
+    if val, ok := propsInfo.Items[name]; ok {
         // new output for luxi
         output = fmt.Sprintf("%s %s.  Notable sources include: ",
         strings.Title(strings.ReplaceAll(name,"-"," ")), 
@@ -289,9 +310,9 @@ func (p *properties) getPropertyMessage(name string) string {
     return output
 }
 
-func (c *comestibles) getComestibleMessage(name string) string {
+func getComestibleMessage(name string) string {
     var output string 
-    if val, ok := c.Items[name]; ok {
+    if val, ok := comestiblesInfo.Items[name]; ok {
         // new output for luxi
         var conduct string
         if val.Conduct == "vegan" {
@@ -312,9 +333,9 @@ func (c *comestibles) getComestibleMessage(name string) string {
     return output
 }
 
-func (p *potions) getPotionMessage(name string) string {
+func getPotionMessage(name string) string {
     var output string 
-    if val, ok := p.Items[name]; ok {
+    if val, ok := potionsInfo.Items[name]; ok {
         output = fmt.Sprintf("A potion of %s costs %dzm and weighs %d. %s",
         strings.ReplaceAll(name,"-"," "), 
         val.Cost, 
@@ -325,9 +346,9 @@ func (p *potions) getPotionMessage(name string) string {
 }
 
 // Get the stats message for an individual weapon
-func (m *monsters) getMonsterMessage(name string) string {
+func getMonsterMessage(name string) string {
     var output string 
-    if val, ok := m.Items[name]; ok {
+    if val, ok := monstersInfo.Items[name]; ok {
         var genocidable string
         if val.Genocidable {
             genocidable = "genocidable"
@@ -360,7 +381,7 @@ func (m *monsters) getMonsterMessage(name string) string {
         "has speed %d, %d AC, %d MR, weighs %d, has nutritional value %d " +
         "and %s alignment.  It is a %s creature. It is %s.%s%s " + 
         "Its corpse is %s to eat. It %s Elbereth.%s",
-        name, 
+        strings.ReplaceAll(name,"-"," "), 
         val.Difficulty, 
         val.Attacks,
         val.Speed,
@@ -515,7 +536,6 @@ func getPotions(fname string) *potions {
     return p
 }
 
-// Load in the weapon stats from a yaml file
 func getArtifacts(fname string) *artifacts {
     var a *artifacts
     yamlFile, err := ioutil.ReadFile(fname)
@@ -530,17 +550,48 @@ func getArtifacts(fname string) *artifacts {
     return a
 }
 
+func getAppearances(fname string) *appearances {
+    var a *appearances
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &a)
+    if err != nil {
+        log.Fatalf("Unmarshal: %v", err)
+    }
+
+    return a
+}
+
+func getAllowedChannels(fname string) *allowedChannels {
+    var a *allowedChannels
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &a)
+    if err != nil {
+        log.Fatalf("Unmarshal: %v", err)
+    }
+
+    fmt.Println(a)
+
+    return a
+}
+
 func parseOracleMessage(c *twitch.Client, message string, user string) {
     if message == "join" {
-        fmt.Printf("%s requests we %s", user, message)
-        for _, allowedChannel := range allowedChannels {
+        fmt.Printf("%s requests we %s\n", user, message)
+        fmt.Println(allowedBroadcasters)
+        for _, allowedChannel := range allowedBroadcasters.Names {
             if user == allowedChannel {
                 c.Join(user)
                 return
             }
         }
     } else if message == "depart" {
-        fmt.Printf("%s requests we %s", user, message)
+        fmt.Printf("%s requests we %s\n", user, message)
         c.Depart(user)
     }
 }
@@ -549,14 +600,17 @@ func parseBroadcasterMessage(c *twitch.Client, message string, user string) {
     if message == "oracle-depart" {
         fmt.Printf("%s requests we %s", user, message)
         c.Depart(user)
+    } else if message == "oracle-update" {
+        fmt.Printf("%s requests an update", user)
+        updateInfo()
     }
 }
 
 // parse messages to see if we should reply or not
-func parseMessage(c *twitch.Client, mess twitch.PrivateMessage, w *weapons, a *armors, m *monsters, t *tools, wa *wands, r *rings, props *properties, com *comestibles, pot *potions, art *artifacts) {
-    message := mess.Message
-    channel := mess.Channel
-    user := mess.User.Name
+func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
+    message := m.Message
+    channel := m.Channel
+    user := m.User.Name
    
     fmt.Println(message)
     words := strings.Split(message, " ")
@@ -583,49 +637,71 @@ func parseMessage(c *twitch.Client, mess twitch.PrivateMessage, w *weapons, a *a
     // Deal with all other messages
 
 
-    if _, wok := w.Items[message]; wok {
-        c.Say(channel, w.getWeaponMessage(message))
-    } else if _, aok := a.Items[message]; aok {
-        c.Say(channel, a.getArmorMessage(message))
+    if _, ok := weaponsInfo.Items[message]; ok {
+        c.Say(channel, getWeaponMessage(message))
+    } else if _, ok := armorInfo.Items[message]; ok {
+        c.Say(channel, getArmorMessage(message))
         //return
-    } else if _, mok := m.Items[message]; mok {
-        c.Say(channel, m.getMonsterMessage(message))
+    } else if _, ok := monstersInfo.Items[message]; ok {
+        c.Say(channel, getMonsterMessage(message))
         //return
-    } else if _, tok := t.Items[message]; tok {
-        c.Say(channel, t.getToolMessage(message))
+    } else if _, ok := toolsInfo.Items[message]; ok {
+        c.Say(channel, getToolMessage(message))
         //return
-    } else if _, waok := wa.Items[message]; waok {
-        c.Say(channel, wa.getWandMessage(message))
+    } else if _, ok := wandsInfo.Items[message]; ok {
+        c.Say(channel, getWandMessage(message))
         //return
-    } else if _, rok := r.Items[message]; rok {
-        c.Say(channel, r.getRingMessage(message))
-    } else if _, pok := props.Items[message]; pok {
-        c.Say(channel, props.getPropertyMessage(message))
-    } else if _, cok := com.Items[message]; cok {
-        c.Say(channel, com.getComestibleMessage(message))
-    } else if _, pok := pot.Items[message]; pok {
-        c.Say(channel, pot.getPotionMessage(message))
-    } else if _, aok := art.Items[message]; aok {
-        c.Say(channel, art.getArtifactMessage(message))
+    } else if _, ok := ringsInfo.Items[message]; ok {
+        c.Say(channel, getRingMessage(message))
+    } else if _, ok := propsInfo.Items[message]; ok {
+        c.Say(channel, getPropertyMessage(message))
+    } else if _, ok := comestiblesInfo.Items[message]; ok {
+        c.Say(channel, getComestibleMessage(message))
+    } else if _, ok := potionsInfo.Items[message]; ok {
+        c.Say(channel, getPotionMessage(message))
+    } else if _, ok := artifactsInfo.Items[message]; ok {
+        c.Say(channel, getArtifactMessage(message))
+    } else if actualName, ok := appearsAs.Items[message]; ok {
+        m.Message = "!"+actualName
+        parseMessage(c, m) 
     } else {
         return
     }
 }
 
-func main() {
-    allowedChannels = []string{"finitelycraig"}
+func updateInfo() {
     // load the information from yaml files containing stats
-    w := getWeapons("weapons.yaml")
-    a := getArmor("armor.yaml")
-    m := getMonsters("monsters.yaml")
-    t := getTools("tools.yaml")
-    wa := getWands("wands.yaml")
-    r := getRings("rings.yaml")
-    props := getProperties("properties.yaml")
-    c := getComestibles("comestibles.yaml")
-    pot := getPotions("potions.yaml")
-    art := getArtifacts("artifacts.yaml")
+    allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
+    weaponsInfo = getWeapons("weapons.yaml")
+    armorInfo = getArmor("armor.yaml")
+    monstersInfo = getMonsters("monsters.yaml")
+    toolsInfo = getTools("tools.yaml")
+    wandsInfo = getWands("wands.yaml")
+    ringsInfo = getRings("rings.yaml")
+    propsInfo = getProperties("properties.yaml")
+    comestiblesInfo = getComestibles("comestibles.yaml")
+    potionsInfo = getPotions("potions.yaml")
+    artifactsInfo = getArtifacts("artifacts.yaml")
+    appearsAs = getAppearances("appearances.yaml")
+}
 
+func main() {
+    allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
+    // load the information from yaml files containing stats
+    weaponsInfo = getWeapons("weapons.yaml")
+    armorInfo = getArmor("armor.yaml")
+    monstersInfo = getMonsters("monsters.yaml")
+    toolsInfo = getTools("tools.yaml")
+    wandsInfo = getWands("wands.yaml")
+    ringsInfo = getRings("rings.yaml")
+    propsInfo = getProperties("properties.yaml")
+    comestiblesInfo = getComestibles("comestibles.yaml")
+    potionsInfo = getPotions("potions.yaml")
+    artifactsInfo = getArtifacts("artifacts.yaml")
+    appearsAs = getAppearances("appearances.yaml")
+
+    fmt.Println(allowedBroadcasters)
+    fmt.Println(appearsAs)
     // find the bot's name, channel's name and oauth from OS env vars
     bot := os.Getenv("TWITCHBOT")
     channel := os.Getenv("TWITCHCHANNEL")
@@ -637,7 +713,7 @@ func main() {
         fmt.Printf("%s: %s\n", message.User.Name, message.Message)
         if message.User.Name != bot {
             fmt.Println("message was not from the oracle")
-            parseMessage(client, message, w, a, m, t, wa, r, props, c, pot, art)
+            parseMessage(client, message)
         }
     })
 
