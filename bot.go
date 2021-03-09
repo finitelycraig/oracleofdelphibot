@@ -164,11 +164,9 @@ type monster struct {
     Extra string `yaml:"extra"`
 }
 
-// Get the stats message for an individual weapon
 func getArmorMessage(name string) string {
     var output string 
     if val, ok := armorInfo.Items[name]; ok {
-        // new output for luxi
         output = fmt.Sprintf("A %s has AC %d, MC %d, weight %d, costs %dzm and is made of %s. %s",
         strings.ReplaceAll(name,"-"," "), 
         val.AC, 
@@ -181,11 +179,9 @@ func getArmorMessage(name string) string {
     return output
 }
 
-// Get the stats message for an individual weapon
 func getWeaponMessage(name string) string {
     var output string 
     if val, ok := weaponsInfo.Items[name]; ok {
-        // new output for luxi
         output = fmt.Sprintf("A %s does %s/%s damage. "+ 
         "It is made of %s, weighs "+ 
         "%d, and is valued at "+
@@ -204,7 +200,6 @@ func getWeaponMessage(name string) string {
 func getArtifactMessage(name string) string {
     var output string 
     if val, ok := artifactsInfo.Items[name]; ok {
-        
         var intelligent string
         if val.Intelligent {
             intelligent = " and intelligent"
@@ -234,12 +229,10 @@ func getArtifactMessage(name string) string {
         used,
         invoked,
         obtaining)
-        
     }
     return output
 }
 
-// Get the stats message for an individual tool
 func getToolMessage(name string) string {
     var output string 
     if val, ok := toolsInfo.Items[name]; ok {
@@ -249,7 +242,6 @@ func getToolMessage(name string) string {
         } else {
             magic = "is not magical"
         }
-        // new output for luxi
         output = fmt.Sprintf("A %s costs %dzm, weighs %d and %s.  It %s.",
         strings.ReplaceAll(name,"-"," "), 
         val.Cost,
@@ -263,8 +255,7 @@ func getToolMessage(name string) string {
 func getWandMessage(name string) string {
     var output string 
     if val, ok := wandsInfo.Items[name]; ok {
-        // new output for luxi
-        output = fmt.Sprintf("A %s costs %dzm, weighs %d and had %s starting charges.  It's pattern is %s. "+
+        output = fmt.Sprintf("A %s costs %dzm, weighs %d and has %s starting charges.  It's pattern is %s. "+
         "%s %s", 
         strings.ReplaceAll(name,"-"," "), 
         val.Cost, 
@@ -280,7 +271,6 @@ func getWandMessage(name string) string {
 func getRingMessage(name string) string {
     var output string 
     if val, ok := ringsInfo.Items[name]; ok {
-        // new output for luxi
         output = fmt.Sprintf("A %s costs %dzm and grants %s. %s.",
         strings.ReplaceAll(name,"-"," "), 
         val.Cost, 
@@ -293,7 +283,6 @@ func getRingMessage(name string) string {
 func getPropertyMessage(name string) string {
     var output string 
     if val, ok := propsInfo.Items[name]; ok {
-        // new output for luxi
         output = fmt.Sprintf("%s %s.  Notable sources include: ",
         strings.Title(strings.ReplaceAll(name,"-"," ")), 
         val.Effect)
@@ -313,7 +302,6 @@ func getPropertyMessage(name string) string {
 func getComestibleMessage(name string) string {
     var output string 
     if val, ok := comestiblesInfo.Items[name]; ok {
-        // new output for luxi
         var conduct string
         if val.Conduct == "vegan" {
             conduct = ", is vegan,"
@@ -345,7 +333,6 @@ func getPotionMessage(name string) string {
     return output
 }
 
-// Get the stats message for an individual weapon
 func getMonsterMessage(name string) string {
     var output string 
     if val, ok := monstersInfo.Items[name]; ok {
@@ -376,7 +363,6 @@ func getMonsterMessage(name string) string {
             elbereth = "does not respect"
         }
 
-        // new output for luxi
         output = fmt.Sprintf("A %s has difficulty %d.  It attacks are %s. It " +
         "has speed %d, %d AC, %d MR, weighs %d, has nutritional value %d " +
         "and %s alignment.  It is a %s creature. It is %s.%s%s " + 
@@ -401,7 +387,6 @@ func getMonsterMessage(name string) string {
     return output
 }
 
-// Load in the weapon stats from a yaml file
 func getWeapons(fname string) *weapons {
     var w *weapons
     yamlFile, err := ioutil.ReadFile(fname)
@@ -416,7 +401,6 @@ func getWeapons(fname string) *weapons {
     return w
 }
 
-// Load in the weapon stats from a yaml file
 func getArmor(fname string) *armors {
     var a *armors
     yamlFile, err := ioutil.ReadFile(fname)
@@ -431,7 +415,6 @@ func getArmor(fname string) *armors {
     return a
 }
 
-// Load in the weapon stats from a yaml file
 func getMonsters(fname string) *monsters {
     var m *monsters
     yamlFile, err := ioutil.ReadFile(fname)
@@ -446,7 +429,6 @@ func getMonsters(fname string) *monsters {
     return m
 }
 
-// Load in the weapon stats from a yaml file
 func getTools(fname string) *tools {
     var t *tools
     yamlFile, err := ioutil.ReadFile(fname)
@@ -461,7 +443,6 @@ func getTools(fname string) *tools {
     return t
 }
 
-// Load in the weapon stats from a yaml file
 func getWands(fname string) *wands {
     var w *wands
     yamlFile, err := ioutil.ReadFile(fname)
@@ -476,7 +457,6 @@ func getWands(fname string) *wands {
     return w
 }
 
-// Load in the weapon stats from a yaml file
 func getRings(fname string) *rings {
     var r *rings
     yamlFile, err := ioutil.ReadFile(fname)
@@ -491,7 +471,6 @@ func getRings(fname string) *rings {
     return r
 }
 
-// Load in the weapon stats from a yaml file
 func getProperties(fname string) *properties {
     var p *properties
     yamlFile, err := ioutil.ReadFile(fname)
@@ -506,7 +485,6 @@ func getProperties(fname string) *properties {
     return p
 }
 
-// Load in the weapon stats from a yaml file
 func getComestibles(fname string) *comestibles {
     var c *comestibles
     yamlFile, err := ioutil.ReadFile(fname)
@@ -521,7 +499,6 @@ func getComestibles(fname string) *comestibles {
     return c
 }
 
-// Load in the weapon stats from a yaml file
 func getPotions(fname string) *potions {
     var p *potions
     yamlFile, err := ioutil.ReadFile(fname)
@@ -575,15 +552,11 @@ func getAllowedChannels(fname string) *allowedChannels {
         log.Fatalf("Unmarshal: %v", err)
     }
 
-    fmt.Println(a)
-
     return a
 }
 
 func parseOracleMessage(c *twitch.Client, message string, user string) {
     if message == "join" {
-        fmt.Printf("%s requests we %s\n", user, message)
-        fmt.Println(allowedBroadcasters)
         for _, allowedChannel := range allowedBroadcasters.Names {
             if user == allowedChannel {
                 c.Join(user)
@@ -591,33 +564,26 @@ func parseOracleMessage(c *twitch.Client, message string, user string) {
             }
         }
     } else if message == "depart" {
-        fmt.Printf("%s requests we %s\n", user, message)
         c.Depart(user)
     }
 }
 
 func parseBroadcasterMessage(c *twitch.Client, message string, user string) {
     if message == "oracle-depart" {
-        fmt.Printf("%s requests we %s", user, message)
         c.Depart(user)
     } else if message == "oracle-update" {
-        fmt.Printf("%s requests an update", user)
         updateInfo()
     }
 }
 
-// parse messages to see if we should reply or not
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
     user := m.User.Name
    
-    fmt.Println(message)
-    words := strings.Split(message, " ")
+    //words := strings.Split(message, " ")
     
-    fmt.Println(words)
     if !strings.HasPrefix(message, "!") {
-        fmt.Println("didn't start with !")
         return
     } else {
         message = strings.TrimPrefix(message, "!")
@@ -631,7 +597,6 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     // Deal with special requests from broadcasters
 
     if user == channel {
-        fmt.Printf("%s is talking in their own channel", user)
         parseBroadcasterMessage(c, message, user)
     }
     // Deal with all other messages
@@ -641,16 +606,12 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         c.Say(channel, getWeaponMessage(message))
     } else if _, ok := armorInfo.Items[message]; ok {
         c.Say(channel, getArmorMessage(message))
-        //return
     } else if _, ok := monstersInfo.Items[message]; ok {
         c.Say(channel, getMonsterMessage(message))
-        //return
     } else if _, ok := toolsInfo.Items[message]; ok {
         c.Say(channel, getToolMessage(message))
-        //return
     } else if _, ok := wandsInfo.Items[message]; ok {
         c.Say(channel, getWandMessage(message))
-        //return
     } else if _, ok := ringsInfo.Items[message]; ok {
         c.Say(channel, getRingMessage(message))
     } else if _, ok := propsInfo.Items[message]; ok {
@@ -663,12 +624,9 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         c.Say(channel, getArtifactMessage(message))
     } else if actualName, ok := appearsAs.Items[message]; ok {
         m.Message = "!"+actualName
-        parseMessage(c, m) 
-    } else {
-        return
+        parseMessage(c, m)
     }
 }
-
 func updateInfo() {
     // load the information from yaml files containing stats
     allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
@@ -700,8 +658,6 @@ func main() {
     artifactsInfo = getArtifacts("artifacts.yaml")
     appearsAs = getAppearances("appearances.yaml")
 
-    fmt.Println(allowedBroadcasters)
-    fmt.Println(appearsAs)
     // find the bot's name, channel's name and oauth from OS env vars
     bot := os.Getenv("TWITCHBOT")
     channel := os.Getenv("TWITCHCHANNEL")
@@ -710,17 +666,14 @@ func main() {
     client := twitch.NewClient(bot, oauth)
 
     client.OnPrivateMessage(func(message twitch.PrivateMessage) {
-        fmt.Printf("%s: %s\n", message.User.Name, message.Message)
         if message.User.Name != bot {
-            fmt.Println("message was not from the oracle")
             parseMessage(client, message)
         }
     })
-    
+
+    // If the broadcaster leaves the stream then the bot should too
     client.OnUserPartMessage(func(message twitch.UserPartMessage) {
-        fmt.Printf("%s left %s\n", message.User, message.Channel)
         if message.User == message.Channel {
-            fmt.Printf("%s left %s\n", message.User, message.Channel)
             client.Depart(message.Channel)
         }
     })
