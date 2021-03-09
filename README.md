@@ -21,7 +21,7 @@ A long-sword does d8/d12 damage. It is made of iron, weighs 40, and
 is valued at 15zm. Works your skill with long swords.
 ```
 
-## Running it yourself at a channel of your choosing
+## Running it yourself at channel of your choosing
 
 The code for running the bot is in bot.go and all the information given by
 the bot is contained in the various yaml files included with this repository.
@@ -35,5 +35,6 @@ that these are set.
 - [ ] Complete the yaml files with info from the wiki
 - [x] Include a mapping from alternative item names to proper item names
 - [ ] Include a price ID helper command, like `!idwand 100`
+- [ ] Write a better running it yourself section
 
 [the bot's channel]: https://twitch.tv/oracleofdeplhibot
