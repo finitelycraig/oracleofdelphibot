@@ -716,6 +716,14 @@ func main() {
             parseMessage(client, message)
         }
     })
+    
+    client.OnUserPartMessage(func(message twitch.UserPartMessage) {
+        fmt.Printf("%s left %s\n", message.User, message.Channel)
+        if message.User == message.Channel {
+            fmt.Printf("%s left %s\n", message.User, message.Channel)
+            client.Depart(message.Channel)
+        }
+    })
 
     client.Join(channel)
 
