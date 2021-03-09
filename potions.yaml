@@ -3,3 +3,7 @@ potions:
     cost: 100
     weight: 20
     effect: "A blessed one heals 8d8 HP when quaffed, an uncursed one 6d8 HP, and a cursed one 4d8 HP. If this would bring your HP above its maximum, your maximum will increase by 2 for an uncursed potion, or 5 for a blessed potion. The potion will also cure hallucination and blindness, exercise constitution and strength, and, if noncursed, cure sickness."
+  holy-water:
+    cost: 100
+    weight: 20
+    effect: "Quaffing a potion of holy water cures lycanthropy and, for non-chaotics, cures all illnesses; chaotics will take damage instead of having illnesses cured. Holy water can be thrown at or wielded against demons, undead, and lycanthropes to cause 2d6 damage. Using the #dip command to dip an object (or stack of objects) into holy water can uncurse or bless them, using up one potion of holy water; objects dipped into holy water do not become wet. A cursed object will be uncursed, while an uncursed object will be blessed; dipping a blessed object into holy water will simply produce an Interesting... message, and the potion is not consumed."
