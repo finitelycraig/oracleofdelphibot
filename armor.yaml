@@ -79,7 +79,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  elvin-mirthril-coat:
+  elven-mithril-coat:
     type: "suit of armor"
     cost: 240
     weight: 150
@@ -103,14 +103,14 @@ armors:
     material: "iron"
     effect: ""
     mc: 1
-  dwarvish-mirthril-coat:
+  dwarvish-mithril-coat:
     type: "suit of armor"
     cost: 240
     weight: 150
     ac: 6
     material: "mithril"
     effect: ""
-    mc: 0
+    mc: 2
   bronze-plate-mail:
     type: "suit of armor"
     cost: 400
