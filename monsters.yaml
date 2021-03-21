@@ -15,4 +15,36 @@ monsters:
     corpse_safe: false
     elbereth: true
     extra: ""
-
+  manes:
+    difficulty: 3
+    attacks: "claw 1d3, claw 1d3, bite 1d4"
+    speed: 3
+    ac: 7
+    mr: 0
+    alignment: "chaotic"
+    genocidable: true
+    weight: 100
+    nutritional_value: 100
+    size: "small"
+    resistances: "sleep and poison"
+    restistances_conveyed: ""
+    corpse_safe: false
+    elbereth: true
+    extra: ""
+  mumak:
+    difficulty: 7
+    attacks: "butt 4d12, bite 2d6"
+    speed: 9
+    ac: 0
+    mr: 0
+    alignment: "chaotic"
+    genocidable: true
+    weight: 2500
+    nutritional_value: 500
+    size: "large"
+    resistances: ""
+    restistances_conveyed: ""
+    corpse_safe: true 
+    elbereth: true
+    extra: ""
+  

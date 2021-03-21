@@ -86,7 +86,7 @@ armors:
     ac: 5
     material: "mithril"
     effect: ""
-    mc: 0
+    mc: 2
   splint-mail:
     type: "suit of armor"
     cost: 80
@@ -118,7 +118,7 @@ armors:
     ac: 6
     material: "copper"
     effect: ""
-    mc: 0
+    mc: 1
   plate-mail:
     type: "suit of armor"
     cost: 600
