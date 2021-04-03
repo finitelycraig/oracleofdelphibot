@@ -9,8 +9,11 @@ import (
 
     "gopkg.in/yaml.v2"
     "github.com/gempir/go-twitch-irc/v2"
+    "github.com/schollz/closestmatch"
 )
 
+var keys []string
+var keyMatching *closestmatch.ClosestMatch
 var weaponsInfo *weapons
 var armorInfo *armors
 var monstersInfo *monsters
@@ -186,7 +189,7 @@ func getWeaponMessage(name string) string {
         "It is made of %s, weighs "+ 
         "%d, and is valued at "+
         "%dzm. Works your skill with %s.", 
-        strings.ReplaceAll(name,"-"," "), 
+        name, // strings.ReplaceAll(name,"-"," "), 
         val.DamageSmall, 
         val.DamageLarge, 
         val.Material, 
@@ -398,6 +401,10 @@ func getWeapons(fname string) *weapons {
         log.Fatalf("Unmarshal: %v", err)
     }
 
+    for k := range w.Items {
+        keys = append(keys, k)
+    }
+
     return w
 }
 
@@ -595,13 +602,11 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     }
 
     // Deal with special requests from broadcasters
-
     if user == channel {
         parseBroadcasterMessage(c, message, user)
     }
+    
     // Deal with all other messages
-
-
     if _, ok := weaponsInfo.Items[message]; ok {
         c.Say(channel, getWeaponMessage(message))
     } else if _, ok := armorInfo.Items[message]; ok {
@@ -641,6 +646,11 @@ func updateInfo() {
     potionsInfo = getPotions("potions.yaml")
     artifactsInfo = getArtifacts("artifacts.yaml")
     appearsAs = getAppearances("appearances.yaml")
+
+    bagSizes := []int{2, 3, 4}
+    keyMatching = closestmatch.New(keys, bagSizes)
+    fmt.Println(keyMatching.AccuracyMutatingWords())
+
 }
 
 func main() {
