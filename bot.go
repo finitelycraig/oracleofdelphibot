@@ -296,7 +296,7 @@ func getPropertyMessage(name string) string {
             } else {
                 output = output + "."
             }
-            fmt.Println("> " + source)
+            //fmt.Println("> " + source)
         }
     }
     return output
@@ -418,6 +418,10 @@ func getArmor(fname string) *armors {
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
     }
+    
+    for k := range a.Items {
+        keys = append(keys, k)
+    }
 
     return a
 }
@@ -431,6 +435,9 @@ func getMonsters(fname string) *monsters {
     err = yaml.Unmarshal(yamlFile, &m)
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
+    }
+    for k := range m.Items {
+        keys = append(keys, k)
     }
 
     return m
@@ -446,6 +453,9 @@ func getTools(fname string) *tools {
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
     }
+    for k := range t.Items {
+        keys = append(keys, k)
+    }
 
     return t
 }
@@ -459,6 +469,9 @@ func getWands(fname string) *wands {
     err = yaml.Unmarshal(yamlFile, &w)
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
+    }
+    for k := range w.Items {
+        keys = append(keys, k)
     }
 
     return w
@@ -474,6 +487,9 @@ func getRings(fname string) *rings {
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
     }
+    for k := range r.Items {
+        keys = append(keys, k)
+    }
 
     return r
 }
@@ -487,6 +503,9 @@ func getProperties(fname string) *properties {
     err = yaml.Unmarshal(yamlFile, &p)
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
+    }
+    for k := range p.Items {
+        keys = append(keys, k)
     }
 
     return p
@@ -502,6 +521,9 @@ func getComestibles(fname string) *comestibles {
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
     }
+    for k := range c.Items {
+        keys = append(keys, k)
+    }
 
     return c
 }
@@ -515,6 +537,9 @@ func getPotions(fname string) *potions {
     err = yaml.Unmarshal(yamlFile, &p)
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
+    }
+    for k := range p.Items {
+        keys = append(keys, k)
     }
 
     return p
@@ -530,6 +555,9 @@ func getArtifacts(fname string) *artifacts {
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
     }
+    for k := range a.Items {
+        keys = append(keys, k)
+    }
 
     return a
 }
@@ -543,6 +571,9 @@ func getAppearances(fname string) *appearances {
     err = yaml.Unmarshal(yamlFile, &a)
     if err != nil {
         log.Fatalf("Unmarshal: %v", err)
+    }
+    for k := range a.Items {
+        keys = append(keys, k)
     }
 
     return a
@@ -590,10 +621,12 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
    
     //words := strings.Split(message, " ")
     
-    if !strings.HasPrefix(message, "!") {
-        return
-    } else {
+    if strings.HasPrefix(message, "!") {
         message = strings.TrimPrefix(message, "!")
+    } else if strings.HasPrefix(message, "?") {
+        message = strings.TrimPrefix(message, "?")
+    } else {
+        return
     }
 
     // Deal with requests for the oracle's attention
@@ -633,6 +666,10 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     }
 }
 func updateInfo() {
+    //reset the matching variables
+    keys = nil
+    keyMatching = nil
+
     // load the information from yaml files containing stats
     allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
     weaponsInfo = getWeapons("weapons.yaml")
