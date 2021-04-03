@@ -104,7 +104,7 @@ weapons:
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
-  crossbow-bolt:
+  crossbow bolt:
     skill: "crossbows"
     cost: 2
     weight: 1
@@ -132,63 +132,63 @@ weapons:
     damage-small: "d3"
     damage-large: "d2"
     material: "iron"
-  dwarvish-mattock:
+  dwarvish mattock:
     skill: "pick-axes"
     cost: 50
     weight: 120
     damage-small: "d12"
     damage-large: "d8+2d6"
     material: "iron"
-  dwarvish-short-sword:
+  dwarvish short sword:
     skill: "short swords"
     cost: 10
     weight: 30
     damage-small: "d7"
     damage-large: "d8"
     material: "iron"
-  dwarvish-spear:
+  dwarvish spear:
     skill: "spears"
     cost: 3
     weight: 35
     damage-small: "d8"
     damage-large: "d8"
     material: "iron"
-  elven-arrow:
+  elven arrow:
     skill: "bows"
     cost: 2
     weight: 1
     damage-small: "d7"
     damage-large: "d6"
     material: "wood"
-  elven-bow:
+  elven bow:
     skill: "bows"
     cost: 60
     weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
-  elven-broadsword:
+  elven broadsword:
     skill: "broadswords"
     cost: 10
     weight: 70
     damage-small: "d6+d4"
     damage-large: "d6+1"
     material: "wood"
-  elven-dagger:
+  elven dagger:
     skill: "daggers"
     cost: 4
     weight: 10
     damage-small: "d5"
     damage-large: "d3"
     material: "wood"
-  elven-short-sword:
+  elven short sword:
     skill: "short swords"
     cost: 10
     weight: 30
     damage-small: "d8"
     damage-large: "d8"
     material: "wood"
-  elven-spear:
+  elven spear:
     skill: "spears"
     cost: 3
     weight: 30
@@ -216,7 +216,7 @@ weapons:
     damage-small: "d6+1"
     damage-large: "2d4"
     material: "iron"
-  flint-stone:
+  flint stone:
     skill: "slings"
     cost: 1
     weight: 10
@@ -237,7 +237,7 @@ weapons:
     damage-small: "d6"
     damage-large: "d10"
     material: "iron"
-  grappling-hook:
+  grappling hook:
     skill: "flails"
     cost: 50
     weight: 30
@@ -293,14 +293,14 @@ weapons:
     damage-small: "d6"
     damage-large: "d8"
     material: "iron"
-  long-sword:
+  long sword:
     skill: "long swords"
     cost: 15
     weight: 40
     damage-small: "d8"
     damage-large: "d12"
     material: "iron"
-  lucern-hammer:
+  lucern hammer:
     skill: "polearms"
     cost: 7
     weight: 150
@@ -314,42 +314,42 @@ weapons:
     damage-small: "d6+1"
     damage-large: "d6"
     material: "iron"
-  morning-star:
+  morning star:
     skill: "morning stars"
     cost: 10
     weight: 120
     damage-small: "2d4"
     damage-large: "d6+1"
     material: "iron"
-  orcish-arrow:
+  orcish arrow:
     skill: "bows"
     cost: 2
     weight: 1
     damage-small: "d5"
     damage-large: "d6"
     material: "iron"
-  orcish-bow:
+  orcish bow:
     skill: "bows"
     cost: 60
     weight: 30
     damage-small: "d2"
     damage-large: "d2"
     material: "wood"
-  orcish-dagger:
+  orcish dagger:
     skill: "daggers"
     cost: 4
     weight: 10
     damage-small: "d3"
     damage-large: "d3"
     material: "iron"
-  orcish-short-sword:
+  orcish short sword:
     skill: "short swords"
     cost: 10
     weight: 30
     damage-small: "d5"
     damage-large: "d8"
     material: "iron"
-  orcish-spear:
+  orcish spear:
     skill: "spears"
     cost: 3
     weight: 30
@@ -384,7 +384,7 @@ weapons:
     damage-small: "2d4"
     damage-large: "2d4"
     material: "iron"
-  rubber-hose:
+  rubber hose:
     skill: "whips"
     cost: 3
     weight: 20
@@ -412,7 +412,7 @@ weapons:
     damage-small: "d8"
     damage-large: "d8"
     material: "iron"
-  short-sword:
+  short sword:
     skill: "short swords"
     cost: 10
     weight: 30
@@ -433,28 +433,28 @@ weapons:
     damage-small: "d8"
     damage-large: "d6"
     material: "iron"
-  silver-arrow:
+  silver arrow:
     skill: "bows"
     cost: 5
     weight: 1
     damage-small: "d6"
     damage-large: "d6"
     material: "silver"
-  silver-dagger:
+  silver dagger:
     skill: "daggers"
     cost: 40
     weight: 12
     damage-small: "d4"
     damage-large: "d3"
     material: "silver"
-  silver-saber:
+  silver saber:
     skill: "sabers"
     cost: 75
     weight: 40
     damage-small: "d8"
     damage-large: "d8"
     material: "silver"
-  silver-spear:
+  silver spear:
     skill: "spears"
     cost: 40
     weight: 36
@@ -503,14 +503,14 @@ weapons:
     damage-small: "d16"
     damage-large: "d8+2d6"
     material: "metal"
-  two-handed-sword:
+  two-handed sword:
     skill: "two-handed swords"
     cost: 50
     weight: 150
     damage-small: "d12"
     damage-large: "3d6"
     material: "iron"
-  unicorn-horn:
+  unicorn horn:
     skill: "unicorn horns"
     cost: 100
     weight: 20
@@ -524,14 +524,14 @@ weapons:
     damage-small: "2d4"
     damage-large: "2d4"
     material: "iron"
-  war-hammer:
+  war hammer:
     skill: "hammers"
     cost: 5
     weight: 50
     damage-small: "d4+1"
     damage-large: "d4"
     material: "iron"
-  worm-tooth:
+  worm tooth:
     skill: "knives"
     cost: 2
     weight: 20
