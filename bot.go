@@ -632,13 +632,14 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     // Deal with requests for the oracle's attention
     if channel == "oracleofdelphibot" {
         parseOracleMessage(c, message, user)
+        return
     }
 
     // Deal with special requests from broadcasters
     if user == channel {
-        parseBroadcasterMessage(c, message, user)
+        //parseBroadcasterMessage(c, message, user)
     }
-    
+
     // Deal with all other messages
     if _, ok := weaponsInfo.Items[message]; ok {
         c.Say(channel, getWeaponMessage(message))
@@ -663,7 +664,14 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     } else if actualName, ok := appearsAs.Items[message]; ok {
         m.Message = "!"+actualName
         parseMessage(c, m)
+    } else {
+        message = keyMatching.Closest(message)
+        m.Message = "?"+message
+        parseMessage(c, m)
     }
+
+
+
 }
 func updateInfo() {
     //reset the matching variables
@@ -693,17 +701,18 @@ func updateInfo() {
 func main() {
     allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
     // load the information from yaml files containing stats
-    weaponsInfo = getWeapons("weapons.yaml")
-    armorInfo = getArmor("armor.yaml")
-    monstersInfo = getMonsters("monsters.yaml")
-    toolsInfo = getTools("tools.yaml")
-    wandsInfo = getWands("wands.yaml")
-    ringsInfo = getRings("rings.yaml")
-    propsInfo = getProperties("properties.yaml")
-    comestiblesInfo = getComestibles("comestibles.yaml")
-    potionsInfo = getPotions("potions.yaml")
-    artifactsInfo = getArtifacts("artifacts.yaml")
-    appearsAs = getAppearances("appearances.yaml")
+    updateInfo()
+    //weaponsInfo = getWeapons("weapons.yaml")
+    //armorInfo = getArmor("armor.yaml")
+    //monstersInfo = getMonsters("monsters.yaml")
+    //toolsInfo = getTools("tools.yaml")
+    //wandsInfo = getWands("wands.yaml")
+    //ringsInfo = getRings("rings.yaml")
+    //propsInfo = getProperties("properties.yaml")
+    //comestiblesInfo = getComestibles("comestibles.yaml")
+    //potionsInfo = getPotions("potions.yaml")
+    //artifactsInfo = getArtifacts("artifacts.yaml")
+    //appearsAs = getAppearances("appearances.yaml")
 
     // find the bot's name, channel's name and oauth from OS env vars
     bot := os.Getenv("TWITCHBOT")
