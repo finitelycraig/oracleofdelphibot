@@ -1,5 +1,5 @@
 armors:
-  hawaiian-shirt:
+  hawaiian shirt:
     type: "shirt"
     cost: 3
     weight: 5
@@ -15,7 +15,7 @@ armors:
     material: "cloth"
     effect: "If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price)."
     mc: 0
-  leather-jacket:
+  leather jacket:
     type: "suit of armor"
     cost: 10
     weight: 30
@@ -23,7 +23,7 @@ armors:
     material: "leather"
     effect: ""
     mc: 0
-  leather-armor:
+  leather armor:
     type: "suit of armor"
     cost: 5
     weight: 150
@@ -31,7 +31,7 @@ armors:
     material: "leather"
     effect: ""
     mc: 0
-  orcish-ring-mail:
+  orcish ring mail:
     type: "suit of armor"
     cost: 80
     weight: 250
@@ -39,7 +39,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  studded-leather-armor:
+  studded leather armor:
     type: "suit of armor"
     cost: 15
     weight: 200
@@ -47,7 +47,7 @@ armors:
     material: "leather"
     effect: ""
     mc: 0
-  ring-mail:
+  ring mail:
     type: "suit of armor"
     cost: 100
     weight: 250
@@ -55,7 +55,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  scale-mail:
+  scale mail:
     type: "suit of armor"
     cost: 45
     weight: 250
@@ -63,7 +63,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  orcish-chain-mail:
+  orcish chain mail:
     type: "suit of armor"
     cost: 70
     weight: 300
@@ -71,7 +71,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  chain-mail:
+  chain mail:
     type: "suit of armor"
     cost: 75
     weight: 300
@@ -79,7 +79,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  elven-mithril-coat:
+  elven mithril-coat:
     type: "suit of armor"
     cost: 240
     weight: 150
@@ -87,7 +87,7 @@ armors:
     material: "mithril"
     effect: ""
     mc: 2
-  splint-mail:
+  splint mail:
     type: "suit of armor"
     cost: 80
     weight: 400
@@ -95,7 +95,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
-  banded-mail:
+  banded mail:
     type: "suit of armor"
     cost: 90
     weight: 350
@@ -103,7 +103,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 1
-  dwarvish-mithril-coat:
+  dwarvish mithril-coat:
     type: "suit of armor"
     cost: 240
     weight: 150
@@ -111,7 +111,7 @@ armors:
     material: "mithril"
     effect: ""
     mc: 2
-  bronze-plate-mail:
+  bronze plate mail:
     type: "suit of armor"
     cost: 400
     weight: 450
@@ -119,7 +119,7 @@ armors:
     material: "copper"
     effect: ""
     mc: 1
-  plate-mail:
+  plate mail:
     type: "suit of armor"
     cost: 600
     weight: 450
@@ -135,7 +135,7 @@ armors:
     material: "iron"
     effect: ""
     mc: 2
-  crystal-plate-mail:
+  crystal plate mail:
     type: "suit of armor"
     cost: 820
     weight: 450
@@ -143,14 +143,14 @@ armors:
     material: "glass"
     effect: ""
     mc: 0
-  dragon-scales:
+  dragon scales:
     type: "suit of armor"
     cost: 500
     weight: 40
     ac: 3
     material: "dragon"
     effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, whie offers cold resistance, yellow offers acid resistance."
-  dragon-scales:
+  dragon scales:
     type: "suit of armor"
     cost: 500
     weight: 40
