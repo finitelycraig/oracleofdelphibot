@@ -1,5 +1,5 @@
 properties:
-  fire-resistance:
+  fire resistance:
     effect: "prevents fire damage, but does not fireproof your inventory"
     sources: 
       - "being a Monk at level 11"
