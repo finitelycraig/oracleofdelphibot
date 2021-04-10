@@ -142,18 +142,34 @@ armors:
     ac: 7
     material: "glass"
     effect: ""
-    mc: 0
+    mc: 2
   dragon scales:
     type: "suit of armor"
     cost: 500
     weight: 40
     ac: 3
     material: "dragon"
-    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, whie offers cold resistance, yellow offers acid resistance."
-  dragon scales:
+    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, white offers cold resistance, yellow offers acid resistance."
+  dragon scale mail:
     type: "suit of armor"
-    cost: 500
+    cost: 900
     weight: 40
-    ac: 3
+    ac: 9
     material: "dragon"
-    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, whie offers cold resistance, yellow offers acid resistance."
+    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, white offers cold resistance, yellow offers acid resistance."
+  mummy wrapping:
+    type: "cloak"
+    cost: 2
+    weight: 3
+    ac: 0
+    material: "cloth"
+    effect: "overrides invisibility so you are again visible"
+    mc: 1
+  orcish cloak:
+    type: "cloak"
+    cost: 40
+    weight: 10
+    ac: 0
+    material: "cloth"
+    effect: ""
+    mc: 1
