@@ -28,7 +28,12 @@ the bot is contained in the various yaml files included with this repository.
 
 The bot gets the initial channel to join, it's channel and it's oauth token from
 environment variables named TWITCHBOT, TWITCHCHANNEL and TWITCHOAUTH: ensure
-that these are set.  
+that these are set. 
+
+## Testing the bot
+
+Running `go test` runs some unit tests.  In particular, there is a check that
+each message fits in the 510 character limit.
 
 ## Todos
 
