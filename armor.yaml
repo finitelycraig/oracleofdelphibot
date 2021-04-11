@@ -143,20 +143,132 @@ armors:
     material: "glass"
     effect: ""
     mc: 2
-  dragon scales:
+  blue dragon scales:
     type: "suit of armor"
     cost: 500
     weight: 40
     ac: 3
     material: "dragon"
-    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, white offers cold resistance, yellow offers acid resistance."
-  dragon scale mail:
+    effect: "shock resistance"
+  black dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "disintegration resistance"
+  gray dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "magic resistance"
+  green dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "poison resistance"
+  orange dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "sleep resistance"
+  red dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "fire resistance"
+  silver dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "relfection"
+  white dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "cold resistance"
+  yellow dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "acid resistance"
+  blue dragon scale mail:
     type: "suit of armor"
     cost: 900
     weight: 40
     ac: 9
     material: "dragon"
-    effect: "Blue offers shock resistance, black offers disintegration resistance, gray offers magic resistance, green offers poison resistance, orange offers sleep resistance, red offers fire resistance, silver offers reflection, white offers cold resistance, yellow offers acid resistance."
+    effect: "shock resistance"
+   black dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "disintegration"
+  gray dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "magic resistance"
+  green dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "poison resistance"
+  orange dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "sleep resistance"
+  red dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "fire resistance"
+  silver dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "reflection"
+  white dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "cold resistance"
+  yellow dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "acid resistance"
   mummy wrapping:
     type: "cloak"
     cost: 2
