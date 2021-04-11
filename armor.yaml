@@ -445,3 +445,83 @@ armors:
     material: "silver"
     effect: "gives reflection"
     mc: 0
+  low boots:
+    type: "boots"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  elven boots:
+    type: "boots"
+    cost: 8
+    weight: 15
+    ac: 1
+    material: "leather"
+    effect: "gives stealth"
+    mc: 0
+  kicking boots:
+    type: "boots"
+    cost: 8
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "kicking does additional damage and grants martial arts bonuses"
+    mc: 0
+  fumble boots:
+    type: "boots"
+    cost: 30
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "you will occasionally fumble"
+    mc: 0
+  levitation boots:
+    type: "boots"
+    cost: 30
+    weight: 15
+    ac: 1
+    material: "leather"
+    effect: "causes leviation but does not prevent you being drowned by monsters"
+    mc: 0
+  jumping boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "gives jumping at will (the special restrictions for Knights do not apply while this item is worn)"
+    mc: 0
+  speed boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "gives you the speed extrinsic (the same as the potion of speed or spell of haste self)"
+    mc: 0
+  water walking boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "allows you to walk on water (does not prevent you being drowned by monsters)"
+    mc: 0
+  high boots:
+    type: "boots"
+    cost: 12
+    weight: 20
+    ac: 2
+    material: "leather"
+    effect: ""
+    mc: 0
+  iron shoes:
+    type: "boots"
+    cost: 16
+    weight: 50
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
