@@ -3,9 +3,113 @@ tools:
     cost: 20
     weight: 2
     use: "blinds you"
+    creation: ""
     magic: false
-  bag-of-holding:
+  lenses:
+    cost: 80
+    weight: 3
+    use: "spellbook reading"
+    creation: ""
+    magic: false
+  towel:
+    cost: 50
+    weight: 2
+    use: "blinds you, cleans face and hands"
+    creation: ""
+    magic: false
+  leash:
+    cost: 20
+    weight: 12
+    use: "keeps pets nearby"
+    creation: ""
+    magic: false
+  saddle:
+    cost: 150
+    weight: 200
+    use: "riding"
+    creation: ""
+    magic: false
+  bag of holding:
     cost: 100
     weight: 15
     use: "make items lighter"
+    creation: "contains 0-1 items"
     magic: true
+  chest:
+    cost: 16
+    weight: 600
+    use: ""
+    creation: "contains 0-5 items"
+    magic: false
+  ice box:
+    cost: 42
+    weight: 900
+    use: "keeps corpses fresh"
+    creation: "contains 0-20 corpses"
+    magic: false
+  large box:
+    cost: 8
+    weight: 350
+    use: ""
+    creation: "contains 0-3 items"
+    magic: false
+  oilskin sack:
+    cost: 100
+    weight: 15
+    use: "prevents blanking"
+    creation: "contains 0-1 items"
+    magic: false
+  sack:
+    cost: 2
+    weight: 15
+    use: ""
+    creation: "contains 0-1 items"
+    magic: false
+  bugle:
+    cost: 15
+    weight: 10
+    use: "aggravates nearby soldiers"
+    creation: ""
+    magic: false
+  fire horn:
+    cost: 50
+    weight: 18
+    use: "ray of fire"
+    creation: ""
+    magic: true
+  frost horn:
+    cost: 50
+    weight: 18
+    use: "ray of frost"
+    creation: ""
+    magic: true
+  magic flute:
+    cost: 36
+    weight: 5
+    use: "lulls monsters to sleep"
+    creation: ""
+    magic: true
+  magic harp:
+    cost: 50
+    weight: 30
+    use: "tames monsters"
+    creation: ""
+    magic: true
+  tooled horn:
+    cost: 15
+    weight: 18
+    use: "scares monsters"
+    creation: ""
+    magic: false
+  wooden flute:
+    cost: 12
+    weight: 5
+    use: "pacifies snakes"
+    creation: ""
+    magic: false
+  wooden harp:
+    cost: 50
+    weight: 30
+    use: "pacifies nymphs"
+    creation: ""
+    magic: false
