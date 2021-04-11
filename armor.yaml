@@ -253,3 +253,91 @@ armors:
     material: "cloth"
     effect: "gives +n AC"
     mc: 3
+  fedora:
+    type: "helm"
+    cost: 1
+    weight: 3
+    ac: 0
+    material: "cloth"
+    effect: ""
+    mc: 0
+  dunce cap:
+    type: "helm"
+    cost: 1
+    weight: 4
+    ac: 0
+    material: "cloth"
+    effect: "fixes your intelligence and wisdom at 6 (auto-curses), shopkeepers buy and sell at the inexperienced Tourist rate"
+    mc: 0
+  cornuthaum:
+    type: "helm"
+    cost: 80
+    weight: 4
+    ac: 0
+    material: "cloth"
+    effect: "A wizard gets clairvoyance and +1 charisma, but other characters have existing clairvoyance blocked and get -1 charisma"
+    mc: 1
+  dented pot:
+    type: "helm"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  elven leather helm:
+    type: "helm"
+    cost: 8
+    weight: 3
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  helmet:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  orcish helm:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  helm of brilliance:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "adds armor's enchantment to your intelligence and wisdom"
+    mc: 0
+  helm of opposite alignment:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "changes your alignment, removes protection, and auto-curses"
+    mc: 0
+  helm of telepathy:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "gives telepathy"
+    mc: 0
+  dwarvish iron helm:
+    type: "helm"
+    cost: 20
+    weight: 40
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
