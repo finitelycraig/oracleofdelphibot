@@ -301,6 +301,14 @@ armors:
     material: "iron"
     effect: ""
     mc: 0
+  kabuto:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
   orcish helm:
     type: "helm"
     cost: 10
@@ -340,4 +348,44 @@ armors:
     ac: 2
     material: "iron"
     effect: ""
+    mc: 0
+  leather gloves:
+    type: "gloves"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  yugake:
+    type: "gloves"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  gauntlets of dexterity:
+    type: "gloves"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: "adds armor's enchantment to your dexterity"
+    mc: 0
+  gauntlets of fumbling:
+    type: "gloves"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: "you will occasionally fumble"
+    mc: 0
+  gauntlets of power:
+    type: "gloves"
+    cost: 50
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: "increases your strength to 25"
     mc: 0
