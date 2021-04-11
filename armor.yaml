@@ -213,7 +213,7 @@ armors:
     ac: 9
     material: "dragon"
     effect: "shock resistance"
-   black dragon scale mail:
+  black dragon scale mail:
     type: "suit of armor"
     cost: 900
     weight: 40
