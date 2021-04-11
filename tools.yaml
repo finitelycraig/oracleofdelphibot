@@ -113,3 +113,177 @@ tools:
     use: "pacifies nymphs"
     creation: ""
     magic: false
+  bell:
+    cost: 50
+    weight: 30
+    use: "wakes monsters, summons nymphs"
+    creation: ""
+    magic: false
+  drum of earthquake:
+    cost: 25
+    weight: 25
+    use: "creates pits, scares monsters, angers peacefuls"
+    creation: ""
+    magic: true
+  leather drum:
+    cost: 25
+    weight: 25
+    use: "wakes and scares monsters"
+    creation: ""
+    magic: false
+  magic whistle:
+    cost: 10
+    weight: 3
+    use: "teleports pets to you"
+    creation: ""
+    magic: true
+  tin whistle:
+    cost: 10
+    weight: 3
+    use: "calls pets"
+    creation: ""
+    magic: false
+  brass lantern:
+    cost: 20
+    weight: 30
+    use: ""
+    creation: ""
+    magic: false
+  magic lamp:
+    cost: 50
+    weight: 20
+    use: "possible wish"
+    creation: ""
+    magic: true
+  oil lamp:
+    cost: 10
+    weight: 20
+    use: ""
+    creation: ""
+    magic: false
+  tallow candle:
+    cost: 10
+    weight: 2
+    use: "invocation"
+    creation: "stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)"
+    magic: false
+  wax candle:
+    cost: 20
+    weight: 2
+    use: "invocation"
+    creation: "stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)"
+    magic: false
+  beartrap:
+    cost: 60
+    weight: 200
+    use: ""
+    creation: ""
+    magic: false
+  land mine:
+    cost: 180
+    weight: 300
+    use: ""
+    creation: ""
+    magic: false
+  credit card:
+    cost: 10
+    weight: 1
+    use: ""
+    creation: ""
+    magic: false
+  lock pick:
+    cost: 20
+    weight: 4
+    use: ""
+    creation: ""
+    magic: false
+  skeleton key:
+    cost: 10
+    weight: 3
+    use: ""
+    creation: ""
+    magic: false
+  grappling hook:
+    cost: 50
+    weight: 30
+    use: ""
+    creation: ""
+    magic: false
+  pick-axe:
+    cost: 50
+    weight: 100
+    use: "digging"
+    creation: ""
+    magic: false
+  unicorn horn:
+    cost: 100
+    weight: 20
+    use: "cure status effects, various other"
+    creation: ""
+    magic: true
+  bag of tricks:
+    cost: 100
+    weight: 15
+    use: "summoning monsters"
+    creation: "1-20 charges"
+    magic: true
+  can of grease:
+    cost: 20
+    weight: 20
+    use: "protects against mind flayers, drowning attacks and water damage"
+    creation: "1-25 charges"
+    magic: false
+  crystal ball:
+    cost: 60
+    weight: 150
+    use: ""
+    creation: "1-5 charges"
+    magic: true
+  expensive camers:
+    cost: 200
+    weight: 12
+    use: "scare monsters"
+    creation: ""
+    magic: false
+  figurine:
+    cost: 80
+    weight: 50
+    use: "summons a monster"
+    creation: ""
+    magic: true
+  horn of plenty:
+    cost: 50
+    weight: 18
+    use: "produces some food or some potions"
+    creation: ""
+    magic: true
+  magic marker:
+    cost: 50
+    weight: 2
+    use: "writes scrolls and spellbooks"
+    creation: "30-99 charges"
+    magic: true
+  mirror:
+    cost: 10
+    weight: 13
+    use: "nymph and foocubus control, luck management and scares monsters"
+    creation: ""
+    magic: false
+  stethoscope:
+    cost: 75
+    weight: 4
+    use: "get monster status information and detect secret doors/corridors"
+    creation: ""
+    magic: false
+  tin opener:
+    cost: 30
+    weight: 4
+    use: ""
+    creation: ""
+    magic: false
+  tinning kit:
+    cost: 30
+    weight: 100
+    use: "prevents troll resurrection and tins corpses for intrinsics"
+    creation: ""
+    magic: false
