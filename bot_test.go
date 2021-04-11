@@ -48,7 +48,7 @@ func TestInjest(t *testing.T) {
 
 	match = keyMatching.Closest(query)
 	if _, ok := monstersInfo.Items[match]; ok {
-		fmt.Println(len(getMonsterMessage(match)))
+		fmt.Println(getMonsterMessage(match))
 	}
     query = "Wand of  daeth"
 
@@ -58,6 +58,16 @@ func TestInjest(t *testing.T) {
 	}
     //got := -1
     //t.Errorf("Abs(-1) = %d; want 1", got)
+
+    cost := 500
+
+    if wands, ok := wandsByCost[cost]; ok {
+        fmt.Println(wands)
+        for _,wand := range wands {
+            fmt.Println(wand)
+        }
+    }
+    fmt.Println(wandsByCost)
 }
 
 // TestMessageLengths makes sure that no single message goes over the 510
