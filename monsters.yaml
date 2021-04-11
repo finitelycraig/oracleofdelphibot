@@ -12,7 +12,7 @@ monsters:
     size: "small"
     resistances: "poison and petrification"
     restistances_conveyed: "poison (33%)"
-    corpse_safe: false
+    corpse_safe: "causes petrification"
     elbereth: true
     extra: ""
   manes:
@@ -28,7 +28,7 @@ monsters:
     size: "small"
     resistances: "sleep and poison"
     restistances_conveyed: ""
-    corpse_safe: false
+    corpse_safe: "is poisonous"
     elbereth: true
     extra: ""
   mumak:
