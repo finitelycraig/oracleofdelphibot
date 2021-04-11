@@ -50,7 +50,7 @@ func TestInjest(t *testing.T) {
 	if _, ok := monstersInfo.Items[match]; ok {
 		fmt.Println(len(getMonsterMessage(match)))
 	}
-    query = "wand of daeth"
+    query = "Wand of  daeth"
 
 	match = keyMatching.Closest(query)
 	if _, ok := wandsInfo.Items[match]; ok {

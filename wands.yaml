@@ -7,13 +7,22 @@ wands:
     type: "non-directional"
     engrave: ""
     effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
-    broken: "There is an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
+    broken: "Breaking results in an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
+  wand of nothing:
+    cost: 100
+    weight: 7
+    starting_charges: "11-15"
+    maximum_charges: 15
+    type: "non-directional"
+    engrave: ""
+    effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
+    broken: "Breaking results in an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
   wand of death:
     cost: 500
     weight: 7
-    starting_charges: "11-15"
-    maximum_charges: 
+    starting_charges: "1-8"
+    maximum_charges: 8 
     type: "ray"
-    engrave: ""
-    effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
-    broken: "There is an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
+    engrave: "The bugs on the floor stop moving!"
+    effect: "Zapping it fires a ray of death that instantly kills almost any monster it hits in its path, including the player character."
+    broken: "When broken, it releases an explosion that deals (16 x charges) damage; MR is not necessary to survive this explosion. Death, major demons, nonliving monsters, and monsters with player-type MR or reflection are uneffected. Death is actually healed and becomes stronger."
