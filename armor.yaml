@@ -389,3 +389,59 @@ armors:
     material: "iron"
     effect: "increases your strength to 25"
     mc: 0
+  small shield:
+    type: "shield"
+    cost: 3
+    weight: 30
+    ac: 1
+    material: "wood"
+    effect: "does not limit spellcasting as much as other shields"
+    mc: 0
+  orcish shield:
+    type: "shield"
+    cost: 7
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  Uruk-hai shield:
+    type: "shield"
+    cost: 7
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  elven shield:
+    type: "shield"
+    cost: 7
+    weight: 40
+    ac: 2
+    material: "wood"
+    effect: ""
+    mc: 0
+  dwarvish roundshield:
+    type: "shield"
+    cost: 10
+    weight: 100
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  large shield:
+    type: "shield"
+    cost: 10
+    weight: 100
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  shield of reflection:
+    type: "shield"
+    cost: 50
+    weight: 50
+    ac: 2
+    material: "silver"
+    effect: "gives reflection"
+    mc: 0
