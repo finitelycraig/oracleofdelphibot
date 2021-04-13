@@ -1,4 +1,17 @@
 scrolls:
+  scroll of mail:
+    cost: 0
+    weight: 5 
+    ink: "2"
+    appearance: "stamped"
+    monster_use: false
+    blessed_effect: ""
+    uncursed_effect: ""
+    cursed_effect: ""
+    blessed_confused_effect: ""
+    uncursed_confused_effect: ""
+    cursed_confused_effect: ""
+    notes: "These scrolls contain a message from outside NetHack and can be delivered by the mail daemon. They are never generated randomly in the dungeon"
   scroll of identify:
     cost: 20
     weight: 5
@@ -11,6 +24,7 @@ scrolls:
     blessed_confused_effect: "it will identify itself but no other items"
     uncursed_confused_effect: "it will identify itself but no other items"
     cursed_confused_effect: "it will identify itself but no other items"
+    notes: "Scrolls of identity are always safe to read, but noncursed scrolls are more beneficial. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first"
   scroll of light:
     cost: 50
     weight: 5
@@ -23,3 +37,43 @@ scrolls:
     blessed_confused_effect: "20% chance of generating a yellow light.  Otherwise, creates a 9-unit radius of darkness."
     uncursed_confused_effect: "20% chance of generating a yellow light.  Otherwise, creates a 5-unit radius of darkness."
     cursed_confused_effect: "20% chance of generating a black light.  Otherwise, creates a 5-unit radius of darkness."
+    notes: ""
+  scroll of blank paper:
+    cost: 60
+    weight: 5
+    ink: "0"
+    appearance: "unlabelled"
+    monster_use: false
+    blessed_effect: ""
+    uncursed_effect: ""
+    cursed_effect: ""
+    blessed_confused_effect: ""
+    uncursed_confused_effect: ""
+    cursed_confused_effect: ""
+    notes: "They may be obtained normally or blanking other scrolls with a wand of cancellation or dipping in water. Their main use is to write new scrolls with a magic marker. The beatitude of the resulting scroll is affected by the beatitude of both the scroll of blank paper and the magic marker"
+  scroll of enchant weapon:
+    cost: 60
+    weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    blessed_effect: "it will attempt enchant your weapon by more than one point depending on current enchantment (up to four points for -5 to -3, up to 3 for -2 to +2, up to two for +3 to +5 and 1 for +6 to +8)"
+    uncursed_effect: "it will attempt to enchant yout weapon by one point"
+    cursed_effect: "it will attempt to enchant your weapon by decreasing the enchantment by one point"
+    blessed_confused_effect: "it will erodeproof your weapon and fix any existing damage"
+    uncursed_confused_effect: "it will erodeproof your weapon and fix any existing damage"
+    cursed_confused_effect: "it will remove erodeproofing"
+    notes: "If you are wielding a stack of weapons, the scroll will affect all of them at once. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting"
+  scroll of enchant armor:
+    cost: 80
+    weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    blessed_effect: "one worn piece of armor is selected and blessed. Other armor has a chance of gaining multiple degrees of enchantment"
+    uncursed_effect: "one worn piece of armor is randomly selected, enchanted by +1, and, if it is cursed, made uncursed"
+    cursed_effect: "one worn piece of armor is randomly selectes, cursed, and loses one point of enchantment"
+    blessed_confused_effect: "it will repair erosion on one piece of armor and make the armor erodeproof"
+    uncursed_confused_effect: "it will repair erosion on one piece of armor and make the armor erodeproof"
+    cursed_confused_effect: "it will not repair damaged armor and will remove erodeproofing"
+    notes: "If the enchantment of the armor is already above +3, the armor may be destroyed when a non-cursed scroll is read"
