@@ -19,7 +19,12 @@ var armorInfo *armors
 var monstersInfo *monsters
 var toolsInfo *tools
 var wandsInfo *wands
+var wandsByCost map[int][]string
+var wandsByEngraveMessage map[string][]string
 var ringsInfo *rings
+var ringsByPrice map[int][]string
+//var scrollsInfo *scrolls
+//var scrollsByPrice map[int][]string
 var propsInfo *properties
 var comestiblesInfo * comestibles
 var potionsInfo *potions
@@ -107,7 +112,7 @@ type rings struct {
 }
 
 type ring struct {
-    Cost int `yaml:"cost"`
+    Cost int `yaml:/"cost"`
     ExtrinsicGranted string `yaml:"extrinsic_granted"`
     Notes string `yaml:"notes"`
 }
@@ -162,7 +167,7 @@ type monster struct {
     Size string `yaml:"size"`
     Resistances string `yaml:"resistances"`
     ResistancesConveyed string `yaml:"resistances_conveyed"`
-    CorpseSafe bool `yaml:"corpse_safe"`
+    CorpseSafe string `yaml:"corpse_safe"`
     Elbereth bool `yaml:"elbereth"`
     Extra string `yaml:"extra"`
 }
@@ -354,10 +359,10 @@ func getMonsterMessage(name string) string {
             resistancesConveyed = " It might convey resistance to " + val.ResistancesConveyed + "."
         }
         var corpseSafe string
-        if val.CorpseSafe {
-            corpseSafe = "safe"
+        if val.CorpseSafe == "" {
+            corpseSafe = "is safe"
         } else {
-            corpseSafe = "not safe"
+            corpseSafe = val.CorpseSafe
         }
         var elbereth string
         if val.Elbereth {
@@ -369,7 +374,7 @@ func getMonsterMessage(name string) string {
         output = fmt.Sprintf("A %s has difficulty %d.  It attacks are %s. It " +
         "has speed %d, %d AC, %d MR, weighs %d, has nutritional value %d " +
         "and %s alignment.  It is a %s creature. It is %s.%s%s " + 
-        "Its corpse is %s to eat. It %s Elbereth.%s",
+        "Eating its corpse %s. It %s Elbereth.%s",
         strings.ReplaceAll(name,"-"," "), 
         val.Difficulty, 
         val.Attacks,
@@ -398,7 +403,7 @@ func getWeapons(fname string) *weapons {
     }
     err = yaml.Unmarshal(yamlFile, &w)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal weapons: %v", err)
     }
 
     for k := range w.Items {
@@ -416,7 +421,7 @@ func getArmor(fname string) *armors {
     }
     err = yaml.Unmarshal(yamlFile, &a)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal armor: %v", err)
     }
     
     for k := range a.Items {
@@ -434,7 +439,7 @@ func getMonsters(fname string) *monsters {
     }
     err = yaml.Unmarshal(yamlFile, &m)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal monsters: %v", err)
     }
     for k := range m.Items {
         keys = append(keys, k)
@@ -451,7 +456,7 @@ func getTools(fname string) *tools {
     }
     err = yaml.Unmarshal(yamlFile, &t)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal tools: %v", err)
     }
     for k := range t.Items {
         keys = append(keys, k)
@@ -468,8 +473,21 @@ func getWands(fname string) *wands {
     }
     err = yaml.Unmarshal(yamlFile, &w)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal wands: %v", err)
     }
+
+    wandsByCost = make(map[int][]string)
+    for k,v := range w.Items {
+        if thisCost, ok := wandsByCost[v.Cost]; ok {
+            fmt.Print(k)
+            thisCost = append(thisCost, k)
+        } else {
+            wandsByCost[v.Cost] = []string{k}
+            fmt.Println(wandsByCost[v.Cost])
+        }
+    }
+
+    // add these wands to the keys slice
     for k := range w.Items {
         keys = append(keys, k)
     }
@@ -485,7 +503,7 @@ func getRings(fname string) *rings {
     }
     err = yaml.Unmarshal(yamlFile, &r)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal rings: %v", err)
     }
     for k := range r.Items {
         keys = append(keys, k)
@@ -502,7 +520,7 @@ func getProperties(fname string) *properties {
     }
     err = yaml.Unmarshal(yamlFile, &p)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal props: %v", err)
     }
     for k := range p.Items {
         keys = append(keys, k)
@@ -519,7 +537,7 @@ func getComestibles(fname string) *comestibles {
     }
     err = yaml.Unmarshal(yamlFile, &c)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal comestibles: %v", err)
     }
     for k := range c.Items {
         keys = append(keys, k)
@@ -536,7 +554,7 @@ func getPotions(fname string) *potions {
     }
     err = yaml.Unmarshal(yamlFile, &p)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal potions: %v", err)
     }
     for k := range p.Items {
         keys = append(keys, k)
@@ -553,7 +571,7 @@ func getArtifacts(fname string) *artifacts {
     }
     err = yaml.Unmarshal(yamlFile, &a)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal artifacts: %v", err)
     }
     for k := range a.Items {
         keys = append(keys, k)
@@ -570,7 +588,7 @@ func getAppearances(fname string) *appearances {
     }
     err = yaml.Unmarshal(yamlFile, &a)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal appearances: %v", err)
     }
     for k := range a.Items {
         keys = append(keys, k)
@@ -587,7 +605,7 @@ func getAllowedChannels(fname string) *allowedChannels {
     }
     err = yaml.Unmarshal(yamlFile, &a)
     if err != nil {
-        log.Fatalf("Unmarshal: %v", err)
+        log.Fatalf("Unmarshal channels: %v", err)
     }
 
     return a

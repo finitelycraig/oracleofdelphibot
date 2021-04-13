@@ -1,0 +1,25 @@
+scrolls:
+  scroll of identify:
+    cost: 20
+    weight: 5
+    ink: "7-13"
+    appearance: "random"
+    monster_use: false
+    blessed_effect: "it will identify 1-4, or all, items in the inventory"
+    uncursed_effect: "it will identify 1-4, or all, items in the inventory"
+    cursed_effect: "it will identify 1 item in the inventory"
+    blessed_confused_effect: "it will identify itself but no other items"
+    uncursed_confused_effect: "it will identify itself but no other items"
+    cursed_confused_effect: "it will identify itself but no other items"
+  scroll of light:
+    cost: 50
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    blessed_effect: "creates a 9-unit radius of light"
+    uncursed_effect: "creates a 5-unit radius of light"
+    cursed_effect: "creates a 5-unit radius of darkness"
+    blessed_confused_effect: "20% chance of generating a yellow light.  Otherwise, creates a 9-unit radius of darkness."
+    uncursed_confused_effect: "20% chance of generating a yellow light.  Otherwise, creates a 5-unit radius of darkness."
+    cursed_confused_effect: "20% chance of generating a black light.  Otherwise, creates a 5-unit radius of darkness."
