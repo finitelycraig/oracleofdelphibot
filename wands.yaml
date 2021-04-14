@@ -18,7 +18,7 @@ wands:
     engrave: ""
     effect: ""
     broken: ""
-    notes: "It is non-magical"
+    notes: "It is non-magical."
   wand of digging:
     cost: 150
     weight: 7
@@ -26,9 +26,9 @@ wands:
     maximum_charges: 8 
     type: "ray"
     engrave: "This wand is a wand of digging! or Gravel flies up from the floor!"
-    effect: "Zapping downwards to make a hole, or it can be used to dig open a corridor of several squares, break through doors or clear secret doors."
+    effect: "Zapping downwards makes a hole or it can be used to dig open a corridor of several squares, break through doors or clear secret doors."
     broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and it creates pits or holes in your square and the eight adjacent."
-    notes: "Does not destroy boulders"
+    notes: "Does not destroy boulders."
   wand of enlightenment:
     cost: 150
     weight: 7
@@ -36,9 +36,9 @@ wands:
     maximum_charges: 15
     type: "non-directional"
     engrave: ""
-    effect: "Gives you enlightenment: you see your properties and exercise wisdom. Will let you see if it's safe to pray"
+    effect: "Gives you enlightenment: you see your properties and exercise wisdom. Will let you see if it's safe to pray."
     broken: ""
-    notes: "Useful for identifying noncursed rings and amulets"
+    notes: "Useful for identifying noncursed rings and amulets."
   wand of locking:
     cost: 150
     weight: 7
@@ -66,7 +66,7 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: "The engraving on the floor vanishes!"
-    effect: "Zapping a monster makes them invisible. It will anger peaceful monsters. Zapping it at yourself will make you permanently invisible."
+    effect: "Zapping a monster makes them invisible which will anger peaceful monsters. Zapping it at yourself will make you permanently invisible."
     broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage."
     notes: "Zapping it downwards will make any engraving on that square disappear, as does engraving with it."
   wand of opening:
@@ -76,9 +76,9 @@ wands:
     maximum_charges: 8 
     type: "ray"
     engrave: ""
-    effect: "Unlocks large boxes and chests and fixes the lock if broken. It reveals and unlocks hidden doors and unlocks un-hidden doors. The door will remain closed. Opens drawbridges, triggers trapdoors and falling rock traps. Releases you or a monster from a bear trap or web."
+    effect: "Unlocks large boxes and chests and fixes the lock if broken. It reveals and unlocks hidden doors and unlocks un-hidden doors. The door will remain closed. It also opens drawbridges, triggers trapdoors and falling rock traps and releases you or a monster from a bear trap or web."
     broken: ""
-    notes: "In most instances, it will be identified if it had any observable effect."
+    notes: "In most instances, it will be identified if it has any observable effect."
   wand of probing:
     cost: 150
     weight: 7
@@ -106,8 +106,8 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: "The bugs on the floor slow down!"
-    effect: "Monsters will slow down and take more turns to move or attack. Monsters have a chance to resist. If you zap yourself, you will lose intrinsic speed if you previously had it."
-    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and you and surrounding monsters are slowed"
+    effect: "Monsters will slow down and take more turns to move or attack. There is a chance monsters will resist. If you zap yourself, you will lose intrinsic speed if you previously had it."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and you and surrounding monsters are slowed."
     notes: ""
   wand of speed monster:
     cost: 150
@@ -116,7 +116,7 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: "The bugs on the floor speed up!"
-    effect: "When zapped at yourself of a monster, the wand gives its target intrinsic speed. Some monsters may resist and peaceful monsters will be angered."
+    effect: "When zapped at yourself or a monster, the wand gives its target intrinsic speed. Some monsters may resist and peaceful monsters will be angered."
     broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and you and surrounding monsters speed up."
     notes: ""
   wand of striking:
@@ -128,7 +128,7 @@ wands:
     engrave: "The wand unsuccessfully fights your attempt to write!"
     effect: "Zapping it will deal 2d12 damage to any monsters in its path. It will destroy boulders, doors, statues, drawbridges and fragile items."
     broken: "When broken, there is an explosion causing from 1 to (charges+1)d6 damage and you and surrounding monsters are hit by a force bolt."
-    notes: "It will also strike any item a monster is carrying, including mirrors carried by nymphs."
+    notes: "It will strike any item a monster is carrying, including mirrors carried by nymphs."
   wand of undead turning:
     cost: 150
     weight: 7
@@ -145,8 +145,8 @@ wands:
     starting_charges: "4-8"
     maximum_charges: 8 
     type: "ray"
-    engrave: "A few ice cubes drop from the wand"
-    effect: "Zapping it in a given direction will deal 6d6 damage to non-cold resistant targets and might freeze and destroy potions in their inventory. The ray bounces with reflection. It will freeze any square of water it crosses into ice."
+    engrave: "A few ice cubes drop from the wand."
+    effect: "Zapping it in a given direction will deal 6d6 damage to non-cold resistant targets and might freeze and destroy potions in their inventory. The ray bounces with reflection. It will freeze any square of water it crosses."
     broken: "When broken, there is an explosion of cold with (8xcharges) damage and potions may freeze."
     notes: ""
   wand of fire:
@@ -186,7 +186,7 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: "The engraving on the floor vanishes!"
-    effect: "It can uncurse and unbless items; neutralize enchantments, charges of most items and the special attacks of monsters; blank scrolls and enchantments; change most potions into water, sickness and see invisible into fruit juice and booze and oil become uncursed; and, kill a clay golem."
+    effect: "It can uncurse and unbless items; neutralize enchantments, charges of most items and the special attacks of monsters; blank scrolls and enchantments; change most potions into water, sickness and see invisible into fruit juice and booze and oil become uncursed; and kill a clay golem."
     broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage. Monsters/objects in the affected squares are cancelled."
     notes: "Putting a charged wand of cancellation into a bag of holding will cause a magical explosion, destroying the bag and all its contents."
   wand of create monster:
