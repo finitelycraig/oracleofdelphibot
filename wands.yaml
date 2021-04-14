@@ -8,15 +8,217 @@ wands:
     engrave: ""
     effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
     broken: "Breaking results in an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
+    notes: ""
   wand of nothing:
     cost: 100
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: "8"
+    type: "random"
+    engrave: ""
+    effect: ""
+    broken: ""
+    notes: "It is non-magical."
+  wand of digging:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "This wand is a wand of digging! or Gravel flies up from the floor!"
+    effect: "Zapping downwards makes a hole or it can be used to dig open a corridor of several squares, break through doors or clear secret doors."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and it creates pits or holes in your square and the eight adjacent."
+    notes: "Does not destroy boulders."
+  wand of enlightenment:
+    cost: 150
     weight: 7
     starting_charges: "11-15"
     maximum_charges: 15
     type: "non-directional"
     engrave: ""
-    effect: "When zapped or engraved with, the wand lights an area with radius of 5, or the whole room if on the Rogue level."
-    broken: "Breaking results in an explosion causing from 1 to (4 × charges) damage. You are blinded for (charges+1)d25 turns; surrounding monsters may also be blinded, and gremlins take damage. The room is lit."
+    effect: "Gives you enlightenment: you see your properties and exercise wisdom. Will let you see if it's safe to pray."
+    broken: ""
+    notes: "Useful for identifying noncursed rings and amulets."
+  wand of locking:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: ""
+    effect: "It will close and lock chests and doors and repair them if broken. It will create a door if the doorway doesn't have one."
+    broken: ""
+    notes: ""
+  wand of magic missile:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "The floor is riddled by bullet holes!"
+    effect: "Zapping in a given direction will do 2d6 damage to monsters in its path. Magic resistance and reflection negates this damage."
+    broken: "When broken, there is an explosion of magic missiles with (4xcharges) damages."
+    notes: ""
+  wand of make invisible:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The engraving on the floor vanishes!"
+    effect: "Zapping a monster makes them invisible which will anger peaceful monsters. Zapping it at yourself will make you permanently invisible."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage."
+    notes: "Zapping it downwards will make any engraving on that square disappear, as does engraving with it."
+  wand of opening:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: ""
+    effect: "Unlocks large boxes and chests and fixes the lock if broken. It reveals and unlocks hidden doors and unlocks un-hidden doors. The door will remain closed. It also opens drawbridges, triggers trapdoors and falling rock traps and releases you or a monster from a bear trap or web."
+    broken: ""
+    notes: "In most instances, it will be identified if it has any observable effect."
+  wand of probing:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: ""
+    effect: "It can give you information about a monster or the contents of a container. If there is a suitable target in the direction you zap, it shows the name, alignment, level, HP, AC, status and inventory of the target."
+    broken: ""
+    notes: "It does not anger peaceful targets."
+  wand of secret door detection:
+    cost: 150
+    weight: 7
+    starting_charges: "11-15"
+    maximum_charges: 15
+    type: "non-directional"
+    engrave: ""
+    effect: "It detects all undiscovered doors, mimics and traps in a radius of 8 squares in line-of-sight upon zapping/engraving."
+    broken: ""
+    notes: ""
+  wand of slow monster:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The bugs on the floor slow down!"
+    effect: "Monsters will slow down and take more turns to move or attack. There is a chance monsters will resist. If you zap yourself, you will lose intrinsic speed if you previously had it."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and you and surrounding monsters are slowed."
+    notes: ""
+  wand of speed monster:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The bugs on the floor speed up!"
+    effect: "When zapped at yourself or a monster, the wand gives its target intrinsic speed. Some monsters may resist and peaceful monsters will be angered."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and you and surrounding monsters speed up."
+    notes: ""
+  wand of striking:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The wand unsuccessfully fights your attempt to write!"
+    effect: "Zapping it will deal 2d12 damage to any monsters in its path. It will destroy boulders, doors, statues, drawbridges and fragile items."
+    broken: "When broken, there is an explosion causing from 1 to (charges+1)d6 damage and you and surrounding monsters are hit by a force bolt."
+    notes: "It will strike any item a monster is carrying, including mirrors carried by nymphs."
+  wand of undead turning:
+    cost: 150
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: ""
+    effect: "Zapping an undead monster deals 1d8 points of damage and causes the monster to flee. The wand can also be used to unturn dead, reviving corpses and rejuvenating eggs."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and monsters/objects in affected squares are turned."
+    notes: ""
+  wand of cold:
+    cost: 175
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "A few ice cubes drop from the wand."
+    effect: "Zapping it in a given direction will deal 6d6 damage to non-cold resistant targets and might freeze and destroy potions in their inventory. The ray bounces with reflection. It will freeze any square of water it crosses."
+    broken: "When broken, there is an explosion of cold with (8xcharges) damage and potions may freeze."
+    notes: ""
+  wand of fire:
+    cost: 175
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "This wand is a wand of fire!"
+    effect: "Zapping the wand in a given direction emits a ray of fire that does 6d6 damage to non-fire resistant targets, and does an additional 7 damage if the monster is cold resistant. The ray bounces with reflection."
+    broken: "When broken, there is an explosion of fire with (8xcharges) damage."
+    notes: "It will auto-identify if engraved with. Engravings are permanent and can only be removed by making them vanish (wand of cancellation or make invisible) or teleporting, polymorphing or overwriting them."
+  wand of lightning:
+    cost: 175
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "Lightning arcs from the wand. You are blinded by the flash!"
+    effect: "Zapping it in a given direction will shoot a ray of lightning dealing 6d6 damage to non-shock resistant targets. It blinds targets in its line of fire for d50 turns with a cap of 127. The ray bounces with reflection."
+    broken: "When broken, there is an explosion of lightning with (16xcharges) damage. Rings and other wands may explode."
+    notes: "It will auto-identify if engraved with, but doing this will blind you for d50 turns."
+  wand of sleep:
+    cost: 175
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "ray"
+    engrave: "The bugs on the floor stop moving!"
+    effect: "When zapped, it emits a ray that puts monsters to sleep for 6d25 turns, unless they resist. Rays can bounce from walls and unrevealed secret doors."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage. You and surrounding monsters may be put to sleep from (1+charges) to 12 turns."
+    notes: ""
+  wand of cancellation:
+    cost: 200
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The engraving on the floor vanishes!"
+    effect: "It can uncurse and unbless items; neutralize enchantments, charges of most items and the special attacks of monsters; blank scrolls and enchantments; change most potions into water, sickness and see invisible into fruit juice and booze and oil become uncursed; and kill a clay golem."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage. Monsters/objects in the affected squares are cancelled."
+    notes: "Putting a charged wand of cancellation into a bag of holding will cause a magical explosion, destroying the bag and all its contents."
+  wand of create monster:
+    cost: 200
+    weight: 7
+    starting_charges: "11-15"
+    maximum_charges: 15
+    type: "non-directional"
+    engrave: ""
+    effect: "Zapping or engraving with it creates one monster (22/23 chance) or 2-9 monsters (1/23 chance)."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and 9 monsters are spawned adjacent to you."
+    notes: "The wand is automatically identified if you are not blind when zapping or engraving."
+  wand of polymorph:
+    cost: 200
+    weight: 7
+    starting_charges: "11-15"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The engraving now reads: <random message>"
+    effect: "Zapping it in a given direction will polymorph any monsters or items in its path. You will polymorph when zapping the wand at yourself."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and monsters/objects in affected squares are polymorphed."
+    notes: "Wands of polymorph are immune to polymorphing from other sources."
+  wand of teleportation:
+    cost: 200
+    weight: 7
+    starting_charges: "4-8"
+    maximum_charges: 8 
+    type: "beam"
+    engrave: "The engraving on the floor vanishes!"
+    effect: "Zapping this wand in a given direction will teleport all monsters and items in the path of the wand. Zapping the wand at yourself will teleport you and all items on your square."
+    broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and monsters/objects in affected squares are teleported."
+    notes: "Engraving with a wand of teleportation will make a previous engraving disappear, although it will teleport to elsewhere on the level."
   wand of death:
     cost: 500
     weight: 7
@@ -26,3 +228,13 @@ wands:
     engrave: "The bugs on the floor stop moving!"
     effect: "Zapping it fires a ray of death that instantly kills almost any monster it hits in its path, including the player character."
     broken: "When broken, it releases an explosion that deals (16 x charges) damage; MR is not necessary to survive this explosion. Death, major demons, nonliving monsters, and monsters with player-type MR or reflection are uneffected. Death is actually healed and becomes stronger."
+  wand of wishing:
+    cost: 500
+    weight: 7
+    starting_charges: "1-3"
+    maximum_charges: 3
+    type: "non-directional"
+    engrave: ""
+    effect: "When zapped or engraved with, if the player's luck is non-negative, the wand will auto-identify and allow the player to make a guaranteed wish."
+    broken: ""
+    notes: "It can only be recharged once and explodes if you try for a second time."
