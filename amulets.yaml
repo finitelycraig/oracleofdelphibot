@@ -1,0 +1,25 @@
+amulets:
+  amulet of change:
+    cost: 150
+    weight: 20
+    appearance: "random"
+    effect: "When put on, it changes the gender of the wearer and self destructs. The effect is the same regardless of gender."
+    notes: "It auto-identifies when worn."
+  amulet of ESP:
+    cost: 150
+    weight: 20
+    appearance: "random"
+    effect: "Grants extrinsic telepathy when worn, which will show all monsters with minds within a 10x10 grid, and all such monsters on the level when blind."
+    notes: ""
+  amulet of life saving:
+    cost: 150
+    weight: 20
+    appearance: "random"
+    effect: "If you die when wearing the amulet, it will save your life. It will disintegrate and becomes identified. The beatitude of the amulet does not change its effect."
+    notes: "Living monsters can wear this amulet."
+  amulet of magical breathing:
+    cost: 150
+    weight: 20
+    appearance: "random"
+    effect: "It grants extrinsic breathlessness to its wearer. When worn, you can travel underwater safely and will be protected from drowning attacks. You will also be immune to the effects of poison clouds and scroll of stinking cloud, and cannot choke over your food."
+    notes: "When wearing this, water is a safe teleport location."
