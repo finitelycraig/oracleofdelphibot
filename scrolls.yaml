@@ -13,7 +13,7 @@ scrolls:
     ink: "7-13"
     appearance: "random"
     monster_use: false
-    effect: "Reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1, 2, 3, 4 or all items. If blessed all options have 1/5 chance, if uncursed there is a 1/25 chance for 1 item and 1/25 chance for the other options"
+    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1/2/3/4/all items. If blessed, all options have 1/5 chance. If uncursed, there is a 21/25 chance for 1 item and 1/25 chance for the other options. If cursed, only one item will be identified."
     notes: "Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first"
   scroll of light:
     cost: 50
@@ -21,7 +21,7 @@ scrolls:
     ink: "4-7"
     appearance: "random"
     monster_use: false
-    effect: "Creates a 9-unit radius if light if blessed, 5-radius of light if uncursed and 5-radius of darkness if cursed. If confused, there is a 20% chance of generating yellow light. Otherwise the scrolls behave the same way as when you are not confused"
+    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius of light if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
     notes: ""
   scroll of blank paper:
     cost: 60
