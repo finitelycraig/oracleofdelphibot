@@ -37,7 +37,7 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "If uncursed/blessed, the scroll will attempt to enchant your weapon: uncursed by 1 point, blessed by up to 4 points depending on its current enchantment. When confused, these scrolls will erodeproof your weapon and fix damage. If cursed, the scroll attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
+    effect: "If uncursed/blessed, it will attempt to enchant your weapon: uncursed by 1 point, blessed by 1-4 points. When confused, it will erodeproof your weapon and fix damage. If cursed, it attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
     notes: "If you are wielding a stack of weapons, the scroll will affect all of them at once. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
   scroll of enchant armor:
     cost: 80
