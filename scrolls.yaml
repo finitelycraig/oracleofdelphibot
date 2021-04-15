@@ -21,7 +21,7 @@ scrolls:
     ink: "4-7"
     appearance: "random"
     monster_use: false
-    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius of light if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
+    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
     notes: ""
   scroll of blank paper:
     cost: 60
