@@ -157,7 +157,7 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "When read it prompts you to choose an item to recharge. Blessed scrolls have a higher probability than uncursed scrolls to restore more charges. If cursed, the number of charges on an item will be set to 0. If you are confused, non-cursed scrolls of charging will instead increase your energy to max. If energy is already at max., it will increase by 5-20 points. If cursed, current energy will be reduced to 0."
+    effect: "When read you to choose an item to recharge. Blessed scrolls restore more charges on average. If cursed, the number of charges on an item is set to 0. If you are confused, non-cursed scrolls of charging will instead restore your energy. If energy is already at max, it will increase by 5-20. If cursed, current energy will be reduced to 0."
     notes: "Magic markers can only be recharged once."
   scroll of genocide:
     cost: 300
