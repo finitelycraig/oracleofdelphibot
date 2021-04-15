@@ -53,7 +53,7 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "Reading an uncursed scroll only affects equipped items whereas reading a blessed scroll affects all items in the open inventory. When non-confused, a scroll of curse removal will uncurse cursed items. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment."
+    effect: "Reading an uncursed scroll only affects equipped items while reading a blessed scroll affects all items in open inventory. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment."
     notes: ""
   scroll of confuse monster:
     cost: 100
