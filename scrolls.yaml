@@ -45,8 +45,8 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "If blessed, one piece of worn armor is selected and blessed. Other armor has a chance of gaining multiple degrees of enchantment. If uncursed, the armor is randomly selected, enchanted by +1 and uncursed if cursed. If the scroll is cursed, the armor is cursed and loses one point of enchantment. If non-cursed and when confused, it will repair erosion on one piece of armor and erodeproof it; if cursed and when confused, damage is not repaired and erodeproofing is removed."
-    notes: "If the enchantment of the armor is already above +3, the armor may be destroyed when a non-cursed scroll is read."
+    effect: "If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, there is a chance of >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed."
+    notes: "If the armor is >+3, a non-cursed scroll might destroy it."
   scroll of remove curse:
     cost: 80
     weight: 5
