@@ -61,8 +61,8 @@ scrolls:
     ink: "6-11"
     appearance: "random"
     monster_use: false
-    effect: "Reading the scroll normally grants the ability to confuse monsters when they are hit in melee. An uncursed scroll will grant one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or reading in a confused state will confuse you instead for 1-100 turns."
-    notes: "Additional readings of uncursed or blessed scrolls will grant additional uses, until 40 or more uses are stored. Any failed attempts will still consume a use."
+    effect: "Reading the scroll grants the ability to confuse monsters when they are hit in melee. An uncursed scroll grants one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or while confused confuses you instead for 1-100 turns."
+    notes: "Additional readings of uncursed or blessed scrolls will grant more uses, until 40 or more uses. Failed attempts will still consume a use."
   scroll of destroy armor:
     cost: 100
     weight: 5
