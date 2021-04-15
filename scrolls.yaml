@@ -13,7 +13,7 @@ scrolls:
     ink: "7-13"
     appearance: "random"
     monster_use: false
-    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1/2/3/4/all items. If blessed, all options have 1/5 chance. If uncursed, there is a 21/25 chance for 1 item and 1/25 chance for the other options. If cursed, only one item will be identified."
+    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item will be identified."
     notes: "Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first."
   scroll of light:
     cost: 50
