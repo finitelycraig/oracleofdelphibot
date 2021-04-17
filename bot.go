@@ -23,11 +23,13 @@ var wandsByCost map[int][]string
 var wandsByEngraveMessage map[string][]string
 var ringsInfo *rings
 var ringsByPrice map[int][]string
-//var scrollsInfo *scrolls
-//var scrollsByPrice map[int][]string
+var scrollsInfo *scrolls
+var scrollsByCost map[int][]string
+var amuletsInfo *amulets
 var propsInfo *properties
 var comestiblesInfo * comestibles
 var potionsInfo *potions
+var potionsByCost map[int][]string
 var artifactsInfo *artifacts
 var appearsAs *appearances
 
@@ -107,8 +109,34 @@ type wand struct {
     Broken string `yaml:"broken"`
 }
 
+type scrolls struct {
+    Items map[string]scroll `yaml:"scrolls"`
+}
+
+type scroll struct {
+    Cost int `yaml:"cost"`
+    Weight int `yaml:"weight"`
+    Ink string `yaml:"ink"`
+    Appearance string `yaml:"appearance"`
+    MonsterUse bool `yaml:"monster_use"`
+    Effect string `yaml:"effect"`
+    Notes string `yaml:"notes"`
+}
+
 type rings struct {
     Items map[string]ring `yaml:"rings"`
+}
+
+type amulets struct {
+    Items map[string]amulet `yaml:"amulets"`
+}
+
+type amulet struct {
+    Cost int `yaml:"cost"`
+    Weight int `yaml:"weight"`
+    Appearance string `yaml:"appearance"`
+    Effect string `yaml:"effect"`
+    Notes string `yaml:"notes"`
 }
 
 type ring struct {
@@ -241,6 +269,27 @@ func getArtifactMessage(name string) string {
     return output
 }
 
+func getScrollMessage(name string) string {
+    var output string 
+    if val, ok := scrollsInfo.Items[name]; ok {
+        var monsterUse string
+        if val.MonsterUse {
+            monsterUse = "Monsters can use it."
+        } else {
+            monsterUse = "Monsters do not use it."
+        }
+        output = fmt.Sprintf("A %s costs %dzm, weights %d and takes %s ink to write. %s %s %s",
+        strings.Title(strings.ReplaceAll(name,"-"," ")), 
+        val.Cost,
+        val.Weight,
+        val.Ink,
+        monsterUse,
+        val.Effect,
+        val.Notes)
+    }
+    return output
+}
+
 func getToolMessage(name string) string {
     var output string 
     if val, ok := toolsInfo.Items[name]; ok {
@@ -263,7 +312,7 @@ func getToolMessage(name string) string {
 func getWandMessage(name string) string {
     var output string 
     if val, ok := wandsInfo.Items[name]; ok {
-        output = fmt.Sprintf("A %s costs %dzm, weighs %d and has %s starting charges.  It's pattern is %s. "+
+        output = fmt.Sprintf("A %s costs %dzm, weighs %d and has %s starting charges.  Its pattern is %s. "+
         "%s %s", 
         strings.ReplaceAll(name,"-"," "), 
         val.Cost, 
@@ -495,6 +544,36 @@ func getWands(fname string) *wands {
     return w
 }
 
+func getScrolls(fname string) *scrolls {
+    var s *scrolls
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &s)
+    if err != nil {
+        log.Fatalf("Unmarshal scrolls: %v", err)
+    }
+
+    scrollsByCost = make(map[int][]string)
+    for k,v := range s.Items {
+        if thisCost, ok := wandsByCost[v.Cost]; ok {
+            fmt.Print(k)
+            thisCost = append(thisCost, k)
+        } else {
+            scrollsByCost[v.Cost] = []string{k}
+            fmt.Println(scrollsByCost[v.Cost])
+        }
+    }
+
+    // add these wands to the keys slice
+    for k := range s.Items {
+        keys = append(keys, k)
+    }
+
+    return s
+}
+
 func getRings(fname string) *rings {
     var r *rings
     yamlFile, err := ioutil.ReadFile(fname)
@@ -669,6 +748,8 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         c.Say(channel, getToolMessage(message))
     } else if _, ok := wandsInfo.Items[message]; ok {
         c.Say(channel, getWandMessage(message))
+    } else if _, ok := scrollsInfo.Items[message]; ok {
+        c.Say(channel, getScrollMessage(message))
     } else if _, ok := ringsInfo.Items[message]; ok {
         c.Say(channel, getRingMessage(message))
     } else if _, ok := propsInfo.Items[message]; ok {
@@ -703,6 +784,7 @@ func updateInfo() {
     monstersInfo = getMonsters("monsters.yaml")
     toolsInfo = getTools("tools.yaml")
     wandsInfo = getWands("wands.yaml")
+    scrollsInfo = getScrolls("scrolls.yaml")
     ringsInfo = getRings("rings.yaml")
     propsInfo = getProperties("properties.yaml")
     comestiblesInfo = getComestibles("comestibles.yaml")

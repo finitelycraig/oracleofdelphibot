@@ -13,7 +13,7 @@ scrolls:
     ink: "7-13"
     appearance: "random"
     monster_use: false
-    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1/2/3/4/all items. If blessed, all options have 1/5 chance. If uncursed, there is a 21/25 chance for 1 item and 1/25 chance for the other options. If cursed, only one item will be identified."
+    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item will be identified."
     notes: "Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first."
   scroll of light:
     cost: 50
@@ -21,7 +21,7 @@ scrolls:
     ink: "4-7"
     appearance: "random"
     monster_use: false
-    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius of light if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
+    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
     notes: ""
   scroll of blank paper:
     cost: 60
@@ -37,23 +37,23 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "If uncursed/blessed, the scroll will attempt to enchant your weapon: uncursed by 1 point, blessed by up to 4 points depending on its current enchantment. When confused, these scrolls will erodeproof your weapon and fix damage. If cursed, the scroll attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
-    notes: "If you are wielding a stack of weapons, the scroll will affect all of them at once. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
+    effect: "If uncursed/blessed, it will attempt to enchant your weapon: uncursed +1, blessed +1-4. When confused, it will erodeproof and fix damage. If cursed, it attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
+    notes: "If you are wielding a stack of weapons, the scroll will affect all of them. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
   scroll of enchant armor:
     cost: 80
     weight: 5
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "If blessed, one piece of worn armor is selected and blessed. Other armor has a chance of gaining multiple degrees of enchantment. If uncursed, the armor is randomly selected, enchanted by +1 and uncursed if cursed. If the scroll is cursed, the armor is cursed and loses one point of enchantment. If non-cursed and when confused, it will repair erosion on one piece of armor and erodeproof it; if cursed and when confused, damage is not repaired and erodeproofing is removed."
-    notes: "If the enchantment of the armor is already above +3, the armor may be destroyed when a non-cursed scroll is read."
+    effect: "If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, there is a chance of >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed."
+    notes: "If the armor is >+3, a non-cursed scroll might destroy it."
   scroll of remove curse:
     cost: 80
     weight: 5
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "Reading an uncursed scroll only affects equipped items whereas reading a blessed scroll affects all items in the open inventory. When non-confused, a scroll of curse removal will uncurse cursed items. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment."
+    effect: "Reading an uncursed scroll only affects equipped items while reading a blessed scroll affects all items in open inventory. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment."
     notes: ""
   scroll of confuse monster:
     cost: 100
@@ -61,8 +61,8 @@ scrolls:
     ink: "6-11"
     appearance: "random"
     monster_use: false
-    effect: "Reading the scroll normally grants the ability to confuse monsters when they are hit in melee. An uncursed scroll will grant one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or reading in a confused state will confuse you instead for 1-100 turns."
-    notes: "Additional readings of uncursed or blessed scrolls will grant additional uses, until 40 or more uses are stored. Any failed attempts will still consume a use."
+    effect: "Reading the scroll grants the ability to confuse monsters when they are hit in melee. An uncursed scroll grants one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or while confused confuses you instead for 1-100 turns."
+    notes: "Additional readings of uncursed or blessed scrolls will grant more uses, until 40 or more uses. Failed attempts will still consume a use."
   scroll of destroy armor:
     cost: 100
     weight: 5
@@ -157,7 +157,7 @@ scrolls:
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "When read it prompts you to choose an item to recharge. Blessed scrolls have a higher probability than uncursed scrolls to restore more charges. If cursed, the number of charges on an item will be set to 0. If you are confused, non-cursed scrolls of charging will instead increase your energy to max. If energy is already at max., it will increase by 5-20 points. If cursed, current energy will be reduced to 0."
+    effect: "When read you to choose an item to recharge. Blessed scrolls restore more charges on average. If cursed, the number of charges on an item is set to 0. If you are confused, non-cursed scrolls of charging will instead restore your energy. If energy is already at max, it will increase by 5-20. If cursed, current energy will be reduced to 0."
     notes: "Magic markers can only be recharged once."
   scroll of genocide:
     cost: 300

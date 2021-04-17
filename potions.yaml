@@ -1,6 +1,6 @@
 potions:
   water:
-    cost: "varies"
+    cost: 0 #base cost is 0 but the wiki says it varies 
     weight: 20
     monster_use: false
     effect: "Gives d10 nutrition. Changing the BUC of an uncursed potion of water can create a potion of holy or unholy water."
