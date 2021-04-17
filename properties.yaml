@@ -6,3 +6,36 @@ properties:
       - "being a Priest at level 20"
       - "putting on or eating a ring of fire resistance"
       - "polymorphing into a resistant monster"
+  cold resistance:
+    effect: "prevents cold damage, but does nor protect your potions"
+    sources:
+      - "being a Valkyrie"
+      - "being a Monk at level 13"
+      - "putting on or eating a ring of cold resistance"
+      - "polymorphing into a resistant monster"
+  sleep resistance:
+    effect: "prevents sleep or, alternatively, free action works for potions only"
+    sources:
+      - "being an elf at level 4"
+      - "eating a ring or free action"
+      - "polymorphing into a resistant monster"
+  disintegration resistance:
+    effect: "prevents instadeath from black dragon breath"
+    sources:
+      - "eating a black dragon corpse"
+      - "polymorphing into a resistant monster"
+  shock resistance:
+    effect: "prevents damage from electric attacks but does not defend rings or wands"
+    sources:
+      - "being a Monak at level 15"
+      - "eating a corpse"
+      - "putting on or eating a ring of shock resistance"
+      - "polymorphing into a resistant monster"
+  poison resistance:
+    effect: "prevents poisoning and instadeath from poison"
+    sources:
+      - "being an Orc, Barbarian or Healer"
+      - "being a Monk at level 3
+      - "being a Tourist at level 20"
+      - "wearing an amulet versus poison or ring of poison resistance"
+      - "polymorphing into a resistant monster"
