@@ -56,7 +56,7 @@ properties:
   see invisible:
     effect: "allows you to see invisible monsters"
     sources:
-      - "quafing a potion og see invisible"
+      - "quaffing a potion og see invisible"
       - "wearing or eating a ring of see invisible"
       - "eating a stalker corpse while invisible"
       - "polymorphing into a monster with the intrinsic"
@@ -64,9 +64,137 @@ properties:
   invisible:
     effect: "makes you invisible"
     sources:
-     - "quaffing a potion of invisibility"
-     - "zapping yourslef with a wand of make invisible"
-     - "wearing a cloak or ring of invisibility"
-     - "eating a stalker corpse while temporarily invisible"
-     - "polymorphing into a stalker or black light"
-     - "invoking the Orb of Detection"
+      - "quaffing a potion of invisibility"
+      - "zapping yourslef with a wand of make invisible"
+      - "wearing a cloak or ring of invisibility"
+      - "eating a stalker corpse while temporarily invisible"
+      - "polymorphing into a stalker or black light"
+      - "invoking the Orb of Detection"
+  teleportation:
+    effect: "randomly teleports you around the dungeon every few turns"
+    sources:
+      - "(sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor"
+      - "wearing or eating a ring of teleportation"
+      - "polymorphing into an monster with the intrinsic"
+  teleportitis:
+    effect: "randomly teleports you around the dungeon every few turns"
+    sources:
+      - "(sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor"
+      - "wearing or eating a ring of teleportation"
+      - "polymorphing into an monster with the intrinsic"
+  telport control:
+    effect: "allows you to choose your destination tile when you teleport"
+    sources:
+      - "being a Monk at level 17"
+      - "being a Wizard at level 17"
+      - "wearing or eating a ring of teleport control"
+      - "carrying the Master Key of Thievery"
+      - "polymorphing into a tengu"
+  polymorph:
+    effect: "randomly polymorphs you into another monster type every few turns"
+    sources:
+      - "wearing or eating a ring of polymorph"
+  polymorphitis:
+    effect: "randomly polymorphs you into another monster type every few turns"
+    sources:
+      - "wearing or eating a ring of polymorph"
+  polymorph control:
+    effect: "allows you to choose the type of monster to become when you polymorph"
+    sources:
+      - "wearing or eating a ring of polymorph control"
+  levitation:
+    effect: "you float and cannot reach the floor! You can pass over moats, trap doors and pits (except in Sokoban)"
+    sources:
+      - "quaffing a potion of levitation (temporary)"
+      - "casting the spell from a spellbook of levitation (temporary)"
+      - "wearing a ring or boots of levitation"
+      - "eating a ring of levitation (temporary)"
+      - "invoking the Heart of Ahriman"
+  stealth:
+    effect: "allows you to move arounf quietly, so that your steps do not wake sleeping monsters"
+    sources:
+      - "some roles have innate stealth"
+      - "wearing elven boots, elven cloak or ring of stealth"
+      - "receiving a favor from your god when praying"
+  aggravate monster:
+    effect: "increases probability that nearby sleeping monsters notice you and wake"
+    sources:
+      - "(for all but Cavemen and Orcs) eating cat or dog meat, or eating your own race"
+      - "sacrificing a dead pet at an altar"
+      - "wearing or eating a ring of aggravate monster"
+  conflict:
+    effect: "monsters will attack other nearby monsters, disregarding their tame/peaceful/hostile status"
+    sources:
+      - "wearing or eating a ring of conflict"
+      - "invoking the Sceptre of Might"
+  protection:
+    effect: "indicates that have have either intrinsic divine protection, or wear an item of protection, for the purposes of the enlightenment message"
+    sources:
+      - "buy divine protection by donating to priests"
+      - "wearning a cloak of protection or ring of protection"
+      - "receiving a favor from your god when praying"
+  protection from shape changers:
+    effect: "forces shapeshifters and chameleons to stay in normal form"
+    sources:
+      - "wearing or eating a ring of protection from shape changers"
+  warning:
+    effect: "labels unseen, undetected nearby monsters with a danger indicator from 1-5"
+    sources:
+      - "being a Monk at level 7"
+      - "being some roles at level 15"
+      - "wearing or eating a ring or warning"
+      - "carrying the Master Key of Thievery or the Orb of Fate"
+  hunger:
+    effect: "increase the rate that you lose nutrition"
+    sources:
+      - "wearing or eating a ring of hunger"
+  telepathy (intrinsic):
+    effect: "allows you to sense most monsters but only when you are blind"
+    sources:
+      - "eating a floating eye (100% chance) or mind flayer corpse (50% chance or 100% at max intelligence)"
+      - "receiving a favor from your god when praying"
+  telepathy (extrinsic):
+    effect: "allows you to sense most monsters but only when you are blind and also in a limited radius when not blind"
+    sources:
+      - "wearing an amulet of ESP of helm of telepathy"
+      - "carrying the Longbow of Diane"
+      - "carrying the Orb of Detection"
+      - "carrying the Magic Mirror of Merlin"
+      - "carrying the Platinum Yendorian Express Card"
+  speed (intrinsic):
+    effect: "makes you fast, allowing 4 moves every 3 turns"
+    sources:
+      - "zapping yourself with a wand of speed monster"
+      - "eating a quantum mechanic corpse to toggle the intrinsic"
+      - "receiving a favor from your god when praying"
+  speed (extrinsic):
+    effect: "makes you very fast, allowing 5 moves every 3 turns"
+    sources:
+      - "quaffing a potion of speed"
+      - "wearing speed boots"
+  food appraisal:
+    effect: "warns you of any bad effects that might result before eating something, and allows you to abort. It is lost after one activation."
+    sources:
+      - "reading a blessed scroll of food detection"
+      - "casting detect food at skilled or expert"
+  unbreathing:
+    effect: "allows you to survive without breathing: you can go underwater and will not choke on food"
+    sources:
+      - "wearing or eating an amulet of magical breathing"
+      - "polymorphing into a breathless monster"
+  amphibiousness:
+    effect: "allows you to breathe both in the air and underwater"
+    sources:
+      - "polymorphing into an amphibious monster"
+      - "be breathless"
+  jumping:
+    effect: "allows you to land on another tile in one move"
+    sources:
+      - "being a Knight"
+      - "wearing jumping boots"
+      - "reading a spellbook of jumping"
+  infravision:
+    effect: "your eyes sense the heat from warm monsters, making them visible to you you, even in unlit places"
+    sources:
+      - "being a Dwarf, Elf, Gnome or Orc"
+      - "polymorphing into a monster with the intrinsic"
