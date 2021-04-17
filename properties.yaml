@@ -39,3 +39,34 @@ properties:
       - "being a Tourist at level 20"
       - "wearing an amulet versus poison or ring of poison resistance"
       - "polymorphing into a resistant monster"
+  regeneration:
+    effect: "increases the rate of recovery of your HPs"
+    sources:
+      - "wearing or eating a ring of regeneration"
+      - "wielding the Staff of Aesculapius"
+      - "polymorphing into a monster with the intrinsic"
+  searching:
+    effect: "automatically search squares around you, increasing the chance you notice hidden doors or traps"
+    sources:
+      - "being a Ranger"
+      - "being a Monk at level 9"
+      - "being an Archaeologist, Rogue or Tourist at level 10"
+      - "wearing or eating a ring of searching"
+      - "wielding Excalibur"
+  see invisible:
+    effect: "allows you to see invisible monsters"
+    sources:
+      - "quafing a potion og see invisible"
+      - "wearing or eating a ring of see invisible"
+      - "eating a stalker corpse while invisible"
+      - "polymorphing into a monster with the intrinsic"
+      - "drinking from a fountain"
+  invisible:
+    effect: "makes you invisible"
+    sources:
+     - "quaffing a potion of invisibility"
+     - "zapping yourslef with a wand of make invisible"
+     - "wearing a cloak or ring of invisibility"
+     - "eating a stalker corpse while temporarily invisible"
+     - "polymorphing into a stalker or black light"
+     - "invoking the Orb of Detection"
