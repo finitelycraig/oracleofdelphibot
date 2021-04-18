@@ -198,3 +198,198 @@ properties:
     sources:
       - "being a Dwarf, Elf, Gnome or Orc"
       - "polymorphing into a monster with the intrinsic"
+  acid resistance:
+    effect: "prevents acid damage, but does not rustproof your armor"
+    sources: 
+      - "wearing an alchemy smock or yellow dragon scale mail"
+      - "polymorphing into a resistant monster"
+  stoning resistance:
+    effect: "prevents the stoning process. This is one way to fight cockatrices and chickatrices"
+    sources:
+      - "polymorphing into a resistant monster"
+  sliming resistance:
+    effect: "provides immunity to the sliming process"
+    sources:
+      - "polymorphing into a green slime, fire vortex, flaming sphere, fire elemental or salamander"
+      - "be unchanging"
+  drain resistance:
+    effect: "protects against loss of experience levels and prevents instadeath from drain below level 1"
+    sources:
+      - "wielding Stormbringer or Excalibur or the Staff of Aesculapius"
+      - "polymorphing into any undead monster, demon or werecreature"
+  adornment:
+    effect: "indicates that you wear a ring of adornment that allows an enlightenment messaged to be displayed"
+    sources:
+      - "wearing a ring of adornment"
+  reflection:
+    effect: "bounces gaze and ray attacks away from you"
+    sources:
+      - "wearing silver dragon scale mail"
+      - "wearing a shield or amulet of reflection"
+      - "wielding the Longbow of Diana"
+      - "polymorphing into a silver dragon"
+  life saving:
+    effect: "resurrects you when you die if you're wearing an amulet of life saving"
+    sources:
+      - "wearing an amulet of life saving"
+  magic resistance:
+    effect: "prevents damage from certain traps, magic missiles and certain other magic attacks, among other useful benefits"
+    sources:
+      - "wearing a cloak of magic resistance"
+      - "wearing gray dragon scale mail"
+      - "wielding Magicbane"
+      - "carrying certain quest artifacts"
+  phasing:
+    effect: "means you can walk through walls. This property has no effect in Sokoban"
+    sources:
+      - "polymorphing into a xorn or earth elemental"
+  hallucination resistance:
+    effect: "prevents the effects of hallucination"
+    sources:
+      - "wielding Grayswandir"
+  fumbling:
+    effect: "causes you to sometimes trip while walking, accidentally drop items, fall down stairs and other such problems"
+    sources:
+      - "wearing gauntlets of fumbling or fumble boots"
+  water walking:
+    effect: "means you can cross water by walking on its surface"
+    sources:
+      - "wearing water walking boots"
+  displacement:
+    effect: "produces a displaced image of you on a nearby square, such that monsters sometimes attack the image and miss you"
+    sources:
+      - "wearing a cloak of displacement"
+  clairvoyance:
+    effect: "makes a map of the area around you appear in your mind, every few turns"
+    sources:
+      - "buying temporary clairvoyance by donating to priests"
+      - "being a Wizard and wearing a cornuthaum"
+      - "carrying the Amulet of Yendor"
+  energy regeneration:
+    effect: "increases your power at a much faster rate"
+    sources:
+      - "carrying the Eye of the Aethiopica"
+  half spell damage:
+    effect: ""
+    sources:
+      - "carrying the Orb of Detection, the Platinum Yendorian Express Card, the Orb of Fate or the Eye of the Aethiopica"
+  half physical damage:
+    effect: ""
+    sources:
+      - "carrying the Master Key of Thievery or the Orb of Fate"
+  sickness resistance:
+    effect: "provides complete immunity to sickness"
+    sources:
+      - "polymorphing into a ghoul or any fungus"
+  free action:
+    effect: "prevents paralysis in most cases and makes the potion of sleeping harmless, but does not prevent other forms of sleep. It reduces stunning from monster spells to 1 turn"
+    sources:
+      - "wearing a ring of free action"
+  swimming:
+    effect: "enables you to swim across water"
+    sources:
+      - "polymorphing into a swimming monster"
+      - "riding a swimming steed"
+  sustain ability:
+    effect: "prevents changes to your six attributes and prevents the effects of exercise and abuse"
+    sources:
+      - "wearing a ring of sustain ability"
+  flying:
+    effect: "enables you to fly above the ground"
+    sources:
+      - "polymorphing into a flying monster"
+      - "riding a flying steed"
+  unchanging:
+    effect: "holds you to your current form"
+    sources:
+      - "wearing an amulet of unchanging"
+  slow digestion:
+    effect: "decreases the rate that you lose nutrition"
+    sources:
+      - "wearing a ring of slow digestion"
+  warned of monster type:
+    effect: "detects all monsters on the dungeon level that match certain monster types"
+    sources:
+      - "wielding Sting warns of Orcs"
+  stun:
+    effect: "may make you step in a random direction and may make you hit pets by mistake. Direction of zapping, spellcasting and firing also have a high chance of being randomized. It prevents teleport control"
+    sources:
+      - "attempting to cast a forgotten spell (sometimes)"
+      - "eating a bat, giant bat or stalker corpse"
+      - "getting hit by the Stun monster spell or the stunning gaze attack of Baalzebub and Archons"
+      - "polymorphing into a bat, giant bat, vampire bat, raven or stalker"
+  confusion:
+    effect: "makes you mispronounce any scroll that you read and you will have trouble with spells and spellbooks, among other effects"
+    sources:
+      - "attempting to cast a forgotten spell (sometimes)"
+      - "getting hit by the confusing gaze attack of an umber hulk"
+  blindness (intrinsic):
+    effect: "disables your eyes, blocking your sight. It will heal eventually or you can use a cure, such as eating a carrot"
+    sources:
+      - "attack of a raven"
+      - "explosion of yellow light"
+  blindness (extrinsic):
+    effect: "disables your eyes. Only cure is to remove what is blocking your eyes"
+    sources:
+      - "wearing a blindfold or a towel"
+      - "polymorphing into a monster without eyes"
+  restful sleep:
+    effect: "means you keep falling asleep"
+    sources:
+      - "wearing an amulet of restful sleep"
+  paralysis:
+    effect: "means you become immobile and miss a number of turns"
+    sources:
+      - "quaffing a potion of paralysis or a monster throws one at you"
+  wounded legs:
+    effect: "means you can carry less weight and you cannot jump or kick, among other effects"
+    sources:
+      - "jumping out of a bear trap"
+      - "kicking a wall, object or nothing (sometimes)"
+      - "getting hit by a xan's attack"
+      - "stepping on a land mine"
+  hallucination:
+    effect: "gives a random appearance to any monster or object on the map"
+    sources:
+      - "eating a yellow mold or violet fungus"
+      - "an explosion of a black light"
+  slippery fingers:
+    effect: "causes wielded objects to drop from your grasp"
+    sources:
+      - "eating greasy food from a tin"
+      - "applying a cursed can of grease or choosing '-' as a target for a non-cursed one"
+  invulnerability:
+    effect: "blocks all damage and prevents most causes of death"
+    sources:
+      - "only available as the 'shimmering light' during prayer"
+  monster detection:
+    effect: "detects all monsters on the dungeon level. Only available as a temporary intrinsic"
+    sources:
+      - "quaffing a potion of monster detection"
+      - "reading a spellbook of detect monsters and cast the spell"
+  sickness:
+    effect: "causes instadeath if not cured"
+    sources:
+      - "receiving food poisoning by eating a very old corpse"
+      - "receiving illness from the attack of Demogorgon, Juiblex, Scorpius or Pestilence"
+  stoning:
+    effect: "causes you to turn into a statue, eventually"
+    sources:
+      - "attacks from a monster wielding a cockatrice corpse"
+  nausea:
+    effect: "causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion"
+    sources:
+      - "eating a tripe ration or a rotten egg"
+  vomiting:
+    effect: "causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion"
+    sources:
+      - "eating a tripe ration or a rotten egg"
+  strangulation:
+    effect: "means your amulet will strangle you to instadeath in five turns, unless you can somehow remove it before then"
+    sources:
+      - "wearing an amulet of strangulation"
+   slime:
+    effect: "means that green slime will overtake your body and kill you, unless you can remove the slime or gain sliming resistance before that happens"
+    sources:
+      - "attack from a green slime"
+      - "eating a green slime corpse"
