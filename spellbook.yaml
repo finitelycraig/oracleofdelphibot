@@ -1,0 +1,210 @@
+spellbooks:
+  spellbook of force bolt:
+    spell_type: "attack"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "beam"
+    power_cost:
+    turns_read: 2
+    ink: "5-9"
+    effect: "Allows you to shoot a force bolt in any direction. If it hits a monster, it does 2d12 damage; monsters may resist. It will break any boulder, statue, door or drawbridge that it hits."
+    notes: "Wizards always start with one."
+  spellbook of drain life:
+    spell_type: "attack"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "beam"
+    power_cost: 10
+    turns_read: 2
+    ink: "10-19"
+    effect: "Casting it at a monster drains 1 level from it, does 1d8 x2 damage, and decrease HP max by 1d8. The monster can resist. When cast at an object, it will resist 90% of the time if it is an artifact, or 10% otherwise. If it does not resist, its enchantment is reduced by 1. Casting it at yourslef drains one experience level."
+    notes: ""
+  spellbook of magic missile:
+    spell_type: "attack"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "ray"
+    power_cost: 10
+    turns_read: 2
+    ink: "10-19"
+    effect: "The ray does ((ex.level/2)+1)d6 damage."
+    notes: "It is the special spell for Wizards."
+  spellbook of cone of cold:
+    spell_type: "attack"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "ray/distant"
+    power_cost: 20
+    turns_read: 21
+    ink: "20-39"
+    effect: "At Unskilled or Basic skill level, the spell zaps a ray with the same effect as a wand of cold. At Skilled or Expert level, you may choose a location at which to cast explosions of cold, with some restrictions. See the wiki for these and the effects of the spell at the Unskilled/Basic level."
+    notes: "It is the Valkyrie's special spell."
+  spellbook of fireball:
+    spell_type: "attack"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "ray/distant"
+    power_cost: 20
+    turns_read: 12
+    ink: "20-39"
+    effect: "It has different effects depending on the character's skill level in attack spells (unskilled/basic or skilled/expert). Both spells will produce an explosion of fire. Monsters take 12d6 damage; double this if they have cold resistance. Targets with magic resistance may resist for half the damage. Without fire resistance, you will take 6d6 damage."
+    notes: "The spellbook is fireproof."
+  spellbook of finger of death:
+    spell_type: "attack"
+    spell_level: 7
+    cost: 700
+    weight: 50
+    direction: "ray"
+    power_cost: 35
+    turns_read: 80
+    ink: "35-69"
+    effect: "The ray produced by this spell has the same effect as a wand of death: it instantly kills any monster it hits, unless the monster is Death, a major demon nonliving, or has magic resistance or reflection. Zapping yourself with this spell is an instadeath."
+    notes: "It is the most powerful attack spell."
+  spellbook of protection:
+    spell_type: "clerical"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 3
+    ink: "5-9"
+    effect: "This spell grants AC. The protection wears off at a rate of 1 point every 10 turns, or 1 point every 20 turns if the spell was cast with expert proficiency. See the wiki for the AC granted formula."
+    notes: "The spell is unrelated to protection granted by priests or praying."
+  spellbook of create monster:
+    spell_type: "clerical"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 3
+    ink: "10-19"
+    effect: "Casting this spell has a 72/73 chance of creating a single monster and a 1/73 chance of creating 2-5 monsters."
+    notes: ""
+  spellbook of remove curse:
+    spell_type: "clerical"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 10
+    ink: "15-29"
+    effect: "At unskilled/basic level, it acts identically to an uncursed scroll of remove curse. At skilled/expert, it is identical to a blessed scroll."
+    notes: "It is an emergency spell, and is the special spell for Priests."
+  spellbook of create familiar:
+    spell_type: "clerical"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "non-directional"
+    power_cost: 30
+    turns_read: 42
+    ink: "30-59"
+    effect: "The spell creates a monster near you. It has 1/3 chance of creating an appropriate starting pet and a 2/3 chance of creating a random monster. The created monster will be tame if tameable and peaceful otherwise."
+    notes: ""
+  spellbook of turn undead:
+    spell_type: "clerical"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "beam"
+    power_cost: 30
+    turns_read: 48
+    ink: "30-59"
+    effect: "Casting the spell crates a beam which deals 1d8 damage to undead monsters and scares them into fleeing if they fail a resistance check. It can 'unturn dead', which revives corpses and rejuvenates eggs."
+    notes: "The spell has the same effect as the wand of undead turning."
+  spellbook of detect monsters:
+    spell_type: "divination"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "At unskilled/basic level, it displays monsters of that dungeon level against a black background with no map detail. At skilled/expert, it reveals monsters on the map for 21-60 turns."
+    notes: ""
+  spellbook of light:
+    spell_type: "divination"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "Casting this spell creates a permanently lit cicruclar area (5-square radius) around your position (while casting)."
+    notes: ""
+  spellbook of detect food:
+    spell_type: "divination"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 3
+    ink: "10-19"
+    effect: "Casting this spell reveals the location of all comestibles on the level. If cast at skilled/expert level, you will also aquire the food appraisal intrinsic."
+    notes: "Casting this spell does not cause spell hunger."
+  spellbook of clairvoyance:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 6
+    ink: "15-29"
+    effect: "The spell maps a 19x11 area centered on your location."
+    notes: "It is the special spell for Samurai."
+  spellbook of detect unseen:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 8
+    ink: "15-29"
+    effect: "Reveals secret doors and corridors, non-statue traps, portals, mimics, hidden, submerged and invisible monsters in an area of radius 8 within line-of-sight."
+    notes: ""
+  spellbook of identify:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15 
+    turns_read: 12
+    ink: "15-29"
+    effect: "At basic/unskilled level, it identifies one item 80% of the time and 1d4 items 20% of the time. At skilled/expert, it identifies 1d4 items 80% of the time and your entire inventory 20% of the time."
+    notes: ""
+  spellbook of detect treasure:
+    spell_type: "divination"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "non-directional"
+    power_cost: 20
+    turns_read: 15
+    ink: "20-39"
+    effect: "Unskilled/basic has the same effect as quaffing an uncursed potion of object detection; at skilled/expert, the same effect as a blessed potion of object detection. Check the wiki or use this bot for more information."
+    notes: "It is the special spell for rogues"
+  spellbook of magic mapping:
+    spell_type: "divination"
+    spell_level: 5
+    cost: 500
+    weight: 50
+    direction: "non-directional"
+    power_cost: 25
+    turns_read: 35
+    ink: "25-49"
+    effect: "The spell reveals the entire map, including all of the level's walls, corridors and staircases. Secret passages are revealed but secret doors are not."
+    notes: "It is the special spell for archaeologists."
