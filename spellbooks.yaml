@@ -5,7 +5,7 @@ spellbooks:
     cost: 100
     weight: 50
     direction: "beam"
-    power_cost:
+    power_cost: 5
     turns_read: 2
     ink: "5-9"
     effect: "Allows you to shoot a force bolt in any direction. If it hits a monster, it does 2d12 damage; monsters may resist. It will break any boulder, statue, door or drawbridge that it hits."
