@@ -91,7 +91,7 @@ func TestInjest(t *testing.T) {
 // TestMessageLengths makes sure that no single message goes over the 510
 // character limit of twitch chat
 func TestMessageLengths(t *testing.T) {
-    limit := 510
+    limit := 500
     for k := range weaponsInfo.Items {
         messageLength := len(getWeaponMessage(k))
         if messageLength > limit {
@@ -112,6 +112,12 @@ func TestMessageLengths(t *testing.T) {
     }
     for k := range toolsInfo.Items {
         messageLength := len(getToolMessage(k))
+        if messageLength > limit {
+            t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
+        }
+    }
+    for k := range amuletsInfo.Items {
+        messageLength := len(getAmuletMessage(k))
         if messageLength > limit {
             t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
         }

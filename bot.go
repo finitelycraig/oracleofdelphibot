@@ -586,12 +586,10 @@ func getScrolls(fname string) *scrolls {
 
     scrollsByCost = make(map[int][]string)
     for k,v := range s.Items {
-        if thisCost, ok := wandsByCost[v.Cost]; ok {
-            fmt.Print(k)
-            thisCost = append(thisCost, k)
+        if _, ok := scrollsByCost[v.Cost]; ok {
+            scrollsByCost[v.Cost] = append(scrollsByCost[v.Cost], k)
         } else {
             scrollsByCost[v.Cost] = []string{k}
-            fmt.Println(scrollsByCost[v.Cost])
         }
     }
 
@@ -801,8 +799,10 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
                             c.Say(channel, output)
                             return
                         } else {
-                            fmt.Printf("there are %d candidates \n", len(candidates))
-                            candidates = []string{intersection[0].(string)}
+                            fmt.Printf("there are %d candidates \n", len(intersection))
+                            for i,_ := range intersection {
+                                candidates = append(candidates,intersection[i].(string))
+                            }
                         }
                     }
                 }
@@ -818,17 +818,52 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
         return
     } else {
         output = "That could be a "
-        for _,wand := range candidates {
-             output = output + wand + ", "
+        for i,wand := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + wand + "."
+            } else {
+                output = output + wand + ", "
+            }
         }
     }
     c.Say(channel, output)
-    
-    //if len(candidates) == 1 {
-        //time.Sleep(1 * time.Second)
-        //c.Say(channel, getWandMessage(candidates[0]))
-    //}
+}
 
+func parseScrollID(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "scrollID")
+    re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
+
+    var candidates []string
+    cost,err := strconv.Atoi(re.FindString(message))
+    if err != nil {
+        fmt.Println("oops scrollID cost fjcked up")
+        c.Say(channel, "The scrollID command needs to know the cost of the scroll you're interested in. Try '!scrollID 40'")
+    } else {
+        if scrolls, ok := scrollsByCost[cost]; ok {
+            if candidates == nil {
+                candidates = scrolls
+            }
+        }
+    }
+    
+    var output string
+
+    if len(candidates) == 0 {
+        output = "There aren't any scrolls that are that price."
+    } else if len(candidates) == 1 {
+        c.Say(channel, getScrollMessage(candidates[0]))
+        return
+    } else {
+        output = "That could be a "
+        for i,scroll := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + scroll + "."
+            } else {
+                output = output + scroll + ", "
+            }
+        }
+    }
+    c.Say(channel, output)
 }
 
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
@@ -844,6 +879,10 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         if words[0] == "wandID" {
             fmt.Printf("%s wants to ID a wand\n", user)
             parseWandID(c, channel, message, user)
+            return
+        } else if words[0] == "scrollID" {
+            fmt.Printf("%s wants to ID a scroll\n", user)
+            parseScrollID(c, channel, message, user)
             return
         }
     } else if strings.HasPrefix(message, "?") {
