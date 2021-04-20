@@ -6,10 +6,14 @@ import (
     "io/ioutil"
     "os"
     "strings"
-
+    "strconv"
+    "regexp"
+//    "time"
+    
     "gopkg.in/yaml.v2"
     "github.com/gempir/go-twitch-irc/v2"
     "github.com/schollz/closestmatch"
+    "github.com/juliangruber/go-intersect"
 )
 
 var keys []string
@@ -105,6 +109,7 @@ type wand struct {
     Weight int `yaml:"weight"`
     Type string `yaml:"type"`
     StartingCharges string `yaml:"starting_charges"`
+    Engrave []string `yaml:"engrave"`
     Effect string `yaml:"effect"`
     Broken string `yaml:"broken"`
 }
@@ -284,6 +289,19 @@ func getScrollMessage(name string) string {
         val.Weight,
         val.Ink,
         monsterUse,
+        val.Effect,
+        val.Notes)
+    }
+    return output
+}
+
+func getAmuletMessage(name string) string {
+    var output string 
+    if val, ok := amuletsInfo.Items[name]; ok {
+        output = fmt.Sprintf("A %s costs %dzm and weights %d. %s %s",
+        strings.Title(strings.ReplaceAll(name,"-"," ")), 
+        val.Cost,
+        val.Weight,
         val.Effect,
         val.Notes)
     }
@@ -527,12 +545,23 @@ func getWands(fname string) *wands {
 
     wandsByCost = make(map[int][]string)
     for k,v := range w.Items {
-        if thisCost, ok := wandsByCost[v.Cost]; ok {
-            fmt.Print(k)
-            thisCost = append(thisCost, k)
+        if _, ok := wandsByCost[v.Cost]; ok {
+            wandsByCost[v.Cost] = append(wandsByCost[v.Cost], k)
         } else {
             wandsByCost[v.Cost] = []string{k}
-            fmt.Println(wandsByCost[v.Cost])
+        }
+    }
+    
+    wandsByEngraveMessage = make(map[string][]string)
+    for k,v := range w.Items {
+        for _,message := range v.Engrave {
+            if _, ok := wandsByEngraveMessage[message]; ok {
+                wandsByEngraveMessage[message] = append(wandsByEngraveMessage[message], k)
+                keys = append(keys, message)
+            } else {
+                wandsByEngraveMessage[message] = []string{k}
+                keys = append(keys, message)
+            }
         }
     }
 
@@ -557,12 +586,10 @@ func getScrolls(fname string) *scrolls {
 
     scrollsByCost = make(map[int][]string)
     for k,v := range s.Items {
-        if thisCost, ok := wandsByCost[v.Cost]; ok {
-            fmt.Print(k)
-            thisCost = append(thisCost, k)
+        if _, ok := scrollsByCost[v.Cost]; ok {
+            scrollsByCost[v.Cost] = append(scrollsByCost[v.Cost], k)
         } else {
             scrollsByCost[v.Cost] = []string{k}
-            fmt.Println(scrollsByCost[v.Cost])
         }
     }
 
@@ -589,6 +616,23 @@ func getRings(fname string) *rings {
     }
 
     return r
+}
+
+func getAmulets(fname string) *amulets {
+    var a *amulets
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &a)
+    if err != nil {
+        log.Fatalf("Unmarshal rings: %v", err)
+    }
+    for k := range a.Items {
+        keys = append(keys, k)
+    }
+
+    return a
 }
 
 func getProperties(fname string) *properties {
@@ -711,6 +755,117 @@ func parseBroadcasterMessage(c *twitch.Client, message string, user string) {
     }
 }
 
+func parseWandID(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "wandID")
+    re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
+
+    var candidates []string
+    cost,err := strconv.Atoi(re.FindString(message))
+    if err != nil {
+        fmt.Println("oops wand ID cost fjcked up")
+    } else {
+        if wands, ok := wandsByCost[cost]; ok {
+            if candidates == nil {
+                candidates = wands
+            }
+        }
+    }
+    
+    words := strings.Fields(message)
+    if len(words) > 1 {
+        re := regexp.MustCompile("[^a-zA-Z0-9]+")
+        message = re.ReplaceAllString(message, "")
+        message = keyMatching.Closest(message)
+        if wands, ok := wandsByEngraveMessage[message]; ok {
+            if candidates == nil {
+                candidates = wands
+            } else {
+                intersection := intersect.Simple(candidates, wands)
+                candidates = nil
+                switch intersection := intersection.(type) {
+                    case []string:
+                        for _, v := range intersection {
+                            if candidates == nil {
+                                candidates = []string{v}
+                            } else {
+                                candidates = append(candidates, v)
+                            }
+                        }
+                    case string:
+                        candidates = []string{intersection}
+                    case []interface{}:
+                        if len(intersection) == 0 {
+                            output := "There aren't any wands that are that price with that engrave message"
+                            c.Say(channel, output)
+                            return
+                        } else {
+                            fmt.Printf("there are %d candidates \n", len(intersection))
+                            for i,_ := range intersection {
+                                candidates = append(candidates,intersection[i].(string))
+                            }
+                        }
+                    }
+                }
+            }
+    }
+
+    var output string
+
+    if len(candidates) == 0 {
+        output = "There aren't any wands that are that price with that engrave message"
+    } else if len(candidates) == 1 {
+        c.Say(channel, getWandMessage(candidates[0]))
+        return
+    } else {
+        output = "That could be a "
+        for i,wand := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + wand + "."
+            } else {
+                output = output + wand + ", "
+            }
+        }
+    }
+    c.Say(channel, output)
+}
+
+func parseScrollID(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "scrollID")
+    re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
+
+    var candidates []string
+    cost,err := strconv.Atoi(re.FindString(message))
+    if err != nil {
+        fmt.Println("oops scrollID cost fjcked up")
+        c.Say(channel, "The scrollID command needs to know the cost of the scroll you're interested in. Try '!scrollID 40'")
+    } else {
+        if scrolls, ok := scrollsByCost[cost]; ok {
+            if candidates == nil {
+                candidates = scrolls
+            }
+        }
+    }
+    
+    var output string
+
+    if len(candidates) == 0 {
+        output = "There aren't any scrolls that are that price."
+    } else if len(candidates) == 1 {
+        c.Say(channel, getScrollMessage(candidates[0]))
+        return
+    } else {
+        output = "That could be a "
+        for i,scroll := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + scroll + "."
+            } else {
+                output = output + scroll + ", "
+            }
+        }
+    }
+    c.Say(channel, output)
+}
+
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
@@ -720,6 +875,16 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     
     if strings.HasPrefix(message, "!") {
         message = strings.TrimPrefix(message, "!")
+        words := strings.Fields(message)
+        if words[0] == "wandID" {
+            fmt.Printf("%s wants to ID a wand\n", user)
+            parseWandID(c, channel, message, user)
+            return
+        } else if words[0] == "scrollID" {
+            fmt.Printf("%s wants to ID a scroll\n", user)
+            parseScrollID(c, channel, message, user)
+            return
+        }
     } else if strings.HasPrefix(message, "?") {
         message = strings.TrimPrefix(message, "?")
     } else {
@@ -752,6 +917,8 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         c.Say(channel, getScrollMessage(message))
     } else if _, ok := ringsInfo.Items[message]; ok {
         c.Say(channel, getRingMessage(message))
+    } else if _, ok := amuletsInfo.Items[message]; ok {
+        c.Say(channel, getAmuletMessage(message))
     } else if _, ok := propsInfo.Items[message]; ok {
         c.Say(channel, getPropertyMessage(message))
     } else if _, ok := comestiblesInfo.Items[message]; ok {
@@ -763,6 +930,8 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     } else if actualName, ok := appearsAs.Items[message]; ok {
         m.Message = "!"+actualName
         parseMessage(c, m)
+    } else if _, ok := wandsByEngraveMessage[message]; ok {
+        return // this is a shit way of handling this case
     } else {
         message = keyMatching.Closest(message)
         m.Message = "?"+message
@@ -786,6 +955,7 @@ func updateInfo() {
     wandsInfo = getWands("wands.yaml")
     scrollsInfo = getScrolls("scrolls.yaml")
     ringsInfo = getRings("rings.yaml")
+    amuletsInfo = getAmulets("amulets.yaml")
     propsInfo = getProperties("properties.yaml")
     comestiblesInfo = getComestibles("comestibles.yaml")
     potionsInfo = getPotions("potions.yaml")

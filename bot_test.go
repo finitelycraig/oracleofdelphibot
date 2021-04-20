@@ -50,7 +50,14 @@ func TestInjest(t *testing.T) {
 	if _, ok := monstersInfo.Items[match]; ok {
 		fmt.Println(getMonsterMessage(match))
 	}
-    query = "Wand of  daeth"
+    query = "scroll of light"
+
+	match = keyMatching.Closest(query)
+	if _, ok := scrollsInfo.Items[match]; ok {
+		fmt.Println(getScrollMessage(match))
+	}
+    
+    query = "wand of cancellation"
 
 	match = keyMatching.Closest(query)
 	if _, ok := wandsInfo.Items[match]; ok {
@@ -62,18 +69,29 @@ func TestInjest(t *testing.T) {
     cost := 500
 
     if wands, ok := wandsByCost[cost]; ok {
-        fmt.Println(wands)
         for _,wand := range wands {
             fmt.Println(wand)
         }
     }
-    fmt.Println(wandsByCost)
+
+    message := "the wand fights your attempt to write"
+	match = keyMatching.Closest(message)
+    fmt.Println(match)
+    fmt.Println("pooper")
+	if _, ok := wandsByEngraveMessage[match]; ok {
+        fmt.Println("poop")
+		fmt.Println(wandsByEngraveMessage[match])
+	}
+
+
+    fmt.Println()
+    fmt.Println(wandsByEngraveMessage)
 }
 
 // TestMessageLengths makes sure that no single message goes over the 510
 // character limit of twitch chat
 func TestMessageLengths(t *testing.T) {
-    limit := 510
+    limit := 500
     for k := range weaponsInfo.Items {
         messageLength := len(getWeaponMessage(k))
         if messageLength > limit {
@@ -98,8 +116,20 @@ func TestMessageLengths(t *testing.T) {
             t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
         }
     }
+    for k := range amuletsInfo.Items {
+        messageLength := len(getAmuletMessage(k))
+        if messageLength > limit {
+            t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
+        }
+    }
     for k := range wandsInfo.Items {
         messageLength := len(getWandMessage(k))
+        if messageLength > limit {
+            t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
+        }
+    }
+    for k := range scrollsInfo.Items {
+        messageLength := len(getScrollMessage(k))
         if messageLength > limit {
             t.Errorf("Querying %s results in an oversided output of %d characters\n", k, messageLength)
         }

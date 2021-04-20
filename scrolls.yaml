@@ -13,7 +13,7 @@ scrolls:
     ink: "7-13"
     appearance: "random"
     monster_use: false
-    effect: "It reveals the full identity of at least one unknown item in the inventory. If blessed/uncursed, it will identify 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item will be identified."
+    effect: "It reveals the identity of at least one unknown item in the inventory. If blessed/uncursed, it identifies 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item is identified."
     notes: "Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first."
   scroll of light:
     cost: 50
@@ -21,7 +21,7 @@ scrolls:
     ink: "4-7"
     appearance: "random"
     monster_use: false
-    effect: "It creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed has a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed has a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
+    effect: "Creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
     notes: ""
   scroll of blank paper:
     cost: 60
@@ -38,14 +38,14 @@ scrolls:
     appearance: "random"
     monster_use: false
     effect: "If uncursed/blessed, it will attempt to enchant your weapon: uncursed +1, blessed +1-4. When confused, it will erodeproof and fix damage. If cursed, it attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
-    notes: "If you are wielding a stack of weapons, the scroll will affect all of them. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
+    notes: "When wielding a stack of weapons, it affects all of them. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
   scroll of enchant armor:
     cost: 80
     weight: 5
     ink: "8-15"
     appearance: "random"
     monster_use: false
-    effect: "If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, there is a chance of >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed."
+    effect: "If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, enchantment is >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed."
     notes: "If the armor is >+3, a non-cursed scroll might destroy it."
   scroll of remove curse:
     cost: 80
