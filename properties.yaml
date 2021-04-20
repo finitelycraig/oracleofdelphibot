@@ -388,7 +388,7 @@ properties:
     effect: "means your amulet will strangle you to instadeath in five turns, unless you can somehow remove it before then"
     sources:
       - "wearing an amulet of strangulation"
-   slime:
+  slime:
     effect: "means that green slime will overtake your body and kill you, unless you can remove the slime or gain sliming resistance before that happens"
     sources:
       - "attack from a green slime"
