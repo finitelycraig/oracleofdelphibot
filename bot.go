@@ -8,7 +8,7 @@ import (
     "strings"
     "strconv"
     "regexp"
-//    "time"
+    "time"
     
     "gopkg.in/yaml.v2"
     "github.com/gempir/go-twitch-irc/v2"
@@ -18,6 +18,8 @@ import (
 
 var keys []string
 var keyMatching *closestmatch.ClosestMatch
+var bagOfMessages []string
+var messageMatching *closestmatch.ClosestMatch
 var weaponsInfo *weapons
 var armorInfo *armors
 var monstersInfo *monsters
@@ -36,6 +38,7 @@ var potionsInfo *potions
 var potionsByCost map[int][]string
 var artifactsInfo *artifacts
 var appearsAs *appearances
+var messagesMapping *messages
 
 var allowedBroadcasters *allowedChannels
 
@@ -45,6 +48,15 @@ type allowedChannels struct {
 
 type appearances struct {
     Items map[string]string `yaml:"appearances"`
+}
+
+type messages struct {
+    Items map[string]message `yaml:"messages"`
+}
+
+type message struct {
+    Meaning string `yaml:"meaning"`
+    Property string `yaml:"property"`
 }
 
 type weapons struct {
@@ -346,7 +358,7 @@ func getWandMessage(name string) string {
 func getRingMessage(name string) string {
     var output string 
     if val, ok := ringsInfo.Items[name]; ok {
-        output = fmt.Sprintf("A %s costs %dzm and grants %s. %s.",
+        output = fmt.Sprintf("A %s costs %dzm and grants %s. %s",
         strings.ReplaceAll(name,"-"," "), 
         val.Cost, 
         val.ExtrinsicGranted, 
@@ -720,6 +732,23 @@ func getAppearances(fname string) *appearances {
     return a
 }
 
+func getMessages(fname string) *messages {
+    var m *messages
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &m)
+    if err != nil {
+        log.Fatalf("Unmarshal message: %v", err)
+    }
+    for k := range m.Items {
+        bagOfMessages = append(bagOfMessages, k)
+    }
+
+    return m
+}
+
 func getAllowedChannels(fname string) *allowedChannels {
     var a *allowedChannels
     yamlFile, err := ioutil.ReadFile(fname)
@@ -866,6 +895,26 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
     c.Say(channel, output)
 }
 
+func parseMessageQuery(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "message")
+
+    words := strings.Fields(message)
+    if len(words) != 0 {
+        re := regexp.MustCompile("[^a-zA-Z0-9]+")
+        message = re.ReplaceAllString(message, "")
+        message = messageMatching.Closest(message)
+        if m, ok := messagesMapping.Items[message]; ok {
+            c.Say(channel, m.Meaning)
+            if m.Property != "" {
+                if _, ok := propsInfo.Items[m.Property]; ok {
+                    time.Sleep(500 * time.Millisecond)
+                    c.Say(channel, getPropertyMessage(m.Property))
+                }
+            }
+        }
+    }
+}
+
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
@@ -884,6 +933,9 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
             fmt.Printf("%s wants to ID a scroll\n", user)
             parseScrollID(c, channel, message, user)
             return
+        } else if words[0] == "message" {
+            fmt.Printf("%s wants to ID a message\n", user)
+            parseMessageQuery(c, channel, message, user)
         }
     } else if strings.HasPrefix(message, "?") {
         message = strings.TrimPrefix(message, "?")
@@ -934,6 +986,7 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         return // this is a shit way of handling this case
     } else {
         message = keyMatching.Closest(message)
+        fmt.Println(message)
         m.Message = "?"+message
         parseMessage(c, m)
     }
@@ -961,9 +1014,11 @@ func updateInfo() {
     potionsInfo = getPotions("potions.yaml")
     artifactsInfo = getArtifacts("artifacts.yaml")
     appearsAs = getAppearances("appearances.yaml")
+    messagesMapping = getMessages("messages.yaml")
 
     bagSizes := []int{2, 3, 4}
     keyMatching = closestmatch.New(keys, bagSizes)
+    messageMatching = closestmatch.New(bagOfMessages, bagSizes)
     fmt.Println(keyMatching.AccuracyMutatingWords())
 
 }
