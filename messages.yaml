@@ -596,3 +596,114 @@ messages:
   You hear someone counting money:
     meaning: "There is a vault on the level with gold inside."
     property: ""
+  You hear the howling of the CwnAnnwn...:
+    meaning: "You have less than 1⁄10 of your maximum hit points left. (The Cŵn Annwn are the hounds of Annwn, the underworld from Welsh mythology, whose howls are seen as a death omen)."
+    property: ""
+  You hear the wailing of the Banshee...:
+    meaning: "You have only 1 hit point left. (The Banshee is a spirit from Irish mythology whose wails can be heard when someone is on the verge of death)."
+    property: ""
+  You hear some noises <in the distance>:
+    meaning: "An unseen monster (typically your pet, or possibly one affected by conflict) attacked another one."
+    property: ""
+  You hear a <nearby/distant> zap:
+    meaning: "An unseen monster zapped a wand."
+    property: ""
+  You hear a chugging sound:
+    meaning: "An unseen monster drank a potion."
+    property: ""
+  You hear a monster behind the boulder. Perhaps that's why you cannot move it:
+    meaning: "You attempted to push a boulder onto a space already occupied by a monster."
+    property: ""
+  You hear the rumble of distant thunder...:
+    meaning: "You killed your pet. You get a −15 penalty to your alignment record and −1 to Luck."
+    property: ""
+  You hear the studio audience applaud!:
+    meaning: "You killed your pet while hallucinating. You get a −15 penalty to your alignment record and −1 to Luck."
+    property: ""
+  You hear a <jackal/wolf> howling at the moon:
+    meaning: "There is a werejackal or werewolf somewhere on the level."
+    property: ""
+  You hear a slurping sound:
+    meaning: "A gelatinous cube somewhere on the level ate one or more items."
+    property: ""
+  You hear several slurping sounds:
+    meaning: "A gelatinous cube somewhere on the level ate one or more items."
+    property: ""
+  You hear a crunching sound:
+    meaning: "A metallivore somewhere on the level ate a metallic object."
+    property: ""
+  You hear crashing rock:
+    meaning: "A dwarf or a tunneling monster somewhere on the level dug through a wall."
+    property: ""
+  You hear something crash through the ground:
+    meaning: "An unseen monster went through a hole in the ground."
+    property: ""
+  You hear a door open:
+    meaning: "A monster opened an unseen door."
+    property: ""
+  You hear a door crash open:
+    meaning: "A monster bashed through an unseen door."
+    property: ""
+  You hear a door unlock and open:
+    meaning: "A monster opened an unseen door that was locked. Shopkeepers and the Riders might unlock doors, as might a monster carrying a skeleton key (usually a nymph who has stolen one)."
+    property: ""
+  You hear a blast:
+    meaning: "An unseen gas spore exploded."
+    property: ""
+  You hear a crashing sound:
+    meaning: "An unseen door, secret door, or trap door was destroyed."
+    property: ""
+  You hear a rushing noise nearby:
+    meaning: "An unseen vortex or air elemental attempted to engulf you but attacked the wrong spot."
+    property: ""
+  You hear a splat nearby:
+    meaning: "An unseen ochre jelly or Juiblex attempted to engulf you but attacked the wrong spot."
+    property: ""
+  You hear a thud:
+    meaning: "An unseen monster shrank out of its body armor as it transformed (through a polymorph trap or lycanthropy)."
+    property: ""
+  You hear a clank:
+    meaning: "An unseen monster dropped its shield or helm as it transformed and became headless, horned, or handless."
+    property: ""
+  You hear a cracking sound:
+    meaning: "An unseen monster broke out of its body armor as it transformed and became too large or the wrong shape to wear it."
+    property: ""
+  You hear a ripping sound:
+    meaning: "An unseen monster tore out of its shirt or cloak as it transformed and became too large or the wrong shape to wear it."
+    property: ""
+  You hear chewing:
+    meaning: "An unseen monster ate a lizard corpse or acidic corpse to survive stoning."
+    property: ""
+  You hear a cough:
+    meaning: "An unseen canceled dragon attempted to use its breath, and there was no effect."
+    property: ""
+  You hear an awful gobbling noise:
+    meaning: "An unseen ghoul ate an old corpse."
+    property: ""
+  You hear a faint sloshing sound:
+    meaning: "Two globs merged on the floor, but you could not see the resulting glob"
+    property: ""
+  You hear a slow drip:
+    meaning: "There is a sink on the level."
+    property: ""
+  You hear a gurgling noise:
+    meaning: "There is a sink on the level."
+    property: ""
+  You hear dishes being washed!:
+    meaning: "There is a sink on the level, and you are hallucinating."
+    property: ""
+  You hear water falling on coins:
+    meaning: "You hear the splashing of a naiad."
+    property: ""
+  You hear bubbling water:
+    meaning: "There is a fountain on the level. (A naiad is a type of nymph in Greek mythology, associated with fountains and other sources of fresh water)."
+    property: ""
+  You hear a soda fountain!:
+    meaning: "There is a fountain on the level, and you are hallucinating."
+    property: ""
+  You hear <number> tumbler(s) click:
+    meaning: "You played a sequence of notes on a musical instrument near the castle's drawbridge. The number is how many notes matched the pitch of notes in the passtune, but did not match the position of those notes within the sequence."
+    property: ""
+  You hear <number> gear(s) turn:
+    meaning: "You played a sequence of notes on a musical instrument near the castle's drawbridge. The number is how many notes matched the pitch and position of notes in the passtune, but did not match the position of those notes within the sequence."
+    property: ""
