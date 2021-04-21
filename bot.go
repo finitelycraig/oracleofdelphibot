@@ -20,6 +20,8 @@ var keys []string
 var keyMatching *closestmatch.ClosestMatch
 var bagOfMessages []string
 var messageMatching *closestmatch.ClosestMatch
+var bagOfEngraves []string
+var engraveMatching *closestmatch.ClosestMatch
 var weaponsInfo *weapons
 var armorInfo *armors
 var monstersInfo *monsters
@@ -569,10 +571,10 @@ func getWands(fname string) *wands {
         for _,message := range v.Engrave {
             if _, ok := wandsByEngraveMessage[message]; ok {
                 wandsByEngraveMessage[message] = append(wandsByEngraveMessage[message], k)
-                keys = append(keys, message)
+                bagOfEngraves = append(bagOfEngraves, message)
             } else {
                 wandsByEngraveMessage[message] = []string{k}
-                keys = append(keys, message)
+                bagOfEngraves = append(bagOfEngraves, message)
             }
         }
     }
@@ -763,25 +765,33 @@ func getAllowedChannels(fname string) *allowedChannels {
     return a
 }
 
-func parseOracleMessage(c *twitch.Client, message string, user string) {
+func parseOracleMessage(c *twitch.Client, message string, user string) bool {
     if message == "join" {
         for _, allowedChannel := range allowedBroadcasters.Names {
             if user == allowedChannel {
                 c.Join(user)
-                return
+                return true
             }
         }
     } else if message == "depart" {
         c.Depart(user)
+        return true
+    } else if message == "update" {
+        updateInfo()
+        return true
     }
+    return false
 }
 
-func parseBroadcasterMessage(c *twitch.Client, message string, user string) {
+func parseBroadcasterMessage(c *twitch.Client, message string, user string) bool {
     if message == "oracle-depart" {
         c.Depart(user)
+        return true
     } else if message == "oracle-update" {
         updateInfo()
+        return true
     }
+    return false
 }
 
 func parseWandID(c *twitch.Client, channel, message, user string) {
@@ -804,7 +814,7 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
     if len(words) > 1 {
         re := regexp.MustCompile("[^a-zA-Z0-9]+")
         message = re.ReplaceAllString(message, "")
-        message = keyMatching.Closest(message)
+        message = engraveMatching.Closest(message)
         if wands, ok := wandsByEngraveMessage[message]; ok {
             if candidates == nil {
                 candidates = wands
@@ -895,7 +905,7 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
     c.Say(channel, output)
 }
 
-func parseMessageQuery(c *twitch.Client, channel, message, user string) {
+func parseNethackMessage(c *twitch.Client, channel, message, user string) {
     message = strings.TrimPrefix(message, "message")
 
     words := strings.Fields(message)
@@ -935,7 +945,8 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
             return
         } else if words[0] == "message" {
             fmt.Printf("%s wants to ID a message\n", user)
-            parseMessageQuery(c, channel, message, user)
+            parseNethackMessage(c, channel, message, user)
+            return
         }
     } else if strings.HasPrefix(message, "?") {
         message = strings.TrimPrefix(message, "?")
@@ -945,13 +956,16 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
 
     // Deal with requests for the oracle's attention
     if channel == "oracleofdelphibot" {
-        parseOracleMessage(c, message, user)
-        return
+        if ok := parseOracleMessage(c, message, user); ok {
+            return
+        }
     }
 
     // Deal with special requests from broadcasters
     if user == channel {
-        //parseBroadcasterMessage(c, message, user)
+        if ok := parseBroadcasterMessage(c, message, user); ok {
+            return
+        }
     }
 
     // Deal with all other messages
@@ -1019,6 +1033,7 @@ func updateInfo() {
     bagSizes := []int{2, 3, 4}
     keyMatching = closestmatch.New(keys, bagSizes)
     messageMatching = closestmatch.New(bagOfMessages, bagSizes)
+    engraveMatching = closestmatch.New(bagOfEngraves, bagSizes)
     fmt.Println(keyMatching.AccuracyMutatingWords())
 
 }
