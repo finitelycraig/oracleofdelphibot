@@ -593,9 +593,6 @@ messages:
   You feel besieged:
     meaning: "You are hemmed in by monsters during the Endgame."
     property: ""
-  You hear someone counting money:
-    meaning: "There is a vault on the level with gold inside."
-    property: ""
   You hear the howling of the CwnAnnwn...:
     meaning: "You have less than 1⁄10 of your maximum hit points left. (The Cŵn Annwn are the hounds of Annwn, the underworld from Welsh mythology, whose howls are seen as a death omen)."
     property: ""
@@ -706,4 +703,220 @@ messages:
     property: ""
   You hear <number> gear(s) turn:
     meaning: "You played a sequence of notes on a musical instrument near the castle's drawbridge. The number is how many notes matched the pitch and position of notes in the passtune, but did not match the position of those notes within the sequence."
+    property: ""
+  You hear rumbling in the distance:
+    meaning: "An unseen monster set off a rolling boulder trap."
+    property: ""
+  You hear someone bowling:
+    meaning: "An unseen monster set off a rolling boulder trap, and you are hallucinating."
+    property: ""
+  You hear a rumbling stop abruptly:
+    meaning: "An unseen boulder rolled onto a teleportation trap."
+    property: ""
+  You hear a loud crash!:
+    meaning: "An unseen rolling boulder hit another boulder."
+    property: ""
+  You hear a distant explosion:
+    meaning: "A monster opened an unseen trapped door."
+    property: ""
+  Kaablamm! You hear an explosion in the distance:
+    meaning: "An unseen monster stepped on a land mine."
+    property: ""
+  You hear a distant squeaking sound:
+    meaning: "An unseen monster stepped on a squeaky board."
+    property: ""
+  You hear the roar of a confused bear!:
+    meaning: "An unseen bugbear or owlbear got stuck in a web."
+    property: ""
+  You hear the roar of an angry bear!:
+    meaning: "An unseen bugbear or owlbear got stuck in a bear trap."
+    property: ""
+  You hear a deafening roar!:
+    meaning: "A magic trap you activated summoned monsters in your vicinity. This deafens you."
+    property: ""
+  You hear distant howling:
+    meaning: "You stepped on a magic trap. No effect."
+    property: ""
+  You hear the moon howling at you:
+    meaning: "You stepped on a magic trap while hallucinating. No effect."
+    property: ""
+  You hear a loud click!:
+    meaning: "An arrow trap you stepped on was destroyed instead of activating."
+    property: ""
+  You hear a soft click!:
+    meaning: "A dart trap you stepped on was destroyed instead of activating."
+    property: ""
+  You hear a twang followed by a thud:
+    meaning: "An unseen trap door was locked."
+    property: ""
+  You hear a sound reminiscent of a seal barking:
+    meaning: "There is a zoo on the level."
+    property: ""
+  You hear a sound reminiscent of an elephant stepping on a peanut:
+    meaning: "There is a zoo on the level."
+    property: ""
+  You hear Doctor Doolittle!:
+    meaning: "There is a zoo on the level, and you are hallucinating."
+    property: ""
+  You hear the footsteps of a guard on patrol:
+    meaning: ""There is a vault on the level."
+    property: ""
+  You hear someone counting money:
+    meaning: ""There is a vault on the level with gold inside."
+    property: ""
+  You hear someone searching:
+    meaning: "There is an empty vault on the level."
+    property: ""
+  You hear Ebenezer Scrooge!:
+    meaning: "There is a vault on the level, and you are hallucinating."
+    property: ""
+  You hear the quarterback calling the play:
+    meaning: "There is a vault on the level with gold inside, and you are hallucinating. (A quarterback is a position in American football. When calling a play, a quarterback characteristically lists a series of numbers)."
+    property: ""
+  You hear snoring snakes:
+    meaning: "The Oracle is on the level."
+    property: ""
+  You hear a strange wind:
+    meaning: "The Oracle is on the level."
+    property: ""
+  You hear convulsive ravings:
+    meaning: "The Oracle is on the level."
+    property: ""
+  You hear someone say 'No more woodchucks!':
+    meaning: "The Oracle is on the level, and you are hallucinating."
+    property: ""
+  You hear a loud ZOT!:
+    meaning: "The Oracle is on the level, and you are hallucinating."
+    property: ""
+  You hear the tones of courtly conversation:
+    meaning: "There is a throne room on the level."
+    property: ""
+  You hear a sceptre pounded in judgment:
+    meaning: "There is a throne room on the level."
+    property: ""
+  Someone shouts 'Off with <his/her> head!':
+    meaning: "There is a throne room on the level."
+    property: ""
+  You hear Queen Beruthiel's cats!:
+    meaning: "There is a throne room on the level, and you are hallucinating. (Queen Berúthiel of Tolkien's works was notorious for her cats)."
+    property: ""
+  You hear someone praising <deity>:
+    meaning: "There is a temple to the deity on the level, attended by a coaligned priest (who is able to speak)."
+    property: ""
+  You hear someone beseeching <deity>:
+    meaning: "There is a temple to the deity on the level, attended by a coaligned priest (who is able to speak)."
+    property: ""
+  You hear an an animal carcass being offered in sacrifice:
+    meaning: "There is a temple on the level attended by a coaligned priest, and you can't see the priest or altar."
+    property: ""
+  You hear a strident plea for donations:
+    meaning: "There is a temple on the level with a coaligned priest who can speak, and you are hallucinating."
+    property: ""
+  You hear a low buzzing:
+    meaning: "There is a beehive on the level."
+    property: ""
+  You hear an angry drone:
+    meaning: "There is a beehive on the level."
+    property: ""
+  You hear bees in your bonnet!:
+    meaning: "There is a beehive on the level. You are hallucinating and wearing a helm."
+    property: ""
+  You hear bees in your (nonexistent) bonnet!:
+    meaning: "There is a beehive on the level. You are hallucinating and not wearing a helm."
+    property: ""
+  You suddenly realize it is unnaturally quiet:
+    meaning: "There is a graveyard on the level."
+    property: ""
+  The <hair> on the back of your <neck> stands up:
+    meaning: "There is a graveyard on the level."
+    property: ""
+  The <hair> on your <head> seems to stand up:
+    meaning: "There is a graveyard on the level, and you are hallucinating."
+    property: ""
+  You hear blades being honed:
+    meaning: "There is a barracks on the level."
+    property: ""
+  You hear loud snoring:
+    meaning: "There is a barracks on the level."
+    property: ""
+  You hear dice being thrown:
+    meaning: "There is a barracks on the level."
+    property: ""
+  You hear General MacArthur!:
+    meaning: "There is a barracks on the level, and you are hallucinating. (General of the Army Douglas MacArthur was a famous United States Army general and field marshal of the Philippine Army)."
+    property: ""
+  You hear mosquitoes!:
+    meaning: "There is a swamp on the level."
+    property: ""
+  You smell marsh gas!:
+    meaning: "There is a swamp on the level."
+    property: ""
+  You hear Donald Duck!:
+    meaning: "There is a swamp on the level, and you are hallucinating."
+    property: ""
+  You hear someone cursing shoplifters:
+    meaning: "There is a shop on the level, attended by a shopkeeper."
+    property: ""
+  You hear the chime of a cash register:
+    meaning: "There is a shop on the level, attended by a shopkeeper."
+    property: ""
+  You hear Neiman and Marcus arguing!:
+    meaning: "There is a shop on the level attended by a shopkeeper, and you are hallucinating. (Neiman Marcus is an upscale department store in the United States)."
+    property: ""
+  You hear something shatter!:
+    meaning: "An unseen fragile item was destroyed."
+    property: ""
+  You hear a crumbling sound:
+    meaning: "An unseen boulder or statue was destroyed."
+    property: ""
+  You hear maniacal laughter close by:
+    meaning: "You read a scroll of scare monster, and at least one non-tame monster was scared."
+    property: ""
+  You hear maniacal laughter in the distance:
+    meaning: "You read a scroll of scare monster, but no non-tame monsters were affected."
+    property: ""
+  You hear sad wailing close by:
+    meaning: "You read a scroll of scare monster while confused, or the scroll was cursed, and at least one non-tame monster was awoken, un-paralyzed, or un-scared."
+    property: ""
+  You hear sad wailing in the distance:
+    meaning: "You read a scroll of scare monster while confused, or the scroll was cursed, and no non-tame monsters were affected."
+    property: ""
+  You hear a muffled shatter:
+    meaning: "You kicked a container and destroyed a fragile item inside."
+    property: ""
+  You hear a muffled cracking:
+    meaning: "You kicked a container and broke an egg inside."
+    property: ""
+  You barely hear faint splashing:
+    meaning: "You applied a stethoscope up or down while underwater."
+    property: ""
+  You hear the crackling of hellfire:
+    meaning: "You applied a stethoscope to the floor of the castle, beneath which lies the Valley of the Dead."
+    property: ""
+  You hear your heart beat:
+    meaning: "You applied a cursed stethoscope; this has a 50% chance of replacing the normal message."
+    property: ""
+  You hear a faint typing noise:
+    meaning: "You applied a stethoscope to the edge of the map."
+    property: ""
+  You hear a hollow sound. This must be a secret <door/passage>!:
+    meaning: "You applied a stethoscope to a wall concealing a secret door or secret passage."
+    property: ""
+  You hear a voice say, "It's dead, Jim.":
+    meaning: "You applied a stethoscope to a corpse while hallucinating. (This is a reference to a phrase often uttered by Dr. McCoy in Star Trek upon examining or discovering the body of a recently deceased)."
+    property: ""
+  You hear a bugle playing reveille!:
+    meaning: "A sergeant, lieutenant, or captain on the level used a bugle."
+    property: ""
+  You hear the rattle of battle gear being readied:
+    meaning: "A soldier on the level is awakened."
+    property: ""
+  You hear hissing gas:
+    meaning: "An unseen moat was boiled away by fire."
+    property: ""
+  You hear a soft crackling:
+    meaning: "An unseen moat was frozen by a bolt of cold.
+    property: ""
+  You hear a crackling sound:
+    meaning: "An unseen square of water on the Plane of Water was frozen by a bolt of cold."
     property: ""
