@@ -17,7 +17,8 @@ wands:
     maximum_charges: "8"
     type: "random"
     engrave:
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: ""
     broken: ""
     notes: "It is non-magical."
@@ -40,7 +41,8 @@ wands:
     maximum_charges: 15
     type: "non-directional"
     engrave:
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "Gives you enlightenment: you see your properties and exercise wisdom. Will let you see if it's safe to pray."
     broken: ""
     notes: "Useful for identifying noncursed rings and amulets."
@@ -51,7 +53,8 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave:
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "It will close and lock chests and doors and repair them if broken. It will create a door if the doorway doesn't have one."
     broken: ""
     notes: ""
@@ -84,7 +87,8 @@ wands:
     maximum_charges: 8 
     type: "ray"
     engrave:
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "Unlocks large boxes and chests and fixes the lock if broken. It reveals and unlocks hidden doors and unlocks un-hidden doors. The door will remain closed. It also opens drawbridges, triggers trapdoors and falling rock traps and releases you or a monster from a bear trap or web."
     broken: ""
     notes: "In most instances, it will be identified if it has any observable effect."
@@ -95,7 +99,8 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: 
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "It can give you information about a monster or the contents of a container. If there is a suitable target in the direction you zap, it shows the name, alignment, level, HP, AC, status and inventory of the target."
     broken: ""
     notes: "It does not anger peaceful targets."
@@ -106,7 +111,8 @@ wands:
     maximum_charges: 15
     type: "non-directional"
     engrave:
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "It detects all undiscovered doors, mimics and traps in a radius of 8 squares in line-of-sight upon zapping/engraving."
     broken: ""
     notes: ""
@@ -150,7 +156,8 @@ wands:
     maximum_charges: 8 
     type: "beam"
     engrave: 
-      - ""
+      - "no message"
+      - "nothing happened"
     effect: "Zapping an undead monster deals 1d8 points of damage and causes the monster to flee. The wand can also be used to unturn dead, reviving corpses and rejuvenating eggs."
     broken: "When broken, there is an explosion causing from 1 to (4xcharges) damage and monsters/objects in affected squares are turned."
     notes: ""

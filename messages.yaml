@@ -264,7 +264,7 @@ messages:
     meaning: "You were hit and confused by a thrown potion of confusion or potion of booze."
     property: ""
   You feel confused:
-    meaning: "You were confused from reading a cursed scroll of confuse monster, or read any such scroll while polymorphed into any non-@, confusing your monster form.
+    meaning: "You were confused from reading a cursed scroll of confuse monster, or read any such scroll while polymorphed into any non-@, confusing your monster form."
     property: ""
   You feel rather light headed:
     meaning: "You were confused as a result of eating rotten food."
@@ -378,10 +378,10 @@ messages:
     meaning: "You triggered a magic trap and it created monsters around you after blinding and deafening you, but you were already deaf beforehand; the deafness is extended for 1d5 + 15 turns."
     property: ""
   You feel tired:
-    meaning: "This is one of six "odd feeling" results from stepping on a magic trap, all of which produce different messages with no effect. It is distinct from the message given for losing sleep resistance."
+    meaning: "This is one of six 'odd feeling' results from stepping on a magic trap, all of which produce different messages with no effect. It is distinct from the message given for losing sleep resistance."
     property: ""
-  You feel [oddly] like the prodigal son: 
-    meaning: ""Yearning for your homeland" is an "odd feeling" resulting from stepping on a magic trap, and you got it while already on the home level of your quest. Female characters feel "oddly"."
+  You feel oddly like the prodigal son: 
+    meaning: "'Yearning for your homeland' is an 'odd feeling' resulting from stepping on a magic trap, and you got it while already on the home level of your quest. Female characters feel 'oddly'."
     property: ""
   You feel charismatic!:
     meaning: "You stepped on a magic trap and gained a point of charisma. All adjacent tameable monsters are tamed, and non-tameable monsters are made peaceful; this ignores monster magic resistance."
@@ -405,7 +405,7 @@ messages:
     meaning: "You were in a shop while the shopkeeper magically repaired the wall, but you were blind."
     property: ""
   You feel a sudden chill:
-    meaning: "One possible "no effect" message of dipping into a fountain."
+    meaning: "One possible 'no effect' message of dipping into a fountain."
     property: ""
   You feel the presence of evil:
     meaning: "You summoned a water demon by quaffing from or dipping into a fountain while blind."
@@ -592,4 +592,7 @@ messages:
     property: ""
   You feel besieged:
     meaning: "You are hemmed in by monsters during the Endgame."
+    property: ""
+  You hear someone counting money:
+    meaning: "There is a vault on the level with gold inside."
     property: ""

@@ -32,7 +32,7 @@ tools:
   bag of holding:
     cost: 100
     weight: 15
-    use: "make items lighter"
+    use: "makes items lighter (1/4 if blessed, 1/2 if uncursed and 2x if cursed)"
     creation: "contains 0-1 items"
     magic: true
   chest:
