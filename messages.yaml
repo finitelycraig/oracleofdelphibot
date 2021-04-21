@@ -1,199 +1,595 @@
 messages:
-  You feel that eating <creature> was a bad idea: "You gained the aggravate monster intrinsic permanently by eating a cat or dog, unless you are an orc or Caveman."
-  You feel less attractive: "You lost the aggravate monster intrinsic due to a gremlin attacking you at night."
-  You feel very firm: "You gained disintegration resistance from eating an appropriate corpse, e.g. that of a black dragon."
-  You feel totally together, man: "You gained disintegration resistance from eating an appropriate corpse, e.g. that of a black dragon, while hallucinating."
-  You feel sensitive!: "You gained the warning intrinsic after reaching the appropriate experience level."
-  You feel less sensitive!: "You lost the warning intrinsic due to level drain."
-  You feel healthy: "You acquired poison resistance from reaching XL 3 as a Monk, or from eating an appropriate corpse, e.g. quasit or killer bee."
-  You feel especially healthy: "You had extrinsic posion resistance but you acquired poison resistance from reaching XL 3 as a Monk, or from eating an appropriate corpse (e.g. quasit or killer bee)."
-  You feel hardy!: "You reached XL 20 as a Tourist."
-  You feel a little sick!: "You lost the poison resistance intrinsic due to level drain or a gremlin attack."
-  You feel a momentary chill: "You gained the fire resistance intrinsic from eating an appropriate corpse (e.g. fire giant)."
-  You be chillin': "You gained the fire resistance intrinsic from eating an appropriate corpse (e.g. fire giant) while hallucinating."
-  You feel cool!: "You gained the fire resistance intrinsic by reaching XL 11 as a Monk, or XL 20 as a Priest."
-  You feel warmer: "You lost the fire resistance intrinsic due a to a gremlin attack or level drain."
-  You don't feel hot!: "You were hit by a ray of fire (e.g. hell hound, wand of fire) with fire resistance."
-  The fire doesn't feel hot!: "You were hit by a monster's fire-element melee fire attack (e.g. fire ant) with fire resistance."
-  You feel rather warm: "You zapped yourself with a ray from a wand of fire or fire horn with fire resistance."
-  You feel mildly warm: "You were hit with a passive fire attack (e.g. red mold) with fire resistance."
-  You feel mildly hot: "A monster engulfing you tried to do fire damage (e.g. steam vortex), but you have fire resistance."
-  You're enveloped in flames. But you resist the effects.: "You were hit by a monster's fire spell with fire resistance."
-  It seems quite tasty: "You quaffed from a sink and got scalding hot water, but you have fire resistance."
-  You are hit by molten lava: "A nearby boulder falling into lava splashes it on you, but you have fire resistance. Without resistance, this message has an exclamation mark."
-  Oh look, what a pretty fire in your <hands>: "You read a scroll of fire while confused, and you have fire resistance."
-  You feel a pleasant warmth in your <hands>: "You read a scroll of fire while confused and blind, and you have fire resistance."
-  You aren't hurt!: "Something in your inventory being destroyed (e.g. wand destroyed by lightning) does fire damage, but you have fire resistance."
-  You feel full of hot air: "You gained the cold resistance intrinsic from eating an appropriate corpse."
-  You feel warm!: "You gainted the cold resistance intrinsic by reaching XL 13 as a Monk."
-  You feel cooler: "You lost the cold resistance intrinsic to a gremlin attack or level drain; the latter will add an exclamation point."
-  You don't feel cold: "You were hit by a ray of cold with cold resistance."
-  The frost doesn't seem cold!: "You were hit by a monster's cold-element melee attack with cold resistance."
-  You feel a little chill: "You zapped yourself with a ray of cold with cold resistance."
-  You feel a mild chill: "You were hit by a passive cold attack (e.g. blue jelly) with cold resistance."
-  You feel mildly chilly: "A monster engulfing you dealt cold damage (i.e. ice vortex), but you have cold resistance."
-  You're covered in frost. But you resist the effects.: "You were hit by a monster's cold spell (i.e. Asmodeus) with cold resistance."
-  You feel wide awake: "You gained the sleep resistance intrinsic from eating the appropriate corpse (e.g. any kind of elf)."
-  You feel awake!: "You gained the sleep resistance intrinsic by reaching XL 4 as an Elf."
-  You feel tired!: "You lost the sleep resistance intrinsic due to level drain or a gremlin attack; this is not to be confused with the same message from a magic trap."
-  Your health currently feels amplified!: "You gained the shock resistance intrinsic from eating an appropriate corpse (e.g. electric eel, storm giant)."
-  You feel grounded in reality: "You gained the shock resistance intrinsic from eating an appropriate corpse (e.g. electric eel, storm giant) while hallucinating."
-  You feel insulated!: "You gained the shock resistance intrinsic by reaching XL 15 as a Monk."
-  You feel conductive!: "You lost the shock resistance intrinsic due to a gremlin attack or level drain."
-  You feel a mild tingle: "You were hit by shock damage from a passive attack or engulfing monster (e.g. energy vortex) with shock resistance"
-  You feel hidden!: "You permanently gained the invisibility intrinsic by eating a stalker corpse while already (temporarily) invisible."
-  You feel rather itchy under your mummy wrapping: "You attempted to become invisible while wearing a mummy wrapping."
-  You see an image of someone stalking you. But it disappears.: "You gained the see invisible intrinsic by quaffing from a fountain. Wisdom is exercised."
-  You feel very self-conscious. But it passes.: "You gained the see invisible intrinsic by quaffing from a fountain while blind. Wisdom is exercised."
-  You feel transparent: "You gained the see invisible intrinsic by quaffing from a fountain while blind and invisible. Wisdom is exercised."
-  Your vision becomes clear!: "You gained the see invisible intrinsic from sitting on a throne."
-  You thought you saw something!: "You lost the see invisible intrinsic to a gremlin attack."
-  You tawt you taw a puttie tat!: "You lost the see invisible intrinsic to a gremlin attack while hallucinating."
-  You feel vulnerable: "You lost intrinsic protection to a gremlin attack."
-  You feel perceptive!: "You gained automatic searching from reaching XL 9 as a Monk, or XL 10 as an Archaeologist, Rogue, or Tourist."
-  You feel quick!: "You gained intrinsic speed by reaching XL 7 as a Barbarian, Caveman, Knight, or Valkyrie."
-  Your quickness feels more natural: "You gained intrinsic speed from a wand of speed monster while wearing speed boots."
-  You feel slow!: "You lost intrinsic speed as a result of level drain."
-  You feel very jumpy: "You gained the teleportitis intrinsic from eating an appropriate corpse (e.g. any nymph)."
-  You feel diffuse: "You gained the teleportitis intrinsic from eating an appropriate corpse (e.g. any nymph) while hallucinating."
-  You feel less jumpy: "You lost the teleportitis intrinsic due to a gremlin attack."
-  You feel controlled!: "You gained intrinsic teleport control by reaching XL 17 as a Wizard or Monk."
-  You feel uncontrolled!: "You lost the teleport control intrinsic through level drain."
-  You feel in control of yourself: "You gained the teleport control intrinsic from eating an appropriate corpse (e.g. tengu)."
-  You feel centered in your personal space: "You gained the teleport control intrinsic from eating an appropriate corpse (e.g. tengu) while hallucinating."
-  You feel a strange mental acuity: "You gained intrinsic telepathy from eating an appropriate corpse (e.g. floating eye)."
-  You feel in touch with the cosmos: "You gained intrinsic telepathy from eating an appropriate corpse (e.g. floating eye) while hallucinating."
-  You feel <very> strong!: "You gained one or more points of strength, e.g. from exercise, a potion of gain ability or eating a fresh giant or ettin corpse."
-  You feel <very> weak!: "You lost one or more points of strength, e.g. as a result of abuse or sitting on a throne."
-  You suddenly feel weaker!: "You were hit by the drain strength monster spell and lost strength. This is still displayed even if the stat loss is blocked through a ring of sustain ability."
-  You feel momentarily weakened: "You were hit by the drain strength monster spell but you have magic resistance and are completely unaffected."
-  You feel weaker: "You lost one or more points of strength from quaffing a non-blessed potion of sickness."
-  You feel <very> agile!: "You gained one or more points of dexterity, e.g. through exercise or a potion of gain ability."
-  You feel <very> clumsy!: "You lost one or more points of dexterity, e.g. as a result of abuse or sitting on a throne."
-  You feel <very> tough!: "You gained one or more points of constitution, e.g. through exercise or a potion of gain ability."
-  You feel <very> fragile!: "You lost one or more points of constitution, e.g. as a result of abuse or sitting on a throne."
-  You feel very sick: "You lost one or more points of constitution from quaffing a non-blessed potion of sickness."
-  You feel <very> smart!: "You gained one or more points of intelligence, e.g. through exercise or a potion of gain ability."
-  You feel <very> stupid!: "You lost one or more points of intelligence, e.g. as a result of abuse, mind flayer attack, or sitting on a throne."
-  You feel like a scarecrow: "You died of brainlessness from a brain-eating attack landing while your intelligence is 3 in explore or wizard mode, but chose not to die. This sets your intelligence to 5, minus up to 2 points from the successful brain-eating attack that would have killed you."
-  You feel <very> wise!: "You gained one or more points of wisdom, e.g. through exercise or a potion of gain ability."
-  You feel <very> foolish!: "You lost one or more points of wisdom, e.g. as a result of abuse or sitting on a throne."
-  You feel <very> charismatic!: "You gained one or more points of charisma, e.g. through exercise or a potion of gain ability."
-  You feel <very> repulsive!: "You lost one or more points of charisma, e.g. as a result of abuse or sitting on a throne."
-  You feel more confident in your weapon skills: "You practiced a weapon skill enough, and can now enhance it."
-  You feel more confident in your spell casting skills: "You practiced a spell-casting skill enough, and can now enhance it."
-  You feel more confident in your fighting skills: "You practiced a combat skill enough, and can now enhance it."
-  You feel more confident in your skills: "You gained a skill slot by gaining a level, and can now enhance a sufficiently practiced skill."
-  You feel you could be more dangerous!: "After enhancing a skill, you can enhance it or skills further."
-  You feel like you've been here before.: "You entered a part of the dungeon that you have forgotten due to a scroll of amnesia or a successful brain-eating attack."
-  You feel somewhat dizzy: "You were hit and confused by a thrown potion of confusion or potion of booze."
-  You feel confused: "You were confused from reading a cursed scroll of confuse monster, or read any such scroll while polymorphed into any non-@, confusing your monster form.
-  You feel rather light headed: "You were confused as a result of eating rotten food."
-  You feel rather trippy: "You were confused as a result of eating rotten food while hallucinating."
-  You feel less confused now: "You are no longer confused."
-  You feel less trippy now: ""You are no longer confused but you are hallucinating."
-  You feel feverish: "You have contracted lycanthropy from a werecreature."
-  You feel purified: "You have been cured of lycanthropy."
-  You feel deathly sick: "You have contracted sickness from food poisoning or a source of illness."
-  You feel sick: "You narrowly avoided sickness from food poisoning, and lost 1d8 hit points."
-  You feel even worse: "You were hit by a disease attack or contracted illness by other means when already sick, reducing your 'time to live' counter to half of its old value."
-  You feel much worse: "You were hit by a disease attack or contracted illness by other means when already sick, reducing your 'time to live' counter to half of its old value."
-  You feel somewhat better: "You cured food poisoning by vomiting, but are still suffering from illness. Your 'time to live' counter is doubled."
-  You are feeling mildly nauseated: "You developed nausea from eating a cursed tin, a rotten egg, a tripe ration (unless you are an orc or Caveman), or a clove of garlic while polymorphed into an undead form. This message prints when you have 14 turns of nausea timeout left."
-  You feel slightly confused: "You developed nausea from eating a cursed tin, a rotten egg, a tripe ration (unless you are an orc or Caveman), or a clove of garlic while polymorphed into an undead form. This message prints when you have 11 turns of nausea timeout left; you only actually become confused for 2d4 (more) turns when the timeout reaches 8, then 6."
-  You feel much less nauseated now: "You are no longer nauseated, e.g. after curing yourself with a unicorn horn."
-  You feel limber!: "You were cured of stoning, e.g. by eating a lizard corpse."
-  You feel a bit steadier now: "You recovered from being stunned."
-  You feel less wobbly now: "You recovered from being stunned while hallucinating."
-  You feel like a hypocrite: "You attacked while over an Elbereth engraving. This carries a -5 alignment penalty and makes the engraving disappear."
-  You feel like an evil coward for using a poisoned weapon: "You hit with a poisoned weapon as a lawful character, which carries an -1 alignment penalty."
-  You feel like a despicable grave-robber!: "As a lawful Archaeologist, you dug up a grave."
-  You feel guilty about damaging such a historic statue: "As an Archaeologist, you broke a historic statue."
-  You feel like a glutton!: "As a Knight, you ate while satiated, incurring a -1 alignment penalty for violating the code of conduct."
-  You feel like a common thief: "As a Knight, you dug down while in a shop, and the shopkeeper was still alive."
-  You feel partially absolved: "You sacrificed a corpse at a co-aligned altar while your alignment was negative, increasing it up to a maximum of zero depending on the corpse."
-  You feel an urge to return to the surface: "You offered the Amulet of Yendor or its cheap plastic imitation on a co-aligned non-high altar."
-  You feel ashamed: "You offered the Amulet of Yendor or its cheap plastic imitation on a cross-aligned non-high altar."
-  You feel homesick: ""You offered the Amulet of Yendor or its cheap plastic imitation on a co-aligned or cross-aligned non-high altar while hallucinating."
-  Unluckily, you feel the power of <your god> decrease: "You sacrificed a corpse at a cross-aligned non-high altar, but the altar was not converted; this abuses your wisdom and you lose a point of Luck."
-  You feel the power of <your god> increase: ""You sacrificed a corpse at a cross-aligned non-high altar and successfully converted it to your alignment; this abuses your wisdom and you lose a point of Luck."
-  You feel in good health again: "You prayed successfully and restored one or more attributes that had been lowered."
-  You feel self-knowledgeable: "You were enlightened, e.g. by using a wand or potion of enlightenment."
-  You feel your magical energy drain away: "You stepped on an anti-magic trap and your energy was drained."
-  You feel momentarily lethargic: ""You stepped on an anti-magic trap and your energy was drained, but your maximum energy was already 0."
-  You feel sluggish: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. The resulting damage was less than 1/4 of your HP."
-  You feel very lethargic: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. The resulting damage was at least 1/4 of your HP."
-  You feel unbearably torpid!: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. You were killed by the implosion from HP loss."
-  You feel rankled: "You triggered a magic trap and it created monsters around you after blinding and deafening you, but you were already deaf beforehand; the deafness is extended for 1d5 + 15 turns."
-  You feel tired: "This is one of six "odd feeling" results from stepping on a magic trap, all of which produce different messages with no effect. It is distinct from the message given for losing sleep resistance."
-  You feel [oddly] like the prodigal son: ""Yearning for your homeland" is an "odd feeling" resulting from stepping on a magic trap, and you got it while already on the home level of your quest. Female characters feel "oddly"."
-  You feel charismatic!: "You stepped on a magic trap and gained a point of charisma. All adjacent tameable monsters are tamed, and non-tameable monsters are made peaceful; this ignores monster magic resistance."
-  You feel momentarily different: "You stepped on a polymorph trap, but had magic resistance or were wearing an amulet of unchanging."
-  You feel a draft: "A monster has tunneled through a secret corridor, or a secret door was detected on the Rogue level."
-  You feel like <enlisting/marching/protesting/fleeing>: "A monster has tunneled through a secret corridor, or a secret door was detected on the Rogue level, and you are hallucinating."
-  You feel an unexpected draft: "A monster has broken through a door."
-  You feel like you are 1-A/4-F: "A monster has broken through a door and you are hallucinating."
-  You feel more claustrophobic than before!: "You were in a shop while the shopkeeper magically repaired the wall, but you were blind."
-  You feel a sudden chill: "One possible "no effect" message of dipping into a fountain."
-  You feel the presence of evil: "You summoned a water demon by quaffing from or dipping into a fountain while blind."
-  You feel a strange sensation: "You would have lost your money, but your wallet had no gold."
-  You feel much, much better!: "Your HP is fully restored, which may also increase your maximum HP; this cures blinding, sickness and wounded legs."
-  You feel your luck is changing: "You gain a point of Luck; if your natural Luck is high enough, this effect is replaced with a wish."
-  You feel somehow out of place...: "No effect."
-  You feel very comfortable here: "You are polymorphed into a queen bee, gnome king, dwarf king, ogre king or Elvenking."
-  You feel like sitting in a corner: "You put on a dunce cap, and your intelligence was greater than or equal to 6; the cap autocurses, fixes your intelligence and wisdom at 6, and prevents any changes to them. Removing the cap will restore those stat to their original values."
-  You feel giddy: "You put on a dunce cap, and your intelligence was less than 6; the cap autocurses, fixes your intelligence and wisdom at 6, and prevents any changes to them. Removing the cap will restore those stat to their original values."
-  You feel completely healed: "You quaffed a potion of full healing."
-  You feel lackluster: "You quaffed a cursed potion of gain energy."
-  You feel lonely: "You quaffed a blessed potion of monster detection, but there were no other monsters on the level."
-  You feel a lack of something: "You quaffed a potion of object detection, and remembered objects that were on the map are now gone."
-  You feel a little strange: "You quaffed a potion of polymorph."
-  You feel a little normal: "You quaffed a potion of polymorph while hallucinating"
-  You feel rather tired: "You inhaled vapors from a potion of sleeping."
-  You feel full of awe: "You drank holy water and you were not polymorphed into a demon or undead."
-  You feel quite proud of yourself: "You drank unholy water while Chaotic, a demon, or undead."
-  You feel full of dread: "You drank unholy water while non-Chaotic and not polymorphed into a demon, or undead."
-  You feel charged up!: "You read a non-cursed scroll of charging while confused."
-  You feel discharged: "You read a cursed scroll of charging while confused."
-  You have a feeling of loss: "You attempted to charge an non-chargeable item."
-  You feel very greedy: "You read a cursed scroll of gold detection, and there are traps on the level."
-  You feel rushing air tickle your nose: "You applied a tin whistle while deaf."
-  You feel vibrations: "A beam-type wand was zapped, but it was blocked by a door while out of your sight."
-  You feel that monsters are aware of your presence: "You quaffed a cursed potion of invisibility, or a nearby monster has cast the aggravate monster spell. This wakes up all sleeping monsters on the level, and there is a one-fifth chance that paralyzed monsters are unparalyzed. The Wizard of Yendor may also invoke this effect as a means of remote harassment."
-  You feel aggravated at the invisible <monster>: "A monster drank a cursed potion of invisibility; this will reveal its location to you."
-  You feel like a rabble-rouser: "You invoked the Sceptre of Might and are now causing conflict."
-  You feel the tension decrease around you: "You invoked the Sceptre of Might (or it left your main inventory), and you are no longer causing conflict."
-  You feel a surge of power, but nothing happens: "You invoked the Sceptre of Might, but you were already causing conflict by other means, e.g. a ring of conflict."
-  You feel like someone is helping you: "The phrase occurs with many instances of curse removal - this includes reading any scroll of remove curse, casting the spell of remove curse, and stepping on a magic trap and getting the remove curse effect, which is the same as an uncursed scroll. This applies even if no items were cursed."
-  You feel like you need some help: "You read a noncursed scroll of remove curse while confused."
-  You feel as if you need some help: "A monster has used the curse items spell against you, and attempted to curse something in your inventory."
-  You feel a malignant aura surround you: "The cursed items spell cursed at least one random item in your inventory."
-  You feel a malignant aura surround the magic-absorbing blade: "Magicbane caught and absorbed the cursed items spell; it will resist with a 95% chance."
-  You feel dead inside: "You genocided your original race or role while polymorphed into another form."
-  You feel better: "You quaffed a potion of healing or cast the healing spell at yourself."
-  You feel much better: "You quaffed a potion of extra healing, cast the extra healing spell at yourself, or had HP restored from prayer."
-  You feel much slimmer: "As a result of prayer, you temporarily gained the ability to pass through walls. This happens if you were stuck in a wall, but there was no safe place to teleport you to."
-  You feel hemmed in again: "Your temporary phasing power wore off, and you are still stuck in a wall."
-  You feel a change coming over you: "You are polymorphing as a result of eating a chameleon or doppelganger corpse, or stepping on a polymorph trap."
-  You feel rather <monster>-ish: "You tried to polymorph into a monster form that has been genocided."
-  You feel like a new <race>!: "You polymorphed into your own race."
-  You feel like a new <monster>!: "You polymorphed into a monster while already being that monster; this is treated as returning to your normal form, then immediately resuming your previous form." 
-  You feel shuddering vibrations: "You polymorphed a pile of items (armor, corpses, gold and/or scrolls) with a wand or spell of polymorph."
-  You feel a wrenching sensation: "You stepped on a teleport trap or level teleport trap trap while magic resistant, sat on a throne and got the teleportation effect, or else failure to read a spellbook caused a teleportation effect."
-  You feel disoriented for a moment: "An attempt to teleport or branchport failed for some reason, e.g. interference from the Amulet of Yendor."
-  You feel worried about <your <pet>>: "Your pet's nutrition is low enough that it is starving, and the pet is out of your sight; a starving pet becomes confused from hunger, its maximum HP is temporarily reduced to 1/4 of its current value, and it will die in 250 turns unless fed, which restores its maximum HP (but not its current HP) to normal."
-  You feel sad for a moment: "Your pet starved to death while out of your sight."
-  You feel guilty losing your pet like this: "You displaced your pet into a trap, killing it; this incurs a -15 alignment penalty and angers your god."
-  You feel good enough to do it again: "You gained a point of constitution, also exercising constitution."
-  You feel restored to health: "You were healed to maximum HP, and strength is exercised."
-  You feel raised to your full potential: "You were restored to maximum energy, and your maximum energy was also increased by 1-5 points; constitution is exercised."
-  You feel exhausted: "You take 10-16 hit points of damage, and strength is abused."
-  You feel drained of energy: "Your maximum energy is decreased by 1-10 points, and your energy is set to zero; constitution is abused."
-  You feel out of shape: "You lose an experience level, unless you have drain resistance."
-  You feel hemmed in!: "A werecreature called for help while you were blind or already surrounded by monsters, and one or more of them spawned out of your sight."
-  You feel vaguely nervous: "The Wizard of Yendor did not harass you during an eligible turn."
-  You feel a mild buzz: "You gained energy or increased your maximum energy by eating a newt corpse."
-  You feel squirming in your backpack: "A troll revived from its corpse while it was in your inventory."
-  You feel threatened: "This message has multiple sources: you failed to read a spellbook and woke up all sleeping monsters on the level, unparalyzing paralyzed monsters; you sat on a throne and produced the aggravate monster effect; you quaffed a nonblessed potion of monster detection when there were no other monsters on the level; or quaffed from a fountain and would have been shown monsters on the level, but there were none."
-  You feel guilty: "This message has multiple sources: you ate non-vegetarian food as a Monk and incurred a -1 alignment penalty; you killed a co-aligned unicorn and suffered a -5 Luck penalty; or else, you read a blessed scroll of punishment (which has no effect)."
-  You feel besieged: "You are hemmed in by monsters during the Endgame."
+  You feel that eating <creature> was a bad idea:
+    meaning: "You gained the aggravate monster intrinsic permanently by eating a cat or dog, unless you are an orc or Caveman."
+    property: "aggravate monster"
+  You feel less attractive: 
+    meaning: "You lost the aggravate monster intrinsic due to a gremlin attacking you at night."
+    property: "aggravate monster"
+  You feel very firm: 
+    meaning: "You gained disintegration resistance from eating an appropriate corpse, e.g. that of a black dragon."
+    property: "disintegration resistance"
+  You feel totally together, man:
+    meaning: "You gained disintegration resistance from eating an appropriate corpse, e.g. that of a black dragon, while hallucinating."
+    property: "disintegration resistance"
+  You feel sensitive!:
+    meaning: "You gained the warning intrinsic after reaching the appropriate experience level."
+    property: "warning"
+  You feel less sensitive!:
+    meaning: "You lost the warning intrinsic due to level drain."
+    property: "warning"
+  You feel healthy: 
+    meaning: "You acquired poison resistance from reaching XL 3 as a Monk, or from eating an appropriate corpse, e.g. quasit or killer bee."
+    property: "poison resistance"
+  You feel especially healthy: 
+    meaning: "You had extrinsic posion resistance but you acquired poison resistance from reaching XL 3 as a Monk, or from eating an appropriate corpse (e.g. quasit or killer bee)."
+    property: "poison resistance"
+  You feel hardy!:
+    meaning: "You reached XL 20 as a Tourist."
+    property: "poison resistance"
+  You feel a little sick!:
+    meaning: "You lost the poison resistance intrinsic due to level drain or a gremlin attack."
+    property: "poison resistance"
+  You feel a momentary chill: 
+    meaning: "You gained the fire resistance intrinsic from eating an appropriate corpse (e.g. fire giant)."
+    property: "fire resistance"
+  You be chillin':
+    meaning: "You gained the fire resistance intrinsic from eating an appropriate corpse (e.g. fire giant) while hallucinating."
+    property: "fire resistance"
+  You feel cool!:
+    meaning: "You gained the fire resistance intrinsic by reaching XL 11 as a Monk, or XL 20 as a Priest."
+    property: "fire resistance"
+  You feel warmer:
+    meaning: "You lost the fire resistance intrinsic due a to a gremlin attack or level drain."
+    property: "fire resistance"
+  You don't feel hot!:
+    meaning: "You were hit by a ray of fire (e.g. hell hound, wand of fire) with fire resistance."
+    property: "fire resistance"
+  The fire doesn't feel hot!: 
+    meaning: "You were hit by a monster's fire-element melee fire attack (e.g. fire ant) with fire resistance."
+    property: "fire resistance"
+  You feel rather warm:
+    meaning: "You zapped yourself with a ray from a wand of fire or fire horn with fire resistance."
+    property: "fire resistance" 
+  You feel mildly warm:
+    meaning: "You were hit with a passive fire attack (e.g. red mold) with fire resistance."
+    property: "fire resistance"
+  You feel mildly hot:
+    meaning: "A monster engulfing you tried to do fire damage (e.g. steam vortex), but you have fire resistance."
+    property: "fire resistance"
+  You're enveloped in flames. But you resist the effects.:
+    meaning: "You were hit by a monster's fire spell with fire resistance."
+    property: "fire resistance"
+  It seems quite tasty:
+    meaning: "You quaffed from a sink and got scalding hot water, but you have fire resistance."
+    property: "fire resistance"
+  You are hit by molten lava:
+    meaning: "A nearby boulder falling into lava splashes it on you, but you have fire resistance. Without resistance, this message has an exclamation mark."
+    property: "fire resistance"
+  Oh look, what a pretty fire in your <hands>:
+    meaning: "You read a scroll of fire while confused, and you have fire resistance."
+    property: "fire resistance"
+  You feel a pleasant warmth in your <hands>:
+    meaning: "You read a scroll of fire while confused and blind, and you have fire resistance."
+    property: "fire resistance"
+  You aren't hurt!:
+    meaning: "Something in your inventory being destroyed (e.g. wand destroyed by lightning) does fire damage, but you have fire resistance."
+    property: "fire resistance"
+  You feel full of hot air:
+    meaning: "You gained the cold resistance intrinsic from eating an appropriate corpse."
+    property: "cold resistance"
+  You feel warm!:
+    meaning: "You gainted the cold resistance intrinsic by reaching XL 13 as a Monk."
+    property: "cold resistance"
+  You feel cooler:
+    meaning: "You lost the cold resistance intrinsic to a gremlin attack or level drain; the latter will add an exclamation point."
+    property: "cold resistance"
+  You don't feel cold:
+    meaning: "You were hit by a ray of cold with cold resistance."
+    property: "cold resistance"
+  The frost doesn't seem cold!:
+    meaning: "You were hit by a monster's cold-element melee attack with cold resistance."
+    property: "cold resistance"
+  You feel a little chill:
+    meaning: "You zapped yourself with a ray of cold with cold resistance."
+    property: "cold resistance"
+  You feel a mild chill:
+    meaning: "You were hit by a passive cold attack (e.g. blue jelly) with cold resistance."
+    property: "cold resistance"
+  You feel mildly chilly:
+    meaning: "A monster engulfing you dealt cold damage (i.e. ice vortex), but you have cold resistance."
+    property: "cold resistance"
+  You're covered in frost. But you resist the effects.:
+    meaning: "You were hit by a monster's cold spell (i.e. Asmodeus) with cold resistance."
+    property: "cold resistance"
+  You feel wide awake:
+    meaning: "You gained the sleep resistance intrinsic from eating the appropriate corpse (e.g. any kind of elf)."
+    property: "sleep resistance"
+  You feel awake!: 
+    meaning: "You gained the sleep resistance intrinsic by reaching XL 4 as an Elf."
+    property: "sleep resistance"
+  You feel tired!:
+    meaning: "You lost the sleep resistance intrinsic due to level drain or a gremlin attack; this is not to be confused with the same message from a magic trap."
+    property: "sleep resistance"
+  Your health currently feels amplified!:
+    meaning: "You gained the shock resistance intrinsic from eating an appropriate corpse (e.g. electric eel, storm giant)."
+    property: "shock resistance"
+  You feel grounded in reality:
+    meaning: "You gained the shock resistance intrinsic from eating an appropriate corpse (e.g. electric eel, storm giant) while hallucinating."
+    property: "shock resistance"
+  You feel insulated!:
+    meaning: "You gained the shock resistance intrinsic by reaching XL 15 as a Monk."
+    property: "shock resistance"
+  You feel conductive!: 
+    meaning: "You lost the shock resistance intrinsic due to a gremlin attack or level drain."
+    property: "shock resistance"
+  You feel a mild tingle: 
+    meaning: "You were hit by shock damage from a passive attack or engulfing monster (e.g. energy vortex) with shock resistance"
+    property: "shock resistance"
+  You feel hidden!: 
+    meaning: "You permanently gained the invisibility intrinsic by eating a stalker corpse while already (temporarily) invisible."
+    property: "invisible"
+  You feel rather itchy under your mummy wrapping:
+    meaning: "You attempted to become invisible while wearing a mummy wrapping."
+    property: "invisible"
+  You see an image of someone stalking you. But it disappears.:
+    meaning: "You gained the see invisible intrinsic by quaffing from a fountain. Wisdom is exercised."
+    property: "see invisible"
+  You feel very self-conscious. But it passes.: 
+    meaning: "You gained the see invisible intrinsic by quaffing from a fountain while blind. Wisdom is exercised."
+    property: "see invisible"
+  You feel transparent: 
+    meaning: "You gained the see invisible intrinsic by quaffing from a fountain while blind and invisible. Wisdom is exercised."
+    property: "see invisible"
+  Your vision becomes clear!: 
+    meaning: "You gained the see invisible intrinsic from sitting on a throne."
+    property: "see invisible"
+  You thought you saw something!: 
+    meaning: "You lost the see invisible intrinsic to a gremlin attack."
+    property: "see invisible"
+  You tawt you taw a puttie tat!:
+    meaning: "You lost the see invisible intrinsic to a gremlin attack while hallucinating."
+    property: "see invisible"
+  You feel vulnerable:
+    meaning: "You lost intrinsic protection to a gremlin attack."
+    property: "protection"
+  You feel perceptive!:
+    meaning: "You gained automatic searching from reaching XL 9 as a Monk, or XL 10 as an Archaeologist, Rogue, or Tourist."
+    property: "searching"
+  You feel quick!:
+    meaning: "You gained intrinsic speed by reaching XL 7 as a Barbarian, Caveman, Knight, or Valkyrie."
+    property: "speed"
+  Your quickness feels more natural:
+    meaning: "You gained intrinsic speed from a wand of speed monster while wearing speed boots."
+    property: "speed"
+  You feel slow!:
+    meaning: "You lost intrinsic speed as a result of level drain."
+    property: "speed"
+  You feel very jumpy:
+    meaning: "You gained the teleportitis intrinsic from eating an appropriate corpse (e.g. any nymph)."
+    property: "teleportitis"
+  You feel diffuse:
+    meaning: "You gained the teleportitis intrinsic from eating an appropriate corpse (e.g. any nymph) while hallucinating."
+    property: "teleportitis"
+  You feel less jumpy:
+    meaning: "You lost the teleportitis intrinsic due to a gremlin attack."
+    property: "teleportitis"
+  You feel controlled!:
+    meaning: "You gained intrinsic teleport control by reaching XL 17 as a Wizard or Monk."
+    property: "teleport control"
+  You feel uncontrolled!:
+    meaning: "You lost the teleport control intrinsic through level drain."
+    property: "teleport control"
+  You feel in control of yourself:
+    meaning: "You gained the teleport control intrinsic from eating an appropriate corpse (e.g. tengu)."
+    property: "teleport control"
+  You feel centered in your personal space:
+    meaning: "You gained the teleport control intrinsic from eating an appropriate corpse (e.g. tengu) while hallucinating."
+    property: "teleport control"
+  You feel a strange mental acuity:
+    meaning: "You gained intrinsic telepathy from eating an appropriate corpse (e.g. floating eye)."
+    property: "teleport control"
+  You feel in touch with the cosmos:
+    meaning: "You gained intrinsic telepathy from eating an appropriate corpse (e.g. floating eye) while hallucinating."
+    property: ""
+  You feel <very> strong!:
+    meaning: "You gained one or more points of strength, e.g. from exercise, a potion of gain ability or eating a fresh giant or ettin corpse."
+    property: ""
+  You feel <very> weak!:
+    meaning: "You lost one or more points of strength, e.g. as a result of abuse or sitting on a throne."
+    property: ""
+  You suddenly feel weaker!:
+    meaning: "You were hit by the drain strength monster spell and lost strength. This is still displayed even if the stat loss is blocked through a ring of sustain ability."
+    property: ""
+  You feel momentarily weakened:
+    meaning: "You were hit by the drain strength monster spell but you have magic resistance and are completely unaffected."
+    property: ""
+  You feel weaker:
+    meaning: "You lost one or more points of strength from quaffing a non-blessed potion of sickness."
+    property: ""
+  You feel <very> agile!:
+    meaning: "You gained one or more points of dexterity, e.g. through exercise or a potion of gain ability."
+    property: ""
+  You feel <very> clumsy!:
+    meaning: "You lost one or more points of dexterity, e.g. as a result of abuse or sitting on a throne."
+    property: ""
+  You feel <very> tough!:
+    meaning: "You gained one or more points of constitution, e.g. through exercise or a potion of gain ability."
+    property: ""
+  You feel <very> fragile!:
+    meaning: "You lost one or more points of constitution, e.g. as a result of abuse or sitting on a throne."
+    property: ""
+  You feel very sick:
+    meaning: "You lost one or more points of constitution from quaffing a non-blessed potion of sickness."
+    property: ""
+  You feel <very> smart!:
+    meaning: "You gained one or more points of intelligence, e.g. through exercise or a potion of gain ability."
+    property: ""
+  You feel <very> stupid!:
+    meaning: "You lost one or more points of intelligence, e.g. as a result of abuse, mind flayer attack, or sitting on a throne."
+    property: ""
+  You feel like a scarecrow:
+    meaning: "You died of brainlessness from a brain-eating attack landing while your intelligence is 3 in explore or wizard mode, but chose not to die. This sets your intelligence to 5, minus up to 2 points from the successful brain-eating attack that would have killed you."
+    property: ""
+  You feel <very> wise!:
+    meaning: "You gained one or more points of wisdom, e.g. through exercise or a potion of gain ability."
+    property: ""
+  You feel <very> foolish!:
+    meaning: "You lost one or more points of wisdom, e.g. as a result of abuse or sitting on a throne."
+    property: ""
+  You feel <very> charismatic!:
+    meaning: "You gained one or more points of charisma, e.g. through exercise or a potion of gain ability."
+    property: ""
+  You feel <very> repulsive!:
+    meaning: "You lost one or more points of charisma, e.g. as a result of abuse or sitting on a throne."
+    property: ""
+  You feel more confident in your weapon skills:
+    meaning: "You practiced a weapon skill enough, and can now enhance it."
+    property: ""
+  You feel more confident in your spell casting skills:
+    meaning: "You practiced a spell-casting skill enough, and can now enhance it."
+    property: ""
+  You feel more confident in your fighting skills:
+    meaning: "You practiced a combat skill enough, and can now enhance it."
+    property: ""
+  You feel more confident in your skills:
+    meaning: "You gained a skill slot by gaining a level, and can now enhance a sufficiently practiced skill."
+    property: ""
+  You feel you could be more dangerous!:
+    meaning: "After enhancing a skill, you can enhance it or skills further."
+    property: ""
+  You feel like you've been here before.:
+    meaning: "You entered a part of the dungeon that you have forgotten due to a scroll of amnesia or a successful brain-eating attack."
+    property: ""
+  You feel somewhat dizzy:
+    meaning: "You were hit and confused by a thrown potion of confusion or potion of booze."
+    property: ""
+  You feel confused:
+    meaning: "You were confused from reading a cursed scroll of confuse monster, or read any such scroll while polymorphed into any non-@, confusing your monster form.
+    property: ""
+  You feel rather light headed:
+    meaning: "You were confused as a result of eating rotten food."
+    property: ""
+  You feel rather trippy:
+    meaning: "You were confused as a result of eating rotten food while hallucinating."
+    property: ""
+  You feel less confused now:
+    meaning: "You are no longer confused."
+    property: ""
+  You feel less trippy now: 
+    meaning: "You are no longer confused but you are hallucinating."
+    property: ""
+  You feel feverish: 
+    meaning: "You have contracted lycanthropy from a werecreature."
+    property: ""
+  You feel purified: 
+    meaning: "You have been cured of lycanthropy."
+    property: ""
+  You feel deathly sick:
+    meaning: "You have contracted sickness from food poisoning or a source of illness."
+    property: "sickness"
+  You feel sick: 
+    meaning: "You narrowly avoided sickness from food poisoning, and lost 1d8 hit points."
+    property: "sickness"
+  You feel even worse:
+    meaning: "You were hit by a disease attack or contracted illness by other means when already sick, reducing your 'time to live' counter to half of its old value."
+    property: "sickness"
+  You feel much worse:
+    meaning: "You were hit by a disease attack or contracted illness by other means when already sick, reducing your 'time to live' counter to half of its old value."
+    property: "sickness"
+  You feel somewhat better:
+    meaning: "You cured food poisoning by vomiting, but are still suffering from illness. Your 'time to live' counter is doubled."
+    property: "sickness"
+  You are feeling mildly nauseated:
+    meaning: "You developed nausea from eating a cursed tin, a rotten egg, a tripe ration (unless you are an orc or Caveman), or a clove of garlic while polymorphed into an undead form. This message prints when you have 14 turns of nausea timeout left."
+    property: "sickness"
+  You feel slightly confused:
+    meaning: "You developed nausea from eating a cursed tin, a rotten egg, a tripe ration (unless you are an orc or Caveman), or a clove of garlic while polymorphed into an undead form. This message prints when you have 11 turns of nausea timeout left; you only actually become confused for 2d4 (more) turns when the timeout reaches 8, then 6."
+    property: "sickness"
+  You feel much less nauseated now:
+    meaning: "You are no longer nauseated, e.g. after curing yourself with a unicorn horn."
+    property: "sickness"
+  You feel limber!:
+    meaning: "You were cured of stoning, e.g. by eating a lizard corpse."
+    property: "stoning"
+  You feel a bit steadier now:
+    meaning: "You recovered from being stunned."
+    property: ""
+  You feel less wobbly now:
+    meaning: "You recovered from being stunned while hallucinating."
+    property: ""
+  You feel like a hypocrite:
+    meaning: "You attacked while over an Elbereth engraving. This carries a -5 alignment penalty and makes the engraving disappear."
+    property: ""
+  You feel like an evil coward for using a poisoned weapon:
+    meaning: "You hit with a poisoned weapon as a lawful character, which carries an -1 alignment penalty."
+    property: ""
+  You feel like a despicable grave-robber!:
+    meaning: "As a lawful Archaeologist, you dug up a grave."
+    property: ""
+  You feel guilty about damaging such a historic statue:
+    meaning: "As an Archaeologist, you broke a historic statue."
+    property: ""
+  You feel like a glutton!:
+    meaning: "As a Knight, you ate while satiated, incurring a -1 alignment penalty for violating the code of conduct."
+    property: ""
+  You feel like a common thief: 
+    meaning: "As a Knight, you dug down while in a shop, and the shopkeeper was still alive."
+    property: ""
+  You feel partially absolved:
+    meaning: "You sacrificed a corpse at a co-aligned altar while your alignment was negative, increasing it up to a maximum of zero depending on the corpse."
+    property: ""
+  You feel an urge to return to the surface:
+    meaning: "You offered the Amulet of Yendor or its cheap plastic imitation on a co-aligned non-high altar."
+    property: ""
+  You feel ashamed:
+    meaning: "You offered the Amulet of Yendor or its cheap plastic imitation on a cross-aligned non-high altar."
+    property: ""
+  You feel homesick: 
+    meaning: "You offered the Amulet of Yendor or its cheap plastic imitation on a co-aligned or cross-aligned non-high altar while hallucinating."
+    property: ""
+  Unluckily, you feel the power of <your god> decrease:
+    meaning: "You sacrificed a corpse at a cross-aligned non-high altar, but the altar was not converted; this abuses your wisdom and you lose a point of Luck."
+    property: ""
+  You feel the power of <your god> increase: 
+    meaning: "You sacrificed a corpse at a cross-aligned non-high altar and successfully converted it to your alignment; this abuses your wisdom and you lose a point of Luck."
+    property: ""
+  You feel in good health again:
+    meaning: "You prayed successfully and restored one or more attributes that had been lowered."
+    property: ""
+  You feel self-knowledgeable:
+    meaning: "You were enlightened, e.g. by using a wand or potion of enlightenment."
+    property: ""
+  You feel your magical energy drain away:
+    meaning: "You stepped on an anti-magic trap and your energy was drained."
+    property: ""
+  You feel momentarily lethargic:
+    meaning: "You stepped on an anti-magic trap and your energy was drained, but your maximum energy was already 0."
+    property: ""
+  You feel sluggish:
+    meaning: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. The resulting damage was less than 1/4 of your HP."
+    property: ""
+  You feel very lethargic:
+    meaning: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. The resulting damage was at least 1/4 of your HP."
+    property: ""
+  You feel unbearably torpid!:
+    meaning: "You stepped on an anti-magic trap, but had magic resistance and took damage instead of losing energy. You were killed by the implosion from HP loss."
+    property: ""
+  You feel rankled:
+    meaning: "You triggered a magic trap and it created monsters around you after blinding and deafening you, but you were already deaf beforehand; the deafness is extended for 1d5 + 15 turns."
+    property: ""
+  You feel tired:
+    meaning: "This is one of six "odd feeling" results from stepping on a magic trap, all of which produce different messages with no effect. It is distinct from the message given for losing sleep resistance."
+    property: ""
+  You feel [oddly] like the prodigal son: 
+    meaning: ""Yearning for your homeland" is an "odd feeling" resulting from stepping on a magic trap, and you got it while already on the home level of your quest. Female characters feel "oddly"."
+    property: ""
+  You feel charismatic!:
+    meaning: "You stepped on a magic trap and gained a point of charisma. All adjacent tameable monsters are tamed, and non-tameable monsters are made peaceful; this ignores monster magic resistance."
+    property: ""
+  You feel momentarily different:
+    meaning: "You stepped on a polymorph trap, but had magic resistance or were wearing an amulet of unchanging."
+    property: ""
+  You feel a draft:
+    meaning: "A monster has tunneled through a secret corridor, or a secret door was detected on the Rogue level."
+    property: ""
+  You feel like <enlisting/marching/protesting/fleeing>:
+    meaning: "A monster has tunneled through a secret corridor, or a secret door was detected on the Rogue level, and you are hallucinating."
+    property: ""
+  You feel an unexpected draft:
+    meaning: "A monster has broken through a door."
+    property: ""
+  You feel like you are 1-A/4-F:
+    meaning: "A monster has broken through a door and you are hallucinating."
+    property: ""
+  You feel more claustrophobic than before!:
+    meaning: "You were in a shop while the shopkeeper magically repaired the wall, but you were blind."
+    property: ""
+  You feel a sudden chill:
+    meaning: "One possible "no effect" message of dipping into a fountain."
+    property: ""
+  You feel the presence of evil:
+    meaning: "You summoned a water demon by quaffing from or dipping into a fountain while blind."
+    property: ""
+  You feel a strange sensation:
+    meaning: "You would have lost your money, but your wallet had no gold."
+    property: ""
+  You feel much, much better!:
+    meaning: "Your HP is fully restored, which may also increase your maximum HP; this cures blinding, sickness and wounded legs."
+    property: ""
+  You feel your luck is changing:
+    meaning: "You gain a point of Luck; if your natural Luck is high enough, this effect is replaced with a wish."
+    property: ""
+  You feel somehow out of place...:
+    meaning: "No effect."
+    property: ""
+  You feel very comfortable here:
+    meaning: "You are polymorphed into a queen bee, gnome king, dwarf king, ogre king or Elvenking."
+    property: ""
+  You feel like sitting in a corner:
+    meaning: "You put on a dunce cap, and your intelligence was greater than or equal to 6; the cap autocurses, fixes your intelligence and wisdom at 6, and prevents any changes to them. Removing the cap will restore those stat to their original values."
+    property: ""
+  You feel giddy:
+    meaning: "You put on a dunce cap, and your intelligence was less than 6; the cap autocurses, fixes your intelligence and wisdom at 6, and prevents any changes to them. Removing the cap will restore those stat to their original values."
+    property: ""
+  You feel completely healed:
+    meaning: "You quaffed a potion of full healing."
+    property: ""
+  You feel lackluster:
+    meaning: "You quaffed a cursed potion of gain energy."
+    property: ""
+  You feel lonely:
+    meaning: "You quaffed a blessed potion of monster detection, but there were no other monsters on the level."
+    property: ""
+  You feel a lack of something:
+    meaning: "You quaffed a potion of object detection, and remembered objects that were on the map are now gone."
+    property: ""
+  You feel a little strange:
+    meaning: "You quaffed a potion of polymorph."
+    property: ""
+  You feel a little normal: 
+    meaning: "You quaffed a potion of polymorph while hallucinating"
+    property: ""
+  You feel rather tired:
+    meaning: "You inhaled vapors from a potion of sleeping."
+    property: ""
+  You feel full of awe:
+    meaning: "You drank holy water and you were not polymorphed into a demon or undead."
+    property: ""
+  You feel quite proud of yourself:
+    meaning: "You drank unholy water while Chaotic, a demon, or undead."
+    property: ""
+  You feel full of dread:
+    meaning: "You drank unholy water while non-Chaotic and not polymorphed into a demon, or undead."
+    property: ""
+  You feel charged up!:
+    meaning: "You read a non-cursed scroll of charging while confused."
+    property: ""
+  You feel discharged:
+    meaning: "You read a cursed scroll of charging while confused."
+    property: ""
+  You have a feeling of loss:
+    meaning: "You attempted to charge an non-chargeable item."
+    property: ""
+  You feel very greedy:
+    meaning: "You read a cursed scroll of gold detection, and there are traps on the level."
+    property: ""
+  You feel rushing air tickle your nose:
+    meaning: "You applied a tin whistle while deaf."
+    property: ""
+  You feel vibrations:
+    meaning: "A beam-type wand was zapped, but it was blocked by a door while out of your sight."
+    property: ""
+  You feel that monsters are aware of your presence:
+    meaning: "You quaffed a cursed potion of invisibility, or a nearby monster has cast the aggravate monster spell. This wakes up all sleeping monsters on the level, and there is a one-fifth chance that paralyzed monsters are unparalyzed. The Wizard of Yendor may also invoke this effect as a means of remote harassment."
+    property: ""
+  You feel aggravated at the invisible <monster>:
+    meaning: "A monster drank a cursed potion of invisibility; this will reveal its location to you."
+    property: ""
+  You feel like a rabble-rouser:
+    meaning: "You invoked the Sceptre of Might and are now causing conflict."
+    property: ""
+  You feel the tension decrease around you:
+    meaning: "You invoked the Sceptre of Might (or it left your main inventory), and you are no longer causing conflict."
+    property: ""
+  You feel a surge of power, but nothing happens:
+    meaning: "You invoked the Sceptre of Might, but you were already causing conflict by other means, e.g. a ring of conflict."
+    property: ""
+  You feel like someone is helping you:
+    meaning: "The phrase occurs with many instances of curse removal - this includes reading any scroll of remove curse, casting the spell of remove curse, and stepping on a magic trap and getting the remove curse effect, which is the same as an uncursed scroll. This applies even if no items were cursed."
+    property: ""
+  You feel like you need some help:
+    meaning: "You read a noncursed scroll of remove curse while confused."
+    property: ""
+  You feel as if you need some help:
+    meaning: "A monster has used the curse items spell against you, and attempted to curse something in your inventory."
+    property: ""
+  You feel a malignant aura surround you:
+    meaning: "The cursed items spell cursed at least one random item in your inventory."
+    property: ""
+  You feel a malignant aura surround the magic-absorbing blade:
+    meaning: "Magicbane caught and absorbed the cursed items spell; it will resist with a 95% chance."
+    property: ""
+  You feel dead inside:
+    meaning: "You genocided your original race or role while polymorphed into another form."
+    property: ""
+  You feel better:
+    meaning: "You quaffed a potion of healing or cast the healing spell at yourself."
+    property: ""
+  You feel much better:
+    meaning: "You quaffed a potion of extra healing, cast the extra healing spell at yourself, or had HP restored from prayer."
+    property: ""
+  You feel much slimmer:
+    meaning: "As a result of prayer, you temporarily gained the ability to pass through walls. This happens if you were stuck in a wall, but there was no safe place to teleport you to."
+    property: ""
+  You feel hemmed in again:
+    meaning: "Your temporary phasing power wore off, and you are still stuck in a wall."
+    property: ""
+  You feel a change coming over you:
+    meaning: "You are polymorphing as a result of eating a chameleon or doppelganger corpse, or stepping on a polymorph trap."
+    property: ""
+  You feel rather <monster>-ish:
+    meaning: "You tried to polymorph into a monster form that has been genocided."
+    property: ""
+  You feel like a new <race>!:
+    meaning: "You polymorphed into your own race."
+    property: ""
+  You feel like a new <monster>!:
+    meaning: "You polymorphed into a monster while already being that monster; this is treated as returning to your normal form, then immediately resuming your previous form." 
+    property: ""
+  You feel shuddering vibrations:
+    meaning: "You polymorphed a pile of items (armor, corpses, gold and/or scrolls) with a wand or spell of polymorph."
+    property: ""
+  You feel a wrenching sensation:
+    meaning: "You stepped on a teleport trap or level teleport trap trap while magic resistant, sat on a throne and got the teleportation effect, or else failure to read a spellbook caused a teleportation effect."
+    property: ""
+  You feel disoriented for a moment:
+    meaning: "An attempt to teleport or branchport failed for some reason, e.g. interference from the Amulet of Yendor."
+    property: ""
+  You feel worried about <your <pet>>:
+    meaning: "Your pet's nutrition is low enough that it is starving, and the pet is out of your sight; a starving pet becomes confused from hunger, its maximum HP is temporarily reduced to 1/4 of its current value, and it will die in 250 turns unless fed, which restores its maximum HP (but not its current HP) to normal."
+    property: ""
+  You feel sad for a moment:
+    meaning: "Your pet starved to death while out of your sight."
+    property: ""
+  You feel guilty losing your pet like this:
+    meaning: "You displaced your pet into a trap, killing it; this incurs a -15 alignment penalty and angers your god."
+    property: ""
+  You feel good enough to do it again:
+    meaning: "You gained a point of constitution, also exercising constitution."
+    property: ""
+  You feel restored to health:
+    meaning: "You were healed to maximum HP, and strength is exercised."
+    property: ""
+  You feel raised to your full potential:
+    meaning: "You were restored to maximum energy, and your maximum energy was also increased by 1-5 points; constitution is exercised."
+    property: ""
+  You feel exhausted:
+    meaning: "You take 10-16 hit points of damage, and strength is abused."
+    property: ""
+  You feel drained of energy:
+    meaning: "Your maximum energy is decreased by 1-10 points, and your energy is set to zero; constitution is abused."
+    property: ""
+  You feel out of shape:
+    meaning: "You lose an experience level, unless you have drain resistance."
+    property: ""
+  You feel hemmed in!:
+    meaning: "A werecreature called for help while you were blind or already surrounded by monsters, and one or more of them spawned out of your sight."
+    property: ""
+  You feel vaguely nervous:
+    meaning: "The Wizard of Yendor did not harass you during an eligible turn."
+    property: ""
+  You feel a mild buzz:
+    meaning: "You gained energy or increased your maximum energy by eating a newt corpse."
+    property: ""
+  You feel squirming in your backpack:
+    meaning: "A troll revived from its corpse while it was in your inventory."
+    property: ""
+  You feel threatened: 
+    meaning: "This message has multiple sources: you failed to read a spellbook and woke up all sleeping monsters on the level, unparalyzing paralyzed monsters; you sat on a throne and produced the aggravate monster effect; you quaffed a nonblessed potion of monster detection when there were no other monsters on the level; or quaffed from a fountain and would have been shown monsters on the level, but there were none."
+    property: ""
+  You feel guilty: 
+    meaning: "This message has multiple sources: you ate non-vegetarian food as a Monk and incurred a -1 alignment penalty; you killed a co-aligned unicorn and suffered a -5 Luck penalty; or else, you read a blessed scroll of punishment (which has no effect)."
+    property: ""
+  You feel besieged:
+    meaning: "You are hemmed in by monsters during the Endgame."
+    property: ""
