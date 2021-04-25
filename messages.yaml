@@ -920,3 +920,13 @@ messages:
   You hear a crackling sound:
     meaning: "An unseen square of water on the Plane of Water was frozen by a bolt of cold."
     property: ""
+  You produce a high whistling sound:
+    meaning: "You applied a non-cursed or blessed tin whistle."
+    property: ""
+  You produce a shrill whistling sound:
+    meaning: "You applied a cursed tin whistle, or else escaped from a vault guard."
+    property: ""
+  You feel rushing air tickle your nose:
+    meaning: "You applied a tin whistle while deaf."
+    property: ""
+   
