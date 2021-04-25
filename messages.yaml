@@ -759,10 +759,10 @@ messages:
     meaning: "There is a zoo on the level, and you are hallucinating."
     property: ""
   You hear the footsteps of a guard on patrol:
-    meaning: ""There is a vault on the level."
+    meaning: "There is a vault on the level."
     property: ""
   You hear someone counting money:
-    meaning: ""There is a vault on the level with gold inside."
+    meaning: "There is a vault on the level with gold inside."
     property: ""
   You hear someone searching:
     meaning: "There is an empty vault on the level."
@@ -782,7 +782,7 @@ messages:
   You hear convulsive ravings:
     meaning: "The Oracle is on the level."
     property: ""
-  You hear someone say 'No more woodchucks!':
+  You hear someone say No more woodchucks!:
     meaning: "The Oracle is on the level, and you are hallucinating."
     property: ""
   You hear a loud ZOT!:
@@ -794,7 +794,7 @@ messages:
   You hear a sceptre pounded in judgment:
     meaning: "There is a throne room on the level."
     property: ""
-  Someone shouts 'Off with <his/her> head!':
+  Someone shouts Off with <his/her> head!:
     meaning: "There is a throne room on the level."
     property: ""
   You hear Queen Beruthiel's cats!:
@@ -902,7 +902,7 @@ messages:
   You hear a hollow sound. This must be a secret <door/passage>!:
     meaning: "You applied a stethoscope to a wall concealing a secret door or secret passage."
     property: ""
-  You hear a voice say, "It's dead, Jim.":
+  You hear a voice say, It's dead, Jim.:
     meaning: "You applied a stethoscope to a corpse while hallucinating. (This is a reference to a phrase often uttered by Dr. McCoy in Star Trek upon examining or discovering the body of a recently deceased)."
     property: ""
   You hear a bugle playing reveille!:
