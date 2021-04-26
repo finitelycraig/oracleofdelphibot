@@ -31,6 +31,14 @@ armors:
     material: "leather"
     effect: ""
     mc: 0
+  ring mail:
+    type: "suit of armor"
+    cost: 100
+    weight: 250
+    ac: 3
+    material: "iron"
+    effect: ""
+    mc: 0    
   orcish ring mail:
     type: "suit of armor"
     cost: 80
@@ -45,14 +53,6 @@ armors:
     weight: 200
     ac: 3
     material: "leather"
-    effect: ""
-    mc: 0
-  ring mail:
-    type: "suit of armor"
-    cost: 100
-    weight: 250
-    ac: 3
-    material: "iron"
     effect: ""
     mc: 0
   scale mail:
