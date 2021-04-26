@@ -47,4 +47,20 @@ monsters:
     corpse_safe: true 
     elbereth: true
     extra: ""
+  green mold:
+    difficulty: 2
+    attacks: "passive (level+1)d4 acid"
+    speed: 0
+    ac: 9
+    mr: 0
+    alignment: "neutral"
+    genocidable: true
+    weight: 50
+    nutritional_value: 30
+    size: "small"
+    resistances: "acid, petrification"
+    restistances_conveyed: ""
+    corpse_safe: "is acidic" 
+    elbereth: true
+    extra: "Corpse acidic when eaten, causing damage but not killing unless hp low."
   
