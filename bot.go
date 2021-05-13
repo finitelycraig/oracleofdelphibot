@@ -931,6 +931,15 @@ func parseTwitchMessage(c *twitch.Client, m twitch.PrivateMessage) {
 	channel := m.Channel
 	user := m.User.Name
 
+	// Ignore messages not prefixed with ! or ?
+	if !strings.HasPrefix(message, "!") && !strings.HasPrefix(message, "?") {
+        return
+    }
+
+	// Remove ! or ? prefix
+	message = strings.TrimPrefix(message, "!")
+    message = strings.TrimPrefix(message, "?")
+
 	if channel == "oracleofdelphibot" {
 		// Deal with requests for the oracle's attention
 		if ok := parseOracleMessage(c, message, user); ok {
