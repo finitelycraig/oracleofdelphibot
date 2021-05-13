@@ -15,6 +15,38 @@ monsters:
     corpse_safe: "causes petrification"
     elbereth: true
     extra: ""
+  gray ooze:
+    difficulty: 4
+    attacks: "bite 2d8 rusting"
+    speed: 1
+    ac: 8
+    mr: 0
+    alignment: "neutral"
+    genocidable: true
+    weight: 500
+    nutritional_value: 250
+    size: "medium"
+    resistances: "fire, cold, poison, acid, petrification"
+    restistances_conveyed: "fire 7%, cold 7%, poison 7%"
+    corpse_safe: "is acidic" 
+    elbereth: true
+    extra: "Corpse acidic when eaten, causing damage but not killing unless hp low. Watch for rusting."    
+  green mold:
+    difficulty: 2
+    attacks: "passive (level+1)d4 acid"
+    speed: 0
+    ac: 9
+    mr: 0
+    alignment: "neutral"
+    genocidable: true
+    weight: 50
+    nutritional_value: 30
+    size: "small"
+    resistances: "acid, petrification"
+    restistances_conveyed: ""
+    corpse_safe: "is acidic" 
+    elbereth: true
+    extra: "Corpse acidic when eaten, causing damage but not killing unless hp low."    
   manes:
     difficulty: 3
     attacks: "claw 1d3, claw 1d3, bite 1d4"

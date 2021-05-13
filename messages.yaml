@@ -690,8 +690,11 @@ messages:
     meaning: "There is a sink on the level, and you are hallucinating."
     property: ""
   You hear water falling on coins:
-    meaning: "You hear the splashing of a naiad."
+    meaning: "There is a fountain on the level."
     property: ""
+  You hear the splashing of a naiad:
+    meaning: "There is a fountain on the level."
+    property: ""    
   You hear bubbling water:
     meaning: "There is a fountain on the level. (A naiad is a type of nymph in Greek mythology, associated with fountains and other sources of fresh water)."
     property: ""
@@ -926,7 +929,6 @@ messages:
   You produce a shrill whistling sound:
     meaning: "You applied a cursed tin whistle, or else escaped from a vault guard."
     property: ""
-  You feel rushing air tickle your nose:
-    meaning: "You applied a tin whistle while deaf."
+  You have a sense of deja vu:
+    meaning: "Nethack 3.6.x and below, you have been hit with Amnesia. Nethack 3.7.x, you have encountered a bones file, most likely one of your previous selves. Eg: >message<, dungeon overview: Final resting place for Kougyoku-Tou-Hum-Fem-Neu"
     property: ""
-   

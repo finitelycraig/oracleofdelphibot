@@ -252,8 +252,8 @@ artifacts:
     invoked: ""
     obtaining: "Chaotic crowning gift"
   sunsword:
-    base_item: "runesword"
-    alignment: "chaotic"
+    base_item: "long sword"
+    alignment: "lawful"
     intelligent: false
     use: "wielded"
     carried: ""
