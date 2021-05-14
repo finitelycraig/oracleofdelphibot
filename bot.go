@@ -1,20 +1,19 @@
 package main
 
 import (
-	"bufio"
-	"fmt"
-	"io/ioutil"
-	"log"
-	"os"
-	"regexp"
-	"strconv"
-	"strings"
-	"time"
-
-	"github.com/gempir/go-twitch-irc/v2"
-	"github.com/juliangruber/go-intersect"
-	"github.com/schollz/closestmatch"
-	"gopkg.in/yaml.v2"
+    "bufio"
+    "fmt"
+    "github.com/gempir/go-twitch-irc/v2"
+    "github.com/juliangruber/go-intersect"
+    "github.com/schollz/closestmatch"
+    "gopkg.in/yaml.v2"
+    "io/ioutil"
+    "log"
+    "os"
+    "regexp"
+    "strconv"
+    "strings"
+    "time"
 )
 
 var keys []string
@@ -914,13 +913,11 @@ func parseNethackMessage(_message string) string {
 		message = re.ReplaceAllString(message, "")
 		message = messageMatching.Closest(message)
 		if m, ok := messagesMapping.Items[message]; ok {
-			return m.Meaning
-			if m.Property != "" {
-				if _, ok := propsInfo.Items[m.Property]; ok {
-					time.Sleep(500 * time.Millisecond)
-					return getPropertyMessage(m.Property)
-				}
-			}
+		    var returnString = m.Meaning
+		    if m.Property != "" {
+		        returnString += "\n" + getPropertyMessage(m.Property)
+            }
+            return returnString
 		}
 	}
 	return "Message not found"
@@ -951,10 +948,19 @@ func parseTwitchMessage(c *twitch.Client, m twitch.PrivateMessage) {
 			return
 		}
 	} else {
+	    // split messages by newline and delay each line by 500 ms
 		response := parseMessage(message)
-		c.Say(channel, response)
-	}
+		if strings.Contains(response, "\n") {
+            messages := strings.Split(response, "\n")
+            for i := 0; i < len(messages); i++ {
+                c.Say(channel, messages[i])
+                time.Sleep(500 * time.Millisecond)
+            }
 
+        } else {
+            c.Say(channel, response)
+        }
+	}
 }
 
 func parseMessage(message string) string {
