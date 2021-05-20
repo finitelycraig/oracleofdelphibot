@@ -764,6 +764,9 @@ messages:
   You hear the footsteps of a guard on patrol:
     meaning: "There is a vault on the level."
     property: ""
+  You hear someone counting gold coins:
+    meaning: "There is a vault on the level."
+    property: ""    
   You hear someone counting money:
     meaning: "There is a vault on the level with gold inside."
     property: ""
