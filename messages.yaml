@@ -966,7 +966,7 @@ messages:
     meaning: "You kicked an object, but the object did not move because it is either too heavy or against a wall."
     property: ""
   THUD!:
-    meaning: ""You kicked a box or chest, but the object did not move because it is either too heavy or against a wall.""
+    meaning: "You kicked a box or chest, but the object did not move because it is either too heavy or against a wall."
     property: ""
   Klunk!:
     meaning: "You kicked a sink and exercised your dexterity or a spell of wizard lock or a wand of locking locked a box or a chest."
