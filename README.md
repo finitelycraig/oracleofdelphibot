@@ -33,7 +33,7 @@ that these are set.
 ## Testing the bot
 
 Running `go test` runs some unit tests.  In particular, there is a check that
-each message fits in the 510 character limit.
+each message fits in the character limit.
 
 ## Todos
 
@@ -41,6 +41,5 @@ each message fits in the 510 character limit.
 - [x] Include a mapping from alternative item names to proper item names
 - [ ] Include a price ID helper command, like `!idwand 100`
 - [ ] Write a better running it yourself section
-- [ ] Add selling price to price ID, and adjust priceID for price ident table for nh36x
 
 [the bot's channel]: https://twitch.tv/oracleofdeplhibot
