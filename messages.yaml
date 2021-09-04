@@ -935,3 +935,9 @@ messages:
   You have a sense of deja vu:
     meaning: "Nethack 3.6.x and below, you have been hit with Amnesia. Nethack 3.7.x, you have encountered a bones file, most likely one of your previous selves. Eg: >message<, dungeon overview: Final resting place for Kougyoku-Tou-Hum-Fem-Neu"
     property: ""
+  You are surrounded by a golden glow:
+    meaning: "Your god grants you a favor in the form of some extra hit points."
+    property: ""
+  You hear sinster laughter as you fall asleep...:
+    meaning: "You ate a cursed apple and fell asleep"
+    property: ""
