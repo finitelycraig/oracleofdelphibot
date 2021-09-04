@@ -63,8 +63,6 @@ func TestInjest(t *testing.T) {
 	if _, ok := wandsInfo.Items[match]; ok {
 		fmt.Println(getWandMessage(match))
 	}
-    //got := -1
-    //t.Errorf("Abs(-1) = %d; want 1", got)
 
     cost := 500
 
@@ -76,19 +74,12 @@ func TestInjest(t *testing.T) {
 
     message := "the wand fights your attempt to write"
 	match = keyMatching.Closest(message)
-    fmt.Println(match)
-    fmt.Println("pooper")
 	if _, ok := wandsByEngraveMessage[match]; ok {
-        fmt.Println("poop")
 		fmt.Println(wandsByEngraveMessage[match])
 	}
-
-
-    fmt.Println()
-    fmt.Println(wandsByEngraveMessage)
 }
 
-// TestMessageLengths makes sure that no single message goes over the 510
+// TestMessageLengths makes sure that no single message goes over the 500
 // character limit of twitch chat
 func TestMessageLengths(t *testing.T) {
     limit := 500

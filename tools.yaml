@@ -152,7 +152,7 @@ tools:
   magic lamp:
     cost: 50
     weight: 20
-    use: "possible wish"
+    use: "possible wish - be sure it is blessed before rubbing"
     creation: ""
     magic: true
   oil lamp:
