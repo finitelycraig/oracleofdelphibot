@@ -1,0 +1,16 @@
+infos:
+  nethack:
+    message: 'NetHack is an open source single-player roguelike video game, first released in 1987 and maintained by the NetHack DevTeam. The game is a software fork of the 1982 game Hack, itself inspired by the 1980 game Rogue. The player takes the role as one of several pre-defined character classes to descend through multiple dungeon floors, fighting monsters and collecting treasure, to recover the "Amulet of Yendor" at the lowest floor and then escape.'
+    link: "https://nethack.org"
+  nao:
+    message: "Play Nethack 3.6.6 online at"
+    link: "https://alt.org/nethack"
+  hardfought:
+    message: "Play Nethack (including version 3.7) and variants at"
+    link: "https://www.hardfought.org"
+  commands:
+    message: "!commands - displays this message // !nethack - displays info about nethack // !nao !hardfought - provides links // !nethackathon - links to nethackathon.org // !wandID <cost> <engrave message> - says what wand it might be // !scrollID <cost> - says what scroll it might be // !message <message> - explains an in game message // !<some in game thing> - tells you about the thing // !oracle-depart - sends the bot away (channel owner only"
+    link: ""
+  nethackathon: 
+    message: "Twenty-two Twitch content creators stream NetHack continuously for over 56 hours!"
+    link: "https://nethackathon.org"

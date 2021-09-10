@@ -111,7 +111,7 @@ properties:
       - "eating a ring of levitation (temporary)"
       - "invoking the Heart of Ahriman"
   stealth:
-    effect: "allows you to move arounf quietly, so that your steps do not wake sleeping monsters"
+    effect: "allows you to move around quietly, so that your steps do not wake sleeping monsters"
     sources:
       - "some roles have innate stealth"
       - "wearing elven boots, elven cloak or ring of stealth"

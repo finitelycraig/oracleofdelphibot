@@ -41,6 +41,7 @@ var potionsByCost map[int][]string
 var artifactsInfo *artifacts
 var appearsAs *appearances
 var messagesMapping *messages
+var infosInfo *infos
 
 var allowedBroadcasters *allowedChannels
 
@@ -59,6 +60,15 @@ type messages struct {
 type message struct {
     Meaning string `yaml:"meaning"`
     Property string `yaml:"property"`
+}
+
+type infos struct {
+    Items map[string]info `yaml:"infos"`
+}
+
+type info struct {
+    Message string `yaml:"message"`
+    Link string `yaml:"link"`
 }
 
 type weapons struct {
@@ -422,6 +432,14 @@ func getPotionMessage(name string) string {
     return output
 }
 
+func getInfoMessage(name string) string {
+    var output string 
+    if val, ok := infosInfo.Items[name]; ok {
+        output = fmt.Sprintf("%s %s",val.Message,val.Link)
+    }
+    return output
+}
+
 func getMonsterMessage(name string) string {
     var output string 
     if val, ok := monstersInfo.Items[name]; ok {
@@ -751,6 +769,20 @@ func getMessages(fname string) *messages {
     return m
 }
 
+func getInfos(fname string) *infos {
+    var i *infos
+    yamlFile, err := ioutil.ReadFile(fname)
+    if err != nil {
+        log.Printf("yamlFile.Get err   #%v ", err)
+    }
+    err = yaml.Unmarshal(yamlFile, &i)
+    if err != nil {
+        log.Fatalf("Unmarshal message: %v", err)
+    }
+
+    return i
+}
+
 func getAllowedChannels(fname string) *allowedChannels {
     var a *allowedChannels
     yamlFile, err := ioutil.ReadFile(fname)
@@ -929,10 +961,11 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
     user := m.User.Name
-   
+    fmt.Println(message) 
     //words := strings.Split(message, " ")
     
     if strings.HasPrefix(message, "!") {
+        fmt.Println("oops")
         message = strings.TrimPrefix(message, "!")
         words := strings.Fields(message)
         if words[0] == "wandID" {
@@ -947,8 +980,12 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
             fmt.Printf("%s wants to ID a message\n", user)
             parseNethackMessage(c, channel, message, user)
             return
+        } else if _, ok := infosInfo.Items[message]; ok {
+            c.Say(channel, getInfoMessage(message))
+            return
         }
     } else if strings.HasPrefix(message, "?") {
+        fmt.Print("prefix is ?")
         message = strings.TrimPrefix(message, "?")
     } else {
         return
@@ -1029,6 +1066,7 @@ func updateInfo() {
     artifactsInfo = getArtifacts("artifacts.yaml")
     appearsAs = getAppearances("appearances.yaml")
     messagesMapping = getMessages("messages.yaml")
+    infosInfo = getInfos("info.yaml")
 
     bagSizes := []int{2, 3, 4}
     keyMatching = closestmatch.New(keys, bagSizes)

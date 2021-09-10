@@ -33,7 +33,7 @@ that these are set.
 ## Testing the bot
 
 Running `go test` runs some unit tests.  In particular, there is a check that
-each message fits in the 510 character limit.
+each message fits in the character limit.
 
 ## Todos
 
