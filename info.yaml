@@ -9,8 +9,11 @@ infos:
     message: "Play Nethack (including version 3.7) and variants at"
     link: "https://www.hardfought.org"
   commands:
-    message: "!commands - displays this message // !nethack - displays info about nethack // !nao !hardfought - provides links // !nethackathon - links to nethackathon.org // !wandID <cost> <engrave message> - says what wand it might be // !scrollID <cost> - says what scroll it might be // !message <message> - explains an in game message // !<some in game thing> - tells you about the thing // !oracle-depart - sends the bot away (channel owner only"
+    message: "!commands - displays this message // !nethack - displays info about nethack // !nao !hardfought - provides links // !nethackathon - links to nethackathon.org // !wandID <cost> <engrave message> - says what wand it might be // !scrollID <cost> - says what scroll it might be // !message <message> - explains an in game message // !<some in game thing> - tells you about the thing // !oracle-depart - sends the bot away (channel owner only)"
     link: ""
   nethackathon: 
     message: "Twenty-two Twitch content creators stream NetHack continuously for over 56 hours!"
     link: "https://nethackathon.org"
+  credits:
+    message: "This bot is by https://www.twitch.tv/finitelycraig and codes are avaliable at https://github.com/finitelycraig/oracleofdelphibot ... Special thanks to https://www.twitch.tv/d_i_s_p_e_r_s_e, https://www.twitch.tv/kougyoku_gentou, and https://www.twitch.tv/alimaair for helping make me."
+    link: ""
