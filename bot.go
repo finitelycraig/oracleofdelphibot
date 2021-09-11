@@ -9,7 +9,7 @@ import (
     "strconv"
     "regexp"
     "time"
-    
+
     "gopkg.in/yaml.v2"
     "github.com/gempir/go-twitch-irc/v2"
     "github.com/schollz/closestmatch"
@@ -526,7 +526,7 @@ func getArmor(fname string) *armors {
     if err != nil {
         log.Fatalf("Unmarshal armor: %v", err)
     }
-    
+
     for k := range a.Items {
         keys = append(keys, k)
     }
@@ -587,7 +587,7 @@ func getWands(fname string) *wands {
             wandsByCost[v.Cost] = []string{k}
         }
     }
-    
+
     wandsByEngraveMessage = make(map[string][]string)
     for k,v := range w.Items {
         for _,message := range v.Engrave {
@@ -802,33 +802,33 @@ func getAllowedChannels(fname string) *allowedChannels {
 }
 
 func parseOracleMessage(c *twitch.Client, message string, user string) bool {
-	joinButNotFound := false 
-	if message == "join" {
-		i := 0 
-		for _, allowedChannel := range allowedBroadcasters.Names {
-			if strings.ToLower(user) == allowedChannel {
-				c.Say("oracleofdelphibot", fmt.Sprintf("Okay, I will join you %s.  You might want to make me a mod so all of my responses get through.  If you want me to leave just type '!oracle-depart', otherwise I will leave when you leave.  Now try typing '!commands' in your chat to see what I can do for you and your viewers.", user))
-				c.Join(user)
-				return true
-			}
-			i = i + 1
-		}
-		if i == len(allowedBroadcasters.Names) {
-			joinButNotFound = true
-		}
-	} else if message == "depart" {
-		c.Depart(user)
-		return true
-	} else if message == "update" {
-		updateInfo()
-		return true
-	}
-	
-	if joinButNotFound {
-		c.Say("oracleofdelphibot", fmt.Sprintf("%s I don't believe I know you.  Ask finitelycraig to give me permission to join you.", user))
-		return true
-	}
-	return false
+    joinButNotFound := false 
+    if message == "join" {
+        i := 0 
+        for _, allowedChannel := range allowedBroadcasters.Names {
+            if strings.ToLower(user) == allowedChannel {
+                c.Say("oracleofdelphibot", fmt.Sprintf("Okay, I will join you %s.  You might want to make me a mod so all of my responses get through.  If you want me to leave just type '!oracle-depart', otherwise I will leave when you leave.  Now try typing '!commands' in your chat to see what I can do for you and your viewers.", user))
+                c.Join(user)
+                return true
+            }
+            i = i + 1
+        }
+        if i == len(allowedBroadcasters.Names) {
+            joinButNotFound = true
+        }
+    } else if message == "depart" {
+        c.Depart(user)
+        return true
+    } else if message == "update" {
+        updateInfo()
+        return true
+    }
+
+    if joinButNotFound {
+        c.Say("oracleofdelphibot", fmt.Sprintf("%s I don't believe I know you.  Ask finitelycraig to give me permission to join you.", user))
+        return true
+    }
+    return false
 }
 
 func parseBroadcasterMessage(c *twitch.Client, message string, user string) bool {
@@ -857,7 +857,7 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
             }
         }
     }
-    
+
     words := strings.Fields(message)
     if len(words) > 1 {
         re := regexp.MustCompile("[^a-zA-Z0-9]+")
@@ -870,30 +870,30 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
                 intersection := intersect.Simple(candidates, wands)
                 candidates = nil
                 switch intersection := intersection.(type) {
-                    case []string:
-                        for _, v := range intersection {
-                            if candidates == nil {
-                                candidates = []string{v}
-                            } else {
-                                candidates = append(candidates, v)
-                            }
-                        }
-                    case string:
-                        candidates = []string{intersection}
-                    case []interface{}:
-                        if len(intersection) == 0 {
-                            output := "There aren't any wands that are that price with that engrave message"
-                            c.Say(channel, output)
-                            return
+                case []string:
+                    for _, v := range intersection {
+                        if candidates == nil {
+                            candidates = []string{v}
                         } else {
-                            fmt.Printf("there are %d candidates \n", len(intersection))
-                            for i,_ := range intersection {
-                                candidates = append(candidates,intersection[i].(string))
-                            }
+                            candidates = append(candidates, v)
+                        }
+                    }
+                case string:
+                    candidates = []string{intersection}
+                case []interface{}:
+                    if len(intersection) == 0 {
+                        output := "There aren't any wands that are that price with that engrave message"
+                        c.Say(channel, output)
+                        return
+                    } else {
+                        fmt.Printf("there are %d candidates \n", len(intersection))
+                        for i,_ := range intersection {
+                            candidates = append(candidates,intersection[i].(string))
                         }
                     }
                 }
             }
+        }
     }
 
     var output string
@@ -932,7 +932,7 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
             }
         }
     }
-    
+
     var output string
 
     if len(candidates) == 0 {
@@ -960,14 +960,14 @@ func parseNethackMessage(c *twitch.Client, channel, message, user string) {
     if len(words) != 0 {
         //re := regexp.MustCompile("[^a-zA-Z0-9]+")
         //message = re.ReplaceAllString(message, "")
-	message = strings.TrimSpace(message)
-	matchedMessage := messageMatching.Closest(message)
-	if message != matchedMessage {
-		fmt.Println(message)
-		fmt.Println(matchedMessage)
-	    c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
+        message = strings.TrimSpace(message)
+        matchedMessage := messageMatching.Closest(message)
+        if message != matchedMessage {
+            fmt.Println(message)
+            fmt.Println(matchedMessage)
+            c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
             time.Sleep(500 * time.Millisecond)
-	}
+        }
         if m, ok := messagesMapping.Items[matchedMessage]; ok {
             c.Say(channel, m.Meaning)
             if m.Property != "" {
@@ -986,9 +986,9 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     channel := m.Channel
     user := m.User.Name
     fmt.Println(message)
-    
+
     //words := strings.Split(message, " ")
-    
+
     if strings.HasPrefix(message, "!") {
         message = strings.TrimPrefix(message, "!")
         words := strings.Fields(message)
@@ -1017,8 +1017,8 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         if ok := parseOracleMessage(c, message, user); ok {
             return
         } else {
-	    return
-	}
+            return
+        }
     }
 
     // Deal with special requests from broadcasters
@@ -1061,7 +1061,7 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     } else {
         message = keyMatching.Closest(message)
         fmt.Println(message)
-	c.Say(channel, fmt.Sprintf("I think you meant '%s'",message))
+        c.Say(channel, fmt.Sprintf("I think you meant '%s'",message))
         m.Message = "?"+message
         parseMessage(c, m)
     }
@@ -1097,23 +1097,23 @@ func updateInfo() {
     accuracy := 0.0
     threshold := 60.0
     for accuracy < threshold { 
-    	keyMatching = closestmatch.New(keys, bagSizes)
-    	accuracy = keyMatching.AccuracyMutatingWords()
+        keyMatching = closestmatch.New(keys, bagSizes)
+        accuracy = keyMatching.AccuracyMutatingWords()
     }
     fmt.Printf("key matching done. accuracy: %d\n", accuracy)
     accuracy = 0.0
     for accuracy < threshold { 
-    	messageMatching = closestmatch.New(bagOfMessages, bagSizes)
-    	accuracy = keyMatching.AccuracyMutatingWords()
+        messageMatching = closestmatch.New(bagOfMessages, bagSizes)
+        accuracy = keyMatching.AccuracyMutatingWords()
     }
     fmt.Printf("message matching done. accuracy: %d\n", accuracy)
     accuracy = 0
     for accuracy < threshold { 
-    	engraveMatching = closestmatch.New(bagOfEngraves, bagSizes)
-    	accuracy = keyMatching.AccuracyMutatingWords()
+        engraveMatching = closestmatch.New(bagOfEngraves, bagSizes)
+        accuracy = keyMatching.AccuracyMutatingWords()
     }
     fmt.Printf("engrave matching done. accuracy: %d\n", accuracy)
- 
+
 
 }
 
