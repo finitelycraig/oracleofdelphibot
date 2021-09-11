@@ -819,7 +819,7 @@ func parseOracleMessage(c *twitch.Client, message string, user string) bool {
     } else if message == "depart" {
         c.Depart(user)
         return true
-    } else if message == "update" {
+    } else if message == "update" && user == "finitelycraig" {
         updateInfo()
         return true
     }
@@ -835,10 +835,10 @@ func parseBroadcasterMessage(c *twitch.Client, message string, user string) bool
     if message == "oracle-depart" {
         c.Depart(user)
         return true
-    } else if message == "oracle-update" {
-        updateInfo()
-        return true
-    }
+    } //else if message == "oracle-update" {
+    //    updateInfo()
+    //    return true
+    //}
     return false
 }
 
@@ -961,21 +961,55 @@ func parseNethackMessage(c *twitch.Client, channel, message, user string) {
         //re := regexp.MustCompile("[^a-zA-Z0-9]+")
         //message = re.ReplaceAllString(message, "")
         message = strings.TrimSpace(message)
-        matchedMessage := messageMatching.Closest(message)
+        matchedMessage := keyMatching.Closest(message)
         if message != matchedMessage {
             fmt.Println(message)
             fmt.Println(matchedMessage)
             c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
             time.Sleep(500 * time.Millisecond)
         }
-        if m, ok := messagesMapping.Items[matchedMessage]; ok {
-            c.Say(channel, m.Meaning)
-            if m.Property != "" {
-                if _, ok := propsInfo.Items[m.Property]; ok {
-                    time.Sleep(500 * time.Millisecond)
-                    c.Say(channel, getPropertyMessage(m.Property))
-                }
-            }
+    }
+}
+
+func parseWhatIsMessage(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "whatis")
+    message = strings.TrimSpace(message)
+
+    words := strings.Fields(message)
+    if len(words) != 0 {
+        matchedMessage := keyMatching.Closest(message)
+        if message != matchedMessage {
+            c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
+            message = matchedMessage
+            time.Sleep(500 * time.Millisecond)
+        }
+        if _, ok := weaponsInfo.Items[message]; ok {
+            c.Say(channel, getWeaponMessage(message))
+        } else if _, ok := armorInfo.Items[message]; ok {
+            c.Say(channel, getArmorMessage(message))
+        } else if _, ok := monstersInfo.Items[message]; ok {
+            c.Say(channel, getMonsterMessage(message))
+        } else if _, ok := toolsInfo.Items[message]; ok {
+            c.Say(channel, getToolMessage(message))
+        } else if _, ok := wandsInfo.Items[message]; ok {
+            c.Say(channel, getWandMessage(message))
+        } else if _, ok := scrollsInfo.Items[message]; ok {
+            c.Say(channel, getScrollMessage(message))
+        } else if _, ok := ringsInfo.Items[message]; ok {
+            c.Say(channel, getRingMessage(message))
+        } else if _, ok := amuletsInfo.Items[message]; ok {
+            c.Say(channel, getAmuletMessage(message))
+        } else if _, ok := propsInfo.Items[message]; ok {
+            c.Say(channel, getPropertyMessage(message))
+        } else if _, ok := comestiblesInfo.Items[message]; ok {
+            c.Say(channel, getComestibleMessage(message))
+        } else if _, ok := potionsInfo.Items[message]; ok {
+            c.Say(channel, getPotionMessage(message))
+        } else if _, ok := artifactsInfo.Items[message]; ok {
+            c.Say(channel, getArtifactMessage(message))
+        } else if actualName, ok := appearsAs.Items[message]; ok {
+            m := twitch.PrivateMessage{Message: "!whatis "+ actualName}
+            parseMessage(c, m)
         }
     }
 }
@@ -985,31 +1019,29 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
     user := m.User.Name
-    fmt.Println(message)
+    fmt.Printf("%s %s %s\n", time.Now().String(), message, channel)
 
     //words := strings.Split(message, " ")
 
     if strings.HasPrefix(message, "!") {
         message = strings.TrimPrefix(message, "!")
         words := strings.Fields(message)
-        if words[0] == "wandID" {
+        if words[0] == "wandid" {
             parseWandID(c, channel, message, user)
             return
-        } else if words[0] == "scrollID" {
+        } else if words[0] == "scrollid" {
             parseScrollID(c, channel, message, user)
             return
         } else if words[0] == "message" {
             parseNethackMessage(c, channel, message, user)
             return
+        } else if words[0] == "whatis" {
+            parseWhatIsMessage(c, channel, message, user)
+            return
         } else if _, ok := infosInfo.Items[message]; ok {
             c.Say(channel, getInfoMessage(message))
             return
         }
-    } else if strings.HasPrefix(message, "?") {
-        fmt.Print("prefix is ?")
-        message = strings.TrimPrefix(message, "?")
-    } else {
-        return
     }
 
     // Deal with requests for the oracle's attention
@@ -1027,48 +1059,9 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
             return
         }
     }
-
-    // Deal with all other messages
-    if _, ok := weaponsInfo.Items[message]; ok {
-        c.Say(channel, getWeaponMessage(message))
-    } else if _, ok := armorInfo.Items[message]; ok {
-        c.Say(channel, getArmorMessage(message))
-    } else if _, ok := monstersInfo.Items[message]; ok {
-        c.Say(channel, getMonsterMessage(message))
-    } else if _, ok := toolsInfo.Items[message]; ok {
-        c.Say(channel, getToolMessage(message))
-    } else if _, ok := wandsInfo.Items[message]; ok {
-        c.Say(channel, getWandMessage(message))
-    } else if _, ok := scrollsInfo.Items[message]; ok {
-        c.Say(channel, getScrollMessage(message))
-    } else if _, ok := ringsInfo.Items[message]; ok {
-        c.Say(channel, getRingMessage(message))
-    } else if _, ok := amuletsInfo.Items[message]; ok {
-        c.Say(channel, getAmuletMessage(message))
-    } else if _, ok := propsInfo.Items[message]; ok {
-        c.Say(channel, getPropertyMessage(message))
-    } else if _, ok := comestiblesInfo.Items[message]; ok {
-        c.Say(channel, getComestibleMessage(message))
-    } else if _, ok := potionsInfo.Items[message]; ok {
-        c.Say(channel, getPotionMessage(message))
-    } else if _, ok := artifactsInfo.Items[message]; ok {
-        c.Say(channel, getArtifactMessage(message))
-    } else if actualName, ok := appearsAs.Items[message]; ok {
-        m.Message = "!"+actualName
-        parseMessage(c, m)
-    } else if _, ok := wandsByEngraveMessage[message]; ok {
-        return // this is a shit way of handling this case
-    } else {
-        message = keyMatching.Closest(message)
-        fmt.Println(message)
-        c.Say(channel, fmt.Sprintf("I think you meant '%s'",message))
-        m.Message = "?"+message
-        parseMessage(c, m)
-    }
-
-
-
+    return
 }
+
 func updateInfo() {
     //reset the matching variables
     keys = nil
@@ -1095,7 +1088,7 @@ func updateInfo() {
 
     bagSizes := []int{2, 3, 4, 5, 6, 7, 8, 9, 10}
     accuracy := 0.0
-    threshold := 60.0
+    threshold := 57.0
     for accuracy < threshold { 
         keyMatching = closestmatch.New(keys, bagSizes)
         accuracy = keyMatching.AccuracyMutatingWords()
