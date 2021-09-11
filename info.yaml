@@ -15,7 +15,7 @@ infos:
     message: "Play Nethack (including version 3.7) and variants at"
     link: "https://www.hardfought.org"
   commands:
-    message: "!commands - displays this message // !nethack - displays info about nethack // !nao !hardfought - provides links // !nethackathon - links to nethackathon.org // !wandID <cost> <engrave message> - says what wand it might be // !scrollID <cost> - says what scroll it might be // !message <message> - explains an in game message // !<some in game thing> - tells you about the thing // !oracle-depart - sends the bot away (channel owner only)"
+    message: "!commands - displays this message // !nethack - displays info about nethack // !nao !hardfought !brogue !dcss - provides info and links // !nethackathon - links to nethackathon.org // !wandid <cost> <engrave message> - says what wand it might be // !scrollid <cost> - says what scroll it might be // !message <message> - explains an in game message // !whatis <some in game thing> - tells you about the thing // !credits - says who contributed to make me // !oracle-depart - sends the bot away (channel owner only)"
     link: ""
   nethackathon: 
     message: "Twenty-two Twitch content creators stream NetHack continuously for over 56 hours!"
