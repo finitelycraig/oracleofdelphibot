@@ -917,14 +917,14 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
 }
 
 func parseScrollID(c *twitch.Client, channel, message, user string) {
-    message = strings.TrimPrefix(message, "scrollID")
+    message = strings.TrimPrefix(message, "scrollid")
     re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
 
     var candidates []string
     cost,err := strconv.Atoi(re.FindString(message))
     if err != nil {
         fmt.Println("oops scrollID cost fjcked up")
-        c.Say(channel, "The scrollID command needs to know the cost of the scroll you're interested in. Try '!scrollID 40'")
+        c.Say(channel, "The scrollID command needs to know the cost of the scroll you're interested in. Try '!scrollid 40'")
     } else {
         if scrolls, ok := scrollsByCost[cost]; ok {
             if candidates == nil {
@@ -961,7 +961,7 @@ func parseNethackMessage(c *twitch.Client, channel, message, user string) {
         //re := regexp.MustCompile("[^a-zA-Z0-9]+")
         //message = re.ReplaceAllString(message, "")
         message = strings.TrimSpace(message)
-        matchedMessage := keyMatching.Closest(message)
+        matchedMessage := messageMatching.Closest(message)
         if message != matchedMessage {
             fmt.Println(message)
             fmt.Println(matchedMessage)
@@ -977,40 +977,50 @@ func parseWhatIsMessage(c *twitch.Client, channel, message, user string) {
 
     words := strings.Fields(message)
     if len(words) != 0 {
-        matchedMessage := keyMatching.Closest(message)
-        if message != matchedMessage {
-            c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
-            message = matchedMessage
-            time.Sleep(500 * time.Millisecond)
-        }
         if _, ok := weaponsInfo.Items[message]; ok {
             c.Say(channel, getWeaponMessage(message))
+	    return
         } else if _, ok := armorInfo.Items[message]; ok {
             c.Say(channel, getArmorMessage(message))
+	    return
         } else if _, ok := monstersInfo.Items[message]; ok {
             c.Say(channel, getMonsterMessage(message))
+	    return
         } else if _, ok := toolsInfo.Items[message]; ok {
             c.Say(channel, getToolMessage(message))
+	    return
         } else if _, ok := wandsInfo.Items[message]; ok {
             c.Say(channel, getWandMessage(message))
+	    return
         } else if _, ok := scrollsInfo.Items[message]; ok {
             c.Say(channel, getScrollMessage(message))
+	    return
         } else if _, ok := ringsInfo.Items[message]; ok {
             c.Say(channel, getRingMessage(message))
+	    return
         } else if _, ok := amuletsInfo.Items[message]; ok {
             c.Say(channel, getAmuletMessage(message))
+	    return
         } else if _, ok := propsInfo.Items[message]; ok {
             c.Say(channel, getPropertyMessage(message))
+	    return
         } else if _, ok := comestiblesInfo.Items[message]; ok {
             c.Say(channel, getComestibleMessage(message))
+	    return
         } else if _, ok := potionsInfo.Items[message]; ok {
             c.Say(channel, getPotionMessage(message))
+	    return
         } else if _, ok := artifactsInfo.Items[message]; ok {
             c.Say(channel, getArtifactMessage(message))
+	    return
         } else if actualName, ok := appearsAs.Items[message]; ok {
-            m := twitch.PrivateMessage{Message: "!whatis "+ actualName}
-            parseMessage(c, m)
+            parseWhatIsMessage(c, channel, "whatis " + actualName, user)
         }
+	// if we get here then there wasn't a matching, make a guess
+        matchedMessage := keyMatching.Closest(message)
+        c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
+        time.Sleep(500 * time.Millisecond)
+	parseWhatIsMessage(c, channel, "whatis "+matchedMessage, user)
     }
 }
 
