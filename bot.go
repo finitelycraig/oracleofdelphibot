@@ -2,8 +2,10 @@ package main
 
 import (
     "fmt"
-    "log"
+    log "github.com/sirupsen/logrus"
+
     "io/ioutil"
+    //"bufio"
     "os"
     "strings"
     "strconv"
@@ -32,7 +34,7 @@ var wandsInfo *wands
 var wandsByCost map[int][]string
 var wandsByEngraveMessage map[string][]string
 var ringsInfo *rings
-var ringsByPrice map[int][]string
+var ringsByCost map[int][]string
 var scrollsInfo *scrolls
 var scrollsByCost map[int][]string
 var amuletsInfo *amulets
@@ -207,7 +209,6 @@ type comestible struct {
     Conduct string `yaml:"conduct"`
     Effect string `yaml:"effect"`
 }
-
 
 type monsters struct {
     Items map[string]monster `yaml:"monsters"`
@@ -558,6 +559,31 @@ func getMonsters(fname string) *monsters {
         keys = append(keys, k)
     }
 
+
+//    resp, err := http.Get("https://raw.githubusercontent.com/NetHack/NetHack/071d79dce2ad5b8ade17c4dedf6b57c18b273a59/include/monsters.h")
+//    if err != nil {
+//       //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
+//   }
+////We Read the response body on the line below.
+//   body, err := ioutil.ReadAll(resp.Body)
+//   if err != nil {
+//      //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
+//   }
+//
+//   
+////Convert the body to type string
+//   var monsts *monsters
+//   sb := string(body)
+//   //fmt.Println(sb)
+//   scanner := bufio.NewScanner(strings.NewReader(sb))
+//   for scanner.Scan() {
+//	   var m monster 
+//	   line := scanner.Text()
+//	   if strings.Contains(line, "MON"){
+//		   name := strings.Split(line,'"')[1]
+//		   monsts.Items[name] = m
+//	   }
+//	}
     return m
 }
 
@@ -657,6 +683,15 @@ func getRings(fname string) *rings {
     if err != nil {
         log.Fatalf("Unmarshal rings: %v", err)
     }
+    
+    ringsByCost = make(map[int][]string)
+    for k,v := range r.Items {
+        if _, ok := ringsByCost[v.Cost]; ok {
+            ringsByCost[v.Cost] = append(ringsByCost[v.Cost], k)
+        } else {
+            ringsByCost[v.Cost] = []string{k}
+        }
+    }
     for k := range r.Items {
         keys = append(keys, k)
     }
@@ -724,6 +759,14 @@ func getPotions(fname string) *potions {
     err = yaml.Unmarshal(yamlFile, &p)
     if err != nil {
         log.Fatalf("Unmarshal potions: %v", err)
+    }
+    potionsByCost = make(map[int][]string)
+    for k,v := range p.Items {
+        if _, ok := potionsByCost[v.Cost]; ok {
+            potionsByCost[v.Cost] = append(potionsByCost[v.Cost], k)
+        } else {
+            potionsByCost[v.Cost] = []string{k}
+        }
     }
     for k := range p.Items {
         keys = append(keys, k)
@@ -827,8 +870,8 @@ func parseOracleMessage(c *twitch.Client, message string, user string) bool {
             joinButNotFound = true
         }
     } else if message == "depart" {
-        c.Depart(user)
-        return true
+	    c.Depart(user)
+	    return true
     } else if message == "update" && user == "finitelycraig" {
         updateInfo()
         return true
@@ -935,7 +978,7 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
     cost,err := strconv.Atoi(re.FindString(message))
     if err != nil {
         fmt.Println("oops scrollID cost fjcked up")
-        c.Say(channel, "The scrollID command needs to know the cost of the scroll you're interested in. Try '!scrollid 40'")
+        c.Say(channel, "The scrollid command needs to know the cost of the scroll you're interested in. Try '!scrollid 40'")
     } else {
         if scrolls, ok := scrollsByCost[cost]; ok {
             if candidates == nil {
@@ -958,6 +1001,80 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
                 output = output + "or " + scroll + "."
             } else {
                 output = output + scroll + ", "
+            }
+        }
+    }
+    c.Say(channel, output)
+}
+
+func parseRingID(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "ringid")
+    re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
+
+    var candidates []string
+    cost,err := strconv.Atoi(re.FindString(message))
+    if err != nil {
+        fmt.Println("oops ringID cost fjcked up")
+        c.Say(channel, "The ringid command needs to know the cost of the scroll you're interested in. Try '!ringid 300'")
+    } else {
+        if rings, ok := ringsByCost[cost]; ok {
+            if candidates == nil {
+                candidates = rings
+            }
+        }
+    }
+
+    var output string
+
+    if len(candidates) == 0 {
+        output = "There aren't any rings that are that price."
+    } else if len(candidates) == 1 {
+        c.Say(channel, getRingMessage(candidates[0]))
+        return
+    } else {
+        output = "That could be a "
+        for i,ring := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + ring + "."
+            } else {
+                output = output + ring + ", "
+            }
+        }
+    }
+    c.Say(channel, output)
+}
+
+func parsePotionID(c *twitch.Client, channel, message, user string) {
+    message = strings.TrimPrefix(message, "potionid")
+    re := regexp.MustCompile(`[-]?\d[\d,]*[\.]?[\d{2}]*`)
+
+    var candidates []string
+    cost,err := strconv.Atoi(re.FindString(message))
+    if err != nil {
+        fmt.Println("oops potionID cost fjcked up")
+        c.Say(channel, "The potionid command needs to know the cost of the potion you're interested in. Try '!potionid 50'")
+    } else {
+        if potions, ok := potionsByCost[cost]; ok {
+            if candidates == nil {
+                candidates = potions
+            }
+        }
+    }
+
+    var output string
+
+    if len(candidates) == 0 {
+        output = "There aren't any potions that are that price."
+    } else if len(candidates) == 1 {
+        c.Say(channel, getPotionMessage(candidates[0]))
+        return
+    } else {
+        output = "That could be a "
+        for i,potion := range candidates {
+            if i == len(candidates) - 1 {
+                output = output + "or " + potion + "."
+            } else {
+                output = output + potion + ", "
             }
         }
     }
@@ -1067,11 +1184,10 @@ func parseWhoIsNext(c *twitch.Client, channel, message, user string) {
 	t,_ := strconv.ParseInt(s.Start_time,10,64) 
 	if t > time.Now().UnixMilli() {
 	   gap := strings.Split((time.UnixMilli(t).Sub(time.Now()).String()),"m")
-	   c.Say(channel, fmt.Sprintf("https://twitch.tv/%s is up in %sm", s.Username, gap[0]))
+	   c.Say(channel, fmt.Sprintf("%s is up in %sm at https://twitch.tv/%s", s.Username, gap[0],strings.ToLower(s.Username)))
            return
 	}
    } 
-
 }
 
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
@@ -1079,7 +1195,11 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     message := m.Message
     channel := m.Channel
     user := m.User.Name
-    fmt.Printf("%s %s %s\n", time.Now().String(), message, channel)
+    log.WithFields(log.Fields{
+	    "user": user,
+	    "channel": channel,
+    }).Info(message)
+    //log.Printf("%s %s %s\n", message, user, channel)
 
     //words := strings.Split(message, " ")
 
@@ -1091,6 +1211,12 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
             return
         } else if words[0] == "scrollid" {
             parseScrollID(c, channel, message, user)
+            return
+        } else if words[0] == "ringid" {
+            parseRingID(c, channel, message, user)
+            return
+        } else if words[0] == "potionid" {
+            parsePotionID(c, channel, message, user)
             return
         } else if words[0] == "message" {
             parseNethackMessage(c, channel, message, user)
@@ -1174,6 +1300,11 @@ func updateInfo() {
 }
 
 func main() {
+	log.SetFormatter(&log.JSONFormatter{})
+	    log.SetOutput(os.Stdout)
+
+	    log.SetOutput(os.Stdout)
+
     allowedBroadcasters = getAllowedChannels("allowed-channels.yaml")
     // load the information from yaml files containing stats
     updateInfo()
