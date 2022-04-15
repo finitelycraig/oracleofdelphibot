@@ -444,6 +444,14 @@ func getInfoMessage(name string) string {
     return output
 }
 
+func getNethackMessage(name string) string {
+    var output string 
+    if val, ok := messagesMapping.Items[name]; ok {
+        output = fmt.Sprintf("%s",val.Meaning)
+    }
+    return output
+}
+
 func getMonsterMessage(name string) string {
     var output string 
     if val, ok := monstersInfo.Items[name]; ok {
@@ -857,6 +865,7 @@ func parseWandID(c *twitch.Client, channel, message, user string) {
             }
         }
     }
+    fmt.Println(candidates)
 
     words := strings.Fields(message)
     if len(words) > 1 {
@@ -954,6 +963,7 @@ func parseScrollID(c *twitch.Client, channel, message, user string) {
 }
 
 func parseNethackMessage(c *twitch.Client, channel, message, user string) {
+    fmt.Println("parsing nethack message")
     message = strings.TrimPrefix(message, "message")
 
     words := strings.Fields(message)
@@ -968,6 +978,7 @@ func parseNethackMessage(c *twitch.Client, channel, message, user string) {
             c.Say(channel, fmt.Sprintf("I think you meant '%s'",matchedMessage))
             time.Sleep(500 * time.Millisecond)
         }
+        c.Say(channel, getNethackMessage(matchedMessage))
     }
 }
 
