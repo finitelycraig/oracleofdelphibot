@@ -1015,6 +1015,7 @@ func parseWhatIsMessage(c *twitch.Client, channel, message, user string) {
 	    return
         } else if actualName, ok := appearsAs.Items[message]; ok {
             parseWhatIsMessage(c, channel, "whatis " + actualName, user)
+	    return
         }
 	// if we get here then there wasn't a matching, make a guess
         matchedMessage := keyMatching.Closest(message)
@@ -1103,19 +1104,19 @@ func updateInfo() {
         keyMatching = closestmatch.New(keys, bagSizes)
         accuracy = keyMatching.AccuracyMutatingWords()
     }
-    fmt.Printf("key matching done. accuracy: %d\n", accuracy)
+    fmt.Printf("key matching done. accuracy: %f\n", accuracy)
     accuracy = 0.0
     for accuracy < threshold { 
         messageMatching = closestmatch.New(bagOfMessages, bagSizes)
         accuracy = keyMatching.AccuracyMutatingWords()
     }
-    fmt.Printf("message matching done. accuracy: %d\n", accuracy)
+    fmt.Printf("message matching done. accuracy: %f\n", accuracy)
     accuracy = 0
     for accuracy < threshold { 
         engraveMatching = closestmatch.New(bagOfEngraves, bagSizes)
         accuracy = keyMatching.AccuracyMutatingWords()
     }
-    fmt.Printf("engrave matching done. accuracy: %d\n", accuracy)
+    fmt.Printf("engrave matching done. accuracy: %f\n", accuracy)
 
 
 }
