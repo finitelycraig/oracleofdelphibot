@@ -9,6 +9,8 @@ import (
     "strconv"
     "regexp"
     "time"
+    "net/http"
+    "encoding/json"
 
     "gopkg.in/yaml.v2"
     "github.com/gempir/go-twitch-irc/v2"
@@ -1036,6 +1038,45 @@ func parseWhatIsMessage(c *twitch.Client, channel, message, user string) {
     }
 }
 
+type Streamer struct {
+   Username string
+   Start_time string
+}
+
+type Streamers struct {
+   Streamers []Streamer
+}
+
+func parseWhoIsNext(c *twitch.Client, channel, message, user string) {
+   resp, err := http.Get("https://api.nethackathon.org/schedule")
+   if err != nil {
+      log.Fatalln(err)
+   }
+//We Read the response body on the line below.
+   body, err := ioutil.ReadAll(resp.Body)
+   if err != nil {
+      log.Fatalln(err)
+   }
+
+   
+//Convert the body to type string
+   sb := string(body)
+   var streamers Streamers
+   json.Unmarshal([]byte(sb), &streamers)
+   fmt.Printf(sb)	
+   fmt.Println(streamers)	
+   fmt.Println(time.Now().UnixMilli())
+   for _,s := range(streamers.Streamers) {
+	t,_ := strconv.ParseInt(s.Start_time,10,64) 
+	if t > time.Now().UnixMilli() {
+	   gap := strings.Split((time.UnixMilli(t).Sub(time.Now()).String()),"m")
+	   c.Say(channel, fmt.Sprintf("%s is up in %sm", s.Username, gap[0]))
+           return
+	}
+   } 
+
+}
+
 func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
     time.Sleep(500 * time.Millisecond)
     message := m.Message
@@ -1060,7 +1101,10 @@ func parseMessage(c *twitch.Client, m twitch.PrivateMessage) {
         } else if words[0] == "whatis" {
             parseWhatIsMessage(c, channel, message, user)
             return
-        } else if _, ok := infosInfo.Items[message]; ok {
+        } else if words[0] == "whoisnext" {
+            parseWhoIsNext(c, channel, message, user)
+            return
+	} else if _, ok := infosInfo.Items[message]; ok {
             c.Say(channel, getInfoMessage(message))
             return
         }
