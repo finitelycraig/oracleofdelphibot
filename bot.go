@@ -1050,12 +1050,12 @@ type Streamers struct {
 func parseWhoIsNext(c *twitch.Client, channel, message, user string) {
    resp, err := http.Get("https://api.nethackathon.org/schedule")
    if err != nil {
-      log.Fatalln(err)
+      c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
    }
 //We Read the response body on the line below.
    body, err := ioutil.ReadAll(resp.Body)
    if err != nil {
-      log.Fatalln(err)
+      c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
    }
 
    
@@ -1063,14 +1063,11 @@ func parseWhoIsNext(c *twitch.Client, channel, message, user string) {
    sb := string(body)
    var streamers Streamers
    json.Unmarshal([]byte(sb), &streamers)
-   fmt.Printf(sb)	
-   fmt.Println(streamers)	
-   fmt.Println(time.Now().UnixMilli())
    for _,s := range(streamers.Streamers) {
 	t,_ := strconv.ParseInt(s.Start_time,10,64) 
 	if t > time.Now().UnixMilli() {
 	   gap := strings.Split((time.UnixMilli(t).Sub(time.Now()).String()),"m")
-	   c.Say(channel, fmt.Sprintf("%s is up in %sm", s.Username, gap[0]))
+	   c.Say(channel, fmt.Sprintf("https://twitch.tv/%s is up in %sm", s.Username, gap[0]))
            return
 	}
    } 
