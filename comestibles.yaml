@@ -95,14 +95,6 @@ comestibles:
     conduct: "vegetarian"
     effect: ""
     notes: "They will never be rotten when eaten and have a scrap of paper inside with a random rumor, blessed cookies will contain true rumors, cursed will contain false and uncursed may contain either"
-  gunyoki:
-    cost: 45
-    weight: 20
-    nutritional_value: 800
-    time: 5
-    conduct: "vegan"
-    effect: ""
-    notes: "Samurai name for food ration. Cursed food rations are always rotten when eaten"
   huge chunk of meat:
     cost: 105
     weight: 400

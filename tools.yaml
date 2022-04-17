@@ -112,13 +112,7 @@ tools:
     weight: 900
     use: "keeps corpses fresh"
     creation: "contains 0-20 corpses"
-    magic: false
-  koto:
-    cost: 50
-    weight: 30
-    use: "Samurai name for wooden harp. pacifies nymphs"
-    creation: ""
-    magic: false    
+    magic: false 
   land mine:
     cost: 180
     weight: 300
@@ -202,12 +196,6 @@ tools:
     weight: 15
     use: "prevents blanking"
     creation: "contains 0-1 items"
-    magic: false
-  osaku:
-    cost: 20
-    weight: 4
-    use: "Samurai name for lock pick. Opens locked things"
-    creation: ""
     magic: false
   pick-axe:
     cost: 50
