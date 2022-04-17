@@ -1,67 +1,79 @@
 appearances:
-  crude ring mail: "orcish ring mail"
-  crude chain mail: "orcish chain mail"
-  coarse mantelet: "orcish cloak"
-  hooded cloak: "dwarvish cloak"
-  slippery cloak: "oilskin cloak"
-  apron: "alchemy smock"
-  faded pall: "elven cloak"
-  leather hat: "elven leather helm"
-  iron skull cap: "orcish helm"
-  hard hat: "dwarvish iron helm"
-  red-eyed shield: "orcish shield"
-  white-handed shield: "Uruk-hai shield"
-  blue and green shield: "elven shield"
-  large round shield: "dwarvish roundshield"
-  polished silver shield: "shield of reflection"
-  walking shoes: "low boots"
-  jackboots: "high boots"
-  hard shoes: "iron shoes"
-  crude dagger: "orcish dagger"
-  runed dagger: "elven dagger"
-  double-headed axe: "battle-axe"
-  broad pick: "dwarvish mattock"
-  crude short sword: "orcish short sword"
-  broad short sword: "dwarvish short sword"
-  runed short sword: "elven short sword"
-  samurai sword: "katana"
-  long samurai sword: "tsurugi"
-  curved sword: "scimitar"
-  thonged club: "aklys"
-  iron hook: "grappling hook"
-  staff: "quarterstaff"
-  vulgar polearm: "partisan"
-  pole sickle: "fauchard"
-  single-edged polearm: "glaive"
-  beaked polearm: "bec-de-corbin"
-  forked polearm: "spetum"
-  pronged polearm: "lucern hammer"
-  pruning hook: "guisarme"
-  hilted polearm: "ranseur"
-  pole cleaver: "voulge"
-  hooked polearm: "bill-guisarme"
-  long poleaxe: "bardiche"
-  angled poleaxe: "halberd"
-  crude spear: "orcish spear"
-  runed spear: "elven spear"
-  stout spear: "dwarvish spear"
-  throwing spear: "javelin"
-  crude bow: "orcish bow"
-  crude arrow: "orcish arrow"
-  runed bow: "elven bow"
-  runed arrow: "elven arrow"
-  long bow: "yumi"
-  bamboo arrow: "ya"
-  throwing star: "shuriken"
-  gdsm: "gray dragon scale mail"
-  sdsm: "silver dragon scale mail"
-  boh: "bag of holding"
-  aoy: "Amulet of Yendor"
-  pyec: "The Platinum Yendorian Express Card"
-  soa: "The Staff of Aesculapius"
-  mb: "Magicbane"
-  mkot: "The Master Key of Thievery"
-  mmom: "The Magic Mirror of Merlin"
-  eota: "The Eye of the Aethiopica"
-  hooa: "helm of opposite alignment"
-  key: "skeleton key"
+  angled poleaxe: halberd
+  aoy: Amulet of Yendor
+  apron: alchemy smock
+  bamboo arrow: ya
+  beaked polearm: bec-de-corbin
+  blue and green shield: elven shield
+  boh: bag of holding
+  broad pick: dwarvish mattock
+  broad short sword: dwarvish short sword
+  coarse mantelet: orcish cloak
+  crude arrow: orcish arrow
+  crude bow: orcish bow
+  crude chain mail: orcish chain mail
+  crude dagger: orcish dagger
+  crude ring mail: orcish ring mail
+  crude short sword: orcish short sword
+  crude spear: orcish spear
+  curved sword: scimitar
+  double-headed axe: battle-axe
+  eota: The Eye of the Aethiopica
+  faded pall: elven cloak
+  forked polearm: spetum
+  gdsm: gray dragon scale mail
+  gunyoki: food ration
+  hard hat: dwarvish iron helm
+  hard shoes: iron shoes
+  hilted polearm: ranseur
+  hooa: helm of opposite alignment
+  hooded cloak: dwarvish cloak
+  hooked polearm: bill-guisarme
+  iron hook: grappling hook
+  iron skull cap: orcish helm
+  jackboots: high boots
+  kabuto: helmet
+  key: skeleton key
+  koto: wooden harp
+  large round shield: dwarvish roundshield
+  leather hat: elven leather helm
+  long bow: yumi
+  long poleaxe: bardiche
+  long samurai sword: tsurugi
+  mb: Magicbane
+  mkot: The Master Key of Thievery
+  mmom: The Magic Mirror of Merlin
+  naginata: glaive
+  ninja-to: broadsword
+  nunchaku: flail
+  osaku: lock pick  
+  pole cleaver: voulge
+  pole sickle: fauchard
+  polished silver shield: shield of reflection
+  pronged polearm: lucern hammer
+  pruning hook: guisarme
+  pyec: The Platinum Yendorian Express Card
+  red-eyed shield: orcish shield
+  runed arrow: elven arrow
+  runed bow: elven bow
+  runed dagger: elven dagger
+  runed short sword: elven short sword
+  runed spear: elven spear
+  sake: potion of booze
+  samurai sword: katana
+  sdsm: silver dragon scale mail
+  shito: knife
+  single-edged polearm: glaive
+  slippery cloak: oilskin cloak
+  soa: The Staff of Aesculapius
+  staff: quarterstaff
+  stout spear: dwarvish spear
+  tanko: plate mail
+  thonged club: aklys
+  throwing spear: javelin
+  throwing star: shuriken
+  vulgar polearm: partisan
+  wakizashi: short sword
+  walking shoes: low boots
+  white-handed shield: Uruk-hai shield
+  yugake: leather gloves
