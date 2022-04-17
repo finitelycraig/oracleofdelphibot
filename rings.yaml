@@ -1,113 +1,113 @@
 rings:
   meat ring:
     cost: 5
-    extrinsic_granted: ""
-    notes: "never randomly generated"
+    extrinsic_granted: ''
+    notes: never randomly generated
   ring of adornment:
     cost: 100
-    extrinsic_granted: "+n charisma"
-    notes: "It is chargeable"
-  ring of hunger:
-    cost: 100
-    extrinsic_granted: "hunger"
-    notes: "90% are generated cursed"
-  ring of protection:
-    cost: 100
-    extrinsic_granted: "+n protection"
-    notes: "It is chargeable"
-  ring of protection from shape shifters:
-    cost: 100
-    extrinsic_granted: "protection from shape changers"
-    notes: ""
-  ring of stealth:
-    cost: 100
-    extrinsic_granted: "stealth"
-    notes: ""
-  ring of sustain ability:
-    cost: 100
-    extrinsic_granted: "sustian ability"
-    notes: ""
-  ring of warning:
-    cost: 100
-    extrinsic_granted: "warning"
-    notes: ""
+    extrinsic_granted: +n charisma
+    notes: It is chargeable
   ring of aggravate monster:
     cost: 150
-    extrinsic_granted: "aggravate monster"
-    notes: "90% are generated cursed"
+    extrinsic_granted: aggravate monster
+    notes: 90% are generated cursed
   ring of cold resistance:
     cost: 150
-    extrinsic_granted: "cold resistance"
-    notes: ""
-  ring of gain constitution:
-    cost: 150
-    extrinsic_granted: "+n constitution"
-    notes: "It is chargeable"
-  ring of gain strength:
-    cost: 150
-    extrinsic_granted: "+n strength"
-    notes: "It is chargeable"
-  ring of increase accuracy:
-    cost: 150
-    extrinsic_granted: "+n to-hit bonus"
-    notes: "It is chargeable"
-  ring of invisibility:
-    cost: 150
-    extrinsic_granted: "invisibility"
-    notes: "It is cursed if from a Nazgul"
-  ring of poison resistance:
-    cost: 150
-    extrinsic_granted: "poison resistance"
-    notes: ""
-  ring of see invisible:
-    cost: 150
-    extrinsic_granted: "see invisible"
-    notes: ""
-  ring of shock resistance:
-    cost: 150
-    extrinsic_granted: "shock resistance"
-    notes: ""
-  ring of fire resistance:
-    cost: 200
-    extrinsic_granted: "fire resistance"
-    notes: ""
-  ring of free action:
-    cost: 200
-    extrinsic_granted: "free action"
-    notes: ""
-  ring of levitation:
-    cost: 200
-    extrinsic_granted: "levitation"
-    notes: ""
-  ring of regeneration:
-    cost: 200
-    extrinsic_granted: "regeneration"
-    notes: ""
-  ring of searching:
-    cost: 200
-    extrinsic_granted: "searching"
-    notes: ""
-  ring of slow digestion:
-    cost: 200
-    extrinsic_granted: "slow digestion"
-    notes: ""
-  ring of teleportation:
-    cost: 200
-    extrinsic_granted: "teleportitis"
-    notes: "90% are generated cursed"
+    extrinsic_granted: cold resistance
+    notes: ''
   ring of conflict:
     cost: 300
-    extrinsic_granted: "conflict"
-    notes: ""
+    extrinsic_granted: conflict
+    notes: ''
+  ring of fire resistance:
+    cost: 200
+    extrinsic_granted: fire resistance
+    notes: ''
+  ring of free action:
+    cost: 200
+    extrinsic_granted: free action
+    notes: ''
+  ring of gain constitution:
+    cost: 150
+    extrinsic_granted: +n constitution
+    notes: It is chargeable
+  ring of gain strength:
+    cost: 150
+    extrinsic_granted: +n strength
+    notes: It is chargeable
+  ring of hunger:
+    cost: 100
+    extrinsic_granted: hunger
+    notes: 90% are generated cursed
+  ring of increase accuracy:
+    cost: 150
+    extrinsic_granted: +n to-hit bonus
+    notes: It is chargeable
+  ring of invisibility:
+    cost: 150
+    extrinsic_granted: invisibility
+    notes: It is cursed if from a Nazgul
+  ring of levitation:
+    cost: 200
+    extrinsic_granted: levitation
+    notes: ''
+  ring of poison resistance:
+    cost: 150
+    extrinsic_granted: poison resistance
+    notes: ''
   ring of polymorph:
     cost: 300
-    extrinsic_granted: "polymorphitis"
-    notes: "90% are generated cursed"
+    extrinsic_granted: polymorphitis
+    notes: 90% are generated cursed
   ring of polymorph control:
     cost: 300
-    extrinsic_granted: "polymorph control"
-    notes: ""
+    extrinsic_granted: polymorph control
+    notes: ''
+  ring of protection:
+    cost: 100
+    extrinsic_granted: +n protection
+    notes: It is chargeable
+  ring of protection from shape shifters:
+    cost: 100
+    extrinsic_granted: protection from shape changers
+    notes: ''
+  ring of regeneration:
+    cost: 200
+    extrinsic_granted: regeneration
+    notes: ''
+  ring of searching:
+    cost: 200
+    extrinsic_granted: searching
+    notes: ''
+  ring of see invisible:
+    cost: 150
+    extrinsic_granted: see invisible
+    notes: ''
+  ring of shock resistance:
+    cost: 150
+    extrinsic_granted: shock resistance
+    notes: ''
+  ring of slow digestion:
+    cost: 200
+    extrinsic_granted: slow digestion
+    notes: ''
+  ring of stealth:
+    cost: 100
+    extrinsic_granted: stealth
+    notes: ''
+  ring of sustain ability:
+    cost: 100
+    extrinsic_granted: sustian ability
+    notes: ''
   ring of teleport control:
     cost: 300
-    extrinsic_granted: "teleport control"
-    notes: ""
+    extrinsic_granted: teleport control
+    notes: ''
+  ring of teleportation:
+    cost: 200
+    extrinsic_granted: teleportitis
+    notes: 90% are generated cursed
+  ring of warning:
+    cost: 100
+    extrinsic_granted: warning
+    notes: ''

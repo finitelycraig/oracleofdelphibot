@@ -1,395 +1,395 @@
 properties:
-  fire resistance:
-    effect: "prevents fire damage, but does not fireproof your inventory"
-    sources: 
-      - "being a Monk at level 11"
-      - "being a Priest at level 20"
-      - "putting on or eating a ring of fire resistance"
-      - "polymorphing into a resistant monster"
-  cold resistance:
-    effect: "prevents cold damage, but does not protect your potions"
-    sources:
-      - "being a Valkyrie"
-      - "being a Monk at level 13"
-      - "putting on or eating a ring of cold resistance"
-      - "polymorphing into a resistant monster"
-  sleep resistance:
-    effect: "prevents sleep or, alternatively, free action works for potions only"
-    sources:
-      - "being an Elf at level 4"
-      - "eating a ring of free action"
-      - "polymorphing into a resistant monster"
-  disintegration resistance:
-    effect: "prevents instadeath from black dragon breath"
-    sources:
-      - "eating a black dragon corpse"
-      - "polymorphing into a resistant monster"
-  shock resistance:
-    effect: "prevents damage from electric attacks but does not defend rings or wands"
-    sources:
-      - "being a Monk at level 15"
-      - "eating a corpse"
-      - "putting on or eating a ring of shock resistance"
-      - "polymorphing into a resistant monster"
-  poison resistance:
-    effect: "prevents poisoning and instadeath from poison"
-    sources:
-      - "being an Orc, Barbarian or Healer"
-      - "being a Monk at level 3"
-      - "being a Tourist at level 20"
-      - "wearing an amulet versus poison or ring of poison resistance"
-      - "polymorphing into a resistant monster"
-  regeneration:
-    effect: "increases the rate of recovery of your HPs"
-    sources:
-      - "wearing or eating a ring of regeneration"
-      - "wielding the Staff of Aesculapius"
-      - "polymorphing into a monster with the intrinsic"
-  searching:
-    effect: "automatically search squares around you, increasing the chance you notice hidden doors or traps"
-    sources:
-      - "being a Ranger"
-      - "being a Monk at level 9"
-      - "being an Archaeologist, Rogue or Tourist at level 10"
-      - "wearing or eating a ring of searching"
-      - "wielding Excalibur"
-  see invisible:
-    effect: "allows you to see invisible monsters"
-    sources:
-      - "quaffing a potion og see invisible"
-      - "wearing or eating a ring of see invisible"
-      - "eating a stalker corpse while invisible"
-      - "polymorphing into a monster with the intrinsic"
-      - "drinking from a fountain"
-  invisible:
-    effect: "makes you invisible"
-    sources:
-      - "quaffing a potion of invisibility"
-      - "zapping yourslef with a wand of make invisible"
-      - "wearing a cloak or ring of invisibility"
-      - "eating a stalker corpse while temporarily invisible"
-      - "polymorphing into a stalker or black light"
-      - "invoking the Orb of Detection"
-  teleportation:
-    effect: "randomly teleports you around the dungeon every few turns"
-    sources:
-      - "(sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor"
-      - "wearing or eating a ring of teleportation"
-      - "polymorphing into an monster with the intrinsic"
-  teleportitis:
-    effect: "randomly teleports you around the dungeon every few turns"
-    sources:
-      - "(sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor"
-      - "wearing or eating a ring of teleportation"
-      - "polymorphing into an monster with the intrinsic"
-  telport control:
-    effect: "allows you to choose your destination tile when you teleport"
-    sources:
-      - "being a Monk at level 17"
-      - "being a Wizard at level 17"
-      - "wearing or eating a ring of teleport control"
-      - "carrying the Master Key of Thievery"
-      - "polymorphing into a tengu"
-  polymorph:
-    effect: "randomly polymorphs you into another monster type every few turns"
-    sources:
-      - "wearing or eating a ring of polymorph"
-  polymorphitis:
-    effect: "randomly polymorphs you into another monster type every few turns"
-    sources:
-      - "wearing or eating a ring of polymorph"
-  polymorph control:
-    effect: "allows you to choose the type of monster to become when you polymorph"
-    sources:
-      - "wearing or eating a ring of polymorph control"
-  levitation:
-    effect: "you float and cannot reach the floor! You can pass over moats, trap doors and pits (except in Sokoban)"
-    sources:
-      - "quaffing a potion of levitation (temporary)"
-      - "casting the spell from a spellbook of levitation (temporary)"
-      - "wearing a ring or boots of levitation"
-      - "eating a ring of levitation (temporary)"
-      - "invoking the Heart of Ahriman"
-  stealth:
-    effect: "allows you to move around quietly, so that your steps do not wake sleeping monsters"
-    sources:
-      - "some roles have innate stealth"
-      - "wearing elven boots, elven cloak or ring of stealth"
-      - "receiving a favor from your god when praying"
-  aggravate monster:
-    effect: "increases probability that nearby sleeping monsters notice you and wake"
-    sources:
-      - "(for all but Cavemen and Orcs) eating cat or dog meat, or eating your own race"
-      - "sacrificing a dead pet at an altar"
-      - "wearing or eating a ring of aggravate monster"
-  conflict:
-    effect: "monsters will attack other nearby monsters, disregarding their tame/peaceful/hostile status"
-    sources:
-      - "wearing or eating a ring of conflict"
-      - "invoking the Sceptre of Might"
-  protection:
-    effect: "indicates that have have either intrinsic divine protection, or wear an item of protection, for the purposes of the enlightenment message"
-    sources:
-      - "buy divine protection by donating to priests"
-      - "wearning a cloak of protection or ring of protection"
-      - "receiving a favor from your god when praying"
-  protection from shape changers:
-    effect: "forces shapeshifters and chameleons to stay in normal form"
-    sources:
-      - "wearing or eating a ring of protection from shape changers"
-  warning:
-    effect: "labels unseen, undetected nearby monsters with a danger indicator from 1-5"
-    sources:
-      - "being a Monk at level 7"
-      - "being some roles at level 15"
-      - "wearing or eating a ring or warning"
-      - "carrying the Master Key of Thievery or the Orb of Fate"
-  hunger:
-    effect: "increase the rate that you lose nutrition"
-    sources:
-      - "wearing or eating a ring of hunger"
-  telepathy (intrinsic):
-    effect: "allows you to sense most monsters but only when you are blind"
-    sources:
-      - "eating a floating eye (100% chance) or mind flayer corpse (50% chance or 100% at max intelligence)"
-      - "receiving a favor from your god when praying"
-  telepathy (extrinsic):
-    effect: "allows you to sense most monsters but only when you are blind and also in a limited radius when not blind"
-    sources:
-      - "wearing an amulet of ESP of helm of telepathy"
-      - "carrying the Longbow of Diane"
-      - "carrying the Orb of Detection"
-      - "carrying the Magic Mirror of Merlin"
-      - "carrying the Platinum Yendorian Express Card"
-  speed (intrinsic):
-    effect: "makes you fast, allowing 4 moves every 3 turns"
-    sources:
-      - "zapping yourself with a wand of speed monster"
-      - "eating a quantum mechanic corpse to toggle the intrinsic"
-      - "receiving a favor from your god when praying"
-  speed (extrinsic):
-    effect: "makes you very fast, allowing 5 moves every 3 turns"
-    sources:
-      - "quaffing a potion of speed"
-      - "wearing speed boots"
-  food appraisal:
-    effect: "warns you of any bad effects that might result before eating something, and allows you to abort. It is lost after one activation."
-    sources:
-      - "reading a blessed scroll of food detection"
-      - "casting detect food at skilled or expert"
-  unbreathing:
-    effect: "allows you to survive without breathing: you can go underwater and will not choke on food"
-    sources:
-      - "wearing or eating an amulet of magical breathing"
-      - "polymorphing into a breathless monster"
-  amphibiousness:
-    effect: "allows you to breathe both in the air and underwater"
-    sources:
-      - "polymorphing into an amphibious monster"
-      - "be breathless"
-  jumping:
-    effect: "allows you to land on another tile in one move"
-    sources:
-      - "being a Knight"
-      - "wearing jumping boots"
-      - "reading a spellbook of jumping"
-  infravision:
-    effect: "your eyes sense the heat from warm monsters, making them visible to you you, even in unlit places"
-    sources:
-      - "being a Dwarf, Elf, Gnome or Orc"
-      - "polymorphing into a monster with the intrinsic"
   acid resistance:
-    effect: "prevents acid damage, but does not rustproof your armor"
-    sources: 
-      - "wearing an alchemy smock or yellow dragon scale mail"
-      - "polymorphing into a resistant monster"
-  stoning resistance:
-    effect: "prevents the stoning process. This is one way to fight cockatrices and chickatrices"
+    effect: prevents acid damage, but does not rustproof your armor
     sources:
-      - "polymorphing into a resistant monster"
-  sliming resistance:
-    effect: "provides immunity to the sliming process"
-    sources:
-      - "polymorphing into a green slime, fire vortex, flaming sphere, fire elemental or salamander"
-      - "be unchanging"
-  drain resistance:
-    effect: "protects against loss of experience levels and prevents instadeath from drain below level 1"
-    sources:
-      - "wielding Stormbringer or Excalibur or the Staff of Aesculapius"
-      - "polymorphing into any undead monster, demon or werecreature"
+      - wearing an alchemy smock or yellow dragon scale mail
+      - polymorphing into a resistant monster
   adornment:
-    effect: "indicates that you wear a ring of adornment that allows an enlightenment messaged to be displayed"
+    effect: indicates that you wear a ring of adornment that allows an enlightenment messaged to be displayed
     sources:
-      - "wearing a ring of adornment"
-  reflection:
-    effect: "bounces gaze and ray attacks away from you"
+      - wearing a ring of adornment
+  aggravate monster:
+    effect: increases probability that nearby sleeping monsters notice you and wake
     sources:
-      - "wearing silver dragon scale mail"
-      - "wearing a shield or amulet of reflection"
-      - "wielding the Longbow of Diana"
-      - "polymorphing into a silver dragon"
-  life saving:
-    effect: "resurrects you when you die if you're wearing an amulet of life saving"
+      - (for all but Cavemen and Orcs) eating cat or dog meat, or eating your own race
+      - sacrificing a dead pet at an altar
+      - wearing or eating a ring of aggravate monster
+  amphibiousness:
+    effect: allows you to breathe both in the air and underwater
     sources:
-      - "wearing an amulet of life saving"
-  magic resistance:
-    effect: "prevents damage from certain traps, magic missiles and certain other magic attacks, among other useful benefits"
-    sources:
-      - "wearing a cloak of magic resistance"
-      - "wearing gray dragon scale mail"
-      - "wielding Magicbane"
-      - "carrying certain quest artifacts"
-  phasing:
-    effect: "means you can walk through walls. This property has no effect in Sokoban"
-    sources:
-      - "polymorphing into a xorn or earth elemental"
-  hallucination resistance:
-    effect: "prevents the effects of hallucination"
-    sources:
-      - "wielding Grayswandir"
-  fumbling:
-    effect: "causes you to sometimes trip while walking, accidentally drop items, fall down stairs and other such problems"
-    sources:
-      - "wearing gauntlets of fumbling or fumble boots"
-  water walking:
-    effect: "means you can cross water by walking on its surface"
-    sources:
-      - "wearing water walking boots"
-  displacement:
-    effect: "produces a displaced image of you on a nearby square, such that monsters sometimes attack the image and miss you"
-    sources:
-      - "wearing a cloak of displacement"
-  clairvoyance:
-    effect: "makes a map of the area around you appear in your mind, every few turns"
-    sources:
-      - "buying temporary clairvoyance by donating to priests"
-      - "being a Wizard and wearing a cornuthaum"
-      - "carrying the Amulet of Yendor"
-  energy regeneration:
-    effect: "increases your power at a much faster rate"
-    sources:
-      - "carrying the Eye of the Aethiopica"
-  half spell damage:
-    effect: ""
-    sources:
-      - "carrying the Orb of Detection, the Platinum Yendorian Express Card, the Orb of Fate or the Eye of the Aethiopica"
-  half physical damage:
-    effect: ""
-    sources:
-      - "carrying the Master Key of Thievery or the Orb of Fate"
-  sickness resistance:
-    effect: "provides complete immunity to sickness"
-    sources:
-      - "polymorphing into a ghoul or any fungus"
-  free action:
-    effect: "prevents paralysis in most cases and makes the potion of sleeping harmless, but does not prevent other forms of sleep. It reduces stunning from monster spells to 1 turn"
-    sources:
-      - "wearing a ring of free action"
-  swimming:
-    effect: "enables you to swim across water"
-    sources:
-      - "polymorphing into a swimming monster"
-      - "riding a swimming steed"
-  sustain ability:
-    effect: "prevents changes to your six attributes and prevents the effects of exercise and abuse"
-    sources:
-      - "wearing a ring of sustain ability"
-  flying:
-    effect: "enables you to fly above the ground"
-    sources:
-      - "polymorphing into a flying monster"
-      - "riding a flying steed"
-  unchanging:
-    effect: "holds you to your current form"
-    sources:
-      - "wearing an amulet of unchanging"
-  slow digestion:
-    effect: "decreases the rate that you lose nutrition"
-    sources:
-      - "wearing a ring of slow digestion"
-  warned of monster type:
-    effect: "detects all monsters on the dungeon level that match certain monster types"
-    sources:
-      - "wielding Sting warns of Orcs"
-  stun:
-    effect: "may make you step in a random direction and may make you hit pets by mistake. Direction of zapping, spellcasting and firing also have a high chance of being randomized. It prevents teleport control"
-    sources:
-      - "attempting to cast a forgotten spell (sometimes)"
-      - "eating a bat, giant bat or stalker corpse"
-      - "getting hit by the Stun monster spell or the stunning gaze attack of Baalzebub and Archons"
-      - "polymorphing into a bat, giant bat, vampire bat, raven or stalker"
-  confusion:
-    effect: "makes you mispronounce any scroll that you read and you will have trouble with spells and spellbooks, among other effects"
-    sources:
-      - "attempting to cast a forgotten spell (sometimes)"
-      - "getting hit by the confusing gaze attack of an umber hulk"
-  blindness (intrinsic):
-    effect: "disables your eyes, blocking your sight. It will heal eventually or you can use a cure, such as eating a carrot"
-    sources:
-      - "attack of a raven"
-      - "explosion of yellow light"
+      - polymorphing into an amphibious monster
+      - be breathless
   blindness (extrinsic):
-    effect: "disables your eyes. Only cure is to remove what is blocking your eyes"
+    effect: disables your eyes. Only cure is to remove what is blocking your eyes
     sources:
-      - "wearing a blindfold or a towel"
-      - "polymorphing into a monster without eyes"
-  restful sleep:
-    effect: "means you keep falling asleep"
+      - wearing a blindfold or a towel
+      - polymorphing into a monster without eyes
+  blindness (intrinsic):
+    effect: disables your eyes, blocking your sight. It will heal eventually or you can use a cure, such as eating a carrot
     sources:
-      - "wearing an amulet of restful sleep"
-  paralysis:
-    effect: "means you become immobile and miss a number of turns"
+      - attack of a raven
+      - explosion of yellow light
+  clairvoyance:
+    effect: makes a map of the area around you appear in your mind, every few turns
     sources:
-      - "quaffing a potion of paralysis or a monster throws one at you"
-  wounded legs:
-    effect: "means you can carry less weight and you cannot jump or kick, among other effects"
+      - buying temporary clairvoyance by donating to priests
+      - being a Wizard and wearing a cornuthaum
+      - carrying the Amulet of Yendor
+  cold resistance:
+    effect: prevents cold damage, but does not protect your potions
     sources:
-      - "jumping out of a bear trap"
-      - "kicking a wall, object or nothing (sometimes)"
-      - "getting hit by a xan's attack"
-      - "stepping on a land mine"
+      - being a Valkyrie
+      - being a Monk at level 13
+      - putting on or eating a ring of cold resistance
+      - polymorphing into a resistant monster
+  conflict:
+    effect: monsters will attack other nearby monsters, disregarding their tame/peaceful/hostile status
+    sources:
+      - wearing or eating a ring of conflict
+      - invoking the Sceptre of Might
+  confusion:
+    effect: makes you mispronounce any scroll that you read and you will have trouble with spells and spellbooks, among other effects
+    sources:
+      - attempting to cast a forgotten spell (sometimes)
+      - getting hit by the confusing gaze attack of an umber hulk
+  disintegration resistance:
+    effect: prevents instadeath from black dragon breath
+    sources:
+      - eating a black dragon corpse
+      - polymorphing into a resistant monster
+  displacement:
+    effect: produces a displaced image of you on a nearby square, such that monsters sometimes attack the image and miss you
+    sources:
+      - wearing a cloak of displacement
+  drain resistance:
+    effect: protects against loss of experience levels and prevents instadeath from drain below level 1
+    sources:
+      - wielding Stormbringer or Excalibur or the Staff of Aesculapius
+      - polymorphing into any undead monster, demon or werecreature
+  energy regeneration:
+    effect: increases your power at a much faster rate
+    sources:
+      - carrying the Eye of the Aethiopica
+  fire resistance:
+    effect: prevents fire damage, but does not fireproof your inventory
+    sources:
+      - being a Monk at level 11
+      - being a Priest at level 20
+      - putting on or eating a ring of fire resistance
+      - polymorphing into a resistant monster
+  flying:
+    effect: enables you to fly above the ground
+    sources:
+      - polymorphing into a flying monster
+      - riding a flying steed
+  food appraisal:
+    effect: warns you of any bad effects that might result before eating something, and allows you to abort. It is lost after one activation.
+    sources:
+      - reading a blessed scroll of food detection
+      - casting detect food at skilled or expert
+  free action:
+    effect: prevents paralysis in most cases and makes the potion of sleeping harmless, but does not prevent other forms of sleep. It reduces stunning from monster spells to 1 turn
+    sources:
+      - wearing a ring of free action
+  fumbling:
+    effect: causes you to sometimes trip while walking, accidentally drop items, fall down stairs and other such problems
+    sources:
+      - wearing gauntlets of fumbling or fumble boots
+  half physical damage:
+    effect: ''
+    sources:
+      - carrying the Master Key of Thievery or the Orb of Fate
+  half spell damage:
+    effect: ''
+    sources:
+      - carrying the Orb of Detection, the Platinum Yendorian Express Card, the Orb of Fate or the Eye of the Aethiopica
   hallucination:
-    effect: "gives a random appearance to any monster or object on the map"
+    effect: gives a random appearance to any monster or object on the map
     sources:
-      - "eating a yellow mold or violet fungus"
-      - "an explosion of a black light"
-  slippery fingers:
-    effect: "causes wielded objects to drop from your grasp"
+      - eating a yellow mold or violet fungus
+      - an explosion of a black light
+  hallucination resistance:
+    effect: prevents the effects of hallucination
     sources:
-      - "eating greasy food from a tin"
-      - "applying a cursed can of grease or choosing '-' as a target for a non-cursed one"
+      - wielding Grayswandir
+  hunger:
+    effect: increase the rate that you lose nutrition
+    sources:
+      - wearing or eating a ring of hunger
+  infravision:
+    effect: your eyes sense the heat from warm monsters, making them visible to you you, even in unlit places
+    sources:
+      - being a Dwarf, Elf, Gnome or Orc
+      - polymorphing into a monster with the intrinsic
+  invisible:
+    effect: makes you invisible
+    sources:
+      - quaffing a potion of invisibility
+      - zapping yourslef with a wand of make invisible
+      - wearing a cloak or ring of invisibility
+      - eating a stalker corpse while temporarily invisible
+      - polymorphing into a stalker or black light
+      - invoking the Orb of Detection
   invulnerability:
-    effect: "blocks all damage and prevents most causes of death"
+    effect: blocks all damage and prevents most causes of death
     sources:
-      - "only available as the 'shimmering light' during prayer"
+      - only available as the 'shimmering light' during prayer
+  jumping:
+    effect: allows you to land on another tile in one move
+    sources:
+      - being a Knight
+      - wearing jumping boots
+      - reading a spellbook of jumping
+  levitation:
+    effect: you float and cannot reach the floor! You can pass over moats, trap doors and pits (except in Sokoban)
+    sources:
+      - quaffing a potion of levitation (temporary)
+      - casting the spell from a spellbook of levitation (temporary)
+      - wearing a ring or boots of levitation
+      - eating a ring of levitation (temporary)
+      - invoking the Heart of Ahriman
+  life saving:
+    effect: resurrects you when you die if you're wearing an amulet of life saving
+    sources:
+      - wearing an amulet of life saving
+  magic resistance:
+    effect: prevents damage from certain traps, magic missiles and certain other magic attacks, among other useful benefits
+    sources:
+      - wearing a cloak of magic resistance
+      - wearing gray dragon scale mail
+      - wielding Magicbane
+      - carrying certain quest artifacts
   monster detection:
-    effect: "detects all monsters on the dungeon level. Only available as a temporary intrinsic"
+    effect: detects all monsters on the dungeon level. Only available as a temporary intrinsic
     sources:
-      - "quaffing a potion of monster detection"
-      - "reading a spellbook of detect monsters and cast the spell"
-  sickness:
-    effect: "causes instadeath if not cured"
-    sources:
-      - "receiving food poisoning by eating a very old corpse"
-      - "receiving illness from the attack of Demogorgon, Juiblex, Scorpius or Pestilence"
-  stoning:
-    effect: "causes you to turn into a statue, eventually"
-    sources:
-      - "attacks from a monster wielding a cockatrice corpse"
+      - quaffing a potion of monster detection
+      - reading a spellbook of detect monsters and cast the spell
   nausea:
-    effect: "causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion"
+    effect: causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion
     sources:
-      - "eating a tripe ration or a rotten egg"
-  vomiting:
-    effect: "causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion"
+      - eating a tripe ration or a rotten egg
+  paralysis:
+    effect: means you become immobile and miss a number of turns
     sources:
-      - "eating a tripe ration or a rotten egg"
-  strangulation:
-    effect: "means your amulet will strangle you to instadeath in five turns, unless you can somehow remove it before then"
+      - quaffing a potion of paralysis or a monster throws one at you
+  phasing:
+    effect: means you can walk through walls. This property has no effect in Sokoban
     sources:
-      - "wearing an amulet of strangulation"
+      - polymorphing into a xorn or earth elemental
+  poison resistance:
+    effect: prevents poisoning and instadeath from poison
+    sources:
+      - being an Orc, Barbarian or Healer
+      - being a Monk at level 3
+      - being a Tourist at level 20
+      - wearing an amulet versus poison or ring of poison resistance
+      - polymorphing into a resistant monster
+  polymorph:
+    effect: randomly polymorphs you into another monster type every few turns
+    sources:
+      - wearing or eating a ring of polymorph
+  polymorph control:
+    effect: allows you to choose the type of monster to become when you polymorph
+    sources:
+      - wearing or eating a ring of polymorph control
+  polymorphitis:
+    effect: randomly polymorphs you into another monster type every few turns
+    sources:
+      - wearing or eating a ring of polymorph
+  protection:
+    effect: indicates that have have either intrinsic divine protection, or wear an item of protection, for the purposes of the enlightenment message
+    sources:
+      - buy divine protection by donating to priests
+      - wearning a cloak of protection or ring of protection
+      - receiving a favor from your god when praying
+  protection from shape changers:
+    effect: forces shapeshifters and chameleons to stay in normal form
+    sources:
+      - wearing or eating a ring of protection from shape changers
+  reflection:
+    effect: bounces gaze and ray attacks away from you
+    sources:
+      - wearing silver dragon scale mail
+      - wearing a shield or amulet of reflection
+      - wielding the Longbow of Diana
+      - polymorphing into a silver dragon
+  regeneration:
+    effect: increases the rate of recovery of your HPs
+    sources:
+      - wearing or eating a ring of regeneration
+      - wielding the Staff of Aesculapius
+      - polymorphing into a monster with the intrinsic
+  restful sleep:
+    effect: means you keep falling asleep
+    sources:
+      - wearing an amulet of restful sleep
+  searching:
+    effect: automatically search squares around you, increasing the chance you notice hidden doors or traps
+    sources:
+      - being a Ranger
+      - being a Monk at level 9
+      - being an Archaeologist, Rogue or Tourist at level 10
+      - wearing or eating a ring of searching
+      - wielding Excalibur
+  see invisible:
+    effect: allows you to see invisible monsters
+    sources:
+      - quaffing a potion og see invisible
+      - wearing or eating a ring of see invisible
+      - eating a stalker corpse while invisible
+      - polymorphing into a monster with the intrinsic
+      - drinking from a fountain
+  shock resistance:
+    effect: prevents damage from electric attacks but does not defend rings or wands
+    sources:
+      - being a Monk at level 15
+      - eating a corpse
+      - putting on or eating a ring of shock resistance
+      - polymorphing into a resistant monster
+  sickness:
+    effect: causes instadeath if not cured
+    sources:
+      - receiving food poisoning by eating a very old corpse
+      - receiving illness from the attack of Demogorgon, Juiblex, Scorpius or Pestilence
+  sickness resistance:
+    effect: provides complete immunity to sickness
+    sources:
+      - polymorphing into a ghoul or any fungus
+  sleep resistance:
+    effect: prevents sleep or, alternatively, free action works for potions only
+    sources:
+      - being an Elf at level 4
+      - eating a ring of free action
+      - polymorphing into a resistant monster
   slime:
-    effect: "means that green slime will overtake your body and kill you, unless you can remove the slime or gain sliming resistance before that happens"
+    effect: means that green slime will overtake your body and kill you, unless you can remove the slime or gain sliming resistance before that happens
     sources:
-      - "attack from a green slime"
-      - "eating a green slime corpse"
+      - attack from a green slime
+      - eating a green slime corpse
+  sliming resistance:
+    effect: provides immunity to the sliming process
+    sources:
+      - polymorphing into a green slime, fire vortex, flaming sphere, fire elemental or salamander
+      - be unchanging
+  slippery fingers:
+    effect: causes wielded objects to drop from your grasp
+    sources:
+      - eating greasy food from a tin
+      - applying a cursed can of grease or choosing '-' as a target for a non-cursed one
+  slow digestion:
+    effect: decreases the rate that you lose nutrition
+    sources:
+      - wearing a ring of slow digestion
+  speed (extrinsic):
+    effect: makes you very fast, allowing 5 moves every 3 turns
+    sources:
+      - quaffing a potion of speed
+      - wearing speed boots
+  speed (intrinsic):
+    effect: makes you fast, allowing 4 moves every 3 turns
+    sources:
+      - zapping yourself with a wand of speed monster
+      - eating a quantum mechanic corpse to toggle the intrinsic
+      - receiving a favor from your god when praying
+  stealth:
+    effect: allows you to move around quietly, so that your steps do not wake sleeping monsters
+    sources:
+      - some roles have innate stealth
+      - wearing elven boots, elven cloak or ring of stealth
+      - receiving a favor from your god when praying
+  stoning:
+    effect: causes you to turn into a statue, eventually
+    sources:
+      - attacks from a monster wielding a cockatrice corpse
+  stoning resistance:
+    effect: prevents the stoning process. This is one way to fight cockatrices and chickatrices
+    sources:
+      - polymorphing into a resistant monster
+  strangulation:
+    effect: means your amulet will strangle you to instadeath in five turns, unless you can somehow remove it before then
+    sources:
+      - wearing an amulet of strangulation
+  stun:
+    effect: may make you step in a random direction and may make you hit pets by mistake. Direction of zapping, spellcasting and firing also have a high chance of being randomized. It prevents teleport control
+    sources:
+      - attempting to cast a forgotten spell (sometimes)
+      - eating a bat, giant bat or stalker corpse
+      - getting hit by the Stun monster spell or the stunning gaze attack of Baalzebub and Archons
+      - polymorphing into a bat, giant bat, vampire bat, raven or stalker
+  sustain ability:
+    effect: prevents changes to your six attributes and prevents the effects of exercise and abuse
+    sources:
+      - wearing a ring of sustain ability
+  swimming:
+    effect: enables you to swim across water
+    sources:
+      - polymorphing into a swimming monster
+      - riding a swimming steed
+  telepathy (extrinsic):
+    effect: allows you to sense most monsters but only when you are blind and also in a limited radius when not blind
+    sources:
+      - wearing an amulet of ESP of helm of telepathy
+      - carrying the Longbow of Diane
+      - carrying the Orb of Detection
+      - carrying the Magic Mirror of Merlin
+      - carrying the Platinum Yendorian Express Card
+  telepathy (intrinsic):
+    effect: allows you to sense most monsters but only when you are blind
+    sources:
+      - eating a floating eye (100% chance) or mind flayer corpse (50% chance or 100% at max intelligence)
+      - receiving a favor from your god when praying
+  teleportation:
+    effect: randomly teleports you around the dungeon every few turns
+    sources:
+      - (sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor
+      - wearing or eating a ring of teleportation
+      - polymorphing into an monster with the intrinsic
+  teleportitis:
+    effect: randomly teleports you around the dungeon every few turns
+    sources:
+      - (sometimes) eating a leprechaun, nymph, tengu or the Wizard of Yendor
+      - wearing or eating a ring of teleportation
+      - polymorphing into an monster with the intrinsic
+  telport control:
+    effect: allows you to choose your destination tile when you teleport
+    sources:
+      - being a Monk at level 17
+      - being a Wizard at level 17
+      - wearing or eating a ring of teleport control
+      - carrying the Master Key of Thievery
+      - polymorphing into a tengu
+  unbreathing:
+    effect: 'allows you to survive without breathing: you can go underwater and will not choke on food'
+    sources:
+      - wearing or eating an amulet of magical breathing
+      - polymorphing into a breathless monster
+  unchanging:
+    effect: holds you to your current form
+    sources:
+      - wearing an amulet of unchanging
+  vomiting:
+    effect: causes you to vomit some of your food and lose some nutrition when it times out. Can cause stun and confusion
+    sources:
+      - eating a tripe ration or a rotten egg
+  warned of monster type:
+    effect: detects all monsters on the dungeon level that match certain monster types
+    sources:
+      - wielding Sting warns of Orcs
+  warning:
+    effect: labels unseen, undetected nearby monsters with a danger indicator from 1-5
+    sources:
+      - being a Monk at level 7
+      - being some roles at level 15
+      - wearing or eating a ring or warning
+      - carrying the Master Key of Thievery or the Orb of Fate
+  water walking:
+    effect: means you can cross water by walking on its surface
+    sources:
+      - wearing water walking boots
+  wounded legs:
+    effect: means you can carry less weight and you cannot jump or kick, among other effects
+    sources:
+      - jumping out of a bear trap
+      - kicking a wall, object or nothing (sometimes)
+      - getting hit by a xan's attack
+      - stepping on a land mine

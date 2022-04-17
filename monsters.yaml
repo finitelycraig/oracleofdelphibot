@@ -1,82 +1,81 @@
 monsters:
   cockatrice:
-    difficulty: 8
-    attacks: "bite 1d3 and petrification"
-    speed: 6
     ac: 6
+    alignment: neutral
+    attacks: bite 1d3 and petrification
+    corpse_safe: causes petrification
+    difficulty: 8
+    elbereth: true
+    extra: ''
+    genocidable: true
     mr: 30
-    alignment: "neutral"
-    genocidable: true
+    nutritional_value: 30
+    resistances: poison and petrification
+    restistances_conveyed: poison (33%)
+    size: small
+    speed: 6
     weight: 30
-    nutritional_value: 30
-    size: "small"
-    resistances: "poison and petrification"
-    restistances_conveyed: "poison (33%)"
-    corpse_safe: "causes petrification"
-    elbereth: true
-    extra: ""
   gray ooze:
-    difficulty: 4
-    attacks: "bite 2d8 rusting"
-    speed: 1
     ac: 8
-    mr: 0
-    alignment: "neutral"
+    alignment: neutral
+    attacks: bite 2d8 rusting
+    corpse_safe: is acidic
+    difficulty: 4
+    elbereth: true
+    extra: Corpse acidic when eaten, causing damage but not killing unless hp low. Watch for rusting.
     genocidable: true
-    weight: 500
+    mr: 0
     nutritional_value: 250
-    size: "medium"
-    resistances: "fire, cold, poison, acid, petrification"
-    restistances_conveyed: "fire 7%, cold 7%, poison 7%"
-    corpse_safe: "is acidic" 
-    elbereth: true
-    extra: "Corpse acidic when eaten, causing damage but not killing unless hp low. Watch for rusting."    
+    resistances: fire, cold, poison, acid, petrification
+    restistances_conveyed: fire 7%, cold 7%, poison 7%
+    size: medium
+    speed: 1
+    weight: 500
   green mold:
-    difficulty: 2
-    attacks: "passive (level+1)d4 acid"
-    speed: 0
     ac: 9
-    mr: 0
-    alignment: "neutral"
+    alignment: neutral
+    attacks: passive (level+1)d4 acid
+    corpse_safe: is acidic
+    difficulty: 2
+    elbereth: true
+    extra: Corpse acidic when eaten, causing damage but not killing unless hp low.
     genocidable: true
-    weight: 50
+    mr: 0
     nutritional_value: 30
-    size: "small"
-    resistances: "acid, petrification"
-    restistances_conveyed: ""
-    corpse_safe: "is acidic" 
-    elbereth: true
-    extra: "Corpse acidic when eaten, causing damage but not killing unless hp low."    
+    resistances: acid, petrification
+    restistances_conveyed: ''
+    size: small
+    speed: 0
+    weight: 50
   manes:
-    difficulty: 3
-    attacks: "claw 1d3, claw 1d3, bite 1d4"
-    speed: 3
     ac: 7
-    mr: 0
-    alignment: "chaotic"
+    alignment: chaotic
+    attacks: claw 1d3, claw 1d3, bite 1d4
+    corpse_safe: is poisonous
+    difficulty: 3
+    elbereth: true
+    extra: ''
     genocidable: true
-    weight: 100
+    mr: 0
     nutritional_value: 100
-    size: "small"
-    resistances: "sleep and poison"
-    restistances_conveyed: ""
-    corpse_safe: "is poisonous"
-    elbereth: true
-    extra: ""
+    resistances: sleep and poison
+    restistances_conveyed: ''
+    size: small
+    speed: 3
+    weight: 100
   mumak:
-    difficulty: 7
-    attacks: "butt 4d12, bite 2d6"
-    speed: 9
     ac: 0
-    mr: 0
-    alignment: "chaotic"
-    genocidable: true
-    weight: 2500
-    nutritional_value: 500
-    size: "large"
-    resistances: ""
-    restistances_conveyed: ""
-    corpse_safe: true 
+    alignment: chaotic
+    attacks: butt 4d12, bite 2d6
+    corpse_safe: true
+    difficulty: 7
     elbereth: true
-    extra: ""
-  
+    extra: ''
+    genocidable: true
+    mr: 0
+    nutritional_value: 500
+    resistances: ''
+    restistances_conveyed: ''
+    size: large
+    speed: 9
+    weight: 2500
