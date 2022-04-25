@@ -1,289 +1,289 @@
 tools:
   bag of holding:
     cost: 100
-    creation: contains 0-1 items
-    magic: true
-    use: makes items lighter (1/4 if blessed, 1/2 if uncursed and 2x if cursed)
     weight: 15
+    use: "makes items lighter (1/4 if blessed, 1/2 if uncursed and 2x if cursed)"
+    creation: "contains 0-1 items"
+    magic: true
   bag of tricks:
     cost: 100
-    creation: 1-20 charges
-    magic: true
-    use: summoning monsters
     weight: 15
+    use: "summoning monsters"
+    creation: "1-20 charges"
+    magic: true
   beartrap:
     cost: 60
-    creation: ''
-    magic: false
-    use: traps monsters or yourself in a single square
     weight: 200
+    use: "traps monsters or yourself in a single square"
+    creation: ""
+    magic: false
   bell:
     cost: 50
-    creation: ''
-    magic: false
-    use: wakes monsters, summons nymphs
     weight: 30
+    use: "wakes monsters, summons nymphs"
+    creation: ""
+    magic: false
   blindfold:
     cost: 20
-    creation: ''
-    magic: false
-    use: blinds you
     weight: 2
+    use: "blinds you"
+    creation: ""
+    magic: false
   brass lantern:
     cost: 20
-    creation: max charge of 1500 turns
-    magic: false
-    use: light source, fill with potion of oil or use charging
     weight: 30
+    use: "light source, fill with potion of oil or use charging"
+    creation: "max charge of 1500 turns"
+    magic: false
   bugle:
     cost: 15
-    creation: ''
-    magic: false
-    use: aggravates nearby soldiers. Awakens/scares nearby monsters
     weight: 10
+    use: "aggravates nearby soldiers. Awakens/scares nearby monsters"
+    creation: ""
+    magic: false
   can of grease:
     cost: 20
-    creation: 1-25 charges
-    magic: false
-    use: protects against mind flayers, drowning attacks and water damage
     weight: 20
+    use: "protects against mind flayers, drowning attacks and water damage"
+    creation: "1-25 charges"
+    magic: false
   chest:
     cost: 16
-    creation: contains 0-5 items
-    magic: false
-    use: storage
     weight: 600
+    use: "storage"
+    creation: "contains 0-5 items"
+    magic: false
   credit card:
     cost: 10
-    creation: ''
-    magic: false
-    use: Open locked things. If tourist, upgrades to PYEC.
     weight: 1
+    use: "Open locked things. If tourist, upgrades to PYEC."
+    creation: ""
+    magic: false
   crystal ball:
     cost: 60
-    creation: 1-5 charges
-    magic: true
-    use: Detect any specified symbol on the current level.
     weight: 150
+    use: "Detect any specified symbol on the current level."
+    creation: "1-5 charges"
+    magic: true
   drum of earthquake:
     cost: 25
-    creation: ''
-    magic: true
-    use: creates pits, scares monsters, angers peacefuls
     weight: 25
+    use: "creates pits, scares monsters, angers peacefuls"
+    creation: ""
+    magic: true
   expensive camera:
     cost: 200
-    creation: ''
-    magic: false
-    use: scare monsters
     weight: 12
+    use: "scare monsters"
+    creation: ""
+    magic: false
   figurine:
     cost: 80
-    creation: ''
-    magic: true
-    use: summons a monster
     weight: 50
+    use: "summons a monster"
+    creation: ""
+    magic: true    
   fire horn:
     cost: 50
-    creation: ''
-    magic: true
-    use: ray of fire
     weight: 18
+    use: "ray of fire"
+    creation: ""
+    magic: true
   frost horn:
     cost: 50
-    creation: ''
-    magic: true
-    use: ray of frost
     weight: 18
+    use: "ray of frost"
+    creation: ""
+    magic: true
   grappling hook:
     cost: 50
-    creation: ''
-    magic: false
-    use: Grab an item, drag yourself to a spot, attack a monster.
     weight: 30
+    use: "Grab an item, drag yourself to a spot, attack a monster."
+    creation: ""
+    magic: false
   horn of plenty:
     cost: 50
-    creation: ''
-    magic: true
-    use: produces some food or some potions
     weight: 18
+    use: "produces some food or some potions"
+    creation: ""
+    magic: true
   ice box:
     cost: 42
-    creation: contains 0-20 corpses
-    magic: false
-    use: keeps corpses fresh
     weight: 900
+    use: "keeps corpses fresh"
+    creation: "contains 0-20 corpses"
+    magic: false 
   land mine:
     cost: 180
-    creation: ''
-    magic: false
-    use: detonates when stepped upon dealing 1-16 physical damage
     weight: 300
+    use: "detonates when stepped upon dealing 1-16 physical damage"
+    creation: ""
+    magic: false
   large box:
     cost: 8
-    creation: contains 0-3 items
-    magic: false
-    use: ''
     weight: 350
-  leash:
-    cost: 20
-    creation: ''
+    use: ""
+    creation: "contains 0-3 items"
     magic: false
-    use: keeps pets nearby
-    weight: 12
   leather drum:
     cost: 25
-    creation: ''
-    magic: false
-    use: wakes and scares monsters
     weight: 25
+    use: "wakes and scares monsters"
+    creation: ""
+    magic: false
+  leash:
+    cost: 20
+    weight: 12
+    use: "keeps pets nearby"
+    creation: ""
+    magic: false
   lenses:
     cost: 80
-    creation: ''
-    magic: false
-    use: spellbook reading
     weight: 3
+    use: "spellbook reading"
+    creation: ""
+    magic: false
   lock pick:
     cost: 20
-    creation: ''
-    magic: false
-    use: Opens locked things
     weight: 4
+    use: "Opens locked things"
+    creation: ""
+    magic: false
   magic flute:
     cost: 36
-    creation: ''
-    magic: true
-    use: lulls monsters to sleep
     weight: 5
+    use: "lulls monsters to sleep"
+    creation: ""
+    magic: true
   magic harp:
     cost: 50
-    creation: ''
-    magic: true
-    use: tames monsters
     weight: 30
+    use: "tames monsters"
+    creation: ""
+    magic: true
   magic lamp:
     cost: 50
-    creation: ''
-    magic: true
-    use: possible wish - be sure it is blessed before rubbing
     weight: 20
+    use: "possible wish - be sure it is blessed before rubbing"
+    creation: ""
+    magic: true
   magic marker:
     cost: 50
-    creation: 30-99 charges
-    magic: true
-    use: writes scrolls and spellbooks
     weight: 2
+    use: "writes scrolls and spellbooks"
+    creation: "30-99 charges"
+    magic: true
   magic whistle:
     cost: 10
-    creation: ''
-    magic: true
-    use: teleports pets to you
     weight: 3
+    use: "teleports pets to you"
+    creation: ""
+    magic: true
   mirror:
     cost: 10
-    creation: ''
-    magic: false
-    use: nymph and foocubus control, luck management and scares monsters
     weight: 13
+    use: "nymph and foocubus control, luck management and scares monsters"
+    creation: ""
+    magic: false
   oil lamp:
     cost: 10
-    creation: light source, fill with potion of oil or use charging
-    magic: false
-    use: ''
     weight: 20
+    use: ""
+    creation: "light source, fill with potion of oil or use charging"
+    magic: false
   oilskin sack:
     cost: 100
-    creation: contains 0-1 items
-    magic: false
-    use: prevents blanking
     weight: 15
+    use: "prevents blanking"
+    creation: "contains 0-1 items"
+    magic: false
   pick-axe:
     cost: 50
-    creation: ''
-    magic: false
-    use: digging
     weight: 100
+    use: "digging"
+    creation: ""
+    magic: false
   sack:
     cost: 2
-    creation: contains 0-1 items
-    magic: false
-    use: ''
     weight: 15
+    use: ""
+    creation: "contains 0-1 items"
+    magic: false
   saddle:
     cost: 150
-    creation: ''
-    magic: false
-    use: riding
     weight: 200
+    use: "riding"
+    creation: ""
+    magic: false
   skeleton key:
     cost: 10
-    creation: Opens locked things
-    magic: false
-    use: ''
     weight: 3
+    use: ""
+    creation: "Opens locked things"
+    magic: false
   stethoscope:
     cost: 75
-    creation: ''
-    magic: false
-    use: get monster status information and detect secret doors/corridors
     weight: 4
+    use: "get monster status information and detect secret doors/corridors"
+    creation: ""
+    magic: false
   tallow candle:
     cost: 10
-    creation: stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)
-    magic: false
-    use: invocation and light source
     weight: 2
+    use: "invocation and light source"
+    creation: "stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)"
+    magic: false  
   tin opener:
     cost: 30
-    creation: ''
-    magic: false
-    use: opens tins
     weight: 4
+    use: "opens tins"
+    creation: ""
+    magic: false
   tin whistle:
     cost: 10
-    creation: ''
-    magic: false
-    use: calls pets
     weight: 3
+    use: "calls pets"
+    creation: ""
+    magic: false
   tinning kit:
     cost: 30
-    creation: ''
-    magic: false
-    use: prevents troll resurrection and tins corpses for intrinsics
     weight: 100
-  tooled horn:
-    cost: 15
-    creation: ''
-    magic: false
-    use: scares monsters
-    weight: 18
+    use: "prevents troll resurrection and tins corpses for intrinsics"
+    creation: ""
+    magic: false      
   towel:
     cost: 50
-    creation: ''
-    magic: false
-    use: blinds you, cleans face and hands
     weight: 2
+    use: "blinds you, cleans face and hands"
+    creation: ""
+    magic: false
+  tooled horn:
+    cost: 15
+    weight: 18
+    use: "scares monsters"
+    creation: ""
+    magic: false
   unicorn horn:
     cost: 100
-    creation: ''
-    magic: true
-    use: cure status effects, various other
     weight: 20
+    use: "cure status effects, various other"
+    creation: ""
+    magic: true
   wax candle:
     cost: 20
-    creation: stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)
-    magic: false
-    use: invocation
     weight: 2
+    use: "invocation"
+    creation: "stack of 1 (4/7 prob.) or 2-7 (1/14 prob. each)"
+    magic: false
   wooden flute:
     cost: 12
-    creation: ''
-    magic: false
-    use: pacifies snakes
     weight: 5
+    use: "pacifies snakes"
+    creation: ""
+    magic: false
   wooden harp:
     cost: 50
-    creation: ''
-    magic: false
-    use: pacifies nymphs
     weight: 30
+    use: "pacifies nymphs"
+    creation: ""
+    magic: false

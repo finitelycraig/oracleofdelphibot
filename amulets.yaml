@@ -1,67 +1,67 @@
 amulets:
-  Amulet of Yendor:
-    appearance: random
-    cost: 30000
-    effect: The Amulet of Yendor has many effects when carried, worn or wielded. See the wiki for a list of these.
-    notes: The ultimate goal of NetHack is to find this amulet and offer it to your god to become immortal. The offering is done at the Atral Plane.
-    weight: 20
-  amulet of ESP:
-    appearance: random
-    cost: 150
-    effect: Grants extrinsic telepathy when worn, which will show all monsters with minds within a 10x10 grid, and all such monsters on the level when blind.
-    notes: ''
-    weight: 20
   amulet of change:
-    appearance: random
     cost: 150
-    effect: When put on, it changes the gender of the wearer and self destructs. The effect is the same regardless of gender.
-    notes: It auto-identifies when worn.
     weight: 20
+    appearance: "random"
+    effect: "When put on, it changes the gender of the wearer and self destructs. The effect is the same regardless of gender."
+    notes: "It auto-identifies when worn."
+  amulet of ESP:
+    cost: 150
+    weight: 20
+    appearance: "random"
+    effect: "Grants extrinsic telepathy when worn, which will show all monsters with minds within a 10x10 grid, and all such monsters on the level when blind."
+    notes: ""
   amulet of life saving:
-    appearance: random
     cost: 150
-    effect: If you die when wearing the amulet, it will save your life. It will disintegrate and becomes identified. The beatitude of the amulet does not change its effect.
-    notes: Living monsters can wear this amulet.
     weight: 20
+    appearance: "random"
+    effect: "If you die when wearing the amulet, it will save your life. It will disintegrate and becomes identified. The beatitude of the amulet does not change its effect."
+    notes: "Living monsters can wear this amulet."
   amulet of magical breathing:
-    appearance: random
     cost: 150
-    effect: It grants extrinsic breathlessness to its wearer. When worn, you can travel underwater safely and will be protected from drowning attacks. You will also be immune to the effects of poison clouds and scroll of stinking cloud, and cannot choke over your food.
-    notes: When wearing this, water is a safe teleport location.
     weight: 20
+    appearance: "random"
+    effect: "It grants extrinsic breathlessness to its wearer. When worn, you can travel underwater safely and will be protected from drowning attacks. You will also be immune to the effects of poison clouds and scroll of stinking cloud, and cannot choke over your food."
+    notes: "When wearing this, water is a safe teleport location."
   amulet of reflection:
-    appearance: random
     cost: 150
-    effect: Conveys extrinsic reflection when worn.
-    notes: It auto-identifies when something reflects from it. Living monsters can wear this amulet.
     weight: 20
+    appearance: "random"
+    effect: "Conveys extrinsic reflection when worn."
+    notes: "It auto-identifies when something reflects from it. Living monsters can wear this amulet."
   amulet of restful sleep:
-    appearance: random
     cost: 150
-    effect: When wearing this amulet, you will consistently fall asleep within the next 100 turns. After falling asleep, you awaken within 1-20 turns or when disturbed and the cycle continues aslong as you have the restful sleep property.
-    notes: ''
     weight: 20
+    appearance: "random"
+    effect: "When wearing this amulet, you will consistently fall asleep within the next 100 turns. After falling asleep, you awaken within 1-20 turns or when disturbed and the cycle continues aslong as you have the restful sleep property."
+    notes: ""
   amulet of strangulation:
-    appearance: random
     cost: 150
-    effect: This amulet quickly strangles you to death in six turns. Removing it nullifies the effect; however, most of these amulets are generated cursed.
-    notes: It auto-identifies when worn.
     weight: 20
+    appearance: "random"
+    effect: "This amulet quickly strangles you to death in six turns. Removing it nullifies the effect; however, most of these amulets are generated cursed."
+    notes: "It auto-identifies when worn."
   amulet of unchanging:
-    appearance: random
     cost: 150
-    effect: This amulet prevents polymorphing and other means of changing form. It does not prevent being turned to stone.
-    notes: ''
     weight: 20
+    appearance: "random"
+    effect: "This amulet prevents polymorphing and other means of changing form. It does not prevent being turned to stone."
+    notes: ""
   amulet versus poison:
-    appearance: random
     cost: 150
-    effect: An amulet versus poison grants poison resistance as an extrinsic.
-    notes: ''
     weight: 20
+    appearance: "random"
+    effect: "An amulet versus poison grants poison resistance as an extrinsic."
+    notes: ""
   cheap plastic imitation of the Amulet of Yendor:
-    appearance: random
     cost: 150
-    effect: It has not effect when worn and exists solely to be confused with the real Amulet of Yendor.
-    notes: It appears as Amulet of Yendor when unidentified.
     weight: 20
+    appearance: "random"
+    effect: "It has not effect when worn and exists solely to be confused with the real Amulet of Yendor."
+    notes: "It appears as Amulet of Yendor when unidentified."
+  Amulet of Yendor:
+    cost: 30000
+    weight: 20
+    appearance: "random"
+    effect: "The Amulet of Yendor has many effects when carried, worn or wielded. See the wiki for a list of these."
+    notes: "The ultimate goal of NetHack is to find this amulet and offer it to your god to become immortal. The offering is done at the Atral Plane."

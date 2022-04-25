@@ -1,639 +1,639 @@
 armors:
-  Uruk-hai shield:
-    ac: 1
-    cost: 7
-    effect: ''
-    material: iron
-    mc: 0
-    type: shield
-    weight: 50
-  alchemy smock:
-    ac: 1
-    cost: 50
-    effect: gives poison resistance and gives acid resistance
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  banded mail:
-    ac: 6
-    cost: 90
-    effect: ''
-    material: iron
-    mc: 1
-    type: suit of armor
-    weight: 350
-  black dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: disintegration
-    material: dragon
-    type: suit of armor
-    weight: 40
-  black dragon scales:
-    ac: 3
-    cost: 500
-    effect: disintegration resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  blue dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: shock resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  blue dragon scales:
-    ac: 3
-    cost: 500
-    effect: shock resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  bronze plate mail:
-    ac: 6
-    cost: 400
-    effect: ''
-    material: copper
-    mc: 1
-    type: suit of armor
-    weight: 450
-  chain mail:
-    ac: 5
-    cost: 75
-    effect: ''
-    material: iron
-    mc: 0
-    type: suit of armor
-    weight: 300
-  cloak of displacement:
-    ac: 1
-    cost: 50
-    effect: gives displacement
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  cloak of invisibility:
-    ac: 1
-    cost: 60
-    effect: gives invisibility
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  cloak of magic resistance:
-    ac: 1
-    cost: 60
-    effect: gives magic resistance (does not affect magic cancellation)
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  cloak of protection:
-    ac: 3
-    cost: 50
-    effect: gives +n AC
-    material: cloth
-    mc: 3
-    type: cloak
-    weight: 10
-  cornuthaum:
-    ac: 0
-    cost: 80
-    effect: A wizard gets clairvoyance and +1 charisma, but other characters have existing clairvoyance blocked and get -1 charisma
-    material: cloth
-    mc: 1
-    type: helm
-    weight: 4
-  crystal plate mail:
-    ac: 7
-    cost: 820
-    effect: ''
-    material: glass
-    mc: 2
-    type: suit of armor
-    weight: 450
-  dented pot:
-    ac: 1
-    cost: 8
-    effect: ''
-    material: iron
-    mc: 0
-    type: helm
-    weight: 10
-  dunce cap:
-    ac: 0
-    cost: 1
-    effect: fixes your intelligence and wisdom at 6 (auto-curses), shopkeepers buy and sell at the inexperienced Tourist rate
-    material: cloth
-    mc: 0
-    type: helm
-    weight: 4
-  dwarvish cloak:
-    ac: 0
-    cost: 50
-    effect: ''
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  dwarvish iron helm:
-    ac: 2
-    cost: 20
-    effect: ''
-    material: iron
-    mc: 0
-    type: helm
-    weight: 40
-  dwarvish mithril-coat:
-    ac: 6
-    cost: 240
-    effect: ''
-    material: mithril
-    mc: 2
-    type: suit of armor
-    weight: 150
-  dwarvish roundshield:
-    ac: 2
-    cost: 10
-    effect: ''
-    material: iron
-    mc: 0
-    type: shield
-    weight: 100
-  elven boots:
-    ac: 1
-    cost: 8
-    effect: gives stealth
-    material: leather
-    mc: 0
-    type: boots
-    weight: 15
-  elven cloak:
-    ac: 1
-    cost: 60
-    effect: gives stealth
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  elven leather helm:
-    ac: 1
-    cost: 8
-    effect: ''
-    material: leather
-    mc: 0
-    type: helm
-    weight: 3
-  elven mithril-coat:
-    ac: 5
-    cost: 240
-    effect: ''
-    material: mithril
-    mc: 2
-    type: suit of armor
-    weight: 150
-  elven shield:
-    ac: 2
-    cost: 7
-    effect: ''
-    material: wood
-    mc: 0
-    type: shield
-    weight: 40
-  fedora:
-    ac: 0
-    cost: 1
-    effect: ''
-    material: cloth
-    mc: 0
-    type: helm
-    weight: 3
-  fumble boots:
-    ac: 1
-    cost: 30
-    effect: you will occasionally fumble
-    material: leather
-    mc: 0
-    type: boots
-    weight: 20
-  gauntlets of dexterity:
-    ac: 1
-    cost: 50
-    effect: adds armor's enchantment to your dexterity
-    material: leather
-    mc: 0
-    type: gloves
-    weight: 10
-  gauntlets of fumbling:
-    ac: 1
-    cost: 50
-    effect: you will occasionally fumble
-    material: leather
-    mc: 0
-    type: gloves
-    weight: 10
-  gauntlets of power:
-    ac: 1
-    cost: 50
-    effect: increases your strength to 25
-    material: iron
-    mc: 0
-    type: gloves
-    weight: 30
-  gray dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: magic resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  gray dragon scales:
-    ac: 3
-    cost: 500
-    effect: magic resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  green dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: poison resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  green dragon scales:
-    ac: 3
-    cost: 500
-    effect: poison resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
   hawaiian shirt:
-    ac: 0
+    type: "shirt"
     cost: 3
-    effect: If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price).
-    material: cloth
-    mc: 0
-    type: shirt
     weight: 5
-  helm of brilliance:
-    ac: 1
-    cost: 50
-    effect: adds armor's enchantment to your intelligence and wisdom
-    material: iron
-    mc: 0
-    type: helm
-    weight: 50
-  helm of opposite alignment:
-    ac: 1
-    cost: 50
-    effect: changes your alignment, removes protection, and auto-curses
-    material: iron
-    mc: 0
-    type: helm
-    weight: 50
-  helm of telepathy:
-    ac: 1
-    cost: 50
-    effect: gives telepathy
-    material: iron
-    mc: 0
-    type: helm
-    weight: 50
-  helmet:
-    ac: 1
-    cost: 10
-    effect: ''
-    material: iron
-    mc: 0
-    type: helm
-    weight: 30
-  high boots:
-    ac: 2
-    cost: 12
-    effect: ''
-    material: leather
-    mc: 0
-    type: boots
-    weight: 20
-  iron shoes:
-    ac: 2
-    cost: 16
-    effect: ''
-    material: iron
-    mc: 0
-    type: boots
-    weight: 50
-  jumping boots:
-    ac: 1
-    cost: 50
-    effect: gives jumping at will (the special restrictions for Knights do not apply while this item is worn)
-    material: leather
-    mc: 0
-    type: boots
-    weight: 20
-  kabuto:
-    ac: 1
-    cost: 10
-    effect: ''
-    material: iron
-    mc: 0
-    type: helm
-    weight: 30
-  kicking boots:
-    ac: 1
-    cost: 8
-    effect: kicking does additional damage and grants martial arts bonuses
-    material: iron
-    mc: 0
-    type: boots
-    weight: 50
-  large shield:
-    ac: 2
-    cost: 10
-    effect: ''
-    material: iron
-    mc: 0
-    type: shield
-    weight: 100
-  leather armor:
-    ac: 2
-    cost: 5
-    effect: ''
-    material: leather
-    mc: 0
-    type: suit of armor
-    weight: 150
-  leather cloak:
-    ac: 1
-    cost: 40
-    effect: ''
-    material: leather
-    mc: 1
-    type: cloak
-    weight: 15
-  leather gloves:
-    ac: 1
-    cost: 8
-    effect: ''
-    material: leather
-    mc: 0
-    type: gloves
-    weight: 10
-  leather jacket:
-    ac: 1
-    cost: 10
-    effect: ''
-    material: leather
-    mc: 0
-    type: suit of armor
-    weight: 30
-  levitation boots:
-    ac: 1
-    cost: 30
-    effect: causes leviation but does not prevent you being drowned by monsters
-    material: leather
-    mc: 0
-    type: boots
-    weight: 15
-  low boots:
-    ac: 1
-    cost: 8
-    effect: ''
-    material: leather
-    mc: 0
-    type: boots
-    weight: 10
-  mummy wrapping:
     ac: 0
-    cost: 2
-    effect: overrides invisibility so you are again visible
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 3
-  oilskin cloak:
-    ac: 1
-    cost: 50
-    effect: protects metal body armor from rust and corrosion (1/3 chance if cursed) and prevents grabbing attacks
-    material: cloth
-    mc: 2
-    type: cloak
-    weight: 10
-  orange dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: sleep resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  orange dragon scales:
-    ac: 3
-    cost: 500
-    effect: sleep resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  orcish chain mail:
-    ac: 4
-    cost: 70
-    effect: ''
-    material: iron
+    material: "cloth"
+    effect: "If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price)."
     mc: 0
-    type: suit of armor
-    weight: 300
-  orcish cloak:
-    ac: 0
-    cost: 40
-    effect: ''
-    material: cloth
-    mc: 1
-    type: cloak
-    weight: 10
-  orcish helm:
-    ac: 1
-    cost: 10
-    effect: ''
-    material: iron
-    mc: 0
-    type: helm
-    weight: 30
-  orcish ring mail:
-    ac: 2
-    cost: 80
-    effect: ''
-    material: iron
-    mc: 0
-    type: suit of armor
-    weight: 250
-  orcish shield:
-    ac: 1
-    cost: 7
-    effect: ''
-    material: iron
-    mc: 0
-    type: shield
-    weight: 50
-  plate mail:
-    ac: 7
-    cost: 600
-    effect: ''
-    material: iron
-    mc: 2
-    type: suit of armor
-    weight: 450
-  red dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: fire resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  red dragon scales:
-    ac: 3
-    cost: 500
-    effect: fire resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
-  ring mail:
-    ac: 3
-    cost: 100
-    effect: ''
-    material: iron
-    mc: 0
-    type: suit of armor
-    weight: 250
-  robe:
-    ac: 2
-    cost: 50
-    effect: spellcasting is more likely to suceed and reduces the penalty for metallic armor
-    material: cloth
-    mc: 2
-    type: cloak
-    weight: 15
-  scale mail:
-    ac: 4
-    cost: 45
-    effect: ''
-    material: iron
-    mc: 0
-    type: suit of armor
-    weight: 250
-  shield of reflection:
-    ac: 2
-    cost: 50
-    effect: gives reflection
-    material: silver
-    mc: 0
-    type: shield
-    weight: 50
-  silver dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: reflection
-    material: dragon
-    type: suit of armor
-    weight: 40
-  silver dragon scales:
-    ac: 3
-    cost: 500
-    effect: relfection
-    material: dragon
-    type: suit of armor
-    weight: 40
-  small shield:
-    ac: 1
-    cost: 3
-    effect: does not limit spellcasting as much as other shields
-    material: wood
-    mc: 0
-    type: shield
-    weight: 30
-  speed boots:
-    ac: 1
-    cost: 50
-    effect: gives you the speed extrinsic (the same as the potion of speed or spell of haste self)
-    material: leather
-    mc: 0
-    type: boots
-    weight: 20
-  splint mail:
-    ac: 6
-    cost: 80
-    effect: ''
-    material: iron
-    mc: 0
-    type: suit of armor
-    weight: 400
-  studded leather armor:
-    ac: 3
-    cost: 15
-    effect: ''
-    material: leather
-    mc: 0
-    type: suit of armor
-    weight: 200
   t-shirt:
-    ac: 0
+    type: "shirt"
     cost: 2
-    effect: If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price).
-    material: cloth
-    mc: 0
-    type: shirt
     weight: 5
-  tanko:
-    ac: 7
-    cost: 600
-    effect: ''
-    material: iron
+    ac: 0
+    material: "cloth"
+    effect: "If not covered by body armor or cloak, shopkeepers buy and sell at the same rate as inexperienced (level < 15) tourists (buy at 4/3 of and sell at 1/3 of the normal price)."
+    mc: 0
+  leather jacket:
+    type: "suit of armor"
+    cost: 10
+    weight: 30
+    ac: 1 
+    material: "leather"
+    effect: ""
+    mc: 0
+  leather armor:
+    type: "suit of armor"
+    cost: 5
+    weight: 150
+    ac: 2
+    material: "leather"
+    effect: ""
+    mc: 0
+  ring mail:
+    type: "suit of armor"
+    cost: 100
+    weight: 250
+    ac: 3
+    material: "iron"
+    effect: ""
+    mc: 0    
+  orcish ring mail:
+    type: "suit of armor"
+    cost: 80
+    weight: 250
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  studded leather armor:
+    type: "suit of armor"
+    cost: 15
+    weight: 200
+    ac: 3
+    material: "leather"
+    effect: ""
+    mc: 0
+  scale mail:
+    type: "suit of armor"
+    cost: 45
+    weight: 250
+    ac: 4
+    material: "iron"
+    effect: ""
+    mc: 0
+  orcish chain mail:
+    type: "suit of armor"
+    cost: 70
+    weight: 300
+    ac: 4
+    material: "iron"
+    effect: ""
+    mc: 0
+  chain mail:
+    type: "suit of armor"
+    cost: 75
+    weight: 300
+    ac: 5
+    material: "iron"
+    effect: ""
+    mc: 0
+  elven mithril-coat:
+    type: "suit of armor"
+    cost: 240
+    weight: 150
+    ac: 5
+    material: "mithril"
+    effect: ""
     mc: 2
-    type: suit of armor
+  splint mail:
+    type: "suit of armor"
+    cost: 80
+    weight: 400
+    ac: 6
+    material: "iron"
+    effect: ""
+    mc: 0
+  banded mail:
+    type: "suit of armor"
+    cost: 90
+    weight: 350
+    ac: 6
+    material: "iron"
+    effect: ""
+    mc: 1
+  dwarvish mithril-coat:
+    type: "suit of armor"
+    cost: 240
+    weight: 150
+    ac: 6
+    material: "mithril"
+    effect: ""
+    mc: 2
+  bronze plate mail:
+    type: "suit of armor"
+    cost: 400
     weight: 450
-  water walking boots:
-    ac: 1
-    cost: 50
-    effect: allows you to walk on water (does not prevent you being drowned by monsters)
-    material: leather
-    mc: 0
-    type: boots
-    weight: 20
-  white dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: cold resistance
-    material: dragon
-    type: suit of armor
+    ac: 6
+    material: "copper"
+    effect: ""
+    mc: 1
+  plate mail:
+    type: "suit of armor"
+    cost: 600
+    weight: 450
+    ac: 7
+    material: "iron"
+    effect: ""
+    mc: 2
+  tanko:
+    type: "suit of armor"
+    cost: 600
+    weight: 450
+    ac: 7
+    material: "iron"
+    effect: ""
+    mc: 2
+  crystal plate mail:
+    type: "suit of armor"
+    cost: 820
+    weight: 450
+    ac: 7
+    material: "glass"
+    effect: ""
+    mc: 2
+  blue dragon scales:
+    type: "suit of armor"
+    cost: 500
     weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "shock resistance"
+  black dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "disintegration resistance"
+  gray dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "magic resistance"
+  green dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "poison resistance"
+  orange dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "sleep resistance"
+  red dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "fire resistance"
+  silver dragon scales:
+    type: "suit of armor"
+    cost: 500
+    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "relfection"
   white dragon scales:
-    ac: 3
+    type: "suit of armor"
     cost: 500
-    effect: cold resistance
-    material: dragon
-    type: suit of armor
     weight: 40
-  yellow dragon scale mail:
-    ac: 9
-    cost: 900
-    effect: acid resistance
-    material: dragon
-    type: suit of armor
-    weight: 40
+    ac: 3
+    material: "dragon"
+    effect: "cold resistance"
   yellow dragon scales:
-    ac: 3
+    type: "suit of armor"
     cost: 500
-    effect: acid resistance
-    material: dragon
-    type: suit of armor
     weight: 40
-  yugake:
-    ac: 1
-    cost: 8
-    effect: ''
-    material: leather
-    mc: 0
-    type: gloves
+    ac: 3
+    material: "dragon"
+    effect: "acid resistance"
+  blue dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "shock resistance"
+  black dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "disintegration"
+  gray dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "magic resistance"
+  green dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "poison resistance"
+  orange dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "sleep resistance"
+  red dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "fire resistance"
+  silver dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "reflection"
+  white dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "cold resistance"
+  yellow dragon scale mail:
+    type: "suit of armor"
+    cost: 900
+    weight: 40
+    ac: 9
+    material: "dragon"
+    effect: "acid resistance"
+  mummy wrapping:
+    type: "cloak"
+    cost: 2
+    weight: 3
+    ac: 0
+    material: "cloth"
+    effect: "overrides invisibility so you are again visible"
+    mc: 1
+  orcish cloak:
+    type: "cloak"
+    cost: 40
     weight: 10
+    ac: 0
+    material: "cloth"
+    effect: ""
+    mc: 1
+  dwarvish cloak:
+    type: "cloak"
+    cost: 50
+    weight: 10
+    ac: 0
+    material: "cloth"
+    effect: ""
+    mc: 1
+  leather cloak:
+    type: "cloak"
+    cost: 40
+    weight: 15
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 1
+  cloak of displacement:
+    type: "cloak"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "gives displacement"
+    mc: 1
+  oilskin cloak:
+    type: "cloak"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "protects metal body armor from rust and corrosion (1/3 chance if cursed) and prevents grabbing attacks"
+    mc: 2
+  alchemy smock:
+    type: "cloak"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "gives poison resistance and gives acid resistance"
+    mc: 1
+  cloak of invisibility:
+    type: "cloak"
+    cost: 60
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "gives invisibility"
+    mc: 1
+  cloak of magic resistance:
+    type: "cloak"
+    cost: 60
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "gives magic resistance (does not affect magic cancellation)"
+    mc: 1
+  elven cloak:
+    type: "cloak"
+    cost: 60
+    weight: 10
+    ac: 1
+    material: "cloth"
+    effect: "gives stealth"
+    mc: 1
+  robe:
+    type: "cloak"
+    cost: 50
+    weight: 15
+    ac: 2
+    material: "cloth"
+    effect: "spellcasting is more likely to suceed and reduces the penalty for metallic armor"
+    mc: 2
+  cloak of protection:
+    type: "cloak"
+    cost: 50
+    weight: 10
+    ac: 3
+    material: "cloth"
+    effect: "gives +n AC"
+    mc: 3
+  fedora:
+    type: "helm"
+    cost: 1
+    weight: 3
+    ac: 0
+    material: "cloth"
+    effect: ""
+    mc: 0
+  dunce cap:
+    type: "helm"
+    cost: 1
+    weight: 4
+    ac: 0
+    material: "cloth"
+    effect: "fixes your intelligence and wisdom at 6 (auto-curses), shopkeepers buy and sell at the inexperienced Tourist rate"
+    mc: 0
+  cornuthaum:
+    type: "helm"
+    cost: 80
+    weight: 4
+    ac: 0
+    material: "cloth"
+    effect: "A wizard gets clairvoyance and +1 charisma, but other characters have existing clairvoyance blocked and get -1 charisma"
+    mc: 1
+  dented pot:
+    type: "helm"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  elven leather helm:
+    type: "helm"
+    cost: 8
+    weight: 3
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  helmet:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  kabuto:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  orcish helm:
+    type: "helm"
+    cost: 10
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  helm of brilliance:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "adds armor's enchantment to your intelligence and wisdom"
+    mc: 0
+  helm of opposite alignment:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "changes your alignment, removes protection, and auto-curses"
+    mc: 0
+  helm of telepathy:
+    type: "helm"
+    cost: 50
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "gives telepathy"
+    mc: 0
+  dwarvish iron helm:
+    type: "helm"
+    cost: 20
+    weight: 40
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  leather gloves:
+    type: "gloves"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  yugake:
+    type: "gloves"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  gauntlets of dexterity:
+    type: "gloves"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: "adds armor's enchantment to your dexterity"
+    mc: 0
+  gauntlets of fumbling:
+    type: "gloves"
+    cost: 50
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: "you will occasionally fumble"
+    mc: 0
+  gauntlets of power:
+    type: "gloves"
+    cost: 50
+    weight: 30
+    ac: 1
+    material: "iron"
+    effect: "increases your strength to 25"
+    mc: 0
+  small shield:
+    type: "shield"
+    cost: 3
+    weight: 30
+    ac: 1
+    material: "wood"
+    effect: "does not limit spellcasting as much as other shields"
+    mc: 0
+  orcish shield:
+    type: "shield"
+    cost: 7
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  Uruk-hai shield:
+    type: "shield"
+    cost: 7
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: ""
+    mc: 0
+  elven shield:
+    type: "shield"
+    cost: 7
+    weight: 40
+    ac: 2
+    material: "wood"
+    effect: ""
+    mc: 0
+  dwarvish roundshield:
+    type: "shield"
+    cost: 10
+    weight: 100
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  large shield:
+    type: "shield"
+    cost: 10
+    weight: 100
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0
+  shield of reflection:
+    type: "shield"
+    cost: 50
+    weight: 50
+    ac: 2
+    material: "silver"
+    effect: "gives reflection"
+    mc: 0
+  low boots:
+    type: "boots"
+    cost: 8
+    weight: 10
+    ac: 1
+    material: "leather"
+    effect: ""
+    mc: 0
+  elven boots:
+    type: "boots"
+    cost: 8
+    weight: 15
+    ac: 1
+    material: "leather"
+    effect: "gives stealth"
+    mc: 0
+  kicking boots:
+    type: "boots"
+    cost: 8
+    weight: 50
+    ac: 1
+    material: "iron"
+    effect: "kicking does additional damage and grants martial arts bonuses"
+    mc: 0
+  fumble boots:
+    type: "boots"
+    cost: 30
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "you will occasionally fumble"
+    mc: 0
+  levitation boots:
+    type: "boots"
+    cost: 30
+    weight: 15
+    ac: 1
+    material: "leather"
+    effect: "causes leviation but does not prevent you being drowned by monsters"
+    mc: 0
+  jumping boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "gives jumping at will (the special restrictions for Knights do not apply while this item is worn)"
+    mc: 0
+  speed boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "gives you the speed extrinsic (the same as the potion of speed or spell of haste self)"
+    mc: 0
+  water walking boots:
+    type: "boots"
+    cost: 50
+    weight: 20
+    ac: 1
+    material: "leather"
+    effect: "allows you to walk on water (does not prevent you being drowned by monsters)"
+    mc: 0
+  high boots:
+    type: "boots"
+    cost: 12
+    weight: 20
+    ac: 2
+    material: "leather"
+    effect: ""
+    mc: 0
+  iron shoes:
+    type: "boots"
+    cost: 16
+    weight: 50
+    ac: 2
+    material: "iron"
+    effect: ""
+    mc: 0

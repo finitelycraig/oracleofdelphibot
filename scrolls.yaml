@@ -1,185 +1,185 @@
 scrolls:
-  scroll of amnesia:
-    appearance: random
-    cost: 200
-    effect: Reading a scroll of amnesia can make you forget things including level maps, object identities, traps and whether you are punished. It abuses your wisdom. Unless it is blessed, your forget between 1 and all of your known spells. If cursed or when confused, you forget all of the current level, otherwise you only forget about 6/7 of it.
-    ink: 4-7
-    monster_use: false
-    notes: Maybe don't read this one and blank it instead.
-    weight: 5
-  scroll of blank paper:
-    appearance: unlabelled
-    cost: 60
-    effect: ''
-    ink: '0'
-    monster_use: false
-    notes: They may be obtained normally, by blanking other scrolls with a wand of cancellation or dipping in water. Their main use is to write new scrolls with a magic marker. The beatitude of the resulting scroll is affected by the beatitude of both the scroll of blank paper and the magic marker.
-    weight: 5
-  scroll of charging:
-    appearance: random
-    cost: 300
-    effect: When read you to choose an item to recharge. Blessed scrolls restore more charges on average. If cursed, the number of charges on an item is set to 0. If you are confused, non-cursed scrolls of charging will instead restore your energy. If energy is already at max, it will increase by 5-20. If cursed, current energy will be reduced to 0.
-    ink: 8-15
-    monster_use: false
-    notes: Magic markers can only be recharged once.
-    weight: 5
-  scroll of confuse monster:
-    appearance: random
-    cost: 100
-    effect: Reading the scroll grants the ability to confuse monsters when they are hit in melee. An uncursed scroll grants one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or while confused confuses you instead for 1-100 turns.
-    ink: 6-11
-    monster_use: false
-    notes: Additional readings of uncursed or blessed scrolls will grant more uses, until 40 or more uses. Failed attempts will still consume a use.
-    weight: 5
-  scroll of create monster:
-    appearance: random
-    cost: 200
-    effect: If blessed, it creates 1 monster. If uncursed, there is a 72/73 chance of 1; 1/73 of 2-5. If cursed, a 72/73 chance of 1; 1/73 chance of 14-17. If you are confused, a 72/73 chance of 13 acid blobs; 1/73 chance of 14-17 acid blobs.
-    ink: 5-9
-    monster_use: true
-    notes: Monsters can read this scroll with the same effects.
-    weight: 5
-  scroll of destroy armor:
-    appearance: random
-    cost: 100
-    effect: A non-cursed scroll destroys a random worn piece of armor. When cursed, it decreases the enchantment and stuns you for 10-19 turns. If you are confused and the scroll is non-cursed, reading it removes erodeproofing from a random worn piece of armor; if the scroll is cursed, it erodeproofs one piece of armor.
-    ink: 5-9
-    monster_use: false
-    notes: It starts at the outermost layer you are wearing.
-    weight: 5
-  scroll of earth:
-    appearance: random
-    cost: 200
-    effect: If uncursed/blessed, 8 boulders are created around you. If uncursed/cursed, 1 boulder is created on top of your head. If read when confused, rocks are created instead of boulders
-    ink: 4-7
-    monster_use: true
-    notes: Without a helmet a boulder causes 1d20 damage; with one it cause 2 points. You can build a boulder fort!
-    weight: 5
-  scroll of enchant armor:
-    appearance: random
-    cost: 80
-    effect: If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, enchantment is >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed.
-    ink: 8-15
-    monster_use: false
-    notes: If the armor is >+3, a non-cursed scroll might destroy it.
-    weight: 5
-  scroll of enchant weapon:
-    appearance: random
-    cost: 60
-    effect: 'If uncursed/blessed, it will attempt to enchant your weapon: uncursed +1, blessed +1-4. When confused, it will erodeproof and fix damage. If cursed, it attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing.'
-    ink: 8-15
-    monster_use: false
-    notes: When wielding a stack of weapons, it affects all of them. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting.
-    weight: 5
-  scroll of fire:
-    appearance: random
-    cost: 100
-    effect: If uncursed it creates a 3x3 explosion, centered on you, which deals 2-3 damage to you and surrounding monsters. If cursed it deals 1-2 damage to each target. If blessed, you can change the center of the explosion and it will deal 15/20/25 damage. If read when confused, you lose 1HP. You are unaffected if fire resistant and your armor is fireproof.
-    ink: 4-7
-    monster_use: false
-    notes: The scroll is fireproof and self-identifies when read.
-    weight: 5
-  scroll of food detection:
-    appearance: random
-    cost: 100
-    effect: If uncursed, it reveals all comestible on the level. If blessed, you additionally aquire the food appraisal intrinsic. If the scroll is cursed or you are confused, you will detect potions instead.
-    ink: 4-7
-    monster_use: false
-    notes: ''
-    weight: 5
-  scroll of genocide:
-    appearance: random
-    cost: 300
-    effect: If blessed, you can choose an entire class of monsters or 'none', same when confused. If uncursed, you can genocide one species or 'none'. If confused and reading uncursed, you genocide your own role. If cursed, you are surrounded by 4-6 monsters of one species, which will either be the one you select, a random one for 'none', or your own if you are confused.
-    ink: 15-29
-    monster_use: false
-    notes: ''
-    weight: 5
-  scroll of gold detection:
-    appearance: random
-    cost: 100
-    effect: If uncursed, it will reveal gold pieces, gold golems and hidden gold. If blessed, it will also detect objects made of gold. If read when confused, it detects traps instead. If the scroll is cursed, the traps will appear as gold.
-    ink: 4-7
-    monster_use: false
-    notes: ''
-    weight: 5
-  scroll of identify:
-    appearance: random
-    cost: 20
-    effect: It reveals the identity of at least one unknown item in the inventory. If blessed/uncursed, it identifies 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item is identified.
-    ink: 7-13
-    monster_use: false
-    notes: Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first.
-    weight: 5
-  scroll of light:
-    appearance: random
-    cost: 50
-    effect: Creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed a 20% chance of generating black light or a 5-unit radius of darkness otherwise.
-    ink: 4-7
-    monster_use: false
-    notes: ''
-    weight: 5
-  scroll of magic mapping:
-    appearance: random
-    cost: 100
-    effect: If blessed/uncursed it maps the entire level but only blessed scrolls reveal secret doors. If cursed or when confused, it maps 1/7 of the level's squares. On non-mappable levels you will be confused for 1-30 turns.
-    ink: 4-7
-    monster_use: false
-    notes: ''
-    weight: 5
   scroll of mail:
-    appearance: stamped
     cost: 0
-    effect: ''
-    ink: '2'
+    weight: 5 
+    ink: "2"
+    appearance: "stamped"
     monster_use: false
-    notes: These scrolls contain a message from outside NetHack and can be delivered by the mail daemon. They are never generated randomly in the dungeon.
+    effect: ""
+    notes: "These scrolls contain a message from outside NetHack and can be delivered by the mail daemon. They are never generated randomly in the dungeon."
+  scroll of identify:
+    cost: 20
     weight: 5
-  scroll of punishment:
-    appearance: random
-    cost: 300
-    effect: Reading it can punish you by chaining a heavy ball to you. If uncursed/cursed and you are unpunished, you are punished when the scroll is read. If you are already punished, the ball's weight increases by 160 for uncursed scrolls and 320 for cursed. When blessed or you are confused, the scroll is harmless.
-    ink: 5-9
+    ink: "7-13"
+    appearance: "random"
     monster_use: false
-    notes: It self-identifies when read.
+    effect: "It reveals the identity of at least one unknown item in the inventory. If blessed/uncursed, it identifies 1-4 or all items. Blessed scrolls identify more items on average. If cursed, only one item is identified."
+    notes: "Scrolls of identity are always safe to read. If the number of identifications is less than the number of unidentified items in the inventory, the player chooses which to identify first."
+  scroll of light:
+    cost: 50
     weight: 5
-  scroll of remove curse:
-    appearance: random
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "Creates a 9-unit radius of light if blessed, a 5-unit radius if uncursed and a 5-unit radius of darkness if cursed. When confused, blessed has a 20% chance of generating a yellow light or a 9-unit radius of darkness otherwise; uncursed a 20% of generating a yellow light or a 5-unit radius of darkness otherwise; cursed a 20% chance of generating black light or a 5-unit radius of darkness otherwise."
+    notes: ""
+  scroll of blank paper:
+    cost: 60
+    weight: 5
+    ink: "0"
+    appearance: "unlabelled"
+    monster_use: false
+    effect: ""
+    notes: "They may be obtained normally, by blanking other scrolls with a wand of cancellation or dipping in water. Their main use is to write new scrolls with a magic marker. The beatitude of the resulting scroll is affected by the beatitude of both the scroll of blank paper and the magic marker."
+  scroll of enchant weapon:
+    cost: 60
+    weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    effect: "If uncursed/blessed, it will attempt to enchant your weapon: uncursed +1, blessed +1-4. When confused, it will erodeproof and fix damage. If cursed, it attempts to decrease enchantment by 1. When confused, a cursed scroll removes erodeproofing."
+    notes: "When wielding a stack of weapons, it affects all of them. +5 is the highest enchantment a weapon can have and not be destroyed when enchanting." 
+  scroll of enchant armor:
     cost: 80
-    effect: Reading an uncursed scroll only affects equipped items while reading a blessed scroll affects all items in open inventory. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment.
-    ink: 8-15
-    monster_use: false
-    notes: ''
     weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    effect: "If uncursed, one worn armor is randomly selected, given +1 and uncursed if cursed. If blessed, enchantment is >+1.  Dragon scales become DSM and gain +1. If it is cursed, armor is cursed and gets -1. If non-cursed and confused, repairs erosion and erodeproofs; if cursed and when confused, damage is not repaired and erodeproofing removed."
+    notes: "If the armor is >+3, a non-cursed scroll might destroy it."
+  scroll of remove curse:
+    cost: 80
+    weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    effect: "Reading an uncursed scroll only affects equipped items while reading a blessed scroll affects all items in open inventory. When confused, it will remove all blessed/uncursed/cursed states of items and randomly curse/bless them. All affected items will lose their BUC status and need to be re-identified. Reading a cursed, uncursed or blessed scroll of remove curse will end punishment."
+    notes: ""
+  scroll of confuse monster:
+    cost: 100
+    weight: 5
+    ink: "6-11"
+    appearance: "random"
+    monster_use: false
+    effect: "Reading the scroll grants the ability to confuse monsters when they are hit in melee. An uncursed scroll grants one use of this ability; a blessed scroll will grant 2-9 uses. Reading a cursed scroll or while confused confuses you instead for 1-100 turns."
+    notes: "Additional readings of uncursed or blessed scrolls will grant more uses, until 40 or more uses. Failed attempts will still consume a use."
+  scroll of destroy armor:
+    cost: 100
+    weight: 5
+    ink: "5-9"
+    appearance: "random"
+    monster_use: false
+    effect: "A non-cursed scroll destroys a random worn piece of armor. When cursed, it decreases the enchantment and stuns you for 10-19 turns. If you are confused and the scroll is non-cursed, reading it removes erodeproofing from a random worn piece of armor; if the scroll is cursed, it erodeproofs one piece of armor."
+    notes: "It starts at the outermost layer you are wearing."
+  scroll of fire:
+    cost: 100
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "If uncursed it creates a 3x3 explosion, centered on you, which deals 2-3 damage to you and surrounding monsters. If cursed it deals 1-2 damage to each target. If blessed, you can change the center of the explosion and it will deal 15/20/25 damage. If read when confused, you lose 1HP. You are unaffected if fire resistant and your armor is fireproof."
+    notes: "The scroll is fireproof and self-identifies when read."
+  scroll of food detection:
+    cost: 100
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "If uncursed, it reveals all comestible on the level. If blessed, you additionally aquire the food appraisal intrinsic. If the scroll is cursed or you are confused, you will detect potions instead."
+    notes: ""
+  scroll of gold detection:
+    cost: 100
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "If uncursed, it will reveal gold pieces, gold golems and hidden gold. If blessed, it will also detect objects made of gold. If read when confused, it detects traps instead. If the scroll is cursed, the traps will appear as gold."
+    notes: ""
+  scroll magic mapping:
+    cost: 100
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "If blessed/uncursed it maps the entire level but only blessed scrolls reveal secret doors. If cursed or when confused, it maps 1/7 of the level's squares. On non-mappable levels you will be confused for 1-30 turns."
+    notes: ""
   scroll of scare monster:
-    appearance: random
     cost: 100
-    effect: If blessed/uncursed, monsters in your visual range will flee, although some may resist. If cursed or when confused, the monsters will instead wake up, become unparalyzed and unscared. Most monsters will flee if you step on a scroll of scare monster.
-    ink: 10-19
-    monster_use: false
-    notes: If you pick up a blessed one it will become uncursed. If you try to pick up a cursed one it will disintegrate.
     weight: 5
-  scroll of stinking cloud:
-    appearance: random
-    cost: 300
-    effect: It allows you to enter a cloud of poison gas around a point of your choice in the dungeon. The lifespan, damage caused and size of the cloud depends on its BUC status. If cursed, it is 4x4 and lasts for 4-6 turns; if uncursed, it is 3x3 and lasts 6-8 turns; if blessed, it is 4x4 and lasts 8-10 turns. Damage decreases after dissipations, which occur after 6, 8 and 10 turns.
-    ink: 10-19
+    ink: "10-19"
+    appearance: "random"
     monster_use: false
-    notes: ''
-    weight: 5
-  scroll of taming:
-    appearance: random
-    cost: 200
-    effect: Some monsters can resist or are not susceptible to taming. If blessed/uncursed, adjacent monsters are turned into pets. If cursed, the monster will be angered instead. If you are confused, the range will be increased to within 5 squares of your location.
-    ink: 10-19
-    monster_use: false
-    notes: It can be used to pacify angry creatures that were formerly peaceful.
-    weight: 5
+    effect: "If blessed/uncursed, monsters in your visual range will flee, although some may resist. If cursed or when confused, the monsters will instead wake up, become unparalyzed and unscared. Most monsters will flee if you step on a scroll of scare monster."
+    notes: "If you pick up a blessed one it will become uncursed. If you try to pick up a cursed one it will disintegrate."
   scroll of teleportation:
-    appearance: random
     cost: 100
-    effect: If blessed, you will be asked whether you want to teleport. If uncursed, you will teleport to a location on the same level; if cursed, you will teleport to another level. When confused and with teleport control, you can level teleport.
-    ink: 10-19
-    monster_use: true
-    notes: You will only be asked where to teleport if you have teleport control.
     weight: 5
+    ink: "10-19"
+    appearance: "random"
+    monster_use: true
+    effect: "If blessed, you will be asked whether you want to teleport. If uncursed, you will teleport to a location on the same level; if cursed, you will teleport to another level. When confused and with teleport control, you can level teleport."
+    notes: "You will only be asked where to teleport if you have teleport control."
+  scroll of amnesia:
+    cost: 200
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: false
+    effect: "Reading a scroll of amnesia can make you forget things including level maps, object identities, traps and whether you are punished. It abuses your wisdom. Unless it is blessed, your forget between 1 and all of your known spells. If cursed or when confused, you forget all of the current level, otherwise you only forget about 6/7 of it."
+    notes: "Maybe don't read this one and blank it instead."
+  scroll of create monster:
+    cost: 200
+    weight: 5
+    ink: "5-9"
+    appearance: "random"
+    monster_use: true
+    effect: "If blessed, it creates 1 monster. If uncursed, there is a 72/73 chance of 1; 1/73 of 2-5. If cursed, a 72/73 chance of 1; 1/73 chance of 14-17. If you are confused, a 72/73 chance of 13 acid blobs; 1/73 chance of 14-17 acid blobs."
+    notes: "Monsters can read this scroll with the same effects."
+  scroll of earth:
+    cost: 200
+    weight: 5
+    ink: "4-7"
+    appearance: "random"
+    monster_use: true
+    effect: "If uncursed/blessed, 8 boulders are created around you. If uncursed/cursed, 1 boulder is created on top of your head. If read when confused, rocks are created instead of boulders"
+    notes: "Without a helmet a boulder causes 1d20 damage; with one it cause 2 points. You can build a boulder fort!"
+  scroll of taming:
+    cost: 200
+    weight: 5
+    ink: "10-19"
+    appearance: "random"
+    monster_use: false
+    effect: "Some monsters can resist or are not susceptible to taming. If blessed/uncursed, adjacent monsters are turned into pets. If cursed, the monster will be angered instead. If you are confused, the range will be increased to within 5 squares of your location."
+    notes: "It can be used to pacify angry creatures that were formerly peaceful."
+  scroll of charging:
+    cost: 300
+    weight: 5
+    ink: "8-15"
+    appearance: "random"
+    monster_use: false
+    effect: "When read you to choose an item to recharge. Blessed scrolls restore more charges on average. If cursed, the number of charges on an item is set to 0. If you are confused, non-cursed scrolls of charging will instead restore your energy. If energy is already at max, it will increase by 5-20. If cursed, current energy will be reduced to 0."
+    notes: "Magic markers can only be recharged once."
+  scroll of genocide:
+    cost: 300
+    weight: 5
+    ink: "15-29"
+    appearance: "random"
+    monster_use: false
+    effect: "If blessed, you can choose an entire class of monsters or 'none', same when confused. If uncursed, you can genocide one species or 'none'. If confused and reading uncursed, you genocide your own role. If cursed, you are surrounded by 4-6 monsters of one species, which will either be the one you select, a random one for 'none', or your own if you are confused."
+    notes: ""
+  scroll of punishment:
+    cost: 300
+    weight: 5
+    ink: "5-9"
+    appearance: "random"
+    monster_use: false
+    effect: "Reading it can punish you by chaining a heavy ball to you. If uncursed/cursed and you are unpunished, you are punished when the scroll is read. If you are already punished, the ball's weight increases by 160 for uncursed scrolls and 320 for cursed. When blessed or you are confused, the scroll is harmless."
+    notes: "It self-identifies when read."
+  scroll of stinking cloud:
+    cost: 300
+    weight: 5
+    ink: "10-19"
+    appearance: "random"
+    monster_use: false
+    effect: "It allows you to enter a cloud of poison gas around a point of your choice in the dungeon. The lifespan, damage caused and size of the cloud depends on its BUC status. If cursed, it is 4x4 and lasts for 4-6 turns; if uncursed, it is 3x3 and lasts 6-8 turns; if blessed, it is 4x4 and lasts 8-10 turns. Damage decreases after dissipations, which occur after 6, 8 and 10 turns."
+    notes: ""

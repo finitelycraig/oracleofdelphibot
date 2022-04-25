@@ -1,141 +1,141 @@
 potions:
-  potion of acid:
-    cost: 250
-    effect: It may not be diluted to water, but can turn into one if cancelled. If dipped in water, it will boil and cause 1-10 points of damage. Dipping items vulnerable to corrosion in it will erode them. If you quaff a potion of acid when you are turning to stone, you will be cured, but it will abuse your constitution and you will take damage (1d4 point if blessed, 1d8 damage if uncursed and 2d8 points if cursed).
-    monster_use: true
+  potion of water:
+    cost: 0 #base cost is 0 but the wiki says it varies 
     weight: 20
-  potion of blindness:
-    cost: 150
-    effect: It makes you blind for 125-324 turns if blessed, 250-449 turns if uncursed and 375-574 turns if cursed.
-    monster_use: true
-    weight: 20
+    monster_use: false
+    effect: "Gives d10 nutrition. Changing the BUC of an uncursed potion of water can create a potion of holy or unholy water."
   potion of booze:
     cost: 50
-    effect: When quaffed, a non-blessed potion of booze will make you confused for 3d8 turns, provide some nutrition and abuse your wisdom. If the potion is cursed, it will make you pass out for up to 15 turns.
+    weight: 20
     monster_use: false
-    weight: 20
-  potion of confusion:
-    cost: 100
-    effect: Drinking it will make you confused for 8-16 turns if blessed, 16-24 if uncursed and 24-30 if cursed.
-    monster_use: true
-    weight: 20
-  potion of enlightenment:
-    cost: 200
-    effect: If blessed or uncursed, it will exercise wisdom and provide enlightenment. If blessed, it will also increase your intelligence and wisdom by one point each. A cursed potion will only abuse wisdom.
-    monster_use: false
-    weight: 20
-  potion of extra healing:
-    cost: 100
-    effect: Blessed heals for 8d8, uncursed 6d8, and cursed 4d8. If this would bring your HP above its maximum, your maximum will increase by 2 for uncursed, or 5 for blessed. Also cures hallucination and blindness, exercises constitution and strength, and, if noncursed, cures sickness.
-    monster_use: true
-    weight: 20
+    effect: "When quaffed, a non-blessed potion of booze will make you confused for 3d8 turns, provide some nutrition and abuse your wisdom. If the potion is cursed, it will make you pass out for up to 15 turns."
   potion of fruit juice:
     cost: 50
-    effect: It adds 30 nutrition if blessed, 20 if uncursed and 10 if cursed. The amount of nutrition is halved if the potion is diluted.
+    weight: 20
     monster_use: false
-    weight: 20
-  potion of full healing:
-    cost: 200
-    effect: When quaffed, it will heal up to 400 HP. If 400 would exceed max. HP, a blessed potion will increase the max. by 8 and an uncursed by 4. A cursed potion will not increase max. HP. The potion will also cure hallucination and blindness and exercise constitution and strength. If non-cursed, it will cure sickness.
-    monster_use: true
-    weight: 20
-  potion of gain ability:
-    cost: 300
-    effect: If blessed, all attributes will be increased by one. If uncursed, a random attribute will increase by one. Quaffing a cursed potion has no effect.
-    monster_use: false
-    weight: 20
-  potion of gain energy:
-    cost: 150
-    effect: It will increase maximum energy by 3d6 if blessed, 2d6 if uncursed and decrease maximum energy by 1d6 if cursed. For non-cursed potions, your current energy is increased by 3x the change (capped at the new max.) and for cursed potions current energy is decreased by 3x the change (min. of 0). All potions exercise wisdom.
-    monster_use: false
-    weight: 20
-  potion of gain level:
-    cost: 300
-    effect: If non-cursed, it will increase your experience level by one. An uncursed potion will set your experience points to the min. for your new experience level; a blessed potion will set them to a random value between the min. and max. When you gain a level, you get increased max. HP and energy, the amount depends on your level, race, role and constitution. A cursed potion causes you to rise through the ceiling to the floor above.
-    monster_use: true
-    weight: 20
-  potion of hallucination:
-    cost: 100
-    effect: It will cause hallucination for 300-499 turns if blessed, 600-799 if uncursed and 900-1099 if cursed.
-    monster_use: false
-    weight: 20
-  potion of healing:
-    cost: 100
-    effect: It will heal you for 8d4 HP if blessed (or +1 if max. would be surpassed), 6d4 if uncursed and 4d4 if cursed. Quaffing this potion exercises constitution. If blessed it will cure sickness; noncursed potions will cure blindness.
-    monster_use: true
-    weight: 20
-  potion of holy water:
-    cost: 100
-    effect: Quaffing a potion of holy water cures lycanthropy and, for non-chaotics, cures all illnesses; chaotics take damage instead. It can be thrown at or wielded against demons, undead, and lycanthropes to cause 2d6 damage. Dipping an object into holy water can uncurse or bless them, using up the potion; the objects dipped do not get wet.
-    monster_use: false
-    weight: 20
-  potion of invisibility:
-    cost: 150
-    effect: If blessed, you will become permanently invisible. If uncursed or cursed, you will become invisible for 31-45 turns, but if cursed, all sleeping or meditating monsters on the level will be awoken.
-    monster_use: true
-    weight: 20
-  potion of levitation:
-    cost: 200
-    effect: A blessed potion will make you levitate for 250-299 turns; an uncursed/cursed 10-149 turns. You can stack to increase the levitation timeout. If blessed, you can end your levitation with the '>' key. Quaffing a cursed potion has additional effects - check the wiki for these.
-    monster_use: false
-    weight: 20
-  potion of monster detection:
-    cost: 150
-    effect: A blessed potion will show all monsters on the map for 21-60 turns. An uncursed potion will show just the monsters against a black background and will exercise wisdom if any are found. A cursed potion has the same effect as an uncursed potion, but will also wake all sleeping and paralyzed monsters on the level.
-    monster_use: false
-    weight: 20
-  potion of object detection:
-    cost: 150
-    effect: When quaffed, a potion of object detection will show you the location of all objects on the current level, with specific information dependent on beatitude. Look at the wiki for a list of these effects. Quaffing any potion of object detection will exercise wisdom if an object is detected.
-    monster_use: false
-    weight: 20
-  potion of oil:
-    cost: 250
-    effect: It is primarily intended to be fuel for oil lamps but has a wide number of applications. For example, dipping a damaged iron weapon into a non-cursed potion of oil removes one degree of damage. Doing anything with a cursed potion of oil may cause the oil to spill and make your fingers slippery.
-    monster_use: false
-    weight: 20
-  potion of paralysis:
-    cost: 300
-    effect: It will paralyse you for 13-22 turns if blessed, 25-34 if uncursed and 37-46 if cursed. Breathing its vapours will paralyse you for 1-5 turns. If thrown at a monster or smashed on their head, it will paralyse them for 1-25 turns.
-    monster_use: true
-    weight: 20
-  potion of polymorph:
-    cost: 200
-    effect: It will make you polymorph. Dipping an item into it may polymorph the item and throwing it at monsters will cause them to polymorph.
-    monster_use: true
-    weight: 20
-  potion of restore ability:
-    cost: 100
-    effect: A blessed potion restores all lost attributes and experience levels. An uncursed potion restores one random lost attribute to its former max. and one lost experience level. A cursed potion has no effect.
-    monster_use: false
-    weight: 20
+    effect: "It adds 30 nutrition if blessed, 20 if uncursed and 10 if cursed. The amount of nutrition is halved if the potion is diluted."
   potion of see invisible:
     cost: 50
-    effect: Blessed potions give you the see invisible intrinsic permanently; uncursed and cursed give you the intrinsic for 750-849 turns. If noncursed, it will remove blindness.
-    monster_use: false
     weight: 20
+    monster_use: false
+    effect: "Blessed potions give you the see invisible intrinsic permanently; uncursed and cursed give you the intrinsic for 750-849 turns. If noncursed, it will remove blindness."
   potion of sickness:
     cost: 50
-    effect: If you have no poison resistance, a blessed potion will remove 1HP, an uncursed potion will remove 1-10HP and a cursed potion 1-15HP. Uncursed/cursed potions will also reduce one of your atttributes by 3-6 and abuse constitution. If you have poison resistance, a potion of any BUC state will remove 1 HP; if non-blessed, one of your attributes will be reduced by 1 and it abuses constitution. Healers are protected from these effects.
+    weight: 20
     monster_use: false
-    weight: 20
-  potion of sleeping:
+    effect: "If you have no poison resistance, a blessed potion will remove 1HP, an uncursed potion will remove 1-10HP and a cursed potion 1-15HP. Uncursed/cursed potions will also reduce one of your atttributes by 3-6 and abuse constitution. If you have poison resistance, a potion of any BUC state will remove 1 HP; if non-blessed, one of your attributes will be reduced by 1 and it abuses constitution. Healers are protected from these effects."
+  potion of confusion:
     cost: 100
-    effect: It puts you to sleep for 13-23 turns if blessed, 25-35 turns if uncursed and 37-47 turns if cursed. The potion will have no effect if you have sleep resistance or free action.
-    monster_use: true
     weight: 20
-  potion of speed:
-    cost: 200
-    effect: It will temporarily increase your speed to 'very fast' for 160-169 turns if blessed, 100-109 turns if uncursed and 40-49 turns if cursed. All will heal wounded legs.
     monster_use: true
+    effect: "Drinking it will make you confused for 8-16 turns if blessed, 16-24 if uncursed and 24-30 if cursed."
+  potion of extra healing:
+    cost: 100
     weight: 20
+    monster_use: true
+    effect: "Blessed heals for 8d8, uncursed 6d8, and cursed 4d8. If this would bring your HP above its maximum, your maximum will increase by 2 for uncursed, or 5 for blessed. Also cures hallucination and blindness, exercises constitution and strength, and, if noncursed, cures sickness."
+  potion of hallucination:
+    cost: 100
+    weight: 20
+    monster_use: false
+    effect: "It will cause hallucination for 300-499 turns if blessed, 600-799 if uncursed and 900-1099 if cursed."
+  potion of healing:
+    cost: 100
+    weight: 20
+    monster_use: true
+    effect: "It will heal you for 8d4 HP if blessed (or +1 if max. would be surpassed), 6d4 if uncursed and 4d4 if cursed. Quaffing this potion exercises constitution. If blessed it will cure sickness; noncursed potions will cure blindness."
+  potion of holy water:
+    cost: 100
+    weight: 20
+    monster_use: false
+    effect: "Quaffing a potion of holy water cures lycanthropy and, for non-chaotics, cures all illnesses; chaotics take damage instead. It can be thrown at or wielded against demons, undead, and lycanthropes to cause 2d6 damage. Dipping an object into holy water can uncurse or bless them, using up the potion; the objects dipped do not get wet."
   potion of unholy water:
     cost: 100
-    effect: Quaffing a potion of unholy water will polymorph you into your wereform if you have lycanthropy. Chaotic characters heal 2d6 HP and exercise constitution; lawful characters take 2d6 damage and neutral characters abuse their constitution. Diping a blessed item into it will make it uncursed; dipping an uncursed item will make it cursed.
-    monster_use: false
     weight: 20
-  potion of water:
-    cost: 0
-    effect: Gives d10 nutrition. Changing the BUC of an uncursed potion of water can create a potion of holy or unholy water.
     monster_use: false
+    effect: "Quaffing a potion of unholy water will polymorph you into your wereform if you have lycanthropy. Chaotic characters heal 2d6 HP and exercise constitution; lawful characters take 2d6 damage and neutral characters abuse their constitution. Diping a blessed item into it will make it uncursed; dipping an uncursed item will make it cursed."
+  potion of restore ability:
+    cost: 100
     weight: 20
+    monster_use: false
+    effect: "A blessed potion restores all lost attributes and experience levels. An uncursed potion restores one random lost attribute to its former max. and one lost experience level. A cursed potion has no effect."
+  potion of sleeping:
+    cost: 100
+    weight: 20
+    monster_use: true
+    effect: "It puts you to sleep for 13-23 turns if blessed, 25-35 turns if uncursed and 37-47 turns if cursed. The potion will have no effect if you have sleep resistance or free action."
+  potion of blindness:
+    cost: 150
+    weight: 20
+    monster_use: true
+    effect: "It makes you blind for 125-324 turns if blessed, 250-449 turns if uncursed and 375-574 turns if cursed."
+  potion of gain energy:
+    cost: 150
+    weight: 20
+    monster_use: false
+    effect: "It will increase maximum energy by 3d6 if blessed, 2d6 if uncursed and decrease maximum energy by 1d6 if cursed. For non-cursed potions, your current energy is increased by 3x the change (capped at the new max.) and for cursed potions current energy is decreased by 3x the change (min. of 0). All potions exercise wisdom."
+  potion of invisibility:
+    cost: 150
+    weight: 20
+    monster_use: true
+    effect: "If blessed, you will become permanently invisible. If uncursed or cursed, you will become invisible for 31-45 turns, but if cursed, all sleeping or meditating monsters on the level will be awoken."
+  potion of monster detection:
+    cost: 150
+    weight: 20
+    monster_use: false
+    effect: "A blessed potion will show all monsters on the map for 21-60 turns. An uncursed potion will show just the monsters against a black background and will exercise wisdom if any are found. A cursed potion has the same effect as an uncursed potion, but will also wake all sleeping and paralyzed monsters on the level."
+  potion of object detection:
+    cost: 150
+    weight: 20
+    monster_use: false
+    effect: "When quaffed, a potion of object detection will show you the location of all objects on the current level, with specific information dependent on beatitude. Look at the wiki for a list of these effects. Quaffing any potion of object detection will exercise wisdom if an object is detected."
+  potion of enlightenment:
+    cost: 200
+    weight: 20
+    monster_use: false
+    effect: "If blessed or uncursed, it will exercise wisdom and provide enlightenment. If blessed, it will also increase your intelligence and wisdom by one point each. A cursed potion will only abuse wisdom."
+  potion of full healing:
+    cost: 200
+    weight: 20
+    monster_use: true
+    effect: "When quaffed, it will heal up to 400 HP. If 400 would exceed max. HP, a blessed potion will increase the max. by 8 and an uncursed by 4. A cursed potion will not increase max. HP. The potion will also cure hallucination and blindness and exercise constitution and strength. If non-cursed, it will cure sickness."
+  potion of levitation:
+    cost: 200
+    weight: 20
+    monster_use: false
+    effect: "A blessed potion will make you levitate for 250-299 turns; an uncursed/cursed 10-149 turns. You can stack to increase the levitation timeout. If blessed, you can end your levitation with the '>' key. Quaffing a cursed potion has additional effects - check the wiki for these."
+  potion of polymorph:
+    cost: 200
+    weight: 20
+    monster_use: true
+    effect: "It will make you polymorph. Dipping an item into it may polymorph the item and throwing it at monsters will cause them to polymorph."
+  potion of speed:
+    cost: 200
+    weight: 20
+    monster_use: true
+    effect: "It will temporarily increase your speed to 'very fast' for 160-169 turns if blessed, 100-109 turns if uncursed and 40-49 turns if cursed. All will heal wounded legs."
+  potion of acid:
+    cost: 250
+    weight: 20
+    monster_use: true
+    effect: "It may not be diluted to water, but can turn into one if cancelled. If dipped in water, it will boil and cause 1-10 points of damage. Dipping items vulnerable to corrosion in it will erode them. If you quaff a potion of acid when you are turning to stone, you will be cured, but it will abuse your constitution and you will take damage (1d4 point if blessed, 1d8 damage if uncursed and 2d8 points if cursed)."
+  potion of oil:
+    cost: 250
+    weight: 20
+    monster_use: false
+    effect: "It is primarily intended to be fuel for oil lamps but has a wide number of applications. For example, dipping a damaged iron weapon into a non-cursed potion of oil removes one degree of damage. Doing anything with a cursed potion of oil may cause the oil to spill and make your fingers slippery."
+  potion of gain ability:
+    cost: 300
+    weight: 20
+    monster_use: false
+    effect: "If blessed, all attributes will be increased by one. If uncursed, a random attribute will increase by one. Quaffing a cursed potion has no effect."
+  potion of gain level:
+    cost: 300
+    weight: 20
+    monster_use: true
+    effect: "If non-cursed, it will increase your experience level by one. An uncursed potion will set your experience points to the min. for your new experience level; a blessed potion will set them to a random value between the min. and max. When you gain a level, you get increased max. HP and energy, the amount depends on your level, race, role and constitution. A cursed potion causes you to rise through the ceiling to the floor above."
+  potion of paralysis:
+    cost: 300
+    weight: 20
+    monster_use: true
+    effect: "It will paralyse you for 13-22 turns if blessed, 25-34 if uncursed and 37-46 if cursed. Breathing its vapours will paralyse you for 1-5 turns. If thrown at a monster or smashed on their head, it will paralyse them for 1-25 turns."

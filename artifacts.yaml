@@ -1,298 +1,298 @@
 artifacts:
-  Excalibur:
-    alignment: lawful
-    base_item: long sword
-    carried: ''
-    intelligent: true
-    invoked: ''
-    obtaining: May be produced for lawful adventurers at fountains or a lawful crowning gift
-    use: wielded
-    used: +d5 to-hit and +d10 damage, drain resistance and searching. Monsters track player
-  Orcist:
-    alignment: chaotic
-    base_item: elven broadsword
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: May be produced by naming an ordinary elven broadsword Orcist
-    use: wielded
-    used: +d5 to-hit and double damage to orcs
-  The Eye of the Aethiopica:
-    alignment: neutral
-    base_item: amulet of esp
-    carried: energy regeneration and half spell damage
-    intelligent: true
-    invoked: branchport
-    obtaining: It is the Quest artifact for Wizards.
-    use: worn
-    used: magic resistance and telepathy
-  The Eyes of the Overworld:
-    alignment: neutral
-    base_item: pair of lenses
-    carried: ''
-    intelligent: true
-    invoked: Enlightenment
-    obtaining: Quest artifcat of Monks
-    use: worn
-    used: atral vision, protection against blindness and gazes and magic resitance
-  The Heart of Ahriman:
-    alignment: neutral
-    base_item: luckstone
-    carried: stealth
-    intelligent: true
-    invoked: levitation
-    obtaining: Quest artifact of Barbarians
-    use: thrown
-    used: as projectile, +d5 to-hit and double damage
-  The Longbow of Diana:
-    alignment: chaotic
-    base_item: bow
-    carried: telepathy
-    intelligent: true
-    invoked: creates arrows
-    obtaining: Quest artifact of Rangers
-    use: wielded
-    used: +d5 to-hit and reflection
-  The Magic Mirror of Merlin:
-    alignment: lawful
-    base_item: mirror
-    carried: magic resistance, telepathy and x2 to some spell damage
-    intelligent: true
-    invoked: ''
-    obtaining: Quest artifact of Knights
-    use: applied
-    used: rumors
-  The Master Key of Thievery:
-    alignment: chaotic
-    base_item: skeleton key
-    carried: warning, half physical damage and teleport control
-    intelligent: true
-    invoked: untraps
-    obtaining: Quest artifact of Rogues
-    use: applied
-    used: rumors
-  The Mitre of Holiness:
-    alignment: lawful
-    base_item: helm of brilliance
-    carried: fire resistance
-    intelligent: true
-    invoked: energy boost
-    obtaining: Quest artifact of Priests
-    use: worn
-    used: protection and half damage from undead and demons
-  The Orb of Detection:
-    alignment: lawful
-    base_item: crystal ball
-    carried: magic resistance, half spell damage and telepathy
-    intelligent: true
-    invoked: invisibility
-    obtaining: Quest artifact of Archeologists
-    use: applied
-    used: ''
-  The Orb of Fate:
-    alignment: neutral
-    base_item: crystal ball
-    carried: half physical damage, half spell damage, warning and luck
-    intelligent: true
-    invoked: level teleport
-    obtaining: Quest artifact of Valkyries
-    use: applies
-    used: ''
-  The Platinum Yendorian Express Card:
-    alignment: neutral
-    base_item: credit card
-    carried: magic resistance, half spell damage and telepathy
-    intelligent: true
-    invoked: charging
-    obtaining: Quest artifact of Tourists
-    use: applied
-    used: ''
-  The Sceptre of Might:
-    alignment: lawful
-    base_item: mace
-    carried: ''
-    intelligent: true
-    invoked: conflict
-    obtaining: Quest artifact of Cavepeople
-    use: wielded
-    used: +d5 to-hit, double damage to cross-aligned monsters and magic resistance
-  The Staff of Aesculapius:
-    alignment: neutral
-    base_item: quarterstaff
-    carried: ''
-    intelligent: true
-    invoked: healing, cures sickness, blindness and sliming
-    obtaining: Quest artifact of Healers
-    use: wielded
-    used: double damage and level drain to non-drain-resistant monsters, hungerless regeneration and drain resistance
-  The Tsurugi of Muramasa:
-    alignment: lawful
-    base_item: tsurugi
-    carried: luck
-    intelligent: true
-    invoked: ''
-    obtaining: Quest artifact of Samurai
-    use: wielded
-    used: protection, +d8 damage and 5% chance of bisection
   cleaver:
-    alignment: neutral
-    base_item: battle-axe
-    carried: ''
+    base_item: "battle-axe"
+    alignment: "neutral"
     intelligent: false
-    invoked: ''
-    obtaining: It is the first sacrifice gift for Barbarians
-    use: wielded
-    used: +d3 to-hit and +d6 damage. Arc-swing hits up to 3 monsters at once
+    use: "wielded"
+    carried: ""
+    used: "+d3 to-hit and +d6 damage. Arc-swing hits up to 3 monsters at once"
+    invoked: ""
+    obtaining: "It is the first sacrifice gift for Barbarians"
   demonblade:
-    alignment: lawful
-    base_item: long sword
-    carried: ''
+    base_item: "long sword"
+    alignment: "lawful"
     intelligent: false
-    invoked: ''
-    obtaining: May be given to a new angelic being
-    use: wielded
-    used: +d5 to-hit and double damage to major demons
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to major demons"
+    invoked: ""
+    obtaining: "May be given to a new angelic being"
   dragonblade:
-    alignment: unaligned
-    base_item: broadsword
-    carried: ''
+    base_item: "broadsword"
+    alignment: "unaligned"
     intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to dragons and reflection
-  fire brand:
-    alignment: unaligned
-    base_item: long sword
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to non-fire-resistant monsters and fire resistance
-  frost brand:
-    alignment: unaligned
-    base_item: long sword
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to non-cold-resistant monsters and cold resistance
-  giantslayer:
-    alignment: neutral
-    base_item: long sword
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to giants
-  grayswandir:
-    alignment: lawful
-    base_item: silver barber
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage. Protection against hallucination and silver damage
-  grimtooth:
-    alignment: chaotic
-    base_item: orcish dagger
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d2 to-hit and +d6 damaged
-  magicbane:
-    alignment: neutral
-    base_item: athame
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: First sacrifice gift for wizards
-    use: wielded
-    used: +d3 to-hit, special damage, magic resistance and protects against cursing
-  mjollnir:
-    alignment: neutral
-    base_item: war hammer
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: First sacrifice gift for Valkyries
-    use: wielded
-    used: +d5 to-hit and +2d4 damage to non-shock resistance monsters. Can return when thrown
-  ogresmasher:
-    alignment: unaligned
-    base_item: war hammer
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to ogres. 25 constitution
-  snickersee:
-    alignment: lawful
-    base_item: katana
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: First sacrifice gift for Samurai
-    use: wielded
-    used: +d8 damage
-  sting:
-    alignment: chaotic
-    base_item: elven dagger
-    carried: ''
-    intelligent: false
-    invoked: ''
-    obtaining: May be produced by naming an ordinary elven dagger Sting
-    use: wielded
-    used: +d5 to-hit and double damage to orcs, warning of orcs and cuts through webs
-  stormbringer:
-    alignment: chaotic
-    base_item: runesword
-    carried: ''
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to dragons and reflection"
+    invoked: ""
+    obtaining: ""
+  Excalibur:
+    base_item: "long sword"
+    alignment: "lawful"
     intelligent: true
-    invoked: ''
-    obtaining: Chaotic crowning gift
-    use: wielded
-    used: +d5 to-hit, +d2 damage and level drain to non-drain-resistant monsters, drain resistance and bloodthirsty
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and +d10 damage, drain resistance and searching. Monsters track player"
+    invoked: ""
+    obtaining: "May be produced for lawful adventurers at fountains or a lawful crowning gift"
+  The Eye of the Aethiopica:
+    base_item: "amulet of esp"
+    alignment: "neutral"
+    intelligent: true
+    use: "worn"
+    carried: "energy regeneration and half spell damage"
+    used: "magic resistance and telepathy"
+    invoked: "branchport"
+    obtaining: "It is the Quest artifact for Wizards."
+  The Eyes of the Overworld:
+    base_item: "pair of lenses"
+    alignment: "neutral"
+    intelligent: true
+    use: "worn"
+    carried: ""
+    used: "atral vision, protection against blindness and gazes and magic resitance"
+    invoked: "Enlightenment"
+    obtaining: "Quest artifcat of Monks"
+  fire brand:
+    base_item: "long sword"
+    alignment: "unaligned"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to non-fire-resistant monsters and fire resistance"
+    invoked: ""
+    obtaining: ""
+  frost brand:
+    base_item: "long sword"
+    alignment: "unaligned"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to non-cold-resistant monsters and cold resistance"
+    invoked: ""
+    obtaining: ""
+  giantslayer:
+    base_item: "long sword"
+    alignment: "neutral"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to giants"
+    invoked: ""
+    obtaining: ""
+  grayswandir:
+    base_item: "silver barber"
+    alignment: "lawful"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage. Protection against hallucination and silver damage"
+    invoked: ""
+    obtaining: ""
+  grimtooth:
+    base_item: "orcish dagger"
+    alignment: "chaotic"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d2 to-hit and +d6 damaged"
+    invoked: ""
+    obtaining: ""
+  The Heart of Ahriman:
+    base_item: "luckstone"
+    alignment: "neutral"
+    intelligent: true
+    use: "thrown"
+    carried: "stealth"
+    used: "as projectile, +d5 to-hit and double damage"
+    invoked: "levitation"
+    obtaining: "Quest artifact of Barbarians"
+  The Longbow of Diana:
+    base_item: "bow"
+    alignment: "chaotic"
+    intelligent: true
+    use: "wielded"
+    carried: "telepathy"
+    used: "+d5 to-hit and reflection"
+    invoked: "creates arrows"
+    obtaining: "Quest artifact of Rangers"
+  The Magic Mirror of Merlin:
+    base_item: "mirror"
+    alignment: "lawful"
+    intelligent: true
+    use: "applied"
+    carried: "magic resistance, telepathy and x2 to some spell damage"
+    used: "rumors"
+    invoked: ""
+    obtaining: "Quest artifact of Knights"
+  magicbane:
+    base_item: "athame"
+    alignment: "neutral"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d3 to-hit, special damage, magic resistance and protects against cursing"
+    invoked: ""
+    obtaining: "First sacrifice gift for wizards"
+  The Master Key of Thievery:
+    base_item: "skeleton key"
+    alignment: "chaotic"
+    intelligent: true
+    use: "applied"
+    carried: "warning, half physical damage and teleport control"
+    used: "rumors"
+    invoked: "untraps"
+    obtaining: "Quest artifact of Rogues"
+  The Mitre of Holiness:
+    base_item: "helm of brilliance"
+    alignment: "lawful"
+    intelligent: true
+    use: "worn"
+    carried: "fire resistance"
+    used: "protection and half damage from undead and demons"
+    invoked: "energy boost"
+    obtaining: "Quest artifact of Priests"
+  mjollnir:
+    base_item: "war hammer"
+    alignment: "neutral"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and +2d4 damage to non-shock resistance monsters. Can return when thrown"
+    invoked: ""
+    obtaining: "First sacrifice gift for Valkyries"
+  ogresmasher:
+    base_item: "war hammer"
+    alignment: "unaligned"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to ogres. 25 constitution"
+    invoked: ""
+    obtaining: ""
+  The Orb of Detection:
+    base_item: "crystal ball"
+    alignment: "lawful"
+    intelligent: true
+    use: "applied"
+    carried: "magic resistance, half spell damage and telepathy"
+    used: ""
+    invoked: "invisibility"
+    obtaining: "Quest artifact of Archeologists"
+  The Orb of Fate:
+    base_item: "crystal ball"
+    alignment: "neutral"
+    intelligent: true
+    use: "applies"
+    carried: "half physical damage, half spell damage, warning and luck"
+    used: ""
+    invoked: "level teleport"
+    obtaining: "Quest artifact of Valkyries"
+  Orcist:
+    base_item: "elven broadsword"
+    alignment: "chaotic"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to orcs"
+    invoked: ""
+    obtaining: "May be produced by naming an ordinary elven broadsword Orcist"
+  The Platinum Yendorian Express Card:
+    base_item: "credit card"
+    alignment: "neutral"
+    intelligent: true
+    use: "applied"
+    carried: "magic resistance, half spell damage and telepathy"
+    used: ""
+    invoked: "charging"
+    obtaining: "Quest artifact of Tourists"
+  The Sceptre of Might:
+    base_item: "mace"
+    alignment: "lawful"
+    intelligent: true
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit, double damage to cross-aligned monsters and magic resistance"
+    invoked: "conflict"
+    obtaining: "Quest artifact of Cavepeople"
+  snickersee:
+    base_item: "katana"
+    alignment: "lawful"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d8 damage"
+    invoked: ""
+    obtaining: "First sacrifice gift for Samurai"
+  The Staff of Aesculapius:
+    base_item: "quarterstaff"
+    alignment: "neutral"
+    intelligent: true
+    use: "wielded"
+    carried: ""
+    used: "double damage and level drain to non-drain-resistant monsters, hungerless regeneration and drain resistance"
+    invoked: "healing, cures sickness, blindness and sliming"
+    obtaining: "Quest artifact of Healers"
+  sting:
+    base_item: "elven dagger"
+    alignment: "chaotic"
+    intelligent: false
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to orcs, warning of orcs and cuts through webs"
+    invoked: ""
+    obtaining: "May be produced by naming an ordinary elven dagger Sting"
+  stormbringer:
+    base_item: "runesword"
+    alignment: "chaotic"
+    intelligent: true
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit, +d2 damage and level drain to non-drain-resistant monsters, drain resistance and bloodthirsty"
+    invoked: ""
+    obtaining: "Chaotic crowning gift"
   sunsword:
-    alignment: lawful
-    base_item: long sword
-    carried: ''
+    base_item: "long sword"
+    alignment: "lawful"
     intelligent: false
-    invoked: ''
-    obtaining: May be given to a new angelic being
-    use: wielded
-    used: +d5 to-hit and double damage to undead, light and protection from light-based blinding
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to undead, light and protection from light-based blinding"
+    invoked: ""
+    obtaining: "May be given to a new angelic being"
   trollsbane:
-    alignment: unaligned
-    base_item: morning star
-    carried: ''
+    base_item: "morning star"
+    alignment: "unaligned"
     intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit and double damage to trolls and prevents trolls from reviving
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and double damage to trolls and prevents trolls from reviving"
+    invoked: ""
+    obtaining: ""
+  The Tsurugi of Muramasa:
+    base_item: "tsurugi"
+    alignment: "lawful"
+    intelligent: true
+    use: "wielded"
+    carried: "luck"
+    used: "protection, +d8 damage and 5% chance of bisection"
+    invoked: ""
+    obtaining: "Quest artifact of Samurai"
   vorpal blade:
-    alignment: neutral
-    base_item: long sword
-    carried: ''
+    base_item: "long sword"
+    alignment: "neutral"
     intelligent: false
-    invoked: ''
-    obtaining: Neutral crowning gift
-    use: wielded
-    used: +d5 to-hit and +1 damage, 5% chance of beheading
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit and +1 damage, 5% chance of beheading"
+    invoked: ""
+    obtaining: "Neutral crowning gift"
   werebane:
-    alignment: unaligned
-    base_item: silver sabre
-    carried: ''
+    base_item: "silver sabre"
+    alignment: "unaligned"
     intelligent: false
-    invoked: ''
-    obtaining: ''
-    use: wielded
-    used: +d5 to-hit, double damage to werecreatures and silver damage.
+    use: "wielded"
+    carried: ""
+    used: "+d5 to-hit, double damage to werecreatures and silver damage."
+    invoked: ""
+    obtaining: ""

@@ -1,441 +1,441 @@
 spellbooks:
-  spellbook of cancellation:
-    cost: 700
-    direction: beam
-    effect: The spell fires a beam which will uncurse and unenchant items, blank most spellbooks and scrolls, cause most wands and magical tools to lose their charges and most potions will be turned to water. Monsters must pass a magic resistance check. If they fail, they can lose some or all of their special attacks.
-    ink: 35-69
-    notes: It cannot be cancelled into a spellbook of blank paper and it does not cancel the wands of cancellation or nothing.
-    power_cost: 35
-    spell_level: 7
-    spell_type: matter
-    turns_read: 64
-    weight: 50
-  spellbook of cause fear:
-    cost: 300
-    direction: non-directional
-    effect: It will scare monsters causing them to run away. It is subject to the target's magic resistance and immunities.
-    ink: 15-29
-    notes: It has no effect on pets.
-    power_cost: 15
-    spell_level: 3
-    spell_type: enchantment
-    turns_read: 6
-    weight: 50
-  spellbook of charm monster:
-    cost: 300
-    direction: non-directional
-    effect: It turns adjacent monsters into pets. Monsters can resist. Some monsters will be pacified instead.
-    ink: 25-49
-    notes: It is the special spell for tourists.
-    power_cost: 25
-    spell_level: 3
-    spell_type: enchantment
-    turns_read: 35
-    weight: 50
-  spellbook of clairvoyance:
-    cost: 300
-    direction: non-directional
-    effect: The spell maps a 19x11 area centered on your location.
-    ink: 15-29
-    notes: It is the special spell for Samurai.
-    power_cost: 15
-    spell_level: 3
-    spell_type: divination
-    turns_read: 6
-    weight: 50
-  spellbook of cone of cold:
-    cost: 400
-    direction: ray/distant
-    effect: At Unskilled/Basic skill level, it zaps a ray with the same effect as a wand of cold. At Skilled/Expert level, you may choose a location to cast explosions of cold, with some restrictions. See the wiki for these and the effects of the spell at the Unskilled/Basic level.
-    ink: 20-39
-    notes: It is the Valkyrie's special spell.
-    power_cost: 20
-    spell_level: 4
-    spell_type: attack
-    turns_read: 21
-    weight: 50
-  spellbook of confuse monster:
-    cost: 200
-    direction: non-directional
-    effect: Your hands will glow red confusing the next monster you attack in melee, subject to magic resistance. At skilled level, you get 2-9 more uses of this ability.
-    ink: 10-19
-    notes: ''
-    power_cost: 10
-    spell_level: 2
-    spell_type: enchantment
-    turns_read: 2
-    weight: 50
-  spellbook of create familiar:
-    cost: 600
-    direction: non-directional
-    effect: The spell creates a monster near you. It has 1/3 chance of creating an appropriate starting pet and a 2/3 chance of creating a random monster. The created monster will be tame if tameable and peaceful otherwise.
-    ink: 30-59
-    notes: ''
-    power_cost: 30
-    spell_level: 6
-    spell_type: clerical
-    turns_read: 42
-    weight: 50
-  spellbook of create monster:
-    cost: 200
-    direction: non-directional
-    effect: Casting this spell has a 72/73 chance of creating a single monster and a 1/73 chance of creating 2-5 monsters.
-    ink: 10-19
-    notes: ''
-    power_cost: 10
-    spell_level: 2
-    spell_type: clerical
-    turns_read: 3
-    weight: 50
-  spellbook of cure blindness:
-    cost: 200
-    direction: non-directional
-    effect: Casting this spell cures intrinsic blindness.
-    ink: 10-19
-    notes: It is an emergency spell.
-    power_cost: 10
-    spell_level: 2
-    spell_type: healing
-    turns_read: 2
-    weight: 50
-  spellbook of cure sickness:
-    cost: 300
-    direction: non-directional
-    effect: The spell cures all forms of sickness, including food poisoning and illness and it removes slime.
-    ink: 15-29
-    notes: It is the special spell of the Healer. It is an emergency spell.
-    power_cost: 15
-    spell_level: 3
-    spell_type: healing
-    turns_read: 6
-    weight: 50
-  spellbook of detect food:
-    cost: 200
-    direction: non-directional
-    effect: Casting this spell reveals the location of all comestibles on the level. If cast at skilled/expert level, you will also aquire the food appraisal intrinsic.
-    ink: 10-19
-    notes: Casting this spell does not cause spell hunger.
-    power_cost: 10
-    spell_level: 2
-    spell_type: divination
-    turns_read: 3
-    weight: 50
-  spellbook of detect monsters:
-    cost: 100
-    direction: non-directional
-    effect: At unskilled/basic level, it displays monsters of that dungeon level against a black background with no map detail. At skilled/expert, it reveals monsters on the map for 21-60 turns.
-    ink: 5-9
-    notes: ''
-    power_cost: 5
-    spell_level: 1
-    spell_type: divination
-    turns_read: 1
-    weight: 50
-  spellbook of detect treasure:
-    cost: 400
-    direction: non-directional
-    effect: Unskilled/basic has the same effect as quaffing an uncursed potion of object detection; at skilled/expert, the same effect as a blessed potion of object detection. Check the wiki or use this bot for more information.
-    ink: 20-39
-    notes: It is the special spell for rogues
-    power_cost: 20
-    spell_level: 4
-    spell_type: divination
-    turns_read: 15
-    weight: 50
-  spellbook of detect unseen:
-    cost: 300
-    direction: non-directional
-    effect: Reveals secret doors and corridors, non-statue traps, portals, mimics, hidden, submerged and invisible monsters in an area of radius 8 within line-of-sight.
-    ink: 15-29
-    notes: ''
-    power_cost: 15
-    spell_level: 3
-    spell_type: divination
-    turns_read: 8
-    weight: 50
-  spellbook of dig:
-    cost: 500
-    direction: ray
-    effect: It can be used to dig through walls and create holes in floors.
-    ink: 25-49
-    notes: It is the special spell for Cavemen.
-    power_cost: 25
-    spell_level: 5
-    spell_type: matter
-    turns_read: 30
-    weight: 50
-  spellbook of drain life:
-    cost: 200
-    direction: beam
-    effect: Casting it at a monster drains 1 level, does 1d8 x2 damage, and decreases HP max by 1d8. The monster can resist. When cast at an object, it will resist 90% of the time if it is an artifact, or 10% otherwise. If it does not resist, its enchantment is reduced by 1. Casting it at yourself drains 1 exp. level.
-    ink: 10-19
-    notes: ''
-    power_cost: 10
-    spell_level: 2
-    spell_type: attack
-    turns_read: 2
-    weight: 50
-  spellbook of extra healing:
-    cost: 300
-    direction: beam
-    effect: It heals its target(s) for 6d8 HP. When cast at skilled/expert, it cures blindness. Casting it at a tame or peaceful monster will yield an alignment bonus for each monster affected.
-    ink: 15-29
-    notes: It is an emergency spell. Healers start with a blessed spellbook.
-    power_cost: 15
-    spell_level: 3
-    spell_type: healing
-    turns_read: 10
-    weight: 50
-  spellbook of finger of death:
-    cost: 700
-    direction: ray
-    effect: The ray produced by this spell instantly kills any monster it hits, unless the monster is Death, a major demon, nonliving, or has magic resistance or reflection. Zapping yourself with this spell is an instadeath.
-    ink: 35-69
-    notes: It is the most powerful attack spell.
-    power_cost: 35
-    spell_level: 7
-    spell_type: attack
-    turns_read: 80
-    weight: 50
-  spellbook of fireball:
-    cost: 400
-    direction: ray/distant
-    effect: It has different effects depending on the character's skill level. For unskilled/basic, you choose the direction of the ray; for skilled/expert you choose the location to target (with restrictions). Both spells produce an explosion of fire. Monsters take 12d6 damage; double if they have cold resistance. Targets with magic resistance may resist for half the damage. Without fire resistance, you may take 6d6 damage.
-    ink: 20-39
-    notes: The spellbook is fireproof.
-    power_cost: 20
-    spell_level: 4
-    spell_type: attack
-    turns_read: 12
-    weight: 50
   spellbook of force bolt:
-    cost: 100
-    direction: beam
-    effect: Shoots a force bolt in any direction. If it hits a monster, it does 2d12 damage; monsters may resist. It will break any boulder, statue, door or drawbridge that it hits.
-    ink: 5-9
-    notes: Wizards always start with one.
-    power_cost: 5
+    spell_type: "attack"
     spell_level: 1
-    spell_type: attack
+    cost: 100
+    weight: 50
+    direction: "beam"
+    power_cost: 5
     turns_read: 2
+    ink: "5-9"
+    effect: "Shoots a force bolt in any direction. If it hits a monster, it does 2d12 damage; monsters may resist. It will break any boulder, statue, door or drawbridge that it hits."
+    notes: "Wizards always start with one."
+  spellbook of drain life:
+    spell_type: "attack"
+    spell_level: 2
+    cost: 200
     weight: 50
-  spellbook of haste self:
-    cost: 300
-    direction: non-directional
-    effect: This spell gives you very fast speed temporarily. At unskilled/basic, the effect lasts for 100-109 turns; at skilled/expert it lasts for 160-169 turns.
-    ink: 15-29
-    notes: It is the special spell for barbarians.
-    power_cost: 15
-    spell_level: 3
-    spell_type: escape
-    turns_read: 8
-    weight: 50
-  spellbook of healing:
-    cost: 100
-    direction: beam
-    effect: It is a directional spell that heals its target for 6d4 HP and, at expert/skilled level, cures blindness. Casting it at a tame or peaceful monster will yield an alignment bonus for each monster affected.
-    ink: 5-9
-    notes: This is an emergency spell.
-    power_cost: 5
-    spell_level: 1
-    spell_type: healing
+    direction: "beam"
+    power_cost: 10
     turns_read: 2
-    weight: 50
-  spellbook of identify:
-    cost: 300
-    direction: non-directional
-    effect: At basic/unskilled level, it identifies one item 80% of the time and 1d4 items 20% of the time. At skilled/expert, it identifies 1d4 items 80% of the time and your entire inventory 20% of the time.
-    ink: 15-29
-    notes: ''
-    power_cost: 15
-    spell_level: 3
-    spell_type: divination
-    turns_read: 12
-    weight: 50
-  spellbook of invisibility:
-    cost: 400
-    direction: non-directional
-    effect: Casting this spell cause you to turn invisible for 31-45 turns.
-    ink: 20-39
-    notes: It is the special spell for rangers.
-    power_cost: 20
-    spell_level: 4
-    spell_type: escape
-    turns_read: 15
-    weight: 50
-  spellbook of jumping:
-    cost: 100
-    direction: non-directional
-    effect: Casting allows you to jump to other tiles within a certain range (see wiki for these). You must be able to see the landing spot and you cannot jump over monsters.
-    ink: 5-9
-    notes: Casting jump consumes d25 nutrition, in addition to the ordinary hunger penalty.
-    power_cost: 5
-    spell_level: 1
-    spell_type: escape
-    turns_read: 3
-    weight: 50
-  spellbook of knock:
-    cost: 100
-    direction: beam
-    effect: It will unlock doors and containers and reveal hidden doors.
-    ink: 5-9
-    notes: ''
-    power_cost: 5
-    spell_level: 1
-    spell_type: matter
-    turns_read: 1
-    weight: 50
-  spellbook of levitation:
-    cost: 400
-    direction: non-directional
-    effect: At unskilled/basic level it grants levitation for 10-149 turns; at skilled/expert it grants 250-299 turns, as well as the ability to land using the '>' key.
-    ink: 20-39
-    notes: ''
-    power_cost: 20
-    spell_level: 4
-    spell_type: escape
-    turns_read: 12
-    weight: 50
-  spellbook of light:
-    cost: 100
-    direction: non-directional
-    effect: Casting this spell creates a permanently lit cicruclar area (5-square radius) around your position (while casting).
-    ink: 5-9
-    notes: ''
-    power_cost: 5
-    spell_level: 1
-    spell_type: divination
-    turns_read: 1
-    weight: 50
-  spellbook of magic mapping:
-    cost: 500
-    direction: non-directional
-    effect: The spell reveals the entire map, including all of the level's walls, corridors and staircases. Secret passages are revealed but secret doors are not.
-    ink: 25-49
-    notes: It is the special spell for archaeologists.
-    power_cost: 25
-    spell_level: 5
-    spell_type: divination
-    turns_read: 35
-    weight: 50
+    ink: "10-19"
+    effect: "Casting it at a monster drains 1 level, does 1d8 x2 damage, and decreases HP max by 1d8. The monster can resist. When cast at an object, it will resist 90% of the time if it is an artifact, or 10% otherwise. If it does not resist, its enchantment is reduced by 1. Casting it at yourself drains 1 exp. level."
+    notes: ""
   spellbook of magic missile:
-    cost: 200
-    direction: ray
-    effect: The ray does ((exp.level/2)+1)d6 damage.
-    ink: 10-19
-    notes: It is the special spell for Wizards.
-    power_cost: 10
+    spell_type: "attack"
     spell_level: 2
-    spell_type: attack
+    cost: 200
+    weight: 50
+    direction: "ray"
+    power_cost: 10
     turns_read: 2
-    weight: 50
-  spellbook of polymorph:
-    cost: 600
-    direction: beam
-    effect: Casting a beam changes any monster, item or player it hits into something else of its type.
-    ink: 30-59
-    notes: ''
-    power_cost: 30
-    spell_level: 6
-    spell_type: matter
-    turns_read: 48
-    weight: 50
-  spellbook of protection:
-    cost: 100
-    direction: non-directional
-    effect: This spell grants AC. The protection wears off at a rate of 1 point every 10 turns, or 1 point every 20 turns if the spell was cast with expert proficiency. See the wiki for the AC granted formula.
-    ink: 5-9
-    notes: The spell is unrelated to protection granted by priests or praying.
-    power_cost: 5
-    spell_level: 1
-    spell_type: clerical
-    turns_read: 3
-    weight: 50
-  spellbook of remove curse:
-    cost: 300
-    direction: non-directional
-    effect: At unskilled/basic level, it acts identically to an uncursed scroll of remove curse. At skilled/expert, it is identical to a blessed scroll.
-    ink: 15-29
-    notes: It is an emergency spell, and is the special spell for Priests.
-    power_cost: 15
-    spell_level: 3
-    spell_type: clerical
-    turns_read: 10
-    weight: 50
-  spellbook of restore ability:
-    cost: 400
-    direction: non-directional
-    effect: At unskilled/basic, it restores one random lost attribute to maximum. At skilled/expert, it restores all six.
-    ink: 20-39
-    notes: It is the special spell for Monks. It is an emergency spell.
-    power_cost: 20
+    ink: "10-19"
+    effect: "The ray does ((exp.level/2)+1)d6 damage."
+    notes: "It is the special spell for Wizards."
+  spellbook of cone of cold:
+    spell_type: "attack"
     spell_level: 4
-    spell_type: healing
-    turns_read: 15
+    cost: 400
     weight: 50
-  spellbook of sleep:
-    cost: 100
-    direction: ray
-    effect: Monsters will be put to sleep for (exp.level/2 + 1)d25 turns. Monsters with magic resistance can resist this spell.
-    ink: 5-9
-    notes: ''
-    power_cost: 5
+    direction: "ray/distant"
+    power_cost: 20
+    turns_read: 21
+    ink: "20-39"
+    effect: "At Unskilled/Basic skill level, it zaps a ray with the same effect as a wand of cold. At Skilled/Expert level, you may choose a location to cast explosions of cold, with some restrictions. See the wiki for these and the effects of the spell at the Unskilled/Basic level."
+    notes: "It is the Valkyrie's special spell."
+  spellbook of fireball:
+    spell_type: "attack"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "ray/distant"
+    power_cost: 20
+    turns_read: 12
+    ink: "20-39"
+    effect: "It has different effects depending on the character's skill level. For unskilled/basic, you choose the direction of the ray; for skilled/expert you choose the location to target (with restrictions). Both spells produce an explosion of fire. Monsters take 12d6 damage; double if they have cold resistance. Targets with magic resistance may resist for half the damage. Without fire resistance, you may take 6d6 damage."
+    notes: "The spellbook is fireproof."
+  spellbook of finger of death:
+    spell_type: "attack"
+    spell_level: 7
+    cost: 700
+    weight: 50
+    direction: "ray"
+    power_cost: 35
+    turns_read: 80
+    ink: "35-69"
+    effect: "The ray produced by this spell instantly kills any monster it hits, unless the monster is Death, a major demon, nonliving, or has magic resistance or reflection. Zapping yourself with this spell is an instadeath."
+    notes: "It is the most powerful attack spell."
+  spellbook of protection:
+    spell_type: "clerical"
     spell_level: 1
-    spell_type: enchantment
-    turns_read: 1
+    cost: 100
     weight: 50
-  spellbook of slow monster:
-    cost: 200
-    direction: beam
-    effect: It renders monsters slow if they do not resist, which is 2/3 of their normal speed. If they are already fast, they return to their normal speed. Casting it at yourself will make you lose any intrinsic speed you have.
-    ink: 10-19
-    notes: ''
-    power_cost: 10
-    spell_level: 2
-    spell_type: enchantment
-    turns_read: 2
-    weight: 50
-  spellbook of stone to flesh:
-    cost: 300
-    direction: beam
-    effect: It has many effects depending on what stone object(s) it is used on. See the wiki for a full list of these, which include bringing statues of monsters to life, turning boulders into meat and cancelling any ongoing stiffening process if cast at yourself.
-    ink: 15-29
-    notes: Healers start with a blessed spellbook.
-    power_cost: 15
-    spell_level: 3
-    spell_type: healing
-    turns_read: 2
-    weight: 50
-  spellbook of teleport away:
-    cost: 600
-    direction: beam
-    effect: Casting at yourdel has the same effect as the teleport at will action or zapping yourself with a wand of teleportation. You can use teleport control to choose your destination. Casting it at monsters teleports them to a random square on the current level.
-    ink: 30-59
-    notes: ''
-    power_cost: 30
-    spell_level: 6
-    spell_type: escape
-    turns_read: 36
-    weight: 50
-  spellbook of turn undead:
-    cost: 600
-    direction: beam
-    effect: Casting the spell crates a beam which deals 1d8 damage to undead monsters and scares them into fleeing if they fail a resistance check. It can 'unturn dead', which revives corpses and rejuvenates eggs.
-    ink: 30-59
-    notes: The spell has the same effect as the wand of undead turning.
-    power_cost: 30
-    spell_level: 6
-    spell_type: clerical
-    turns_read: 48
-    weight: 50
-  spellbook of wizard lock:
-    cost: 200
-    direction: beam
-    effect: It closes and locks any open doors and lockable containers in the direction it is cast. If cast at an empty doorway, it will create a locked door.
-    ink: 10-19
-    notes: ''
-    power_cost: 10
-    spell_level: 2
-    spell_type: matter
+    direction: "non-directional"
+    power_cost: 5
     turns_read: 3
+    ink: "5-9"
+    effect: "This spell grants AC. The protection wears off at a rate of 1 point every 10 turns, or 1 point every 20 turns if the spell was cast with expert proficiency. See the wiki for the AC granted formula."
+    notes: "The spell is unrelated to protection granted by priests or praying."
+  spellbook of create monster:
+    spell_type: "clerical"
+    spell_level: 2
+    cost: 200
     weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 3
+    ink: "10-19"
+    effect: "Casting this spell has a 72/73 chance of creating a single monster and a 1/73 chance of creating 2-5 monsters."
+    notes: ""
+  spellbook of remove curse:
+    spell_type: "clerical"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 10
+    ink: "15-29"
+    effect: "At unskilled/basic level, it acts identically to an uncursed scroll of remove curse. At skilled/expert, it is identical to a blessed scroll."
+    notes: "It is an emergency spell, and is the special spell for Priests."
+  spellbook of create familiar:
+    spell_type: "clerical"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "non-directional"
+    power_cost: 30
+    turns_read: 42
+    ink: "30-59"
+    effect: "The spell creates a monster near you. It has 1/3 chance of creating an appropriate starting pet and a 2/3 chance of creating a random monster. The created monster will be tame if tameable and peaceful otherwise."
+    notes: ""
+  spellbook of turn undead:
+    spell_type: "clerical"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "beam"
+    power_cost: 30
+    turns_read: 48
+    ink: "30-59"
+    effect: "Casting the spell crates a beam which deals 1d8 damage to undead monsters and scares them into fleeing if they fail a resistance check. It can 'unturn dead', which revives corpses and rejuvenates eggs."
+    notes: "The spell has the same effect as the wand of undead turning."
+  spellbook of detect monsters:
+    spell_type: "divination"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "At unskilled/basic level, it displays monsters of that dungeon level against a black background with no map detail. At skilled/expert, it reveals monsters on the map for 21-60 turns."
+    notes: ""
+  spellbook of light:
+    spell_type: "divination"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "Casting this spell creates a permanently lit cicruclar area (5-square radius) around your position (while casting)."
+    notes: ""
+  spellbook of detect food:
+    spell_type: "divination"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 3
+    ink: "10-19"
+    effect: "Casting this spell reveals the location of all comestibles on the level. If cast at skilled/expert level, you will also aquire the food appraisal intrinsic."
+    notes: "Casting this spell does not cause spell hunger."
+  spellbook of clairvoyance:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 6
+    ink: "15-29"
+    effect: "The spell maps a 19x11 area centered on your location."
+    notes: "It is the special spell for Samurai."
+  spellbook of detect unseen:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 8
+    ink: "15-29"
+    effect: "Reveals secret doors and corridors, non-statue traps, portals, mimics, hidden, submerged and invisible monsters in an area of radius 8 within line-of-sight."
+    notes: ""
+  spellbook of identify:
+    spell_type: "divination"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15 
+    turns_read: 12
+    ink: "15-29"
+    effect: "At basic/unskilled level, it identifies one item 80% of the time and 1d4 items 20% of the time. At skilled/expert, it identifies 1d4 items 80% of the time and your entire inventory 20% of the time."
+    notes: ""
+  spellbook of detect treasure:
+    spell_type: "divination"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "non-directional"
+    power_cost: 20
+    turns_read: 15
+    ink: "20-39"
+    effect: "Unskilled/basic has the same effect as quaffing an uncursed potion of object detection; at skilled/expert, the same effect as a blessed potion of object detection. Check the wiki or use this bot for more information."
+    notes: "It is the special spell for rogues"
+  spellbook of magic mapping:
+    spell_type: "divination"
+    spell_level: 5
+    cost: 500
+    weight: 50
+    direction: "non-directional"
+    power_cost: 25
+    turns_read: 35
+    ink: "25-49"
+    effect: "The spell reveals the entire map, including all of the level's walls, corridors and staircases. Secret passages are revealed but secret doors are not."
+    notes: "It is the special spell for archaeologists."
+  spellbook of sleep:
+    spell_type: "enchantment"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "ray"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "Monsters will be put to sleep for (exp.level/2 + 1)d25 turns. Monsters with magic resistance can resist this spell."
+    notes: ""
+  spellbook of confuse monster:
+    spell_type: "enchantment"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 2
+    ink: "10-19"
+    effect: "Your hands will glow red confusing the next monster you attack in melee, subject to magic resistance. At skilled level, you get 2-9 more uses of this ability."
+    notes: ""
+  spellbook of slow monster:
+    spell_type: "enchantment"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "beam"
+    power_cost: 10
+    turns_read: 2
+    ink: "10-19"
+    effect: "It renders monsters slow if they do not resist, which is 2/3 of their normal speed. If they are already fast, they return to their normal speed. Casting it at yourself will make you lose any intrinsic speed you have."
+    notes: ""
+  spellbook of cause fear:
+    spell_type: "enchantment"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 6
+    ink: "15-29"
+    effect: "It will scare monsters causing them to run away. It is subject to the target's magic resistance and immunities."
+    notes: "It has no effect on pets."
+  spellbook of charm monster:
+    spell_type: "enchantment"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 25
+    turns_read: 35
+    ink: "25-49"
+    effect: "It turns adjacent monsters into pets. Monsters can resist. Some monsters will be pacified instead."
+    notes: "It is the special spell for tourists."
+  spellbook of jumping:
+    spell_type: "escape"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "non-directional"
+    power_cost: 5
+    turns_read: 3
+    ink: "5-9"
+    effect: "Casting allows you to jump to other tiles within a certain range (see wiki for these). You must be able to see the landing spot and you cannot jump over monsters."
+    notes: "Casting jump consumes d25 nutrition, in addition to the ordinary hunger penalty."
+  spellbook of haste self:
+    spell_type: "escape"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 8
+    ink: "15-29"
+    effect: "This spell gives you very fast speed temporarily. At unskilled/basic, the effect lasts for 100-109 turns; at skilled/expert it lasts for 160-169 turns."
+    notes: "It is the special spell for barbarians."
+  spellbook of invisibility:
+    spell_type: "escape"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "non-directional"
+    power_cost: 20
+    turns_read: 15
+    ink: "20-39"
+    effect: "Casting this spell cause you to turn invisible for 31-45 turns."
+    notes: "It is the special spell for rangers."
+  spellbook of levitation:
+    spell_type: "escape"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "non-directional"
+    power_cost: 20
+    turns_read: 12
+    ink: "20-39"
+    effect: "At unskilled/basic level it grants levitation for 10-149 turns; at skilled/expert it grants 250-299 turns, as well as the ability to land using the '>' key."
+    notes: ""
+  spellbook of teleport away:
+    spell_type: "escape"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "beam"
+    power_cost: 30
+    turns_read: 36
+    ink: "30-59"
+    effect: "Casting at yourdel has the same effect as the teleport at will action or zapping yourself with a wand of teleportation. You can use teleport control to choose your destination. Casting it at monsters teleports them to a random square on the current level."
+    notes: ""
+  spellbook of healing:
+    spell_type: "healing"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "beam"
+    power_cost: 5
+    turns_read: 2
+    ink: "5-9"
+    effect: "It is a directional spell that heals its target for 6d4 HP and, at expert/skilled level, cures blindness. Casting it at a tame or peaceful monster will yield an alignment bonus for each monster affected."
+    notes: "This is an emergency spell."
+  spellbook of cure blindness:
+    spell_type: "healing"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "non-directional"
+    power_cost: 10
+    turns_read: 2
+    ink: "10-19"
+    effect: "Casting this spell cures intrinsic blindness."
+    notes: "It is an emergency spell."
+  spellbook of cure sickness:
+    spell_type: "healing"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "non-directional"
+    power_cost: 15
+    turns_read: 6
+    ink: "15-29"
+    effect: "The spell cures all forms of sickness, including food poisoning and illness and it removes slime."
+    notes: "It is the special spell of the Healer. It is an emergency spell."
+  spellbook of extra healing:
+    spell_type: "healing"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "beam"
+    power_cost: 15
+    turns_read: 10
+    ink: "15-29"
+    effect: "It heals its target(s) for 6d8 HP. When cast at skilled/expert, it cures blindness. Casting it at a tame or peaceful monster will yield an alignment bonus for each monster affected."
+    notes: "It is an emergency spell. Healers start with a blessed spellbook."
+  spellbook of stone to flesh:
+    spell_type: "healing"
+    spell_level: 3
+    cost: 300
+    weight: 50
+    direction: "beam"
+    power_cost: 15
+    turns_read: 2
+    ink: "15-29"
+    effect: "It has many effects depending on what stone object(s) it is used on. See the wiki for a full list of these, which include bringing statues of monsters to life, turning boulders into meat and cancelling any ongoing stiffening process if cast at yourself."
+    notes: "Healers start with a blessed spellbook."
+  spellbook of restore ability:
+    spell_type: "healing"
+    spell_level: 4
+    cost: 400
+    weight: 50
+    direction: "non-directional"
+    power_cost: 20
+    turns_read: 15
+    ink: "20-39"
+    effect: "At unskilled/basic, it restores one random lost attribute to maximum. At skilled/expert, it restores all six."
+    notes: "It is the special spell for Monks. It is an emergency spell."
+  spellbook knock:
+    spell_type: "matter"
+    spell_level: 1
+    cost: 100
+    weight: 50
+    direction: "beam"
+    power_cost: 5
+    turns_read: 1
+    ink: "5-9"
+    effect: "It will unlock doors and containers and reveal hidden doors."
+    notes: ""
+  spellbook of wizard lock:
+    spell_type: "matter"
+    spell_level: 2
+    cost: 200
+    weight: 50
+    direction: "beam"
+    power_cost: 10
+    turns_read: 3
+    ink: "10-19"
+    effect: "It closes and locks any open doors and lockable containers in the direction it is cast. If cast at an empty doorway, it will create a locked door."
+    notes: ""
+  spellbook of dig:
+    spell_type: "matter"
+    spell_level: 5
+    cost: 500
+    weight: 50
+    direction: "ray"
+    power_cost: 25
+    turns_read: 30
+    ink: "25-49"
+    effect: "It can be used to dig through walls and create holes in floors."
+    notes: "It is the special spell for Cavemen."
+  spellbook of polymorph:
+    spell_type: "matter"
+    spell_level: 6
+    cost: 600
+    weight: 50
+    direction: "beam"
+    power_cost: 30
+    turns_read: 48
+    ink: "30-59"
+    effect: "Casting a beam changes any monster, item or player it hits into something else of its type."
+    notes: ""
+  spellbook of cancellation:
+    spell_type: "matter"
+    spell_level: 7
+    cost: 700
+    weight: 50
+    direction: "beam"
+    power_cost: 35
+    turns_read: 64
+    ink: "35-69"
+    effect: "The spell fires a beam which will uncurse and unenchant items, blank most spellbooks and scrolls, cause most wands and magical tools to lose their charges and most potions will be turned to water. Monsters must pass a magic resistance check. If they fail, they can lose some or all of their special attacks."
+    notes: "It cannot be cancelled into a spellbook of blank paper and it does not cancel the wands of cancellation or nothing."
