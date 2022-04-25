@@ -1,66 +1,18 @@
 comestibles:
-  food ration:
-    cost: 45
-    weight: 20
-    nutritional_value: 800
-    time: 5
-    conduct: "vegan"
-    effect: ""
-    notes: "Cursed food rations are always rotten when eaten"
-  cram ration:
-    cost: 35
-    weight: 15
-    nutritional_value: 600
-    time: 3
-    conduct: "vegan"
-    effect: "gives 100 extra nutririon for Dwarves"
-    notes: "Non-cursed cram rations are never rotten"
-  C-ration:
-    cost: 20
-    weight: 10
-    nutritional_value: 300
-    time: 1
-    conduct: "vegan"
-    effect: ""
-    notes: 
-  K-ration:
-    cost: 25
-    weight: 10
-    nutritional_value: 400
-    time: 1
-    conduct: "vegan"
-    effect: ""
-    notes: ""
-  tripe ration:
-    cost: 15
-    weight: 5
-    nutritional_value: 200
-    time: 2
-    conduct: ""
-    effect: "has a 50% chance of giving you nausea unless you are a Caveman, orc or non-humanoid carnivorous monster"
-    notes: "It will tame peaceful cats and dogs and increases pet's apport when fed to them"
-  lembas wafer:
-    cost: 45
-    weight: 5
-    nutritional_value: 800
-    time: 1
-    conduct: "vegan"
-    effect: "gives 200 extra nutrition for Elves and 200 less for Orcs"
-    notes: "Non-cursed lembas wafers are never rotten"
-  cream pie:
-    cost: 10
-    weight: 10
-    nutritional_value: 100
-    time: 1
-    conduct: "vegetarian"
-    effect: "can be used as a source of blindness when applied to yourself"
-    notes: ""
-  pancake:
-    cost: 15
+  apple:
+    cost: 7
     weight: 2
-    nutritional_value: 200
-    time: 2
-    conduct: "vegetarian"
+    nutritional_value: 50
+    time: 1
+    conduct: "vegan"
+    effect: "will cause you to fall asleep for 20-30 turns when eaten if cursed and if you lack sleep resistance"
+    notes: "It can be used to tame horses and dump cores."
+  banana:
+    cost: 9
+    weight: 2
+    nutritional_value: 80
+    time: 1
+    conduct: "vegan"
     effect: ""
     notes: ""
   candy bar:
@@ -71,6 +23,70 @@ comestibles:
     conduct: "vegetarian"
     effect: ""
     notes: ""
+  carrot:
+    cost: 7
+    weight: 2
+    nutritional_value: 50
+    time: 1
+    conduct: "vegan"
+    effect: "can cure blindness"
+    notes: ""
+  clove of garlic:
+    cost: 7
+    weight: 1
+    nutritional_value: 40
+    time: 1
+    conduct: "vegan"
+    effect: "makes you nauseous if you are undead"
+    notes: "It can be used to tame horses"
+  cram ration:
+    cost: 35
+    weight: 15
+    nutritional_value: 600
+    time: 3
+    conduct: "vegan"
+    effect: "gives 100 extra nutririon for Dwarves"
+    notes: "Non-cursed cram rations are never rotten"
+  cream pie:
+    cost: 10
+    weight: 10
+    nutritional_value: 100
+    time: 1
+    conduct: "vegetarian"
+    effect: "can be used as a source of blindness when applied to yourself"
+    notes: ""
+  C-ration:
+    cost: 20
+    weight: 10
+    nutritional_value: 300
+    time: 1
+    conduct: "vegan"
+    effect: ""
+    notes:
+  egg:
+    cost: 9
+    weight: 1
+    nutritional_value: 80
+    time: 1
+    conduct: "vegetarian"
+    effect: "becomes stale after 400 turns, if you eat a stale egg it makes you nauseated for 10d4 turns"
+    notes: "Eggs may hatch into a monster if left uneaten. Cockatrice egg causes delayed petrification, have a lizard corpse available"
+  eucalyptus leaf:
+    cost: 6
+    weight: 1
+    nutritional_value: 30
+    time: 1
+    conduct: "vegan"
+    effect: "can cure sickness and nausea when uncursed"
+    notes: "It can be applied as a whistle"
+  food ration:
+    cost: 45
+    weight: 20
+    nutritional_value: 800
+    time: 5
+    conduct: "vegan"
+    effect: ""
+    notes: "Cursed food rations are always rotten when eaten"
   fortune cookie:
     cost: 7
     weight: 1
@@ -79,14 +95,94 @@ comestibles:
     conduct: "vegetarian"
     effect: ""
     notes: "They will never be rotten when eaten and have a scrap of paper inside with a random rumor, blessed cookies will contain true rumors, cursed will contain false and uncursed may contain either"
-  apple:
-    cost: 7
-    weight: 2
-    nutritional_value: 50
+  huge chunk of meat:
+    cost: 105
+    weight: 400
+    nutritional_value: 2000
+    time: 20
+    conduct: ""
+    effect: "will likely make you oversatiated unless you were fainting beforehand"
+    notes: "It can only be created by zapping a boulder with a spell of stone to flesh"
+  kelp frond:
+    cost: 6
+    weight: 11
+    nutritional_value: 30
     time: 1
     conduct: "vegan"
-    effect: "will cause you to fall asleep for 20-30 turns when eaten if cursed and if you lack sleep resistance"
-    notes: "It can be used to tame horses"
+    effect: ""
+    notes: "It is only generated underwater"
+  K-ration:
+    cost: 25
+    weight: 10
+    nutritional_value: 400
+    time: 1
+    conduct: "vegan"
+    effect: ""
+    notes: ""
+  lembas wafer:
+    cost: 45
+    weight: 5
+    nutritional_value: 800
+    time: 1
+    conduct: "vegan"
+    effect: "gives 200 extra nutrition for Elves and 200 less for Orcs"
+    notes: "Non-cursed lembas wafers are never rotten"
+  lichen corpse:
+    cost: 5
+    weight: 20
+    nutritional_value: 200
+    time: 3
+    conduct: "vegan"
+    effect: "never rots and never causes food poisoning"
+    notes: ""
+  lizard corpse:
+    cost: 5
+    weight: 10
+    nutritional_value: 40
+    time: 1
+    conduct: "vegan"
+    effect: "never rots and never causes food poisoning"
+    notes: "Cures delayed petrification. Open carry one at all times"
+  lump of royal jelly:
+    cost: 15
+    weight: 2
+    nutritional_value: 200
+    time: 1
+    conduct: "vegetarian"
+    effect: "will increase your strength by +1 if the jelly is blessed or uncursed (if cursed it will decrease stength by one)"
+    notes: "It will increase your HP by 0-20 (or decrease if the jelly is cursed)"
+  meatball:
+    cost: 5
+    weight: 1
+    nutritional_value: 5
+    time: 1
+    conduct: ""
+    effect: ""
+    notes: "It can be used to tame cats and dogs and can be fed to pets to increase their tameness and apport. Generated by casting stone to flesh at rocks."
+  meat ring:
+    cost: 5
+    weight: 1
+    nutritional_value: 5
+    time: 1
+    conduct: ""
+    effect: ""
+    notes: "Meat rings are only generated by casting stone to flesh at a ring made of mineral or gemstone material"
+  meat stick:
+    cost: 5
+    weight: 1
+    nutritional_value: 5
+    time: 1
+    conduct: ""
+    effect: ""
+    notes: "It is created by zapping a spell of stone to flesh at a marble wand"
+  melon:
+    cost: 10
+    weight: 5
+    nutritional_value: 100
+    time: 1
+    conduct: "vegan"
+    effect: ""
+    notes: "finitelycraig once accidentally ate a mel-on"
   orange:
     cost: 9
     weight: 2
@@ -95,21 +191,13 @@ comestibles:
     conduct: "vegan"
     effect: ""
     notes: ""
-  banana:
-    cost: 9
+  pancake:
+    cost: 15
     weight: 2
-    nutritional_value: 80
-    time: 1
-    conduct: "vegan"
+    nutritional_value: 200
+    time: 2
+    conduct: "vegetarian"
     effect: ""
-    notes: ""
-  sprig of wolfsbane:
-    cost: 7
-    weight: 1
-    nutritional_value: 40
-    time: 1
-    conduct: "vegan"
-    effect: "will cure lycanthropy"
     notes: ""
   pear:
     cost: 7
@@ -127,107 +215,19 @@ comestibles:
     conduct: "vegan"
     effect: ""
     notes: ""
-  clove of garlic:
+  sprig of wolfsbane:
     cost: 7
     weight: 1
     nutritional_value: 40
     time: 1
     conduct: "vegan"
-    effect: "makes you nauseous if you are undead"
-    notes: "It can be used to tame horses"
-  Melon:
-    cost: 10
-    weight: 5
-    nutritional_value: 100
-    time: 1
-    conduct: "vegan"
-    effect: ""
-    notes: "finitelycraig once accidentally ate a mel-on"
-  carrot:
-    cost: 7
-    weight: 2
-    nutritional_value: 50
-    time: 1
-    conduct: "vegan"
-    effect: "can cure blindness"
+    effect: "will cure lycanthropy"
     notes: ""
-  eucalyptus leaf:
-    cost: 6
-    weight: 1
-    nutritional_value: 30
-    time: 1
-    conduct: "vegan"
-    effect: "can cure sickness and nausea when uncursed"
-    notes: "It can be applied as a whistle"
-  kelp frond:
-    cost: 6
-    weight: 11
-    nutritional_value: 30
-    time: 1
-    conduct: "vegan"
-    effect: ""
-    notes: "It is only generated underwater"
-  meatball:
-    cost: 5
-    weight: 1
-    nutritional_value: 5
-    time: 1
-    conduct: ""
-    effect: ""
-    notes: "It can be used to tame cats and dogs and can be fed to pets to increase their tameness and apport"
-  meat ring:
-    cost: 5
-    weight: 1
-    nutritional_value: 5
-    time: 1
-    conduct: ""
-    effect: ""
-    notes: "Meat rings are only generated by casting stone to flesh at a ring made of mineral or gemstone material"
-  meat stick:
-    cost: 5
-    weight: 1
-    nutritional_value: 5
-    time: 1
-    conduct: ""
-    effect: ""
-    notes: "It is created by zapping a spell of stone to flesh at a marble wand"
-  huge chunk of meat:
-    cost: 105
-    weight: 400
-    nutritional_value: 2000
-    time: 20
-    conduct: ""
-    effect: "will likely make you oversatiated unless you were fainting beforehand"
-    notes: "It can only be created by zapping a boulder with a spell of stone to flesh"
-  egg:
-    cost: 9
-    weight: 1
-    nutritional_value: 80
-    time: 1
-    conduct: "vegetarian"
-    effect: "becomes stale after 400 turns, if you eat a stale egg it makes you nauseated for 10d4 turns"
-    notes: "Eggs may hatch into a monster if left uneaten"
-  lump of royal jelly:
+  tripe ration:
     cost: 15
-    weight: 2
+    weight: 5
     nutritional_value: 200
-    time: 1
-    conduct: "vegetarian"
-    effect: "will increase your strength by +1 if the jelly is blessed or uncursed (if cursed it will decrease stength by one)"
-    notes: "It will increase your HP by 0-20 (or decrease if the jelly is cursed)"
-  lichen corpse:
-    cost: 5
-    weight: 20
-    nutritional_value: 200
-    time: 3
-    conduct: "vegan"
-    effect: "never rots and never causes food poisoning"
-    notes: ""
-  lizard corpse:
-    cost: 5
-    weight: 10
-    nutritional_value: 40
-    time: 1
-    conduct: "vegan"
-    effect: "never rots and never causes food poisoning"
-    notes: ""
+    time: 2
+    conduct: ""
+    effect: "has a 50% chance of giving you nausea unless you are a Caveman, orc or non-humanoid carnivorous monster"
+    notes: "It will tame peaceful cats and dogs and increases pet's apport when fed to them"
