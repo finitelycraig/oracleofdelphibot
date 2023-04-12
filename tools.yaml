@@ -197,6 +197,12 @@ tools:
     use: ""
     creation: ""
     magic: false
+  osaku:
+    cost: 20
+    weight: 4
+    use: ""
+    creation: ""
+    magic: false
   skeleton key:
     cost: 10
     weight: 3

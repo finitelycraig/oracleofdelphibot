@@ -7,6 +7,14 @@ comestibles:
     conduct: "vegan"
     effect: ""
     notes: "Cursed food rations are always rotten when eaten"
+  gunyoki:
+    cost: 45
+    weight: 20
+    nutritional_value: 800
+    time: 5
+    conduct: "vegan"
+    effect: ""
+    notes: "Cursed food rations are always rotten when eaten"
   cram ration:
     cost: 35
     weight: 15

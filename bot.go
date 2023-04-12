@@ -5,7 +5,7 @@ import (
     log "github.com/sirupsen/logrus"
 
     "io/ioutil"
-    //"bufio"
+    "bufio"
     "os"
     "strings"
     "strconv"
@@ -215,7 +215,7 @@ type monsters struct {
 }
 
 type monster struct {
-    Difficulty int `yaml:"difficulty"`
+    BaseLevel int `yaml:"difficulty"`
     Attacks string `yaml:"attacks"`
     Speed int `yaml:"speed"`
     AC int `yaml:"ac"`
@@ -490,7 +490,7 @@ func getMonsterMessage(name string) string {
         "and %s alignment.  It is a %s creature. It is %s.%s%s " + 
         "Eating its corpse %s. It %s Elbereth.%s",
         strings.ReplaceAll(name,"-"," "), 
-        val.Difficulty, 
+        val.BaseLevel, 
         val.Attacks,
         val.Speed,
         val.AC,
@@ -546,45 +546,109 @@ func getArmor(fname string) *armors {
 }
 
 func getMonsters(fname string) *monsters {
-    var m *monsters
-    yamlFile, err := ioutil.ReadFile(fname)
-    if err != nil {
-        log.Printf("yamlFile.Get err   #%v ", err)
-    }
-    err = yaml.Unmarshal(yamlFile, &m)
-    if err != nil {
-        log.Fatalf("Unmarshal monsters: %v", err)
-    }
-    for k := range m.Items {
-        keys = append(keys, k)
-    }
+    //var m *monsters
+    //yamlFile, err := ioutil.ReadFile(fname)
+    //if err != nil {
+    //    log.Printf("yamlFile.Get err   #%v ", err)
+    //}
+    //err = yaml.Unmarshal(yamlFile, &m)
+    //if err != nil {
+    //    log.Fatalf("Unmarshal monsters: %v", err)
+    //}
+    //for k := range m.Items {
+    //    keys = append(keys, k)
+    //}
 
 
-//    resp, err := http.Get("https://raw.githubusercontent.com/NetHack/NetHack/071d79dce2ad5b8ade17c4dedf6b57c18b273a59/include/monsters.h")
-//    if err != nil {
-//       //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
-//   }
-////We Read the response body on the line below.
-//   body, err := ioutil.ReadAll(resp.Body)
-//   if err != nil {
-//      //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
-//   }
-//
-//   
-////Convert the body to type string
-//   var monsts *monsters
-//   sb := string(body)
-//   //fmt.Println(sb)
-//   scanner := bufio.NewScanner(strings.NewReader(sb))
-//   for scanner.Scan() {
-//	   var m monster 
-//	   line := scanner.Text()
-//	   if strings.Contains(line, "MON"){
-//		   name := strings.Split(line,'"')[1]
-//		   monsts.Items[name] = m
-//	   }
-//	}
-    return m
+    resp, err := http.Get("https://raw.githubusercontent.com/NetHack/NetHack/071d79dce2ad5b8ade17c4dedf6b57c18b273a59/include/monsters.h")
+    if err != nil {
+       //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
+   }
+//We Read the response body on the line below.
+   body, err := ioutil.ReadAll(resp.Body)
+   if err != nil {
+      //c.Say(channel, "Sorry, I can't seem to access the schedule. Try https://nethackathon.org")
+   }
+
+   
+//Convert the body to type string
+   monsts := make(map[string]monster)
+   sb := string(body)
+   fmt.Println(sb)
+   scanner := bufio.NewScanner(strings.NewReader(sb))
+	   var m monster
+	   m.Genocidable = true
+   for scanner.Scan() {
+	   var name string
+	   line := scanner.Text()
+	   tokens := strings.Split(line,",")
+	   mode := "skip"
+	   count := 0
+		   for _,token := range(tokens) {
+	   		if strings.Contains(line, "    MON("){
+		   		fmt.Println(line)
+		   		mode = "name"
+		   		count = 0
+			if strings.Contains(token,"LVL") && mode != "skip" {
+				mode = "LVL"
+				count = 0
+			} else if strings.Contains(token, "G") && mode != "skip" {
+				fmt.Println("geno mode")
+				mode = "geno"
+				count = 0
+			} else if strings.Contains(token, "SIZ") && mode != "skip" {
+				fmt.Println("sizemode")
+				mode = "size"
+				count = 0
+			}
+		   	switch mode {
+			case "name":
+				name = strings.Trim(token,"    MON(")
+				fmt.Println(name)
+				name = name[1:len(name)-1]
+				mode = "symbol"
+			case "LVL":
+				if count == 0 {
+					bl,_ := strconv.Atoi(strings.TrimLeft(token," LVL("))
+					m.BaseLevel = bl
+				} else if count == 1 {
+					s,_ := strconv.Atoi(strings.Trim(token," "))
+					m.Speed = s
+				} else if count == 2 {
+					fmt.Println(token)
+					ac,_ := strconv.Atoi(strings.Trim(token," "))
+					m.AC = ac
+				} else if count == 3 {
+					fmt.Println(token)
+					mr,_ := strconv.Atoi(strings.Trim(token," "))
+					m.MR = mr
+				}
+				count = count + 1
+			case "geno":
+				if token == " G_NOGEN" {
+					m.Genocidable = false
+					fmt.Println("no geno")
+				}
+			case "size":
+				if count == 0 {
+					token = strings.Trim(token, " ")
+					w,_ := strconv.Atoi(strings.TrimLeft(token," SIZ("))
+					m.Weight = w
+				} else if count == 1 {
+					n,_ := strconv.Atoi(strings.Trim(token," "))
+					m.NutritionalValue = n
+				}
+				count = count + 1
+
+			}
+		   }
+		   fmt.Println(name)
+		   fmt.Println(m)
+		   monsts[name] = m
+
+	   }
+	}
+	return &monsters{Items: monsts}
 }
 
 func getTools(fname string) *tools {
@@ -1113,9 +1177,9 @@ func parseWhatIsMessage(c *twitch.Client, channel, message, user string) {
         } else if _, ok := armorInfo.Items[message]; ok {
             c.Say(channel, getArmorMessage(message))
 	    return
-        } else if _, ok := monstersInfo.Items[message]; ok {
-            c.Say(channel, getMonsterMessage(message))
-	    return
+        //} else if _, ok := monstersInfo.Items[message]; ok {
+        //    c.Say(channel, getMonsterMessage(message))
+	//    return
         } else if _, ok := toolsInfo.Items[message]; ok {
             c.Say(channel, getToolMessage(message))
 	    return
@@ -1261,7 +1325,7 @@ func updateInfo() {
     fmt.Println(allowedBroadcasters)
     weaponsInfo = getWeapons("weapons.yaml")
     armorInfo = getArmor("armor.yaml")
-    monstersInfo = getMonsters("monsters.yaml")
+    //monstersInfo = getMonsters("monsters.yaml")
     toolsInfo = getTools("tools.yaml")
     wandsInfo = getWands("wands.yaml")
     scrollsInfo = getScrolls("scrolls.yaml")

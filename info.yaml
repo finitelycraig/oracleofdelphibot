@@ -18,8 +18,26 @@ infos:
     message: "!commands // !nethack // !nao // !hardfought // !nethackathon // !whoisnext // !wandid <base cost> <engrave message> // !scrollid <base cost> // !ringid <base-cost> // !potionid <base cost> // !message <message> - explains messages // !whatis <thing> - explains thing // !credits - contributors // !oracle-depart - sends me away (channel owner only)"
     link: ""
   nethackathon: 
-    message: "Twenty-two Twitch content creators stream NetHack continuously for over 56 hours!"
+    message: "Twenty-two Twitch content creators stream NetHack continuously for over 48 hours!"
     link: "https://nethackathon.org"
   credits:
     message: "This bot is by https://www.twitch.tv/finitelycraig and codes are avaliable at https://github.com/finitelycraig/oracleofdelphibot ... Special thanks to https://www.twitch.tv/d_i_s_p_e_r_s_e, https://www.twitch.tv/kougyoku_gentou, and https://www.twitch.tv/alimaair for helping make me."
+    link: ""
+  pethack:
+    message: "I don't know, some players like pets for reasons."
+    link: ""
+  finitelycraig:
+    message: '"My, this Craig tastes yummy!"'
+    link: "https://twitch.tv/finitelycraig"
+  cloudmillion:
+    message: 'Possibly higher than cloud 9'
+    link: "https://twitch.tv/cloudmillion"
+  americanelm:
+    message: 'A strong and noble tree (or man)'
+    link: "https://twitch.tv/americanelm"
+  habib:
+    message: "Some random lurker, worth listening to"
+    link: ""
+  hothraxxa:
+    message: "DAIYEN FOOELS"
     link: ""
